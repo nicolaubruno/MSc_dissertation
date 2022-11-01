@@ -1,0 +1,37 @@
+%
+%-----------------------------------
+\section{Three-dimensional case}
+\label{eq:three-dimensional-case}
+%-----------------------------------
+%
+\begin{wrapfigure}{l}{0.5\textwidth}
+	\centering
+	\caption{Standard 3D-MOT arrangement}
+	\includegraphics[width=0.45\textwidth]{USPSC-img/standard-3D-MOT-arrangement.png}
+	\legend{Standard arrangement of MOT composed of three orthogonal pairs of counter propagating laser beams with opposite circular polarization and coils in anti-Helmholtz configuration, which produces a magnetic quadrupole field. \\ Source: \cite[Figure~9.9]{foot2005atomic}}
+	\label{fig:standard-3D-MOT-arrangement}
+	\vspace{-20pt}
+\end{wrapfigure}
+Let us assume the standard 3D-MOT arrangement illustrated in figure \ref{fig:standard-3D-MOT-arrangement}. An atom, free to move along all Cartesian axes, interacts with \textit{three pairs} of counter-propagating laser beams with opposite circular polarization and a magnetic quadrupole field $ \mathbf{B} $. In a first attempt, we can naturally extend the 1D-MOT theory into a 3D theory considering that each laser beam yields a radiation pressure force given by equation (\ref{eq:1D-MOT-force-components}). Nevertheless, the quantization axis ($z$-axis) must match the direction of the field $ \mathbf{B} $ to proper evaluate the Zeeman shift, which implies that each laser beam polarization depends on the atomic position. This is not a concern in the 1D-MOT since the magnetic field has a fixed direction. Therefore, a theoretical description of the 3D-MOT \cite{prudnikov2015three} encounters considerable difficult due to the spatial-dependence of the quantization axis. Regardless the theoretical complications, the cooling and trapping effects of MOTs are widely confirmed for many alkali \cite{raab1987trapping, katori1999magneto, zachorowski1998magneto} and lanthanide \cite{maier2014narrow, miyazawa2021narrow, frisch2012narrow}. Also, in this thesis, we could demonstrate both effects for dysprosium and strontium atoms through a stochastic simulation. Moreover, it is possible to estimate temperature and also atomic cloud size.
+
+%-----------------------------------
+\subsection{Limit temperature in Doppler cooling}
+\label{sec:Doppler-temperature-limit}
+%-----------------------------------
+
+Let us consider a equilibrium atomic position close to the magnetic field centre. In this case, the Zeeman shift becomes negligible compared to the Doppler shift ($ \delta_{Z} \ll \delta_{D} $) such that a defined quantization axis is no longer required. \footnote{Essentially, we are proposing the treatment of a MOT as an \textbf{optical molasses}, which is a similar technique to only cool an atomic dilute gas based upon \textit{Doppler cooling}.} Also, we suppose weak atom-light couplings in which the laser detuning are grater than the power-broadened linewidth. Thus, the interaction between each laser beam and the atom is independent and it is described by two-level dynamics. In this situation, the MOT force is given by
+\begin{equation}
+	\mathbf{F}_{MOT}(\mathbf{v}) = \frac{\hbar k \Gamma s_0}{2} \sum_{n = 1}^{3} \left( \frac{1}{1 + s_0 + 4[\delta - k (\mathbf{v} \cdot \mathbf{e}_n)]^2 / \Gamma^2} - \frac{1}{1 + s_0 + 4[\delta + k (\mathbf{v} \cdot \mathbf{e}_n)]^2 / \Gamma^2} \right)\mathbf{e}_{n},
+\end{equation}
+where $ \{ \mathbf{e}_1, \mathbf{e}_2, \mathbf{e}_3 \}$ is the Cartesian basis. We are assuming all laser beams with the same saturation parameter $ s_0 $, wavevector magnitude $ k $, and detuning $ \delta $. For low velocities $ v $ such that $ kv \ll \delta $, we can expand the MOT force around $ \mathbf{v} = 0 $ so that $ \mathbf{F}_{MOT} \simeq - \gamma \mathbf{v} $,
+\begin{equation}
+	\gamma = - \frac{8 \hbar k^2 s_0 (\delta / \Gamma)}{[1 + s_0 + 4(\delta / \Gamma)^2]^2}.
+\end{equation}
+Assuming red-detuned laser beams ($ \delta < 0 $), we have $ \gamma > 0 $ and then $ \mathbf{F}_{MOT} $ describes a friction force. Hence, the velocity vanishes after a time as long as $ 1 / \gamma $ and then the final temperature should be zero. However, the $ \mathbf{F}_{MOT} $ is an average and therefore we must take its fluctuations into account. These fluctuations are associate with the Brownian atomic motion due to spontaneous emission, which yields a \textit{heating process}. Therefore, a finite temperature is set by the balance between cooling and heating mechanisms. 
+
+Let us considering a cycle of $ N $ 
+
+%-----------------------------------
+\subsection{Atomic cloud size}
+\label{sec:MOT-cloud-size}
+%-----------------------------------

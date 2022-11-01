@@ -1,0 +1,83 @@
+%% USPSC-pre-textual-Tutorial.tex
+%% Camandos para definição do tipo de documento (tese ou dissertação), área de concentração, opção, preâmbulo, titulação 
+%% referentes ao Programa de Pós-Graduação o IQSC
+\instituicao{Universidade de S\~ao Paulo}
+\unidade{PREFEITURA DO CAMPUS USP DE S\~AO CARLOS \hspace{60 em}INSTITUTO DE ARQUITETURA E URBANISMO \hspace{60 em}ESCOLA DE ENGENHARIA DE S\~AO CARLOS \hspace{60 em}INSTITUTO DE QU\'IMICA DE S\~AO CARLOS \hspace{60 em}INSTITUTO DE F\'ISICA DE S\~AO CARLOS \hspace{60 em}INSTITUTO DE CI\^ENCIAS MATEM\'ATICAS E DE COMPUTA\c{C}\~AO}
+\unidademin{Prefeitura do Campus USP de S\~ao Carlos; Instituto de Arquitetura e Urbanismo; Escola de Engenharia de S\~ao Carlos; Instituto de Qu\'imica de S\~ao Carlos; Instituto de F\'isica de S\~ao Carlos; Instituto de Ci\^encias Matem\'aticas e de Computa\c{c}\~ao}
+\universidademin{Universidade de S\~ao Paulo}
+
+\notafolharosto{Vers\~ao original}
+%Para versão original em inglês, comente do comando/declaração 
+%     acima(inclua % antes do comando acima) e tire a % do 
+%     comando/declaração abaixo no idioma do texto
+%\notafolharosto{Original version} 
+%Para versão corrigida, comente do comando/declaração da 
+%     versão original acima (inclua % antes do comando acima) 
+%     e tire a % do comando/declaração de um dos comandos 
+%     abaixo em conformidade com o idioma do texto
+%\notafolharosto{Vers\~ao corrigida \\(Vers\~ao original dispon\'ivel na Unidade que aloja o Programa)}
+%\notafolharosto{Corrected version \\(Original version available on the Program Unit)}
+
+% ---
+% dados complementares para CAPA e FOLHA DE ROSTO
+% ---
+\universidade{UNIVERSIDADE DE S\~AO PAULO}
+\titulo{Tutorial do Pacote USPSC para modelos de trabalhos acad\^emicos em LaTeX - vers\~ao 3.1}
+\tituloresumo{Tutorial do Pacote USPSC para modelos de trabalhos acad\^emicos em LaTeX - vers\~ao 3.1}
+\titleabstract{USPSC Package tutorial for LaTeX academic work templates - version 3.1}
+\autor{Marilza Aparecida Rodrigues Tognetti}
+\autorficha{Tognetti, Marilza Aparecida Rodrigues}
+%\autorabr{{TOGNETTI, M. A. R.; Calabrez, A. P. A (coord., program.); SIGOLO, B. O. O. (normaliz., padroniz.)} \textit{et al.} }
+\autorabr{{TOGNETTI, M. A. R.; CALABREZ, A. P. A. (coord., program.)}}
+
+\cutter{T645t}
+% Para gerar a ficha catalográfica sem o Código Cutter, basta 
+% incluir uma % na linha acima e tirar a % da linha abaixo
+%\cutter{ }
+
+\local{S\~ao Carlos}
+\data{2021}
+% Quando for Orientador, basta incluir uma % antes do comando abaixo
+\renewcommand{\orientadorname}{Orientadora:}
+% Quando for Coorientadora, basta tirar a % utilizar o comando abaixo
+%\newcommand{\coorientadorname}{Coorientador:}
+%\orientador{Profa. Dra. Elisa Gon\c{c}alves Rodrigues}
+\orientador{Normaliza\c{c}\~ao de Brianda de Oliveira Ordonho Sigolo \textit{ et al.}}
+%\orientador{Normaliza\c{c}\~ao de Brianda de Oliveira Ordonho Sigolo}
+\orientadorcorpoficha{Marilza Aparecida Rodrigues Tognetti, coordenadora, progamadora, normalizadora, padronizadora; Ana Paula Aparecida Calabrez, coordenadora, progamadora, normalizadora, padronizadora; Brianda de Oliveira Ordonho Sigolo, normalizadora e padronizadora ...[et a.]}
+\orientadorficha{Rodrigues, Elisa Gon\c{c}alves, orient}
+%Se houver co-orientador, inclua % antes das duas linhas (antes dos comandos \orientadorcorpoficha e \orientadorficha) 
+%          e tire a % antes dos 3 comandos abaixo
+%\coorientador{Prof. Dr. Jo\~ao Alves Serqueira}
+%\orientadorcorpoficha{orientadora Elisa Gon\c{c}alves Rodrigues ;  co-orientador Jo\~ao Alves Serqueira}
+%\orientadorficha{Rodrigues, Elisa Gon\c{c}alves, orient. II. Serqueira, Jo\~ao Alves, co-orient}
+
+\notaautorizacao{AUTORIZO A REPRODU\c{C}\~AO E DIVULGA\c{C}\~AO TOTAL OU PARCIAL DESTE TRABALHO, POR QUALQUER MEIO CONVENCIONAL OU ELETR\^ONICO PARA FINS DE ESTUDO E PESQUISA, DESDE QUE CITADA A FONTE.}
+\notabib{Ficha catalogr\'afica elaborada pela Biblioteca da Prefeitura do Campus USP de S\~ao Carlos - PUSP-SC/USP}
+
+\newcommand{\programa}[1]{
+
+% USPSC ==========================================================================
+   \ifthenelse{\equal{#1}{USPSC}}{
+				\tipotrabalho{Tutorial}
+				%\opcao{Nome da Opção}
+                % \tipotrabalho{Disserta\c{c}\~ao (Mestrado em Ci\^encias)}
+				%\area{F\'isica B\'asica}
+				%\opcao{Nome da Opção}
+				% O preambulo deve conter o tipo do trabalho, o objetivo, 
+				% o nome da instituição, a área de concentração e opção quando houver
+				% O preambulo irá conter dados de autoria 				
+				\preambulo{\textbf{Coordena\c{c}\~ao e Programa\c{c}\~ao} \newline Marilza Aparecida Rodrigues Tognetti (PUSP-SC) \newline Ana Paula Aparecida Calabrez (PUSP-SC)\newline \newline \textbf{Normaliza\c{c}\~ao} \newline Ana Paula Aparecida Calabrez (PUSP-SC) \newline Brianda de Oliveira Ordonho Sigolo (IAU) \newline Eduardo Graziosi Silva (EESC) \newline Eliana de C\'assia Aquareli Cordeiro (IQSC) \newline Fl\'avia Helena Cassin (EESC) \newline Maria Cristina Cavarette Dziabas (IFSC) \newline Marilza Aparecida Rodrigues Tognetti (PUSP-SC) \newline Regina C\'elia Vidal Medeiros (ICMC)}	
+				%\notaficha{Tutorial}
+
+}{
+% Outros
+	   \tipotrabalho{Disserta\c{c}\~ao/Tese (Mestrado/Doutorado)}
+	   \area{Nome da \'Area}
+	   \opcao{Nome da Op\c{c}\~ao}
+	   % O preambulo deve conter o tipo do trabalho, o objetivo, 
+	   % o nome da instituição, a área de concentração e opção quando houver
+	   \preambulo{Disserta\c{c}\~ao/Tese apresentada ao Programa de P\’{\o}s-Gradua\c{c}\~ao em F\’{\i}sica do Instituto de F\’{\i}sica de S\~ao Carlos da Universidade de S\~ao Paulo, para obtenç\c{c}\~ao do t\’{\i}tulo de Mestre/Doutor em Ci\^encias.}
+	   \notaficha{Disserta\c{c}\~ao/Tese (Mestrado/Doutorado - Programa de P\'os-Gradua\c{c}\~ao em Nome da \'Area)}	
+	
+}}

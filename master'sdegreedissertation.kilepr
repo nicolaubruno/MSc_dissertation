@@ -1,0 +1,43 @@
+[General]
+bib_extensions=.bib
+bibliographyBackendAutoDetected=
+bibliographyBackendUserOverride=
+def_graphic_ext=eps
+img_extIsRegExp=false
+img_extensions=.eps .jpg .jpeg .png .pdf .ps .fig .gif
+kileprversion=3
+kileversion=2.9.93
+masterDocument=
+name=Master's Degree Dissertation
+pkg_extIsRegExp=false
+pkg_extensions=.cls .sty .bbx .cbx .lbx
+src_extIsRegExp=false
+src_extensions=.tex .ltx .latex .dtx .ins
+
+[Tools]
+MakeIndex=
+QuickBuild=
+
+[item:Latex Code/USPSC-TA-Textual/introduction.tex]
+archive=true
+encoding=UTF-8
+highlight=LaTeX
+mode=LaTeX
+
+[item:Latex Code/USPSC-TA-Textual/light_matter_interaction.tex]
+archive=true
+encoding=UTF-8
+highlight=LaTeX
+mode=LaTeX
+
+[item:Latex Code/main.tex]
+archive=true
+encoding=UTF-8
+highlight=LaTeX
+mode=LaTeX
+
+[item:master'sdegreedissertation.kilepr]
+archive=true
+encoding=
+highlight=
+mode=

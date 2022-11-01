@@ -1,0 +1,25 @@
+%
+%-----------------------------------
+\chapter{Anomalous Zeeman effect}
+\label{ap:anomalous-Zeeman-effect}
+%-----------------------------------
+%
+
+The interaction between an external magnetic field and an atom splits the atomic energy levels\footnote{The atomic energy levels are negative energies associated with the bound between the electrons and the atomic nucleus.}. Let us consider, without loss of generality, a z-directed magnetic field $ \mathbf{B} = B \mathbf{e}_z $ and an atom whose magnetic dipole moment is $ \vec{\mu} $. We shall neglect the hyperfine structure so that $ \vec{\mu} = \vec{\mu}_{L} + \vec{\mu}_{S} $, being $ \vec{\mu}_{L} $ the orbital magnetic moment and $ \vec{\mu}_{L} $ the spin moment given by
+\begin{align}
+	\vec{\mu}_{L} &= -\frac{\mu_B g_L}{\hbar} \mathbf{L} & &\textrm{and} & \vec{\mu}_{S} &= -\frac{\mu_B g_S}{\hbar} \mathbf{S},
+\end{align}
+where $ \mu_B $ is the Bohr magneton, $ g_L = 1 $ and $ g_S = 2.002319314... \simeq = 2 $ are \textit{g-factors}, $ \mathbf{L} $ is the orbital angular momentum, and $ \mathbf{S} $ is the spin angular momentum. The interaction between the field $ \mathbf{B} $ and the atom is essentially dipolar such that it is described by the following Hamiltonian 
+\begin{equation}
+	\hat{V} = - \vec{\mu} \cdot \mathbf{B} = \frac{\mu_B}{\hbar}(\mathbf{L} + 2\mathbf{S}) \cdot \mathbf{B} = \frac{\mu_B B}{\hbar}(\hat{L}_z + 2 \hat{S}_z).
+	\label{eq:dipolar-magnetic-interaction}
+\end{equation}
+The interaction energy $ \mu_B B $ is comparable with the atomic energy levels for astronomical magnetic fields of magnitude around $ 10^{5}\ T $. In most situations, we can safely assume this interaction as a \textit{perturbation}. Let us also assume the interaction energy much lower than spin-orbit coupling ($ < 1\ T $) so that the total angular momentum $ \mathbf{J}^2 = (\mathbf{S} + \mathbf{L})^2 $ and its z-projection $ \hat{J}_z = \hat{S}_z + \hat{L}_z $ are compatible observables\footnote{The spin-orbit coupling is described by a Hamiltonian $ \hat{H}_{so} \propto \mathbf{S} \cdot \mathbf{L} $. Since $ \hat{J}^2 = (\mathbf{S} + \mathbf{L}) = \hat{S}^2 + \hat{L}^2 + 2(\mathbf{S} \cdot \mathbf{L}) $, we have $ [\hat{H}_{so}, \hat{J}^2] = [\hat{H}_{so}, \hat{J}_z] = 0 $. Therefore, $ \hat{J}^2 $ and $ \hat{J}_z $ are compatibles with $ \hat{H}_{so} $.} with the unperturbed atomic Hamiltonian even under an external magnetic field. In this case, $ \mathbf{B} $ is said to be a weak field. From the \textbf{perturbation theory}, the \textit{first order} energy correction is given by
+\begin{align}
+	\Delta E &= \frac{\mu_B B}{\hbar}\braket{n, l, s, j, m_j|\hat{L}_z + 2\hat{S}_z|n, l, s, j, m_j} \\
+	&= \frac{\mu_B B}{\hbar} (\braket{n, l, s, j, m_j|\hat{J}_z|n, l, s, j, m_j} + \braket{n, l, s, j, m_j|\hat{S}_z|n, l, s, j, m_j}),
+\end{align}
+where $ n $ is the \textit{principal quantum number} and $ l $, $ s $, $ j $, and $ m_j $ are quantum numbers associated with the angular momenta: \textit{orbital} $ \hat{L}^2 $, \textit{spin} $ \hat{S}^2 $, \textit{total} $ \hat{J}^2 $, and z-projection $ \hat{J}_z $. By the \textbf{Wigner-Eckart theorem}, we have
+\begin{equation}
+	\braket{n, l, s, j, m_j|\hat{L}_z + 2\hat{S}_z|n, l, s, j, m_j} = g
+\end{equation}

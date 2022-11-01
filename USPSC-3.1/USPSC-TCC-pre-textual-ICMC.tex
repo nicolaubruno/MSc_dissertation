@@ -1,0 +1,457 @@
+%% USPSC-TCC-pre-textual-ICMC.tex
+%% Camandos para definição do tipo de documento (tese ou dissertação), área de concentração, opção, preâmbulo, titulação 
+%% referentes ao Programa de Pós-Graduação o IFSC
+\instituicao{Instituto de Ci\^encias Matem\'aticas e de Computa\c{c}\~ao, Universidade de S\~ao Paulo}
+\unidade{INSTITUTO DE CI\^ENCIAS MATEM\'ATICAS E DE COMPUTA\c{C}\~AO}
+\unidademin{Instituto de Ci\^encias Matem\'aticas e de Computa\c{c}\~ao}
+\universidademin{Universidade de S\~ao Paulo}
+\setorpos{SERVI\c{C}O DE GRADUA\c{C}\~AO DO ICMC-USP}
+
+\notafolharosto{Vers\~ao original}
+\notafolharostoadic{Original version}
+%Para versão original em inglês, comente os comandos/declarações acima (inclua % antes do comando acima) 
+% e tire a % dos comandos/declarações abaixo no idioma do texto
+%\notafolharosto{Original version} 
+%\notafolharostoadic{Vers\~ao original}
+
+%Para versão revisada, comente os comandos/declarações acima (inclua % antes do comando acima) 
+% e tire a % dos comandos/declarações abaixo, em conformidade com o idioma do texto
+% Se o Idioma do texto for português: 
+%\notafolharosto{Vers\~ao revisada}
+%\notafolharosto{Final version}
+% Se o Idioma do texto for Inglês: 
+%\notafolharosto{Final version}
+%\notafolharosto{Vers\~ao revisada}
+% ---
+% dados complementares para CAPA e FOLHA DE ROSTO
+% ---
+\universidade{UNIVERSIDADE DE S\~AO PAULO}
+
+% Idioma do texto em PORTUGUÊS
+\titulo{Modelo para TCC em \LaTeX\ utilizando o Pacote USPSC para o ICMC} 
+\titleabstract{Model for TCC in \LaTeX\ using the USPSC Package to the ICMC}
+\tituloadic{Model for TCC in \LaTeX\ using the USPSC Package to the ICMC}
+\tituloresumo{Modelo para TCC em \LaTeX\ utilizando o Pacote USPSC para o ICMC}
+
+% Idioma do texto em INGLÊS
+% 22/02/2017 - Título para página de rosto adicional
+% para a versão em inglês, utilize os comandos abaixo
+%\titulo{Model for TCC in \LaTeX\ using the USPSC Package to the ICMC}
+%\titleabstract{Model for TCC in \LaTeX\ using the USPSC Package to the ICMC}
+%\tituloadic{Modelo para TCC em \LaTeX\ utilizando o Pacote USPSC para o ICMC}
+%\tituloresumo{Modelo para TCC em \LaTeX\ utilizando o Pacote USPSC para o ICMC}
+
+\autor{Jos\'e da Silva}
+\autorficha{Silva, Jos\'e da}
+\autorabr{SILVA, J.}
+
+\cutter{S856m}
+% Para gerar a ficha catalográfica sem o Código Cutter, basta 
+% incluir uma % na linha acima e tirar a % da linha abaixo
+%\cutter{ }
+
+\local{S\~ao Carlos}
+\data{2021}
+% Para o idioma português:
+\renewcommand{\orientadorname}{Orientadora:}
+\orientador{Profa. Dra. Elisa Gon\c{c}alves Rodrigues}
+\orientadoradic{Advisor: Profa. Dra. Elisa Gon\c{c}alves Rodrigues}
+\orientadorcorpoficha{orientadora Elisa Gon\c{c}alves Rodrigues}
+\orientadorficha{Rodrigues, Elisa Gon\c{c}alves, orient}
+%Para incluir o nome do(a) coorientados(a), inclua % nos 2 comandos acima e retire a % dos 2 comandos abaixo
+%\orientadorcorpoficha{orientadora Elisa Gon\c{c}alves Rodrigues ;  co-orientador Jo\~ao Alves Serqueira}
+%\orientadorficha{Rodrigues, Elisa Gon\c{c}alves, orient. II. Serqueira, Jo\~ao Alves, co-orient}
+
+
+%Se o idioma for o inglês, inclua % nos comandos acima e exclua dos comandos abaixo
+%\renewcommand{\orientadorname}{Advisor:}
+%\orientador{Profa. Dra. Elisa Gon\c{c}alves Rodrigues}
+%\orientadoradic{Orientadora: Profa. Dra. Elisa Gon\c{c}alves Rodrigues}
+%\orientadorcorpoficha{orientadora Elisa Gon\c{c}alves Rodrigues}
+%\orientadorficha{Rodrigues, Elisa Gon\c{c}alves, orient}
+%Para incluir o nome do(a) coorientados(a), inclua % nos 2 comandos acima e retire a % dos 2 comandos abaixo
+%\orientadorcorpoficha{orientadora Elisa Gon\c{c}alves Rodrigues ;  co-orientador Jo\~ao Alves Serqueira}
+%\orientadorficha{Rodrigues, Elisa Gon\c{c}alves, orient. II. Serqueira, Jo\~ao Alves, co-orient}
+
+% Quando houver Coorientador(a): 
+% Para o idioma português:
+% basta retirar  % antes de um dos comandos abaixo
+%\newcommand{\coorientadorname}{Coorientador:}
+%\newcommand{\coorientadorname}{Coorientadora:}
+% Para o idoma inglês:
+% basta retirar  % antes do comando abaixo
+%\newcommand{\coorientadorname}{Coorientador:}
+
+% Quando houver Coorientador(a), basta tirar a % utilizar o comando abaixo
+%\newcommand{\coorientadorname}{Coadvisor:}
+%Se houver co-orientador, inclua % antes das duas linhas (antes dos comandos \orientadorcorpoficha e \orientadorficha) 
+%          e tire a % antes dos 3 comandos abaixo
+%\coorientador{Prof. Dr. Jo\~ao Alves Serqueira}
+%\coorientadoradic{ Co-orientador: Prof. Dr. Jo\~ao Alves Serqueira}
+%\orientadorcorpoficha{orientadora Elisa Gon\c{c}alves Rodrigues ;  co-orientador Jo\~ao Alves Serqueira}
+%\orientadorficha{Rodrigues, Elisa Gon\c{c}alves, orient. II. Serqueira, Jo\~ao Alves, co-orient}
+
+%Para o idioma Inglês, retire a % antes da linha abaixo
+%\renewcommand{\areaname}{Concentration area: }
+
+\notaautorizacao{AUTORIZO A REPRODU\c{C}\~AO E DIVULGA\c{C}\~AO TOTAL OU PARCIAL DESTE TRABALHO, POR QUALQUER MEIO CONVENCIONAL OU ELETR\^ONICO PARA FINS DE ESTUDO E PESQUISA, DESDE QUE CITADA A FONTE.}
+% Se o idioma for o inglês, inclua a % antes do campo \notaautorizacao acima e retire a % da linha abaixo
+%\notaautorizacao{I AUTORIZE THE REPRODUCTION AND DISSEMINATION OF TOTAL OR PARTIAL COPIES OF THIS DOCUMENT, BY CONVENCIONAL OR ELECTRONIC MEDIA FOR STUDY OR RESEARCH PURPOSE, SINCE IT IS REFERENCED.}
+
+\notabib{Ficha catalogr\'afica elaborada pela Biblioteca Prof. Achille Bassi, ICMC/USP, com os dados fornecidos pelo(a) autor(a)}
+
+\newcommand{\programa}[1]{
+
+
+% BCCe ==========================================================================
+\ifthenelse{\equal{#1}{BCCe}}{
+	\renewcommand{\areaname}{Concentration area:}
+    \tipotrabalho{Monografia (Trabalho de Conclus\~ao de Curso)}
+    \tipotrabalhoabs{Monograph (Conclusion Course Paper)}
+    \renewcommand{\orientadorname}{Advisor:}
+    %Para Orientadora, inclua % antes do comando acima e retire a % antes do comando abaixo
+    %\renewcommand{\orientadorname}{Orientadora:}
+    % Quando houver Coorientador, basta tirar a % utilizar o comando abaixo
+   	%\newcommand{\coorientadorname}{Coorientador:}
+    \renewcommand{\areaname}{Concentration area: }
+    \area{Computer Science and Computational Mathematics}
+    \areaadic{\'Area de concentra\c{c}\~ao: Ci\^encias de Computa\c{c}\~ao e Matem\'atica Computacional}
+    %\opcao{Nome da Opção em inglês}
+    %\opcaoadic{Nome da Opção em português}
+    % O preambulo deve conter o tipo do trabalho, o objetivo, 
+    % o nome da instituição, a área de concentração e opção quando houver
+    % O preambulo deve conter o tipo do trabalho, o objetivo, 
+	% o nome da instituição, a área de concentração e opção quando houver
+	\preambulo{Conclusion course paper submitted to the Undergraduate Program of the Instituto de Ci\^encias Matem\'aticas e de Computa\c{c}\~ao, Universidade de S\~ao Paulo - ICMC/USP, in partial fulfillment of the  requirements for the degree of the Bachelor in Computer Science.}
+	\preambuloadic{Trabalho de conclus\~ao de curso apresentado ao Programa de Gradua\c{c}\~ao, do Instituto de Ci\^encias Matem\'aticas e de Computa\c{c}\~ao, Universidade de S\~ao Paulo - ICMC/USP, como parte dos requisitos para obten\c{c}\~ao do t\'itulo de Bacharel em Ci\^encias de Computa\c{c}\~ao.}
+	\notaficha{Monograph (Undergraduate in Computer Science)}
+	\notacapaicmc{Conclusion Course Paper to the Undergraduate Program Bachelor's in\\ Computer Sciences}
+    }{
+ % BCCp ==========================================================================
+ \ifthenelse{\equal{#1}{BCCp}}{
+    \tipotrabalho{Monografia (Trabalho de Conclus\~ao de Curso)}
+    \tipotrabalhoabs{Monograph (Conclusion Course Paper)}
+    % Quando for Orientador, basta incluir uma % antes do comando abaixo
+    \renewcommand{\orientadorname}{Orientadora:}
+    % Quando for Coorientadora, basta tirar a % utilizar o comando abaixo
+    %\newcommand{\coorientadorname}{Coorientador:}
+    \area{Ci\^encias de Computa\c{c}\~ao e Matem\'atica Computacional}
+    \areaadic{Concentration area: Computer Science and Computational Mathematics}
+    %\opcao{Nome da Opção em português}
+    %\opcaoadic{Nome da Opção em inglês}
+    % O preambulo deve conter o tipo do trabalho, o objetivo, 
+    % o nome da instituição, a área de concentração e opção quando houver
+    % O preambulo deve conter o tipo do trabalho, o objetivo, 
+    % o nome da instituição, a área de concentração e opção quando houver
+    \preambulo{Trabalho de conclus\~ao de curso apresentado ao Programa de Gradua\c{c}\~ao, do Instituto de Ci\^encias Matem\'aticas e de Computa\c{c}\~ao, Universidade de S\~ao Paulo - ICMC/USP, como parte dos requisitos para obten\c{c}\~ao do t\'itulo de Bacharel em Ci\^encias de Computa\c{c}\~ao.}
+    \preambuloadic{Conclusion course paper submitted to the Undergraduate Program of the Instituto de Ci\^encias Matem\'aticas e de Computa\c{c}\~ao, Universidade de S\~ao Paulo - ICMC/USP, in partial fulfillment of the  requirements for the degree of the Bachelor in Computer Science.}
+    \notaficha{Monografia (Gradua\c{c}\~ao em Ci\^encias de Computa\c{c}\~ao)}
+    \notacapaicmc{Trabalho de Conclus\~ao de Curso do Programa de Gradua\c{c}\~ao Bacharelado em\\ Ci\^encias de Computa\c{c}\~ao}
+    }{
+% BMe ==========================================================================
+\ifthenelse{\equal{#1}{BMe}}{
+	\renewcommand{\areaname}{Concentration area:}
+	\tipotrabalho{Monografia (Trabalho de Conclus\~ao de Curso)}
+	\tipotrabalhoabs{Monograph (Conclusion Course Paper)}
+	%\renewcommand{\orientadorname}{Advisor:}
+	%Para Orientadora, inclua % antes do comando acima e retire a % antes do comando abaixo
+	%\renewcommand{\orientadorname}{Orientadora:}
+	% Quando houver Coorientador, basta tirar a % utilizar o comando abaixo
+	%\newcommand{\coorientadorname}{Coorientador:}
+	\renewcommand{\areaname}{Concentration area: }
+	\area{Mathematics}
+	\areaadic{\'Area de concentra\c{c}\~ao: Matem\'atica}
+	%\opcao{Nome da Opção em inglês}
+	%\opcaoadic{Nome da Opção em português}
+	% O preambulo deve conter o tipo do trabalho, o objetivo, 
+	% o nome da instituição, a área de concentração e opção quando houver
+	% O preambulo deve conter o tipo do trabalho, o objetivo, 
+	% o nome da instituição, a área de concentração e opção quando houver
+	\preambulo{Conclusion course  paper presented to the Undergraduate Program of the Instituto de Ci\^encias Matem\'aticas e de Computa\c{c}\~ao, Universidade de S\~ao Paulo - ICMC/USP, in partial fulfillment of the  requirements for the degree of the Bachelor in Mathematics.}
+	\preambuloadic{Trabalho de conclus\~ao de curso apresentado ao Programa de Gradua\c{c}\~ao do Instituto de Ci\^encias Matem\'aticas e de Computa\c{c}\~ao, Universidade de S\~ao Paulo - ICMC/USP, como parte dos requisitos para obten\c{c}\~ao do t\'itulo de Bacharel em Matem\'atica.}	
+	\notaficha{Monograph (Undergraduate in Mathematics)}
+	\notacapaicmc{Conclusion Course Paper to the Undergraduate Program Bachelor's in\\ Mathematics}
+    }{
+% BMp ==========================================================================
+\ifthenelse{\equal{#1}{BMp}}{
+    \tipotrabalho{Monografia (Trabalho de Conclus\~ao de Curso)}
+    \tipotrabalhoabs{Monograph (Conclusion Course Paper)}
+    \area{Matem\'atica}
+	\areaadic{Concentration area: Mathematics}
+	%\opcao{Nome da Opção em português}
+	%\opcaoadic{Nome da Opção em inglês}
+	% O preambulo deve conter o tipo do trabalho, o objetivo, 
+	% o nome da instituição, a área de concentração e opção quando houver
+	% O preambulo deve conter o tipo do trabalho, o objetivo, 
+	% o nome da instituição, a área de concentração e opção quando houver
+	\preambulo{Trabalho de conclus\~ao de curso apresentado ao Programa de Gradua\c{c}\~ao do Instituto de Ci\^encias Matem\'aticas e de Computa\c{c}\~ao, Universidade de S\~ao Paulo - ICMC/USP, como parte dos requisitos para obten\c{c}\~ao do t\'itulo de Bacharel em Matem\'atica.}	
+	\preambuloadic{Conclusion course  paper presented to the Undergraduate Program of the Instituto de Ci\^encias Matem\'aticas e de Computa\c{c}\~ao, Universidade de S\~ao Paulo - ICMC/USP, in partial fulfillment of the  requirements for the degree of the Bachelor in Mathematics.}
+	\notaficha{Monografia (Gradua\c{c}\~ao em Matem\'atica)}
+	\notacapaicmc{Trabalho de Conclus\~ao de Curso do Programa de Gradua\c{c}\~ao Bacharelado em\\ Matem\'atica}
+    }{
+% BMAe ==========================================================================
+\ifthenelse{\equal{#1}{BMAe}}{
+	\renewcommand{\areaname}{Concentration area:}
+	\tipotrabalho{Monografia (Trabalho de Conclus\~ao de Curso)}
+	\tipotrabalhoabs{Monograph (Conclusion Course Paper)}
+	\area{Applied Mathematics and Scientific Computing}
+	\areaadic{\'Area de concentra\c{c}\~ao: Matem\'atica Aplicada e Computa\c{c}\~ao Cient\'ifica}
+	%\opcao{Nome da Opção em inglês}
+	%\opcaoadic{Nome da Opção em português}
+	% O preambulo deve conter o tipo do trabalho, o objetivo, 
+	% o nome da instituição, a área de concentração e opção quando houver
+	% O preambulo deve conter o tipo do trabalho, o objetivo, 
+	% o nome da instituição, a área de concentração e opção quando houver
+	\preambulo{Conclusion course paper presented to the Undergraduate Program of the Instituto de Ci\^encias Matem\'aticas e de Computa\c{c}\~ao, Universidade de S\~ao Paulo - ICMC/USP, in partial fulfillment of the requirements for the degree of the Bachelor in Applied Mathematics and Scientific Computing.}
+	\preambuloadic{Trabalho de conclus\~ao de curso apresentado ao Programa de Gradua\c{c}\~ao, do Instituto de Ci\^encias Matem\'aticas e de Computa\c{c}\~ao, Universidade de S\~ao Paulo - ICMC/USP, como parte dos requisitos para obten\c{c}\~ao do t\'itulo de Bacharel em Matem\'atica Aplicada e Computa\c{c}\~ao Cient\'ifica.}	
+	\notaficha{Monograph (Undergraduate in Applied Mathematics and Scientific Computing)}
+	\notacapaicmc{Conclusion Course Paper to the Undergraduate Program Bachelor's in\\ Applied Mathematics and Scientific Computing}
+    }{
+% BMAp ==========================================================================
+\ifthenelse{\equal{#1}{BMAp}}{
+	\tipotrabalho{Monografia (Trabalho de Conclus\~ao de Curso)}
+	\tipotrabalhoabs{Monograph (Conclusion Course Paper)}
+	\area{Matem\'atica Aplicada e Computa\c{c}\~ao Cient\'ifica}
+	\areaadic{Concentration area: Applied Mathematics and Scientific Computing}
+	%\opcao{Nome da Opção em português}
+	%\opcaoadic{Nome da Opção em inglês}
+	% O preambulo deve conter o tipo do trabalho, o objetivo, 
+	% o nome da instituição, a área de concentração e opção quando houver
+	% O preambulo deve conter o tipo do trabalho, o objetivo, 
+	% o nome da instituição, a área de concentração e opção quando houver
+	\preambulo{Trabalho de conclus\~ao de curso apresentado ao Programa de Gradua\c{c}\~ao, do Instituto de Ci\^encias Matem\'aticas e de Computa\c{c}\~ao, Universidade de S\~ao Paulo - ICMC/USP, como parte dos requisitos para obten\c{c}\~ao do t\'itulo de Bacharel em Matem\'atica Aplicada e Computa\c{c}\~ao Cient\'ifica.}	
+	\preambuloadic{Conclusion course paper presented to the Undergraduate Program of the Instituto de Ci\^encias Matem\'aticas e de Computa\c{c}\~ao, Universidade de S\~ao Paulo - ICMC/USP, in partial fulfillment of the  requirements for the degree of the Bachelor in Applied Mathematics and Scientific Computing.}
+	\notaficha{Monografia (Gradua\c{c}\~ao em Matem\'atica Aplicada e Computa\c{c}\~ao Cient\'ifica)}
+	\notacapaicmc{Trabalho de Conclus\~ao de Curso do Programa de Gradua\c{c}\~ao Bacharelado em\\ Matem\'atica Aplicada e Computa\c{c}\~ao Cient\'ifica}
+    }{
+% LMe ==========================================================================
+\ifthenelse{\equal{#1}{LMe}}{
+	\renewcommand{\areaname}{Concentration area:}
+	\tipotrabalho{Monografia (Trabalho de Conclus\~ao de Curso)}
+	\tipotrabalhoabs{Monograph (Conclusion Course Paper)}
+	\area{Mathematics}
+	\areaadic{\'Area de concentra\c{c}\~ao: Matem\'atica}
+	%\opcao{Nome da Opção em inglês}
+	%\opcaoadic{Nome da Opção em português}
+	% O preambulo deve conter o tipo do trabalho, o objetivo, 
+	% o nome da instituição, a área de concentração e opção quando houver
+	% O preambulo deve conter o tipo do trabalho, o objetivo, 
+	% o nome da instituição, a área de concentração e opção quando houver
+	\preambulo{Conclusion course paper presented to the Undergraduate Program of the Instituto de Ci\^encias Matem\'aticas e de Computa\c{c}\~ao, Universidade de S\~ao Paulo - ICMC/USP, in partial fulfillment of the  requirements for the degree of the Licentiate in Mathematics.}
+	\preambuloadic{Trabalho de conclus\~ao de curso apresentado ao Programa de Gradua\c{c}\~ao, do Instituto de Ci\^encias Matem\'aticas e de Computa\c{c}\~ao, Universidade de S\~ao Paulo - ICMC/USP, como parte dos requisitos para obten\c{c}\~ao do t\'itulo de Licenciado em Matem\'atica.}	
+	\notaficha{Monograph (Degree in Mathematics)}
+	\notacapaicmc{Conclusion Course Paper to the Undergraduate Program Licenciate in\\ Mathematics}
+    }{
+% LMp ==========================================================================
+\ifthenelse{\equal{#1}{LMp}}{
+	\tipotrabalho{Monografia (Trabalho de Conclus\~ao de Curso)}
+	\tipotrabalhoabs{Monograph (Conclusion Course Paper)}
+	\area{Matem\'atica}
+	\areaadic{Concentration area: Mathematics}
+	%\opcao{Nome da Opção em português}
+	%\opcaoadic{Nome da Opção em inglês}
+	% O preambulo deve conter o tipo do trabalho, o objetivo, 
+	% o nome da instituição, a área de concentração e opção quando houver
+	% O preambulo deve conter o tipo do trabalho, o objetivo, 
+	% o nome da instituição, a área de concentração e opção quando houver
+	\preambulo{Trabalho de conclus\~ao de curso apresentado ao Programa de Gradua\c{c}\~ao, do Instituto de Ci\^encias Matem\'aticas e de Computa\c{c}\~ao, Universidade de S\~ao Paulo - ICMC/USP, como parte dos requisitos para obten\c{c}\~ao do t\'itulo de Licenciado em Matem\'atica.}	
+	\preambuloadic{Conclusion course paper presented to the Undergraduate Program of the Instituto de Ci\^encias Matem\'aticas e de Computa\c{c}\~ao, Universidade de S\~ao Paulo - ICMC/USP, in partial fulfillment of the  requirements for the degree of the Licentiate in Mathematics.}
+	\notaficha{Monografia (Licenciatura em Matem\'atica)}
+	\notacapaicmc{Trabalho de Conclus\~ao de Curso do Programa de Gradua\c{c}\~ao Licenciatura em\\ Matem\'atica}
+    }{
+% BCDe ==========================================================================
+\ifthenelse{\equal{#1}{BCDe}}{
+	\renewcommand{\areaname}{Concentration area:}
+	\tipotrabalho{Monografia (Trabalho de Conclus\~ao de Curso)}
+	\tipotrabalhoabs{Monograph (Conclusion Course Paper)}
+	\area{Data Science}
+	\areaadic{\'Area de concentra\c{c}\~ao: Ci\^encia de Dados}
+	%\opcao{Nome da Opção em inglês}
+	%\opcaoadic{Nome da Opção em português}
+	% O preambulo deve conter o tipo do trabalho, o objetivo, 
+	% o nome da instituição, a área de concentração e opção quando houver
+	% O preambulo deve conter o tipo do trabalho, o objetivo, 
+	% o nome da instituição, a área de concentração e opção quando houver
+	\preambulo{Conclusion course paper presented to the Undergraduate Program of the Instituto de Ci\^encias Matem\'aticas e de Computa\c{c}\~ao, Universidade de S\~ao Paulo - ICMC/USP, in partial fulfillment of the  requirements for the degree of the Bachelor in Data Science.}
+	\preambuloadic{Trabalho de conclus\~ao de curso apresentado ao Programa de Gradua\c{c}\~ao do Instituto de Ci\^encias Matem\'aticas e de Computa\c{c}\~ao, Universidade de S\~ao Paulo - ICMC/USP, como parte dos requisitos para obten\c{c}\~ao do t\'itulo de Bacharel em Ci\^encia de Dados.}	
+	\notaficha{Monograph (Undergraduate in Statistics and Data Science)}
+	\notacapaicmc{Conclusion Course Paper to the Undergraduate Program Bachelor's in\\ Data Science}
+    }{
+% BCDp ==========================================================================
+\ifthenelse{\equal{#1}{BCDp}}{
+    \tipotrabalho{Monografia (Trabalho de Conclus\~ao de Curso)}
+    \tipotrabalhoabs{Monograph (Conclusion Course Paper)}
+	\area{Ci\^encia de Dados}
+	\areaadic{Concentration area: Data Science}
+	%\opcao{Nome da Opção em português}
+	%\opcaoadic{Nome da Opção em inglês}
+	% O preambulo deve conter o tipo do trabalho, o objetivo, 
+	% o nome da instituição, a área de concentração e opção quando houver
+	% O preambulo deve conter o tipo do trabalho, o objetivo, 
+	% o nome da instituição, a área de concentração e opção quando houver
+	\preambulo{Trabalho de conclus\~ao de curso apresentado ao Programa de Gradua\c{c}\~ao do Instituto de Ci\^encias Matem\'aticas e de Computa\c{c}\~ao, Universidade de S\~ao Paulo - ICMC/USP, como parte dos requisitos para obten\c{c}\~ao do t\'itulo de Bacharel em Ci\^encia de Dados.}	
+	\preambuloadic{Conclusion course paper presented to the Undergraduate Program of the Instituto de Ci\^encias Matem\'aticas e de Computa\c{c}\~ao, Universidade de S\~ao Paulo - ICMC/USP, in partial fulfillment of the requirements for the degree of the Bachelor in Data Science.}
+	\notaficha{Monografia (Gradua\c{c}\~ao em Ci\^encia de Dados)}
+	\notacapaicmc{Trabalho de Conclus\~ao de Curso do Programa de Gradua\c{c}\~ao Bacharelado em\\ Ci\^encia de Dados}
+    }{
+% EBECDe ==========================================================================
+\ifthenelse{\equal{#1}{EBECDe}}{
+	\renewcommand{\areaname}{Concentration area:}
+	\tipotrabalho{Projeto de gradua\c{c}\~ao (Trabalho de Conclus\~ao de Curso)}
+	\tipotrabalhoabs{Graduation project (Conclusion Course Paper)}
+	\area{Statistics and Data Science}
+	\areaadic{\'Area de concentra\c{c}\~ao: Estat\'istica e Ci\^encia de Dados}
+	%\opcao{Nome da Opção em inglês}
+	%\opcaoadic{Nome da Opção em português}
+	% O preambulo deve conter o tipo do trabalho, o objetivo, 
+	% o nome da instituição, a área de concentração e opção quando houver
+	% O preambulo deve conter o tipo do trabalho, o objetivo, 
+	% o nome da instituição, a área de concentração e opção quando houver
+	\preambulo{Graduation project presented to the Undergraduate Program of the Instituto de Ci\^encias Matem\'aticas e de Computa\c{c}\~ao, Universidade de S\~ao Paulo - ICMC/USP, in partial fulfillment of the requirements for the degree of the Bachelor in Statistics and Data Science.}
+	\preambuloadic{Projeto de gradua\c{c}\~ao apresentado ao Programa de Gradua\c{c}\~ao do Instituto de Ci\^encias Matem\'aticas e de Computa\c{c}\~ao, Universidade de S\~ao Paulo - ICMC/USP, como parte dos requisitos para obten\c{c}\~ao do t\'itulo de Bacharel em Estat\'istica e Ci\^encia de Dados.}
+	\notaficha{Graduation Project (Undergraduate in Statistics and Data Science)}
+	\notacapaicmc{Graduation Project to the Undergraduate Program Bachelor's in\\ Statistics and Data Science}	
+    }{
+% EBECDp  ==========================================================================
+\ifthenelse{\equal{#1}{EBECDp}}{
+	\tipotrabalho{Projeto de gradua\c{c}\~ao (Trabalho de Conclus\~ao de Curso)}
+	\tipotrabalhoabs{Graduation project (Conclusion Course Paper)}
+	\area{Estat\'istica e Ci\^encia de Dados}
+	\areaadic{Concentration area: Statistics and Data Science}
+	%\opcao{Nome da Opção em português}
+	%\opcaoadic{Nome da Opção em inglês}
+	% O preambulo deve conter o tipo do trabalho, o objetivo, 
+	% o nome da instituição, a área de concentração e opção quando houver
+	% O preambulo deve conter o tipo do trabalho, o objetivo, 
+	% o nome da instituição, a área de concentração e opção quando houver
+	\preambulo{Projeto de gradua\c{c}\~ao apresentado ao Programa de Gradua\c{c}\~ao do Instituto de Ci\^encias Matem\'aticas e de Computa\c{c}\~ao, Universidade de S\~ao Paulo - ICMC/USP, como parte dos requisitos para obten\c{c}\~ao do t\'itulo de Bacharel em Estat\'istica e Ci\^encia de Dados.}	
+	\preambuloadic{Graduation project presented to the Undergraduate Program of the Instituto de Ci\^encias Matem\'aticas e de Computa\c{c}\~ao, Universidade de S\~ao Paulo - ICMC/USP, in partial fulfillment of the requirements for the degree of the Bachelor in Statistics and Data Science.}
+	\notaficha{Projeto de gradua\c{c}\~ao (Gradua\c{c}\~ao em Estat\'istica e Ci\^encia de Dados)}
+	\notacapaicmc{Projeto de gradua\c{c}\~ao do Programa de Gradua\c{c}\~ao Bacharelado em\\ Estat\'istica e Ci\^encia de Dados}
+    }{
+% BECDe ==========================================================================
+\ifthenelse{\equal{#1}{BECDe}}{
+	\renewcommand{\areaname}{Concentration area:}
+	\tipotrabalho{Monografia (Trabalho de Conclus\~ao de Curso)}
+	\tipotrabalhoabs{Monograph (Conclusion Course Paper)}
+	\area{Statistics and Data Science}
+	\areaadic{\'Area de concentra\c{c}\~ao: Estat\'istica  e Ci\^encia de Dados}
+	%\opcao{Nome da Opção em inglês}
+	%\opcaoadic{Nome da Opção em português}
+	% O preambulo deve conter o tipo do trabalho, o objetivo, 
+	% o nome da instituição, a área de concentração e opção quando houver
+	% O preambulo deve conter o tipo do trabalho, o objetivo, 
+	% o nome da instituição, a área de concentração e opção quando houver
+	\preambulo{Conclusion course paper presented to the Undergraduate Program of the Instituto de Ci\^encias Matem\'aticas e de Computa\c{c}\~ao, Universidade de S\~ao Paulo - ICMC/USP, in partial fulfillment of the requirements for the degree of the Bachelor in Statistics and Data Science.}
+	\preambuloadic{Trabalho de conclus\~ao de curso apresentado ao Programa de Gradua\c{c}\~ao do Instituto de Ci\^encias Matem\'aticas e de Computa\c{c}\~ao, Universidade de S\~ao Paulo - ICMC/USP, como parte dos requisitos para obten\c{c}\~ao do t\'itulo de Bacharel em  Estat\'istica  e Ci\^encia de Dados.}	
+	\notaficha{Monograph (Undergraduate in Statistics and Data Science)}
+	\notacapaicmc{Conclusion Course Paper to the Undergraduate Program Bachelor's in\\ Statistics and Data Science}
+    }{
+% BECDp ==========================================================================
+\ifthenelse{\equal{#1}{BECDp}}{
+	\tipotrabalho{Monografia (Trabalho de Conclus\~ao de Curso)}
+	\tipotrabalhoabs{Monograph (Conclusion Course Paper)}
+	\area{Estat\'istica  e Ci\^encia de Dados}
+	\areaadic{Concentration area: Statistics and Data Science}
+	%\opcao{Nome da Opção em português}
+	%\opcaoadic{Nome da Opção em inglês}
+	% O preambulo deve conter o tipo do trabalho, o objetivo, 
+	% o nome da instituição, a área de concentração e opção quando houver
+	% O preambulo deve conter o tipo do trabalho, o objetivo, 
+	% o nome da instituição, a área de concentração e opção quando houver
+	\preambulo{Trabalho de conclus\~ao de curso apresentado ao Programa de Gradua\c{c}\~ao do Instituto de Ci\^encias Matem\'aticas e de Computa\c{c}\~ao, Universidade de S\~ao Paulo - ICMC/USP, como parte dos requisitos para obten\c{c}\~ao do t\'itulo de Bacharel em  Estat\'istica  e Ci\^encia de Dados.}	
+	\preambuloadic{Conclusion course paper presented to the Undergraduate Program of the Instituto de Ci\^encias Matem\'aticas e de Computa\c{c}\~ao, Universidade de S\~ao Paulo - ICMC/USP, in partial fulfillment of the requirements for the degree of the Bachelor in Statistics and Data Science.}
+	\notaficha{Monografia (Gradua\c{c}\~ao em Estat\'istica e Ci\^encia de Dados)}
+	\notacapaicmc{Trabalho de Conclus\~ao de Curso do Programa de Gradua\c{c}\~ao Bacharelado em\\ Estat\'istica e Ci\^encia de Dados}
+    }{
+% BSIe ==========================================================================
+\ifthenelse{\equal{#1}{BSIe}}{
+	\renewcommand{\areaname}{Concentration area:}
+	\tipotrabalho{Monografia (Trabalho de Conclus\~ao de Curso)}
+	\tipotrabalhoabs{Monograph (Conclusion Course Paper)}
+	\area{Information Systems}
+	\areaadic{\'Area de concentra\c{c}\~ao: Sistemas de Informa\c{c}\~ao}
+	%\opcao{Nome da Opção em inglês}
+	%\opcaoadic{Nome da Opção em português}
+	% O preambulo deve conter o tipo do trabalho, o objetivo, 
+	% o nome da instituição, a área de concentração e opção quando houver
+	% O preambulo deve conter o tipo do trabalho, o objetivo, 
+	% o nome da instituição, a área de concentração e opção quando houver
+	\preambulo{Conclusion course paper presented to the Undergraduate Program of the Instituto de Ci\^encias Matem\'aticas e de Computa\c{c}\~ao, Universidade de S\~ao Paulo - ICMC/USP, in partial fulfillment of the requirements for the degree of the Bachelor in Information Systems.}
+	\preambuloadic{Trabalho de conclus\~ao de curso apresentado ao Programa de Gradua\c{c}\~ao do Instituto de Ci\^encias Matem\'aticas e de Computa\c{c}\~ao, Universidade de S\~ao Paulo - ICMC/USP, como parte dos requisitos para obten\c{c}\~ao do t\'itulo de Bacharel em Sistemas de Informa\c{c}\~ao.}	
+	\notaficha{Monograph (Degree in Information Systems)}
+	\notacapaicmc{Conclusion Course Paper to the Undergraduate Program Bachelor's in\\ Information Systems}	
+    }{
+% BSIp ==========================================================================
+\ifthenelse{\equal{#1}{BSIp}}{
+	\tipotrabalho{Monografia (Trabalho de Conclus\~ao de Curso)}
+	\tipotrabalhoabs{Monograph (Conclusion Course Paper)}
+	\area{Sistemas de Informa\c{c}\~ao}
+	\areaadic{Concentration area: Information Systems}
+	%\opcao{Nome da Opção em português}
+	%\opcaoadic{Nome da Opção em inglês}
+	% O preambulo deve conter o tipo do trabalho, o objetivo, 
+	% o nome da instituição, a área de concentração e opção quando houver
+	% O preambulo deve conter o tipo do trabalho, o objetivo, 
+	% o nome da instituição, a área de concentração e opção quando houver
+	\preambulo{Trabalho de conclus\~ao de curso apresentado ao Programa de Gradua\c{c}\~ao do Instituto de Ci\^encias Matem\'aticas e de Computa\c{c}\~ao, Universidade de S\~ao Paulo - ICMC/USP, como parte dos requisitos para obten\c{c}\~ao do t\'itulo de Bacharel em Sistemas de Informa\c{c}\~ao.}	
+	\preambuloadic{Conclusion course paper presented to the Undergraduate Program of the Instituto de Ci\^encias Matem\'aticas e de Computa\c{c}\~ao, Universidade de S\~ao Paulo - ICMC/USP, in partial fulfillment of the requirements for the degree of the Bachelor in Information Systems.}
+	\notaficha{Monografia (Gradua\c{c}\~ao em Sistemas de Informa\c{c}\~ao}
+	\notacapaicmc{Trabalho de Conclus\~ao de Curso do Programa de Gradua\c{c}\~ao Bacharelado em\\ Sistemas de Informa\c{c}\~ao}
+    }{
+% ECe ==========================================================================
+\ifthenelse{\equal{#1}{ECe}}{
+	\renewcommand{\areaname}{Concentration area:}
+	\tipotrabalho{Monografia (Trabalho de Conclus\~ao de Curso)}
+	\tipotrabalhoabs{Monograph (Conclusion Course Paper)}
+	\area{Computer Engineering}
+	\areaadic{\'Area de concentra\c{c}\~ao: Engenharia de Computa\c{c}\~ao}
+	\instituicao{Instituto de Ci\^encias Matem\'aticas e de Computa\c{c}\~ao, Universidade de S\~ao Paulo; Escola de Engenharia de S\~ao Carlos, Universidade de S\~ao Paulo}	
+	%\opcao{Nome da Opção em inglês}
+	%\opcaoadic{Nome da Opção em português}
+	% O preambulo deve conter o tipo do trabalho, o objetivo, 
+	% o nome da instituição, a área de concentração e opção quando houver
+	% O preambulo deve conter o tipo do trabalho, o objetivo, 
+	% o nome da instituição, a área de concentração e opção quando houver
+	\preambulo{Conclusion course paper presented to the Undergraduate Program of the Instituto de Ci\^encias Matem\'aticas e de Computa\c{c}\~ao, and the Escola de Engenharia de S\~ao Carlos, Universidade de S\~ao Paulo, in partial fulfillment of the requirements for the degree of the Computer Engineer.}
+	\preambuloadic{Trabalho de conclus\~ao de curso apresentado ao Programa de Gradua\c{c}\~ao do Instituto de Ci\^encias Matem\'aticas e de Computa\c{c}\~ao e Escola de Engenharia de S\~ao Carlos, Universidade de S\~ao Paulo - ICMC - EESC/USP, como parte dos requisitos para obten\c{c}\~ao do t\'itulo de Engenheiro de Computa\c{c}\~ao.}
+	\notaficha{Monograph (Degree in Computer Engineering)}
+	\notacapaicmc{Conclusion Course Paper to the Undergraduate Program Bachelor's in\\ Computer Engineering}	
+    }{
+% ECp ==========================================================================
+\ifthenelse{\equal{#1}{ECp}}{
+	\tipotrabalho{Monografia (Trabalho de Conclus\~ao de Curso)}
+	\tipotrabalhoabs{Monograph (Conclusion Course Paper)}
+	\area{Engenharia de Computa\c{c}\~ao}
+	\areaadic{Concentration area: Computer Engineering}
+	\instituicao{Instituto de Ci\^encias Matem\'aticas e de Computa\c{c}\~ao, Universidade de S\~ao Paulo; Escola de Engenharia de S\~ao Carlos, Universidade de S\~ao Paulo}
+	%\opcao{Nome da Opção em português}
+	%\opcaoadic{Nome da Opção em inglês}
+	% O preambulo deve conter o tipo do trabalho, o objetivo, 
+	% o nome da instituição, a área de concentração e opção quando houver
+	% O preambulo deve conter o tipo do trabalho, o objetivo, 
+	% o nome da instituição, a área de concentração e opção quando houver
+	\preambulo{Trabalho de conclus\~ao de curso apresentado ao Programa de Gradua\c{c}\~ao do Instituto de Ci\^encias Matem\'aticas e de Computa\c{c}\~ao e Escola de Engenharia de S\~ao Carlos, Universidade de S\~ao Paulo - ICMC - EESC/USP, como parte dos requisitos para obten\c{c}\~ao do t\'itulo de Engenheiro de Computa\c{c}\~ao.}
+	\preambuloadic{Conclusion course paper presented to the Undergraduate Program of the Instituto de Ci\^encias Matem\'aticas e de Computa\c{c}\~ao, and the Escola de Engenharia de S\~ao Carlos, Universidade de S\~ao Paulo, in partial fulfillment of the requirements for the degree of the Computer Engineer.}
+	\notaficha{Monografia (Gradua\c{c}\~ao em Engenharia de Computa\c{c}\~ao)}
+	\notacapaicmc{Trabalho de Conclus\~ao de Curso do Programa de Gradua\c{c}\~ao Bacharelado em\\ Engenharia de Computa\c{c}\~ao}
+	}{
+% Outros
+	\tipotrabalho{Monografia (Trabalho de Conclus\~ao de Curso)}
+	\tipotrabalhoabs{Monograph (Conclusion Course Paper)}
+	\area{Nome da \'Area}
+	\opcao{Nome da Op\c{c}\~ao}
+    % O preambulo deve conter o tipo do trabalho, o objetivo, 
+	% o nome da instituição, a área de concentração e opção quando houver				
+	\preambulo{Trabalho de conclus\~ao de curso apresentado ao Instituto de Ci\^encias Matem\'aticas e de Computa\c{c}\~ao, Universidade de S\~ao Paulo - ICMC/USP, como parte dos requisitos para obten\c{c}\~ao do t\'itulo de ...}
+	\preambuloadic{Term paper submitted to the Instituto de Ci\^encias Matem\'aticas e de Computa\c{c}\~ao, Universidade de S\~ao Paulo - ICMC/USP, in partial fulfillment of the requirements for the degree of the ...}
+	\notaficha{Monografia (Gradua\c{c}\~ao em ...)}
+	\notacapaicmc{Trabalho de Conclus\~ao de Curso do Programa de Gradua\c{c}\~ao em ...}
+    }}}}}}}}}}}}}}}}}}}			
+
+
+
+
+
+
+

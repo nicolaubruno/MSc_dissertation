@@ -1,0 +1,111 @@
+%% USPSC-pre-textual-IAU.tex
+%% Camandos para definição do tipo de documento (tese ou dissertação), área de concentração, opção, preâmbulo, titulação 
+%% referentes ao Programa de Pós-Graduação o IQSC
+\instituicao{Instituto de Arquitetura e Urbanismo, Universidade de S\~ao Paulo}
+\unidade{INSTITUTO DE ARQUITETURA E URBANISMO}
+\unidademin{Instituto de Arquitetura e Urbanismo}
+\universidademin{Universidade de S\~ao Paulo}
+
+\notafolharosto{Vers\~ao original}
+%Para versão original em inglês, comente do comando/declaração 
+%     acima(inclua % antes do comando acima) e tire a % do 
+%     comando/declaração abaixo no idioma do texto
+%\notafolharosto{Original version} 
+%Para versão corrigida, comente do comando/declaração da 
+%     versão original acima (inclua % antes do comando acima) 
+%     e tire a % do comando/declaração de um dos comandos 
+%     abaixo em conformidade com o idioma do texto
+%\notafolharosto{Vers\~ao corrigida \\(Vers\~ao original dispon\'ivel na Unidade que aloja o Programa)}
+%\notafolharosto{Corrected version \\(Original version available on the Program Unit)}
+
+% ---
+% dados complementares para CAPA e FOLHA DE ROSTO
+% ---
+\universidade{UNIVERSIDADE DE S\~AO PAULO}
+\titulo{Modelo para teses e disserta\c{c}\~oes em \LaTeX\ utilizando o Pacote USPSC para o IAU}
+\titleabstract{Model for thesis and dissertations in \LaTeX\ using the USPSC Package to the IAU}
+\tituloresumo{Modelo para teses e disserta\c{c}\~oes em \LaTeX\ utilizando o Pacote USPSC para o IAU}
+\autor{Jos\'e da Silva}
+\autorficha{Silva, Jos\'e da}
+\autorabr{SILVA, J.}
+
+\cutter{S856m}
+% Para gerar a ficha catalográfica sem o Código Cutter, basta 
+% incluir uma % na linha acima e tirar a % da linha abaixo
+%\cutter{ }
+
+\local{S\~ao Carlos}
+\data{2021}
+% Quando for Orientador, basta incluir uma % antes do comando abaixo
+\renewcommand{\orientadorname}{Orientadora:}
+% Quando for Coorientadora, basta tirar a % utilizar o comando abaixo
+%\newcommand{\coorientadorname}{Coorientador:}
+\orientador{Profa. Dra. Elisa Gon\c{c}alves Rodrigues}
+\orientadorcorpoficha{orientadora Elisa Gon\c{c}alves Rodrigues}
+\orientadorficha{Rodrigues, Elisa Gon\c{c}alves, orient}
+%Se houver co-orientador, inclua % antes das duas linhas (antes dos comandos \orientadorcorpoficha e \orientadorficha) 
+%          e tire a % antes dos 3 comandos abaixo
+%\coorientador{Prof. Dr. Jo\~ao Alves Serqueira}
+%\orientadorcorpoficha{orientadora Elisa Gon\c{c}alves Rodrigues ;  co-orientador Jo\~ao Alves Serqueira}
+%\orientadorficha{Rodrigues, Elisa Gon\c{c}alves, orient. II. Serqueira, Jo\~ao Alves, co-orient}
+
+\notaautorizacao{AUTORIZO A REPRODU\c{C}\~AO E DIVULGA\c{C}\~AO TOTAL OU PARCIAL DESTE TRABALHO, POR QUALQUER MEIO CONVENCIONAL OU ELETR\^ONICO PARA FINS DE ESTUDO E PESQUISA, DESDE QUE CITADA A FONTE.}
+\notabib{Ficha catalogr\'afica elaborada pela Biblioteca do Instituto de Arquitetura e Urbanismo - IAU/USP, com os dados fornecidos pelo(a) autor(a)}
+
+\newcommand{\programa}[1]{
+
+% DAUT ==========================================================================
+\ifthenelse{\equal{#1}{DAUT}}{
+    \area{Arquitetura, Urbanismo e Tecnologia}
+	\tipotrabalho{Tese (Doutorado)}
+	\tipotrabalhoabs{Thesis (Doctor)}
+	%\opcao{Nome da Opção}
+    % O preambulo deve conter o tipo do trabalho, o objetivo, 
+	% o nome da instituição e a área de concentração 
+	\preambulo{Tese apresentada ao Programa de P\'os-Gradua\c{c}\~ao em Arquitetura e Urbanismo do Instituto de Arquitetura e Urbanismo, Universidade de S\~ao Paulo, como parte dos requisitos para a obten\c{c}\~ao do t\'itulo de Doutor em Arquitetura e Urbanismo.}
+	\notaficha{Tese (Doutorado - Programa de P\'os-Gradua\c{c}\~ao em Arquitetura e Urbanismo e \'Area de Concentra\c{c}\~ao em ~\imprimirarea)}
+    }{
+% MAUT ===========================================================================
+\ifthenelse{\equal{#1}{MAUT}}{
+    \area{Arquitetura, Urbanismo e Tecnologia}
+	\tipotrabalho{Disserta\c{c}\~ao (Mestrado)}
+	\tipotrabalhoabs{Dissertation (Master)}
+	%\opcao{Nome da Opção}
+    % O preambulo deve conter o tipo do trabalho, o objetivo, 
+	% o nome da instituição e a área de concentração 
+	\preambulo{Disserta\c{c}\~ao apresentada ao Programa de P\'os-Gradua\c{c}\~ao em Arquitetura e Urbanismo do Instituto de Arquitetura e Urbanismo, Universidade de S\~ao Paulo, como parte dos requisitos para a obten\c{c}\~ao do t\'itulo de Mestre em Arquitetura e Urbanismo.}
+	\notaficha{Disserta\c{c}\~ao (Mestrado - Programa de P\'os-Gradua\c{c}\~ao em Arquitetura e Urbanismo e \'Area de Concentra\c{c}\~ao em ~\imprimirarea)}
+    }{
+% DAUH ==========================================================================
+\ifthenelse{\equal{#1}{DAUH}}{
+    \area{Teoria e Hist\'oria da Arquitetura e do Urbanismo}
+	\tipotrabalho{Tese (Doutorado)}
+	\tipotrabalhoabs{Thesis (Doctor)}
+	%\opcao{Nome da Opção}
+    % O preambulo deve conter o tipo do trabalho, o objetivo, 
+	% o nome da instituição e a área de concentração 
+	\preambulo{Tese apresentada ao Programa de P\'os-Gradua\c{c}\~ao em Arquitetura e Urbanismo do Instituto de Arquitetura e Urbanismo, Universidade de S\~ao Paulo, como parte dos requisitos para a obten\c{c}\~ao do t\'itulo de Doutor em Arquitetura e Urbanismo.}
+	\notaficha{Tese (Doutorado - Programa de P\'os-Gradua\c{c}\~ao em Arquitetura e Urbanismo e \'Area de Concentra\c{c}\~ao em ~\imprimirarea)}
+    }{
+% MAUH ===========================================================================
+\ifthenelse{\equal{#1}{MAUH}}{
+    \area{Teoria e Hist\'oria da Arquitetura e do Urbanismo}
+	\tipotrabalho{Disserta\c{c}\~ao (Mestrado)}
+	\tipotrabalhoabs{Dissertation (Master)}
+	%\opcao{Nome da Opção}
+    % O preambulo deve conter o tipo do trabalho, o objetivo, 
+	% o nome da instituição e a área de concentração 
+	\preambulo{Disserta\c{c}\~ao apresentada ao Programa de P\'os-Gradua\c{c}\~ao em Arquitetura e Urbanismo do Instituto de Arquitetura e Urbanismo, Universidade de S\~ao Paulo, como parte dos requisitos para a obten\c{c}\~ao do t\'itulo de Mestre em Arquitetura e Urbanismo.}
+	\notaficha{Disserta\c{c}\~ao (Mestrado - Programa de P\'os-Gradua\c{c}\~ao em Arquitetura e Urbanismo e \'Area de Concentra\c{c}\~ao em ~\imprimirarea)}
+    }{
+% Outros
+	\tipotrabalho{Disserta\c{c}\~ao/Tese (Mestrado/Doutorado)}
+	\tipotrabalhoabs{Dissertation/Thesis (Master/Doctor)}
+	\area{Nome da \'Area}
+	\opcao{Nome da Op\c{c}\~ao}
+	% O preambulo deve conter o tipo do trabalho, o objetivo, 
+	% o nome da instituição e a área de concentração 
+	\preambulo{Disserta\c{c}\~ao/Tese apresentada ao Programa de P\'os-Gradua\c{c}\~ao em Arquitetura e Urbanismo do Instituto de Arquitetura e Urbanismo, Universidade de S\~ao Paulo, como parte dos requisitos para a obten\c{c}\~ao do t\'itulo de Mestre/Doutor em Arquitetura e Urbanismo.}
+	\notaficha{Disserta\c{c}\~ao/Tese (Mestrado/Doutorado - Programa de P\'os-Gradua\c{c}\~ao em Arquitetura e Urbanismo e \'Area de Concentra\c{c}\~ao em ~\imprimirarea)}
+    }}}}}
+				

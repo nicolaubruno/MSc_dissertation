@@ -1,0 +1,83 @@
+%
+%
+% Basic Packages
+%-----------------------------------
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{lastpage}
+\usepackage{indentfirst}
+\usepackage{color}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{tikz}
+\usetikzlibrary{positioning}
+\usepackage{pdfpages}
+\usepackage{makeidx}
+\usepackage{hyphenat}
+\usepackage[absolute]{textpos}
+\usepackage{eso-pic}
+\usepackage{makebox}
+
+%\usepackage{amsmath}
+%\usepackage{physics}
+%\usepackage{hyperref}
+%\usepackage{geometry}
+%-----------------------------------
+
+% Bibliography references
+%-----------------------------------
+\usepackage{cite}
+\usepackage[num, abnt-emphasize=bf, abnt-thesis-year=both, abnt-repeated-author-omit=no, abnt-last-names=abnt, abnt-etal-cite, abnt-etal-list=3, abnt-etal-text=it, abnt-and-type=e, abnt-doi=doi, abnt-url-package=none, abnt-verbatim-entry=no]{abntex2cite} 
+\bibliographystyle{USPSC-classe/abntex2-numeng-USPSC}
+%-----------------------------------                 
+
+% Footpage
+%-----------------------------------
+\renewcommand{\thefootnote}{\fnsymbol{footnote}}
+\renewcommand{\footnotesize}{\small}
+%-----------------------------------
+
+% ABNTex2
+%-----------------------------------
+\usepackage{multicol}
+\usepackage{multirow}
+\usepackage{longtable}
+\usepackage{threeparttablex}
+\usepackage{array}
+\usepackage{USPSC-classe/ABNT6023-2018}
+%-----------------------------------
+
+% Institutional program
+%-----------------------------------
+\siglaunidade{IFSC}
+\programa{MFAe}
+%-----------------------------------
+
+% PDF Info
+%-----------------------------------
+\makeatletter
+\hypersetup{
+	pdftitle={\@title}, 
+	pdfauthor={\@author},
+	pdfsubject={\imprimirpreambulo},
+	pdfcreator={LaTeX with abnTeX2},
+	pdfkeywords={abnt}{latex}{abntex}{USPSC}{trabalho acadêmico}, 
+	colorlinks=true, 
+	linkcolor=blue,
+	citecolor=blue,
+	filecolor=magenta,
+	urlcolor=blue,
+	bookmarksdepth=4	
+}
+\makeatother
+%-----------------------------------
+
+% Layout
+%-----------------------------------
+\definecolor{blue}{RGB}{41,5,195}
+\setlength{\parindent}{1.3cm}
+\setlength{\parskip}{0.2cm}
+
+\makeindex
+%-----------------------------------

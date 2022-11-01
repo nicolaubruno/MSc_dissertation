@@ -1,0 +1,121 @@
+%-----------------------------------
+% TITLE: Investigation of Magneto-Optical Traps using Monte Carlo Simulation
+%-----------------------------------
+\documentclass[12pt, openright, twoside, a4paper, chapter=TITLE, english, brazil]{USPSC-classe/USPSC}
+\input{settings.tex}
+%-----------------------------------
+
+
+%-----------------------------------
+\begin{document}
+	% Language
+	%-----------------------------------
+	\selectlanguage{english}
+	%-----------------------------------
+	
+	% Formatting
+	%-----------------------------------
+	\frenchspacing 
+	\renewcommand{\ABNTEXchapterfontsize}{\fontsize{12}{12}\bfseries}
+	\renewcommand{\ABNTEXsectionfontsize}{\fontsize{12}{12}\bfseries}
+	\renewcommand{\ABNTEXsubsectionfontsize}{\fontsize{12}{12}\normalfont}
+	\renewcommand{\ABNTEXsubsubsectionfontsize}{\fontsize{12}{12}\normalfont}
+	\renewcommand{\ABNTEXsubsubsubsectionfontsize}{\fontsize{12}{12}\normalfont}
+	%-----------------------------------
+	
+	
+	%-----------------------------------
+	% PRE-TEXTUAL ELEMENTS
+	%-----------------------------------
+	\imprimircapa
+	\imprimirfolhaderosto*
+	
+	\includepdf{USPSC-TA-PreTextual/USPSC-fichacatalografica.pdf}
+	\includepdf{USPSC-TA-PreTextual/USPSC-folhadeaprovacao.pdf}
+	\include{USPSC-TA-PreTextual/USPSC-Dedicatoria}
+	\include{USPSC-TA-PreTextual/USPSC-Agradecimentos}
+	\include{USPSC-TA-PreTextual/USPSC-Abstract}
+	\include{USPSC-TA-PreTextual/USPSC-Resumo}
+	% Figures list
+	%-----------------------------------
+	\pdfbookmark[0]{\listfigurename}{lof}
+	\listoffigures*
+	\cleardoublepage
+	%-----------------------------------
+	% Table list
+	%-----------------------------------
+	\pdfbookmark[0]{\listtablename}{lot}
+	\listoftables*
+	\cleardoublepage
+	%-----------------------------------
+	% Board list
+	%-----------------------------------
+	\pdfbookmark[0]{\listofquadroname}{loq}
+	\listofquadro*
+	\cleardoublepage
+	%-----------------------------------
+	\include{USPSC-TA-PreTextual/USPSC-AbreviaturasSiglas}
+	\include{USPSC-TA-PreTextual/USPSC-Simbolos}
+	%-----------------------------------
+	% Summary
+	%-----------------------------------
+	\pdfbookmark[0]{\contentsname}{toc}
+	\tableofcontents*
+	\cleardoublepage
+	%-----------------------------------	
+	
+	%-----------------------------------
+	% TEXTUAL ELEMENTS
+	%-----------------------------------
+	
+	% Introduction
+	%-----------------------------------
+	\input{USPSC-TA-Textual/introduction.tex}
+	%-----------------------------------
+	
+	% Atom-Light Interaction
+	%-----------------------------------
+	\input{USPSC-TA-Textual/atom_light_interaction.tex}
+	%-----------------------------------
+	
+	% Magneto-Optical Trap
+	%-----------------------------------
+	\input{USPSC-TA-Textual/magneto_optical_trap.tex}
+	%-----------------------------------
+	
+	% Stochastic Simulation
+	%-----------------------------------
+	\input{USPSC-TA-Textual/stochastic_simulation.tex}
+	%-----------------------------------
+	
+	% Results
+	%-----------------------------------
+	\input{USPSC-TA-Textual/results.tex}
+	%-----------------------------------
+	
+	% Conclusion
+	%-----------------------------------
+	\input{USPSC-TA-Textual/conclusion.tex}
+	%-----------------------------------
+	
+	% Appendix
+	%-----------------------------------
+	%\input{Sections/appendix.tex}
+	%-----------------------------------
+	
+	%-----------------------------------
+	% POST-TEXTUAL ELEMENTS
+	%-----------------------------------
+	
+	% References
+	%-----------------------------------
+	\bibliography{references}
+	%-----------------------------------
+	
+	% Index
+	%-----------------------------------
+	\include{USPSC-IndicesRemissivos}
+	%-----------------------------------
+	
+\end{document}
+%-----------------------------------

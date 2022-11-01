@@ -1,0 +1,476 @@
+%% USPSC-pre-textual-ICMC.tex
+%% Camandos para definição do tipo de documento (tese ou dissertação ou monografia), área de concentração, opção, preâmbulo, titulação 
+%% referentes ao Programa de Pós-Graduação o ICMC
+\instituicao{Instituto de Ci\^encias Matem\'aticas e de Computa\c{c}\~ao, Universidade de S\~ao Paulo}
+\unidade{INSTITUTO DE CI\^ENCIAS MATEM\'ATICAS E DE COMPUTA\c{C}\~AO}
+\unidademin{Instituto de Ci\^encias Matem\'aticas e de Computa\c{c}\~ao}
+\universidademin{Universidade de S\~ao Paulo}
+\setorpos{SERVI\c{C}O DE P\'OS-GRADUA\c{C}\~AO DO ICMC-USP}
+
+\notafolharosto{Vers\~ao original}
+\notafolharostoadic{Original version}
+%Para versão original em inglês, comente os comandos/declarações acima (inclua % antes do comando acima) 
+% e tire a % dos comandos/declarações abaixo no idioma do texto
+%\notafolharosto{Original version}
+%\notafolharostoadic{Vers\~ao original}
+ 
+%Para versão revisada, comente os comandos/declarações acima (inclua % antes do comando acima) 
+% e tire a % dos comandos/declarações abaixo, em conformidade com o idioma do texto
+% Se o Idioma do texto for português: 
+%\notafolharosto{Vers\~ao revisada}
+%\notafolharosto{Final version}
+% Se o Idioma do texto for Inglês: 
+%\notafolharosto{Final version}
+%\notafolharosto{Vers\~ao revisada}
+% ---
+% dados complementares para CAPA e FOLHA DE ROSTO
+% ---
+\universidade{UNIVERSIDADE DE S\~AO PAULO}
+
+% Idioma do texto em PORTUGUÊS
+\titulo{Modelo para teses e disserta\c{c}\~oes em \LaTeX\ utilizando o Pacote USPSC para o ICMC} 
+\titleabstract{Model for thesis and dissertations in \LaTeX\ using the USPSC Package to the ICMC}
+\tituloadic{Model for thesis and dissertations in \LaTeX\ using the USPSC Package to the ICMC}
+\tituloresumo{Modelo para teses e disserta\c{c}\~oes em LaTeX utilizando o Pacote USPSC para o ICMC}
+
+% Idioma do texto em INGLÊS
+% 22/02/2017 - Título para página de rosto adicional
+% para a versão em inglês, utilize os comandos abaixo, e inclua % no início dos 4 comandos logo acima,  cada comando acima que são referentes ao texto do Trabalho Acadêmico em português
+%\titulo{Model for thesis and dissertations in LaTeX using the USPSC Package to the ICMC}
+%\titleabstract{Model for thesis and dissertations in LaTeX using the USPSC Package to the ICMC}
+%\tituloadic{Modelo para teses e disserta\c{c}\~oes em LaTeX utilizando o Pacote USPSC para o ICMC}
+%\tituloresumo{Modelo para teses e disserta\c{c}\~oes em LaTeX utilizando o Pacote USPSC para o ICMC}
+
+\autor{Jos\'e da Silva}
+\autorficha{Silva, Jos\'e da}
+\autorabr{SILVA, J.}
+
+\cutter{S856m}
+% Para gerar a ficha catalográfica sem o Código Cutter, basta 
+% incluir uma % na linha acima e tirar a % da linha abaixo
+%\cutter{ }
+
+\local{S\~ao Carlos}
+\data{2021}
+
+% Para o idioma português:
+\renewcommand{\orientadorname}{Orientadora:}
+\orientador{Profa. Dra. Elisa Gon\c{c}alves Rodrigues}
+\orientadoradic{Advisor: Profa. Dra. Elisa Gon\c{c}alves Rodrigues}
+\orientadorcorpoficha{orientadora Elisa Gon\c{c}alves Rodrigues}
+\orientadorficha{Rodrigues, Elisa Gon\c{c}alves, orient}
+%Para incluir o nome do(a) coorientados(a), inclua % nos 2 comandos acima e retire a % dos 2 comandos abaixo
+%\orientadorcorpoficha{orientadora Elisa Gon\c{c}alves Rodrigues ;  co-orientador Jo\~ao Alves Serqueira}
+%\orientadorficha{Rodrigues, Elisa Gon\c{c}alves, orient. II. Serqueira, Jo\~ao Alves, co-orient}
+
+
+%Se o idoma for o inglês, inclua % nos comandos acima e exclua dos comandos abaixo
+%\renewcommand{\orientadorname}{Advisor:}
+%\orientador{Profa. Dra. Elisa Gon\c{c}alves Rodrigues}
+%\orientadoradic{Orientadora: Profa. Dra. Elisa Gon\c{c}alves Rodrigues}
+%\orientadorcorpoficha{orientadora Elisa Gon\c{c}alves Rodrigues}
+%\orientadorficha{Rodrigues, Elisa Gon\c{c}alves, orient}
+%Para incluir o nome do(a) coorientados(a), inclua % nos 2 comandos acima e retire a % dos 2 comandos abaixo
+%\orientadorcorpoficha{orientadora Elisa Gon\c{c}alves Rodrigues ;  co-orientador Jo\~ao Alves Serqueira}
+%\orientadorficha{Rodrigues, Elisa Gon\c{c}alves, orient. II. Serqueira, Jo\~ao Alves, co-orient}
+
+% Quando houver Coorientador(a): 
+% Para o idioma português:
+% basta retirar  % antes de um dos comandos abaixo
+%\newcommand{\coorientadorname}{Coorientador:}
+%\newcommand{\coorientadorname}{Coorientadora:}
+% Para o idoma inglês:
+% basta retirar  % antes do comando abaixo
+%\newcommand{\coorientadorname}{Coorientador:}
+
+% Quando houver Coorientador(a), basta tirar a % utilizar o comando abaixo
+%\newcommand{\coorientadorname}{Coadvisor:}
+%Se houver co-orientador, inclua % antes das duas linhas (antes dos comandos \orientadorcorpoficha e \orientadorficha) 
+%          e tire a % antes dos 3 comandos abaixo
+%\coorientador{Prof. Dr. Jo\~ao Alves Serqueira}
+%\coorientadoradic{ Co-orientador: Prof. Dr. Jo\~ao Alves Serqueira}
+%\orientadorcorpoficha{orientadora Elisa Gon\c{c}alves Rodrigues ;  co-orientador Jo\~ao Alves Serqueira}
+%\orientadorficha{Rodrigues, Elisa Gon\c{c}alves, orient. II. Serqueira, Jo\~ao Alves, co-orient}
+
+%Para o idioma Inglês, retire a % antes da linha abaixo
+%\renewcommand{\areaname}{Concentration area: }
+
+		
+\notaautorizacao{AUTORIZO A REPRODU\c{C}\~AO E DIVULGA\c{C}\~AO TOTAL OU PARCIAL DESTE TRABALHO, POR QUALQUER MEIO CONVENCIONAL OU ELETR\^ONICO PARA FINS DE ESTUDO E PESQUISA, DESDE QUE CITADA A FONTE.}
+% Se o idioma for o inglês, inclua a % antes do campo \notaautorizacao acima e retire a % da linha abaixo
+%\notaautorizacao{I AUTORIZE THE REPRODUCTION AND DISSEMINATION OF TOTAL OR PARTIAL COPIES OF THIS DOCUMENT, BY CONVENCIONAL OR ELECTRONIC MEDIA FOR STUDY OR RESEARCH PURPOSE, SINCE IT IS REFERENCED.}
+
+\notabib{Ficha catalogr\'afica elaborada pela Biblioteca Prof. Achille Bassi, ICMC/USP, com os dados fornecidos pelo(a) autor(a)}
+
+\newcommand{\programa}[1]{
+% MPMp ==========================================================================
+\ifthenelse{\equal{#1}{MPMp}}{
+	\tipotrabalho{Disserta\c{c}\~ao (Mestrado em Ci\^encias)}
+	\tipotrabalhoabs{Dissertation (Master in Science)}
+	\area{Matem\'atica em Rede Nacional}
+	\areaadic{Concentration area: Mathematics in National Network}
+	%\opcao{Nome da Opção em português}
+	%\opcaoadic{Nome da Opção em inglês}
+	% O preambulo deve conter o tipo do trabalho, o objetivo, 
+	% o nome da instituição, a área de concentração e opção quando houver
+	\preambulo{Disserta\c{c}\~ao apresentada ao Instituto de Ci\^encias Matem\'aticas e de Computa\c{c}\~ao, Universidade de S\~ao Paulo - ICMC/USP, como parte dos requisitos para obten\c{c}\~ao do t\'itulo de Mestre em Ci\^encias - Mestrado Profissional em Matem\'atica em Rede Nacional.}
+	\preambuloadic{Dissertation submitted to the Instituto de Ci\^encias Matem\'aticas e de Computa\c{c}\~ao, Universidade de S\~ao Paulo - ICMC/USP, in partial fulfillment of the requirements for the degree of the Master in Science - Professional Master in Mathematics in National Network.}
+	\notaficha{Disserta\c{c}\~ao (Mestrado - Programa de Mestrado Profissional em Matem\'atica em Rede Nacional)}
+	\notacapaicmc{Disserta\c{c}\~ao de Mestrado do Programa de Mestrado Profissional em \\Matem\'atica em Rede Nacional (PROFMAT)}
+    }{
+% MPMe ==========================================================================
+\ifthenelse{\equal{#1}{MPMe}}{
+	\renewcommand{\areaname}{Concentration area:}
+	\tipotrabalho{Disserta\c{c}\~ao (Mestrado em Ci\^encias)}
+	\tipotrabalhoabs{Dissertation (Master in Science)}
+	\area{Mathematics in National Network}
+	\areaadic{\'Area de concentra\c{c}\~ao: Matem\'atica em Rede Nacional}
+	%\opcao{Nome da Opção em inglês}
+	%\opcaoadic{Nome da Opção em português}
+	% O preambulo deve conter o tipo do trabalho, o objetivo, 
+	% o nome da instituição, a área de concentração e opção quando houver
+	\preambulo{Dissertation submitted to the Instituto de Ci\^encias Matem\'aticas e de Computa\c{c}\~ao, Universidade de S\~ao Paulo - ICMC/USP, in partial fulfillment of the requirements for the degree of the Master in Science - Professional Master in Mathematics in National Network.}		
+	\preambuloadic{Disserta\c{c}\~ao apresentada ao Instituto de Ci\^encias Matem\'aticas e de Computa\c{c}\~ao, Universidade de S\~ao Paulo - ICMC/USP, como parte dos requisitos para obten\c{c}\~ao do t\'itulo de Mestre em Ci\^encias - Mestrado Profissional em Matem\'atica em Rede Nacional.}
+	\notaficha{Dissertation (Master - Professional Master\'{}s Program in Mathematics on the National Network)}
+	\notacapaicmc{Master\'{}s Dissertation of the Professional Master\'{}s Program in \\Mathematics on the National Network (PROFMAT)}
+    }{   
+% MPMECAIp ==========================================================================
+\ifthenelse{\equal{#1}{MPMECAIp}}{
+	\tipotrabalho{Disserta\c{c}\~ao (Mestrado em Ci\^encias)}
+	\tipotrabalhoabs{Dissertation (Master in Science)}
+	\area{Matem\'atica, Estat\'istica e Computa\c{c}\~ao}
+	\areaadic{Concentration area: Mathematics, Statistics and Computing}
+	%\opcao{Nome da Opção em português}
+	%\opcaoadic{Nome da Opção em inglês}
+	% O preambulo deve conter o tipo do trabalho, o objetivo, 
+	% o nome da instituição, a área de concentração e opção quando houver
+	\preambulo{Disserta\c{c}\~ao apresentada ao Instituto de Ci\^encias Matem\'aticas e de Computa\c{c}\~ao, Universidade de S\~ao Paulo - ICMC/USP, como parte dos requisitos para obten\c{c}\~ao do t\'itulo de Mestre em Ci\^encias - Mestrado Profissional em Matem\'atica, Estat\'istica e Computa\c{c}\~ao Aplicadas \`a Ind\'ustria.}
+	\preambuloadic{Dissertation submitted to the Instituto de Ci\^encias Matem\'aticas e de Computa\c{c}\~ao, Universidade de S\~ao Paulo - ICMC/USP, in partial fulfillment of the requirements for the degree of the Master in Science - Professional Masters in Mathematics, Statistics and Computing Applied to Industry.}
+	\notaficha{Disserta\c{c}\~ao (Mestrado - Programa de Mestrado Profissional em Matem\'atica, Estat\'istica e Computa\c{c}\~ao Aplicadas \`a Ind\'ustria)}
+	\notacapaicmc{Disserta\c{c}\~ao de Mestrado do Programa de Mestrado Profissional em \\Matem\'atica, Estat\'istica e Computa\c{c}\~ao Aplicadas \`a Ind\'ustria (MECAI)} 
+}{
+% MPMECAIe ==========================================================================
+\ifthenelse{\equal{#1}{MPMECAIe}}{
+	\renewcommand{\areaname}{Concentration area:}
+	\tipotrabalho{Disserta\c{c}\~ao (Mestrado em Ci\^encias)}
+	\tipotrabalhoabs{Dissertation (Master in Science)}
+	\area{Mathematics, Statistics and Computing}
+	\areaadic{\'Area de concentra\c{c}\~ao: Matem\'atica, Estat\'istica e Computa\c{c}\~ao}
+	%\opcao{Nome da Opção em inglês}
+	%\opcaoadic{Nome da Opção em português}
+	% O preambulo deve conter o tipo do trabalho, o objetivo, 
+	% o nome da instituição, a área de concentração e opção quando houver
+	\preambulo{Dissertation submitted to the Instituto de Ci\^encias Matem\'aticas e de Computa\c{c}\~ao, Universidade de S\~ao Paulo - ICMC/USP, in partial fulfillment of the requirements for the degree of the Master in Science - Professional Masters in Mathematics, Statistics and Computing Applied to Industry.}		
+	\preambuloadic{Disserta\c{c}\~ao apresentada ao Instituto de Ci\^encias Matem\'aticas e de Computa\c{c}\~ao, Universidade de S\~ao Paulo - ICMC/USP, como parte dos requisitos para obten\c{c}\~ao do t\'itulo de Mestre em Ci\^encias - Mestrado Profissional em Matem\'atica, Estat\'istica e Computa\c{c}\~ao Aplicadas \`a Ind\'ustria.}
+	\notaficha{Dissertation (Master - Professional Master's Program in Mathematics, Statistics and Computing Applied to Industry)}
+	\notacapaicmc{Master's Dissertation of the Professional Master's Program in Mathematics, \\Statistics and Computing Applied to Industry (MECAI)}
+}{    
+% DMAp ==========================================================================
+\ifthenelse{\equal{#1}{DMAp}}{
+    \tipotrabalho{Tese (Doutorado em Ci\^encias)}
+    \tipotrabalhoabs{Thesis (Doctorate in Science)}
+    \area{Matem\'atica}
+    \areaadic{Concentration area: Mathematics}
+	%\opcao{Nome da Opção em português}
+	%\opcaoadic{Nome da Opção em inglês}
+    % O preambulo deve conter o tipo do trabalho, o objetivo, 
+	% o nome da instituição, a área de concentração e opção quando houver
+	\preambulo{Tese apresentada ao Instituto de Ci\^encias Matem\'aticas e de Computa\c{c}\~ao, Universidade de S\~ao Paulo - ICMC/USP, como parte dos requisitos para obten\c{c}\~ao do t\'itulo de Doutor em Ci\^encias - Matem\'atica.}	
+	\preambuloadic{Thesis submitted to the Instituto de Ci\^encias Matem\'aticas e de Computa\c{c}\~ao, Universidade de S\~ao Paulo - ICMC/USP, in partial fulfillment of the requirements for the degree of the Doctor in Science - Mathematics.}
+	\notaficha{Tese (Doutorado - Programa de P\'os-Gradua\c{c}\~ao em Matem\'atica)}
+	\notacapaicmc{Tese de Doutorado do Programa de P\'os-Gradua\c{c}\~ao em \\Matem\'atica (PPG-Mat)}
+    }{
+% DMAe ==========================================================================
+\ifthenelse{\equal{#1}{DMAe}}{
+	\tipotrabalho{Tese (Doutorado em Ci\^encias)}
+    \tipotrabalhoabs{Thesis (Doctorate in Science)}
+	\renewcommand{\areaname}{Concentration area:}
+    \area{Mathematics}
+    \areaadic{\'Area de concentra\c{c}\~ao: Matem\'atica}
+	%\opcao{Nome da Opção em inglês}
+	%\opcaoadic{Nome da Opção em português}
+    % O preambulo deve conter o tipo do trabalho, o objetivo, 
+	% o nome da instituição, a área de concentração e opção quando houver
+	\preambulo{Thesis submitted to the Instituto de Ci\^encias Matem\'aticas e de Computa\c{c}\~ao, Universidade de S\~ao Paulo - ICMC/USP, in partial fulfillment of the requirements for the degree of the Doctor in Science - Mathematics.}
+	\preambuloadic{Tese apresentada ao Instituto de Ci\^encias Matem\'aticas e de Computa\c{c}\~ao, Universidade de S\~ao Paulo - ICMC/USP, como parte dos requisitos para obten\c{c}\~ao do t\'itulo de Doutor em Ci\^encias - Matem\'atica.}
+	\notaficha{Thesis (Doctorate - Program in Mathematics)}
+	\notacapaicmc{Doctoral Thesis of the Postgraduate Program in Mathematics (PPG-Mat)}
+    }{
+% MMAp ==========================================================================
+\ifthenelse{\equal{#1}{MMAp}}{
+    \tipotrabalho{Disserta\c{c}\~ao (Mestrado em Ci\^encias)}
+    \tipotrabalhoabs{Dissertation (Master in Science)}
+    \area{Matem\'atica}
+    \areaadic{Concentration area: Mathematics}
+	%\opcao{Nome da Opção em português}
+	%\opcaoadic{Nome da Opção em inglês}
+    % O preambulo deve conter o tipo do trabalho, o objetivo, 
+	% o nome da instituição, a área de concentração e opção quando houver
+	\preambulo{Disserta\c{c}\~ao apresentada ao Instituto de Ci\^encias Matem\'aticas e de Computa\c{c}\~ao, Universidade de S\~ao Paulo - ICMC/USP, como parte dos requisitos para obten\c{c}\~ao do t\'itulo de Mestre em Ci\^encias - Matem\'atica.}	
+	\preambuloadic{Dissertation submitted to the Instituto de Ci\^encias Matem\'aticas e de Computa\c{c}\~ao, Universidade de S\~ao Paulo - ICMC/USP, in partial fulfillment of the requirements for the degree of the Master in Science - Mathematics.}
+	\notaficha{Disserta\c{c}\~ao (Mestrado - Programa de P\'os-Gradua\c{c}\~ao em Matem\'atica)}
+	\notacapaicmc{Disserta\c{c}\~ao de Mestrado do Programa de P\'os-Gradua\c{c}\~ao em \\Matem\'atica (PPG-Mat)}
+    }{
+% MMAe ==========================================================================
+\ifthenelse{\equal{#1}{MMAe}}{
+	\tipotrabalho{Disserta\c{c}\~ao (Mestrado em Ci\^encias)}
+    \tipotrabalhoabs{Dissertation (Master in Science)}
+	\renewcommand{\areaname}{Concentration area:}
+    \area{Mathematics}
+    \areaadic{\'Area de concentra\c{c}\~ao: Matem\'atica}
+	%\opcao{Nome da Opção em inglês}
+	%\opcaoadic{Nome da Opção em português}
+    % O preambulo deve conter o tipo do trabalho, o objetivo, 
+	% o nome da instituição, a área de concentração e opção quando houver
+	\preambulo{Dissertation submitted to the Instituto de Ci\^encias Matem\'aticas e de Computa\c{c}\~ao, Universidade de S\~ao Paulo - ICMC/USP, in partial fulfillment of the requirements for the degree of the Master in Science - Mathematics.}
+	\preambuloadic{Disserta\c{c}\~ao apresentada ao Instituto de Ci\^encias Matem\'aticas e de Computa\c{c}\~ao, Universidade de S\~ao Paulo - ICMC/USP, como parte dos requisitos para obten\c{c}\~ao do t\'itulo de Mestre em Ci\^encias - Matem\'atica.}
+	\notaficha{Dissertation (Master - Program in Mathematics)}
+	\notacapaicmc{Master\'{}s Dissertation of the Postgraduate Program in Mathematics (PPG-Mat)}
+    }{
+% DESp ==========================================================================
+\ifthenelse{\equal{#1}{DESp}}{
+    \tipotrabalho{Tese (Doutorado em Estat\'istica)}
+    \tipotrabalhoabs{Thesis (Doctorate in Statistics)}
+    \area{Estat\'istica}
+    \areaadic{Concentration area: Statistics}
+    \instituicao{Instituto de Ci\^encias Matem\'aticas e de Computa\c{c}\~ao, Universidade de S\~ao Paulo; Departamento de Estat\'istica, Universidade Federal de S\~ao Carlos}
+	%\opcao{Nome da Opção em português}
+	%\opcaoadic{Nome da Opção em inglês}
+    % O preambulo deve conter o tipo do trabalho, o objetivo, 
+	% o nome da instituição, a área de concentração e opção quando houver
+	\preambulo{Tese apresentada ao Instituto de Ci\^encias Matem\'aticas e de Computa\c{c}\~ao, Universidade de S\~ao Paulo - ICMC/USP e ao Departamento de Estat\'istica, Universidade Federal de S\~ao Carlos - DEs/UFSCar, como parte dos requisitos para obten\c{c}\~ao do t\'itulo de Doutor em Estat\'istica - Interinstitucional de P\'os-Gradua\c{c}\~ao em Estat\'istica.}
+	\preambuloadic{Thesis submitted to the Instituto de Ci\^encias Matem\'aticas e de Computa\c{c}\~ao, Universidade de S\~ao Paulo - ICMC/USP and to the Departamento de Estat\'istica, Universidade Federal de S\~ao Carlos - DEs/UFSCar, in partial fulfillment of the requirements for the degree of the Doctor in Statistics - Interagency Program Graduate in Statistics.}
+	\notaficha{Tese (Doutorado - Interinstitucional de P\'os-Gradua\c{c}\~ao em Estat\'istica)}
+	\notacapaicmc{Tese de Doutorado do Programa Interinstitucional de P\'os-Gradua\c{c}\~ao em \\Estat\'istica (PIPGEs)}
+    }{
+% DESe ==========================================================================
+\ifthenelse{\equal{#1}{DESe}}{
+	\tipotrabalho{Tese (Doutorado em Estat\'istica)}
+    \tipotrabalhoabs{Thesis (Doctorate in Statistics)}
+	\renewcommand{\areaname}{Concentration area:}
+    \area{Statistics}
+    \areaadic{\'Area de concentra\c{c}\~ao: Estat\'istica}
+    \instituicao{Instituto de Ci\^encias Matem\'aticas e de Computa\c{c}\~ao, Universidade de S\~ao Paulo; Departamento de Estat\'istica, Universidade Federal de S\~ao Carlos}
+	%\opcao{Nome da Opção em inglês}
+	%\opcaoadic{Nome da Opção em português}
+    % O preambulo deve conter o tipo do trabalho, o objetivo, 
+	% o nome da instituição, a área de concentração e opção quando houver
+	\preambulo{Thesis submitted to the Instituto de Ci\^encias Matem\'aticas e de Computa\c{c}\~ao, Universidade de S\~ao Paulo - ICMC/USP and to the Departamento
+	de Estat\'istica, Universidade Federal de S\~ao Carlos - DEs/UFSCar, in partial fulfillment of the requirements for the degree of the Doctor in Statistics - Interagency Program Graduate in Statistics.}
+	\preambuloadic{Tese apresentada ao Instituto de Ci\^encias Matem\'aticas e de Computa\c{c}\~ao, Universidade de S\~ao Paulo - ICMC/USP e ao Departamento de Estat\'istica, Universidade Federal de S\~ao Carlos - DEs/UFSCar, como parte dos requisitos para obten\c{c}\~ao do t\'itulo de Doutor em Estat\'istica - Interinstitucional de P\'os-Gradua\c{c}\~ao em Estat\'istica.}
+	\notaficha{Thesis (Doctorate - Joint Graduate Program in Statistics)}
+	\notacapaicmc{Doctoral Thesis of the Interagency Postgraduate Program in Statistics (PIPGEs)}
+    }{     
+% MESp ==========================================================================
+\ifthenelse{\equal{#1}{MESp}}{
+    \tipotrabalho{Disserta\c{c}\~ao (Mestrado em Estat\'istica)}
+    \tipotrabalhoabs{Dissertation (Master in Statistics)}
+    \renewcommand{\areaname}{Concentration area:}
+    \area{Estat\'istica}
+    \areaadic{Concentration area: Statistics}
+    \instituicao{Instituto de Ci\^encias Matem\'aticas e de Computa\c{c}\~ao, Universidade de S\~ao Paulo; Departamento de Estat\'istica, Universidade Federal de S\~ao Carlos}
+	%\opcao{Nome da Opção em português}
+	%\opcaoadic{Nome da Opção em inglês}
+    % O preambulo deve conter o tipo do trabalho, o objetivo, 
+	% o nome da instituição, a área de concentração e opção quando houver
+	\preambulo{Disserta\c{c}\~ao apresentada ao Instituto de Ci\^encias Matem\'aticas e de Computa\c{c}\~ao, Universidade de S\~ao Paulo - ICMC/USP e ao Departamento de Estat\'istica, Universidade Federal de S\~ao Carlos - DEs/UFSCar, como parte dos requisitos para obten\c{c}\~ao do t\'itulo de Mestre em Estat\'istica - Interinstitucional de P\'os-Gradua\c{c}\~ao em Estat\'istica.}
+	\preambuloadic{Dissertation submitted to the Instituto de Ci\^encias Matem\'aticas e de Computa\c{c}\~ao, Universidade de S\~ao Paulo - ICMC/USP and to the Departamento de Estat\'istica- DEs, Universidade Federal de S\~ao Carlos - DEs/UFSCar, in partial fulfillment of the requirements for the degree of the Master in Statistics - Joint Graduate Program in Statistics.}
+	\notaficha{Disserta\c{c}\~ao (Mestrado - Interinstitucional de P\'os-Gradua\c{c}\~ao em Estat\'istica)}
+	\notacapaicmc{Disserta\c{c}\~ao de Mestrado do Programa Interinstitucional de \\P\'os-Gradua\c{c}\~ao em Estat\'istica (PIPGEs)}
+    }{
+% MESe ==========================================================================
+\ifthenelse{\equal{#1}{MESe}}{
+	\tipotrabalho{Disserta\c{c}\~ao (Mestrado em Estat\'istica)}
+    \tipotrabalhoabs{Dissertation (Master in Statistics)}
+    \renewcommand{\areaname}{Concentration area:}
+	\area{Statistics}
+    \areaadic{\'Area de concentra\c{c}\~ao: Estat\'istica}
+    \instituicao{Instituto de Ci\^encias Matem\'aticas e de Computa\c{c}\~ao, Universidade de S\~ao Paulo; Departamento de Estat\'istica, Universidade Federal de S\~ao Carlos}
+	%\opcao{Nome da Opção em inglês}
+	%\opcaoadic{Nome da Opção em português}
+    % O preambulo deve conter o tipo do trabalho, o objetivo, 
+	% o nome da instituição, a área de concentração e opção quando houver
+	\preambulo{Dissertation submitted to the Instituto de Ci\^encias Matem\'aticas e de Computa\c{c}\~ao, Universidade de S\~ao Paulo - ICMC/USP and to the Departamento de Estat\'istica - DEs, Universidade Federal de S\~ao Carlos - DEs/UFSCar, in partial fulfillment of the requirements for the degree of the Master in Statistics - Interagency Program Graduate in Statistics.} 
+	\preambuloadic{Disserta\c{c}\~ao apresentada ao Instituto de Ci\^encias Matem\'aticas e de Computa\c{c}\~ao, Universidade de S\~ao Paulo - ICMC/USP e ao Departamento de Estat\'istica, Universidade Federal de S\~ao Carlos - DEs/UFSCar, como parte dos requisitos para obten\c{c}\~ao do t\'itulo de Mestre em Estat\'istica - Interinstitucional de P\'os-Gradua\c{c}\~ao em Estat\'istica.}
+	\notaficha{Dissertation (Master - Joint Graduate Program in Statistics)}
+	\notacapaicmc{Master\'{}s Dissertation of the Interagency Postgraduate Program in\\ Statistics (PIPGEs)}
+	}{  
+% DCCp ==========================================================================
+\ifthenelse{\equal{#1}{DCCp}}{
+    \tipotrabalho{Tese (Doutorado em Ci\^encias)}
+    \tipotrabalhoabs{Thesis (Doctorate in Science)}
+    \area{Ci\^encias de Computa\c{c}\~ao e Matem\'atica Computacional}
+    \areaadic{Concentration area: Computer Science and Computational Mathematics} 
+	%\opcao{Nome da Opção em português}
+	%\opcaoadic{Nome da Opção em inglês}
+    % O preambulo deve conter o tipo do trabalho, o objetivo, 
+	% o nome da instituição, a área de concentração e opção quando houver
+	\preambulo{Tese apresentada ao Instituto de Ci\^encias Matem\'aticas e de Computa\c{c}\~ao, Universidade de S\~ao Paulo - ICMC/USP, como parte dos requisitos para obten\c{c}\~ao do t\'itulo de Doutor em Ci\^encias - Ci\^encias de Computa\c{c}\~ao e Matem\'atica Computacional.}
+	\preambuloadic{Thesis submitted to the Instituto de Ci\^encias Matem\'aticas e de Computa\c{c}\~ao, Universidade de S\~ao Paulo - ICMC/USP, in partial fulfillment of the requirements for the degree of the Doctor in Science - Program in Computer Science and Computational Mathematics.}
+	\notaficha{Tese (Doutorado - Programa de P\'os-Gradua\c{c}\~ao em Ci\^encias de Computa\c{c}\~ao e Matem\'atica Computacional)}	 
+	\notacapaicmc{Tese de Doutorado do Programa de P\'os-Gradua\c{c}\~ao em Ci\^encias de\\ Computa\c{c}\~ao e Matem\'atica Computacional (PPG-CCMC)}		
+    }{
+% DCCe ==========================================================================
+\ifthenelse{\equal{#1}{DCCe}}{
+    \tipotrabalho{Tese (Doutorado em Ci\^encias)}
+    \tipotrabalhoabs{Thesis (Doctorate in Science)}
+	\renewcommand{\areaname}{Concentration area:}
+    \area{Computer Science and Computational Mathematics}
+    \areaadic{\'Area de concentra\c{c}\~ao: Ci\^encias de Computa\c{c}\~ao e Matem\'atica Computacional}
+	%\opcao{Nome da Opção em inglês}
+	%\opcaoadic{Nome da Opção em português}
+    % O preambulo deve conter o tipo do trabalho, o objetivo, 
+	% o nome da instituição, a área de concentração e opção quando houver
+	\preambulo{Thesis submitted to the Instituto de Ci\^encias Matem\'aticas e de Computa\c{c}\~ao, Universidade de S\~ao Paulo - ICMC/USP, in partial fulfillment of the requirements for the degree of the Doctor in Science - Program in Computer Science and Computational Mathematics.}
+	\preambuloadic{Tese apresentada ao Instituto de Ci\^encias Matem\'aticas e de Computa\c{c}\~ao, Universidade de S\~ao Paulo - ICMC/USP, como parte dos requisitos para obten\c{c}\~ao do t\'itulo de Doutor em Ci\^encias - Ci\^encias de Computa\c{c}\~ao e Matem\'atica Computacional.}
+	\notaficha{Thesis (Doctorate - Program in Computer Science and Computational Mathematics)}
+	\notacapaicmc{Doctoral Thesis of the Postgraduate Program in Computer Science and\\ Computational Mathematics (PPG-CCMC)}	
+    }{			
+% MCCp ==========================================================================
+\ifthenelse{\equal{#1}{MCCp}}{
+    \tipotrabalho{Disserta\c{c}\~ao (Mestrado em Ci\^encias)}
+    \tipotrabalhoabs{Dissertation (Master in Science)}
+    \area{Ci\^encias de Computa\c{c}\~ao e Matem\'atica Computacional}
+    \areaadic{Concentration area: Computer Science and Computational Mathematics}         
+	%\opcao{Nome da Opção em português}
+	%\opcaoadic{Nome da Opção em inglês}
+    % O preambulo deve conter o tipo do trabalho, o objetivo, 
+	% o nome da instituição, a área de concentração e opção quando houver
+	\preambulo{Disserta\c{c}\~ao apresentada ao Instituto de Ci\^encias Matem\'aticas e de Computa\c{c}\~ao, Universidade de S\~ao Paulo - ICMC/USP, como parte dos requisitos para obten\c{c}\~ao do t\'itulo de Mestre em Ci\^encias - Ci\^encias de Computa\c{c}\~ao e Matem\'atica Computacional.}
+	\preambuloadic{Dissertation submitted to the Instituto de Ci\^encias Matem\'aticas e de Computa\c{c}\~ao, Universidade de S\~ao Paulo - ICMC/USP, in partial fulfillment of the requirements for the degree of the Master in Science - Program in Computer Science and Computational Mathematics.}
+	\notaficha{Disserta\c{c}\~ao (Mestrado - Programa de P\'os-Gradua\c{c}\~ao em Ci\^encias de Computa\c{c}\~ao e Matem\'atica Computacional)}
+	\notacapaicmc{Disserta\c{c}\~ao de Mestrado do Programa de P\'os-Gradua\c{c}\~ao em Ci\^encias de\\ Computa\c{c}\~ao e Matem\'atica Computacional (PPG-CCMC)}	
+    }{
+% MCCe ==========================================================================
+\ifthenelse{\equal{#1}{MCCe}}{
+    \tipotrabalho{Disserta\c{c}\~ao (Mestrado em Ci\^encias)}
+    \tipotrabalhoabs{Dissertation (Master in Science)}
+	\renewcommand{\areaname}{Concentration area:}
+    \area{Computer Science and Computational Mathematics}
+    \areaadic{\'Area de concentra\c{c}\~ao: Ci\^encias de Computa\c{c}\~ao e Matem\'atica Computacional}
+	%\opcao{Nome da Opção em inglês}
+	%\opcaoadic{Nome da Opção em português}
+    % O preambulo deve conter o tipo do trabalho, o objetivo, 
+	% o nome da instituição, a área de concentração e opção quando houver
+	\preambulo{Dissertation submitted to the Instituto de Ci\^encias Matem\'aticas e de Computa\c{c}\~ao, Universidade de S\~ao Paulo - ICMC/USP, in partial fulfillment of the requirements for the degree of the Master in Science - Program in Computer Science and Computational Mathematics.}
+	\preambuloadic{Disserta\c{c}\~ao apresentada ao Instituto de Ci\^encias Matem\'aticas e de Computa\c{c}\~ao, Universidade de S\~ao Paulo - ICMC/USP, como parte dos requisitos para obten\c{c}\~ao do t\'itulo de Mestre em Ci\^encias - Ci\^encias de Computa\c{c}\~ao e Matem\'atica Computacional.}
+	\notaficha{Dissertation (Master - Program in Computer Science and Computational Mathematics)}
+	\notacapaicmc{Master's Dissertation of the Postgraduate Program in Computer Science and\\ Computational Mathematics (PPG-CCMC)}
+    }{		
+% MBACDp ==========================================================================
+\ifthenelse{\equal{#1}{MBACDp}}{
+	\tipotrabalho{Monografia (MBA em Ci\^encias de Dados)}
+	\tipotrabalhoabs{Monograph (MBA in Data Sciences)}
+	\area{Ci\^encias de Dados}
+	\areaadic{Concentration area: Data Science} 
+	%\opcao{Nome da Opção em português}
+	%\opcaoadic{Nome da Opção em inglês}
+	% O preambulo deve conter o tipo do trabalho, o objetivo, 
+	% o nome da instituição, a área de concentração e opção quando houver
+	\preambulo{Monografia apresentada ao Centro de Ci\^encias Matem\'aticas Aplicadas \`a Ind\'ustria do Instituto de Ci\^encias Matem\'aticas e de Computa\c{c}\~ao, Universidade de S\~ao Paulo - ICMC/USP, como parte dos requisitos para obten\c{c}\~ao do t\'itulo de Especialista em Ci\^encias de Dados.}
+	\preambuloadic{Monograph presented to the Centro de Ci\^encias Matem\'aticas Aplicadas \`a Ind\'ustria do Instituto de Ci\^encias Matem\'aticas e de Computa\c{c}\~ao, Universidade de S\~ao Paulo - ICMC/USP, as part of the requirements for obtaining the title of Specialist in Data Science.}
+	\instituicao{Centro de Ci\^encias Matem\'aticas Aplicadas \`a Ind\'ustria, Instituto de Ci\^encias Matem\'aticas e de Computa\c{c}\~ao, Universidade de S\~ao Paulo}
+	\notaficha{Monografia (MBA em Ci\^encias de Dados)}
+	\notacapaicmc{Monografia - MBA em Ci\^encia de Dados (CEMEAI)}
+    }{    		
+% MBACDe ==========================================================================
+\ifthenelse{\equal{#1}{MBACDe}}{
+	\tipotrabalho{Monografia (MBA em Ci\^encias de Dados)}
+	\tipotrabalhoabs{Monograph (MBA in Data Sciences)}
+	\renewcommand{\areaname}{Concentration area:}
+	\area{Data Sciences}
+	\areaadic{\'Area de concentra\c{c}\~ao: Ci\^encias de Dados}
+ 	%\opcao{Nome da Opção em inglês}
+ 	%\opcaoadic{Nome da Opção em português}
+	% O preambulo deve conter o tipo do trabalho, o objetivo, 
+	% o nome da instituição, a área de concentração e opção quando houver
+	\preambulo{Monograph presented to the Centro de Ci\^encias Matem\'aticas Aplicadas \`a Ind\'ustria do Instituto de Ci\^encias Matem\'aticas e de Computa\c{c}\~ao, Universidade de S\~ao Paulo - ICMC/USP, as part of the requirements for obtaining the title of Specialist in Data Science.}
+	\preambuloadic{Monografia apresentada ao Centro de Ci\^encias Matem\'aticas Aplicadas \`a Ind\'ustria do Instituto de Ci\^encias Matem\'aticas e de Computa\c{c}\~ao, Universidade de S\~ao Paulo - ICMC/USP, como parte dos requisitos para obten\c{c}\~ao do t\'itulo de Especialista em Ci\^encias de Dados.}
+	\instituicao{Centro de Ci\^encias Matem\'aticas Aplicadas \`a Ind\'ustria, Instituto de Ci\^encias Matem\'aticas e de Computa\c{c}\~ao, Universidade de S\~ao Paulo}
+	\notaficha{Monograph (MBA in Data Sciences)}
+	\notacapaicmc{Monograph - MBA in Data Science (CEMEAI)}
+    }{   
+% MBAIAp ==========================================================================
+\ifthenelse{\equal{#1}{MBAIAp}}{
+	\tipotrabalho{Monografia (MBA em Intelig\^encia Artificial e Big Data)}
+	\tipotrabalhoabs{Monograph (MBA in Artificial Intelligence and Big Data)}
+	\area{Intelig\^encia Artificial}
+	\areaadic{Concentration area: Artificial Intelligence} 
+	%\opcao{Nome da Opção em português}
+	%\opcaoadic{Nome da Opção em inglês}
+	% O preambulo deve conter o tipo do trabalho, o objetivo, 
+	% o nome da instituição, a área de concentração e opção quando houver
+	\preambulo{Monografia apresentada ao Departamento de Ci\^encias de Computa\c{c}\~ao do Instituto de Ci\^encias Matem\'aticas e de Computa\c{c}\~ao, Universidade de S\~ao Paulo - ICMC/USP, como parte dos requisitos para obten\c{c}\~ao do t\'itulo de Especialista em Intelig\^encia Artificial e Big Data.}
+	\preambuloadic{Monograph presented to the Departamento de Ci\^encias de Computa\c{c}\~ao do Instituto de Ci\^encias Matem\'aticas e de Computa\c{c}\~ao, Universidade de S\~ao Paulo - ICMC/USP, as part of the requirements for obtaining the title of Specialist in Artificial Intelligence and Big Data.}
+	\notaficha{Monografia (MBA em Intelig\^encia Artificial e Big Data)}
+	\notacapaicmc{Monografia - MBA em Intelig\^encia Artificial e Big Data}
+    }{    		
+% MBAIAe ==========================================================================
+\ifthenelse{\equal{#1}{MBAIAe}}{
+	\tipotrabalho{Monografia (MBA em Intelig\^encia Artificial e Big Data)}
+	\tipotrabalhoabs{Monograph (MBA in Artificial Intelligence and Big Data)}
+	\renewcommand{\areaname}{Concentration area:}
+	\area{Artificial Intelligence and Big Data}
+	\areaadic{\'Area de concentra\c{c}\~ao: Intelig\^encia Artificial e Big Data}
+	%\opcao{Nome da Opção em inglês}
+	%\opcaoadic{Nome da Opção em português}
+	% O preambulo deve conter o tipo do trabalho, o objetivo, 
+	% o nome da instituição, a área de concentração e opção quando houver
+	\preambulo{Monograph presented to the Departamento de Ci\^encias de Computa\c{c}\~ao do Instituto de Ci\^encias Matem\'aticas e de Computa\c{c}\~ao, Universidade de S\~ao Paulo - ICMC/USP, as part of the requirements for obtaining the title of Specialist in Artificial Intelligence and Big Data.}
+	\preambuloadic{Monografia apresentada ao Departamento de Ci\^encias de Computa\c{c}\~ao do Instituto de Ci\^encias Matem\'aticas e de Computa\c{c}\~ao, Universidade de S\~ao Paulo - ICMC/USP, como parte dos requisitos para obten\c{c}\~ao do t\'itulo de Especialista em Intelig\^encia Artificial e Big Data.}
+	\notaficha{Monograph (MBA in Artificial Intelligence and Big Data)}
+	\notacapaicmc{Monograph - MBA in Artificial Intelligence and Big Data}
+    }{  
+% MBASDp ==========================================================================
+\ifthenelse{\equal{#1}{MBASDp}}{
+	\tipotrabalho{Monografia (MBA em Seguran\c{c}a de Dados)}
+	\tipotrabalhoabs{Monograph (MBA in Data Security)}
+	\area{Seguran\c{c}a de Dados}
+	\areaadic{Concentration area: Data Security} 
+	%\opcao{Nome da Opção em português}
+	%\opcaoadic{Nome da Opção em inglês}
+	% O preambulo deve conter o tipo do trabalho, o objetivo, 
+	% o nome da instituição, a área de concentração e opção quando houver
+	\preambulo{Monografia apresentada ao Centro de Ci\^encias Matem\'aticas Aplicadas \`a Ind\'ustria do Instituto de Ci\^encias Matem\'aticas e de Computa\c{c}\~ao, Universidade de S\~ao Paulo - ICMC/USP, como parte dos requisitos para obten\c{c}\~ao do t\'itulo de Especialista em Seguran\c{c}a de Dados.}
+	\preambuloadic{Monograph presented to the Centro de Ci\^encias Matem\'aticas Aplicadas \`a Ind\'ustria do Instituto de Ci\^encias Matem\'aticas e de Computa\c{c}\~ao, Universidade de S\~ao Paulo - ICMC/USP, as part of the requirements for obtaining the title of Specialist in Artificial Intelligence and Big Data.}
+	\notaficha{Monografia (MBA em Seguran\c{c}a de Dados)}
+	\notacapaicmc{Monografia - MBA em Seguran\c{c}a de Dados (CEMEAI)}
+    }{    		
+% MBASDe ==========================================================================
+\ifthenelse{\equal{#1}{MBASDe}}{
+	\tipotrabalho{Monografia (MBA em Seguran\c{c}a de Dados)}
+	\tipotrabalhoabs{Monograph (MBA in Data Security)}
+	\renewcommand{\areaname}{Concentration area:}
+	\area{Data Security}
+	\areaadic{\'Area de concentra\c{c}\~ao: Seguran\c{c}a de Dados}
+	%\opcao{Nome da Opção em inglês}
+	%\opcaoadic{Nome da Opção em português}
+	% O preambulo deve conter o tipo do trabalho, o objetivo, 
+	% o nome da instituição, a área de concentração e opção quando houver
+	\preambulo{Monograph presented to the Centro de Ci\^encias Matem\'aticas Aplicadas \`a Ind\'ustria do Instituto de Ci\^encias Matem\'aticas e de Computa\c{c}\~ao, Universidade de S\~ao Paulo - ICMC/USP, as part of the requirements for obtaining the title of Specialist in Artificial Intelligence and Big Data.}
+	\preambuloadic{Monografia apresentada ao Centro de Ci\^encias Matem\'aticas Aplicadas \`a Ind\'ustria do Instituto de Ci\^encias Matem\'aticas e de Computa\c{c}\~ao, Universidade de S\~ao Paulo - ICMC/USP, como parte dos requisitos para obten\c{c}\~ao do t\'itulo de Especialista em Seguran\c{c}a de Dados.}
+	\notaficha{Monograph (MBA in Data Security)}
+	\notacapaicmc{Monograph - MBA in Data Security (CEMEAI)}
+    }{  
+% Outros
+	\tipotrabalho{Disserta\c{c}\~ao/Tese (Mestrado/Doutorado)}
+	\tipotrabalhoabs{Dissertation/Thesis (Master/Doctor)}
+	\area{Nome da \'Area}
+	\opcao{Nome da Op\c{c}\~ao}
+	\areaadic{Additional area}
+	%\opcao{Nome da Opção em português}
+	%\opcaoadic{Nome da Opção em inglês}
+    % O preambulo deve conter o tipo do trabalho, o objetivo, 
+	% o nome da instituição, a área de concentração e opção quando houver				
+	\preambulo{Disserta\c{c}\~ao/Tese apresentada ao Instituto de Ci\^encias Matem\'aticas e de Computa\c{c}\~ao, Universidade de S\~ao Paulo - ICMC/USP, como parte dos requisitos para obten\c{c}\~ao do t\'itulo de Mestre/Doutor em Ci\^encias - Programa.}
+	\preambuloadic{Dissertation/Thesis submitted to the Instituto de Ci\^encias Matem\'aticas e de Computa\c{c}\~ao, Universidade de S\~ao Paulo - ICMC/USP, in partial fulfillment of the requirements for the degree of the Master/Doctor in Science - Program.}
+	\notaficha{Disserta\c{c}\~ao/Tese (Mestrado/Doutorado - Programa)}
+	\notacapaicmc{Master's Dissertation/Doctoral Thesis of the Postgraduate Program in ...}
+        }}}}}}}}}}}}}}}}}}}}}}}		
+
+
+
+
+
+
+

@@ -1,0 +1,187 @@
+%!TEX jobname = Master's Degree Dissertation
+%!TEX aux_directory = build
+%!TEX output_directory = build
+%!TEX copy_output_on_build = true
+% ---¬
+\documentclass[12pt, openright, twoside, a4paper, english, brazil]{USPSC-classe/USPSC}
+\input{settings}
+% ---
+	
+% ---
+% Document begging
+% ---
+\begin{document}
+	% ---
+	% Language
+	% ---Since there are only right-handed and left-handed laser beams, $\pi$-transitions do not occur. The $ k_{+} $ and $ k_{-} $ laser beams are exclusively absorbed under some conditionsby $ \sigma_{+} $	 and $ \sigma_{-} $ transitions respectively.
+	\selectlanguage{english}
+	\vspace{5pt}
+	% ---
+
+	% ---
+	% Formatting
+% 	% ---fig:1D-MOT
+	\frenchspacing
+	\renewcommand{\ABNTEXchapterfontsize}{\fontsize{12}{12}\bfseries}
+	\renewcommand{\ABNTEXsectionfontsize}{\fontsize{12}{12}\bfseries}
+	\renewcommand{\ABNTEXsubsectionfontsize}{\fontsize{12}{12}\normalfont}
+	\renewcommand{\ABNTEXsubsubsectionfontsize}{\fontsize{12}{12}\normalfont}
+	\renewcommand{\ABNTEXsubsubsubsectionfontsize}{\fontsize{12}{12}\normalfont}
+	% ---
+
+	% ----------------------------------------------------------
+	% PRE-TEXTUAL ELEMENTS
+	% ----------------------------------------------------------
+
+	\imprimircapa
+	\imprimirfolhaderosto*
+
+	%\includepdf{USPSC-TA-PreTextual/USPSC-fichacatalografica.pdf}
+	%\include{USPSC-TA-PreTextual/USPSC-Errata}
+	%\includepdf{USPSC-TA-PreTextual/USPSC-folhadeaprovacao.pdf}
+	%\includepdf{USPSC-TA-PreTextual/USPSC-PaginaEmBranco.pdf}
+
+	% ---
+	% Dedication
+	% ---
+	%\include{USPSC-TA-PreTextual/USPSC-Dedicatoria}
+	% ---
+
+	% ---
+	% Thanks
+	% ---
+	%\include{USPSC-TA-PreTextual/USPSC-Agradecimentos}
+	% ---
+
+	% ---
+	% Epigraph
+	% ---
+	%\include{USPSC-TA-PreTextual/USPSC-Epigrafe}
+	% ---
+
+	% English Abstract
+	% ---
+	%\include{USPSC-TA-PreTextual/USPSC-Abstract}
+	% --- 
+
+	% ---
+	% Portuguese Abstract
+	% ---
+	%\include{USPSC-TA-PreTex	tual/USPSC-Resumo}
+	% ---
+
+	% ---
+	% Pictures list
+	% ---
+	\pdfbookmark[0]{\listfigurename}{lof}
+	\listoffigures*
+	\cleardoublepage
+	% ---
+
+	% ---
+	% Tables list
+	% ---
+	%\pdfbookmark[0]{\listtablename}{lot}
+	%\listoftables*
+	%\cleardoublepage
+	% ---
+
+	% ---
+	% Boards list
+	% ---
+	%\pdfbookmark[0]{\listofquadroname}{loq}
+	%\listofquadro*
+	%\cleardoublepage
+	% ---
+
+	% ---
+	% Abbreviation
+	% ---
+	%\include{USPSC-TA-PreTextual/USPSC-AbreviaturasSiglas}
+	% ---
+
+	% ---
+	% Symbols
+	% ---
+	%\include{USPSC-TA-PreTextual/USPSC-Simbolos}
+	% ---
+
+	% ---
+	% Summary
+	% ---
+	\pdfbookmark[0]{\contentsname}{toc}
+	\tableofcontents*
+	\cleardoublepage
+	% ---
+
+	% ----------------------------------------------------------
+	% Textual Elements
+	% ----------------------------------------------------------
+	\textual
+
+	% ---
+	% Introduction
+	% ---
+	\include{USPSC-TA-Textual/introduction}
+	% ---
+
+	% ---
+	% Light-Matter Interaction
+	% ---
+	\include{USPSC-TA-Textual/Atom-Light-Interaction}
+
+	% ---
+	% Magneto-Optical Trap
+	% ---
+	\include{USPSC-TA-Textual/Magneto-Optical-Trap}
+
+	% ---
+	% nMOT Stochastic Dynamics
+	% ---
+	\include{USPSC-TA-Textual/Stochastic-dynamics}
+
+	% ---
+	% Results
+	% ---
+	\include{USPSC-TA-Textual/Results}
+
+	% ---
+	%  Conclusion
+	% ---
+	\include{USPSC-TA-Textual/Conclusion}
+
+	% ----------------------------------------------------------
+	% Post-Textual Elements
+	% ----------------------------------------------------------
+	\postextual
+	% ----------------------------------------------------------
+
+	% -----------------------------------------------------------
+	% Referências bibliográficas
+	% ----------------------------------------------------------
+	\bibliography{references}
+
+
+	% ----------------------------------------------------------
+	% Glossary
+	% ----------------------------------------------------------
+	%\glossary
+
+	% ----------------------------------------------------------
+	% Apêndices
+	% ----------------------------------------------------------
+	\include{USPSC-TA-PosTextual/Appendix}
+
+	% ----------------------------------------------------------
+	% Anexos
+	% ----------------------------------------------------------
+	%\include{USPSC-TA-PosTextual/USPSC-Anexos}
+
+	%---------------------------------------------------------------------
+	% INDICE REMISSIVO
+	%--------------------------------------------------------------------
+	%\include{USPSC-IndicesRemissivos}
+
+	%---------------------------------------------------------------------
+\end{document}
+% ---

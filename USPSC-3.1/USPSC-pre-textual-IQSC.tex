@@ -1,0 +1,128 @@
+%% USPSC-pre-textual-IQSC.tex
+%% Camandos para definição do tipo de documento (tese ou dissertação), área de concentração, opção, preâmbulo, titulação 
+%% referentes ao Programa de Pós-Graduação o IQSC
+\instituicao{Instituto de Qu\'imica de S\~ao Carlos, Universidade de S\~ao Paulo}
+\unidade{INSTITUTO DE QU\'IMICA DE S\~AO CARLOS}
+\unidademin{Instituto de Qu\'imica de S\~ao Carlos}
+\universidademin{Universidade de S\~ao Paulo}
+% O IQSC não inclui a nota "Versão original", portanto o comando abaixo não tem a mensagem entre {}
+\notafolharosto{ }
+%Para a versão revisada tire a % do comando/declaração abaixo e inclua uma % antes do comando acima
+
+%\notafolharosto{Exemplar revisado \\O exemplar original encontra-se em acervo reservado na Biblioteca do IQSC-USP}
+
+% ---
+% dados complementares para CAPA e FOLHA DE ROSTO
+% ---
+\universidade{UNIVERSIDADE DE S\~AO PAULO}
+\titulo{Modelo para teses e disserta\c{c}\~oes em \LaTeX\ utilizando o Pacote USPSC para o IQSC}
+%\titulo{Modelo para elabora\c{c}\~ao de trabalhos acad\^emicos em LaTex utilizando o Pacote USPSC para o IQSC}
+\titleabstract{Model for thesis and dissertations in \LaTeX\ using the USPSC Package to the IQSC}
+\tituloresumo{Modelo para teses e disserta\c{c}\~oes em \LaTeX\ utilizando o Pacote USPSC para o IQSC}
+\autor{Jos\'e da Silva}
+\autorficha{Silva, Jos\'e da}
+\autorabr{SILVA, J.}
+
+\cutter{S856m}
+% Para gerar a ficha catalográfica sem o Código Cutter, basta 
+% incluir uma % na linha acima e tirar a % da linha abaixo
+%\cutter{ }
+
+\local{S\~ao Carlos}
+\data{2021}
+% Quando for Orientador, basta incluir uma % antes do comando abaixo
+\renewcommand{\orientadorname}{Orientadora:}
+% Quando for Coorientadora, basta tirar a % utilizar o comando abaixo
+%\newcommand{\coorientadorname}{Coorientador:}
+\orientador{Profa. Dra. Elisa Gon\c{c}alves Rodrigues}
+\orientadorcorpoficha{orientadora Elisa Gon\c{c}alves Rodrigues}
+\orientadorficha{Rodrigues, Elisa Gon\c{c}alves, orient}
+%Se houver co-orientador, inclua % antes das duas linhas (antes dos comandos \orientadorcorpoficha e \orientadorficha) 
+%          e tire a % antes dos 3 comandos abaixo
+%\coorientador{Prof. Dr. Jo\~ao Alves Serqueira}
+%\orientadorcorpoficha{orientadora Elisa Gon\c{c}alves Rodrigues ;  co-orientador Jo\~ao Alves Serqueira}
+%\orientadorficha{Rodrigues, Elisa Gon\c{c}alves, orient. II. Serqueira, Jo\~ao Alves, co-orient}
+
+\notaautorizacao{AUTORIZO A REPRODU\c{C}\~AO E DIVULGA\c{C}\~AO TOTAL OU PARCIAL DESTE TRABALHO, POR QUALQUER MEIO CONVENCIONAL OU ELETR\^ONICO PARA FINS DE ESTUDO E PESQUISA, DESDE QUE CITADA A FONTE.}
+\notabib{Ficha catalogr\'afica elaborada pela Se\c{c}\~ao de Refer\^encia e Atendimento ao Usu\'ario do Servi\c{c}o de Biblioteca e Informa\c{c}\~ao Prof. Johannes R\"udiger Lechat, com os dados fornecidos pelo(a) autor(a)}
+
+\newcommand{\programa}[1]{
+
+% DFQ ==========================================================================
+\ifthenelse{\equal{#1}{DFQ}}{
+    \area{F\'isico-Qu\'imica}
+	\tipotrabalho{Tese (Doutorado em ~\imprimirarea)}
+	\tipotrabalhoabs{Tese (Doutorado em ~\imprimirarea)}
+	%\opcao{Nome da Opção}
+    % O preambulo deve conter o tipo do trabalho, o objetivo, 
+	% o nome da instituição e a área de concentração 
+	\preambulo{Tese apresentada ao Instituto de Qu\'imica de S\~ao Carlos, da Universidade de S\~ao Paulo, como parte dos requisitos para a obten\c{c}\~ao do t\'itulo de Doutor em Ci\^encias no Programa Qu\'imica.}
+	\notaficha{Tese (Doutorado em ~\imprimirarea)}
+    }{
+% MFQ ===========================================================================
+\ifthenelse{\equal{#1}{MFQ}}{
+    \area{F\'isico-Qu\'imica}
+	\tipotrabalho{Disserta\c{c}\~ao (Mestrado em ~\imprimirarea)}
+	\tipotrabalhoabs{Disserta\c{c}\~ao (Mestrado em ~\imprimirarea)}
+	%\opcao{Nome da Opção}
+    % O preambulo deve conter o tipo do trabalho, o objetivo, 
+	% o nome da instituição e a área de concentração 
+	\preambulo{Disserta\c{c}\~ao apresentada ao Instituto de Qu\'imica de S\~ao Carlos, da Universidade de S\~ao Paulo, como parte dos requisitos para a obten\c{c}\~ao do t\'itulo de Mestre em Ci\^encias no Programa Qu\'imica.}
+	\notaficha{Disserta\c{c}\~ao (Mestrado em ~\imprimirarea)}
+    }{
+% DQAI ==========================================================================
+\ifthenelse{\equal{#1}{DQAI}}{
+    \area{Qu\'imica Anal\'itica e Inorg\^anica}
+	\tipotrabalho{Tese (Doutorado em ~\imprimirarea)}
+	\tipotrabalhoabs{Tese (Doutorado em ~\imprimirarea)}
+	%\opcao{Nome da Opção}
+    % O preambulo deve conter o tipo do trabalho, o objetivo, 
+	% o nome da instituição e a área de concentração 
+	\preambulo{Tese apresentada ao Instituto de Qu\'imica de S\~ao Carlos, da Universidade de S\~ao Paulo, como parte dos requisitos para a obten\c{c}\~ao do t\'itulo de Doutor em Ci\^encias no Programa Qu\'imica.}
+	\notaficha{Tese (Doutorado em ~\imprimirarea)}
+    }{
+% MQAI ===========================================================================
+\ifthenelse{\equal{#1}{MQAI}}{
+	\area{Qu\'imica Anal\'itica e Inorg\^anica}
+	\tipotrabalho{Disserta\c{c}\~ao (Mestrado em ~\imprimirarea)}
+	\tipotrabalhoabs{Disserta\c{c}\~ao (Mestrado em ~\imprimirarea)}
+	%\opcao{Nome da Opção}
+	% O preambulo deve conter o tipo do trabalho, o objetivo, 
+	% o nome da instituição e a área de concentração 
+	\preambulo{Disserta\c{c}\~ao apresentada ao Instituto de Qu\'imica de S\~ao Carlos, da Universidade de S\~ao Paulo, como parte dos requisitos para a obten\c{c}\~ao do t\'itulo de Mestre em Ci\^encias no Programa Qu\'imica.}
+	\notaficha{Disserta\c{c}\~ao (Mestrado em ~\imprimirarea)}
+    }{
+% DQOB ===========================================================================
+\ifthenelse{\equal{#1}{DQOB}}{
+	\area{Qu\'imica Org\^anica e Biol\'ogica}
+	\tipotrabalho{Tese (Doutorado em ~\imprimirarea)}
+	\tipotrabalhoabs{Tese (Doutorado em ~\imprimirarea)}
+	%\opcao{Nome da Opção}
+    % O preambulo deve conter o tipo do trabalho, o objetivo, 
+	% o nome da instituição e a área de concentração 
+	\preambulo{Tese apresentada ao Instituto de Qu\'imica de S\~ao Carlos, da Universidade de S\~ao Paulo, como parte dos requisitos para a obten\c{c}\~ao do t\'itulo de Doutor em Ci\^encias no Programa Qu\'imica.}
+	\notaficha{Tese (Doutorado em ~\imprimirarea)}
+	}{
+% MQOB ===========================================================================
+\ifthenelse{\equal{#1}{MQOB}}{
+    \area{Qu\'imica Org\^anica e Biol\'ogica}
+	\tipotrabalho{Disserta\c{c}\~ao (Mestrado em ~\imprimirarea)}
+	\tipotrabalhoabs{Disserta\c{c}\~ao (Mestrado em ~\imprimirarea)}
+	%\opcao{Nome da Opção}
+    % O preambulo deve conter o tipo do trabalho, o objetivo, 
+	% o nome da instituição e a área de concentração 
+	\preambulo{Disserta\c{c}\~ao apresentada ao Instituto de Qu\'imica de S\~ao Carlos, da Universidade de S\~ao Paulo, como parte dos requisitos para a obten\c{c}\~ao do t\'itulo de Mestre em Ci\^encias no Programa Qu\'imica.}
+	\notaficha{Disserta\c{c}\~ao (Mestrado em ~\imprimirarea)}
+    }{
+% Outros 
+	\tipotrabalho{Disserta\c{c}\~ao/Tese (Mestrado/Doutorado)}
+	\tipotrabalhoabs{Disserta\c{c}\~ao/Tese (Mestrado/Doutorado)}
+	\area{Nome da \'Area}
+	\opcao{Nome da Op\c{c}\~ao}
+	% O preambulo deve conter o tipo do trabalho, o objetivo, 
+	% o nome da instituição, a área de concentração e opção quando houver
+	\preambulo{Disserta\c{c}\~ao/Tese apresentada ao Instituto de Qu\'imica de S\~ao Carlos, da Universidade de S\~ao Paulo, como parte dos requisitos para a obten\c{c}\~ao do t\'itulo de Mestre/Doutor em Ci\^encias no Programa Qu\'imica.}
+	\notaficha{Disserta\c{c}\~ao/Tese (Mestrado/Doutorado em ~\imprimirarea)}	
+  
+}}}}}}}
+				

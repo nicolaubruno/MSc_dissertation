@@ -1,0 +1,169 @@
+%% USPSC-TCC-pre-textual-EESC.tex
+%% Camandos para definição do tipo de documento (tese ou dissertação), área de concentração, opção, preâmbulo, titulação 
+%% referentes aos Programas de Pós-Graduação
+\instituicao{Escola de Engenharia de S\~ao Carlos, Universidade de S\~ao Paulo}
+\unidade{ESCOLA DE ENGENHARIA DE S\~AO CARLOS}
+\unidademin{Escola de Engenharia de S\~ao Carlos}
+\universidademin{Universidade de S\~ao Paulo}
+% A EESC não inclui a nota "Versão original", portanto o comando abaixo não tem a mensagem entre {}
+\notafolharosto{ }
+%Para a versão corrigida tire a % do comando/declaração abaixo e inclua uma % antes do comando acima
+%\notafolharosto{VERS\~AO CORRIGIDA}
+% ---
+% dados complementares para CAPA e FOLHA DE ROSTO
+% ---
+\universidade{UNIVERSIDADE DE S\~AO PAULO}
+\titulo{Modelo para TCC em \LaTeX\ utilizando o Pacote USPSC para a EESC}
+\titleabstract{Model for TCC in \LaTeX\ using the USPSC Package to the EESC}
+\tituloresumo{Modelo para TCC em \LaTeX\ utilizando o Pacote USPSC para a EESC}
+\autor{Jos\'e da Silva}
+\autorficha{Silva, Jos\'e da}
+\autorabr{SILVA, J.}
+
+\cutter{S856m}
+% Para gerar a ficha catalográfica sem o Código Cutter, basta 
+% incluir uma % na linha acima e tirar a % da linha abaixo
+%\cutter{ }
+
+\local{S\~ao Carlos}
+\data{2021}
+% Quando for Orientador, basta incluir uma % antes do comando abaixo
+\renewcommand{\orientadorname}{Orientadora:}
+% Quando for Coorientadora, basta tirar a % do comando abaixo
+%\newcommand{\coorientadorname}{Coorientador:}
+\orientador{Profa. Dra. Elisa Gon\c{c}alves Rodrigues}
+%\orientadorcorpoficha{orientadora Elisa Gon\c{c}alves Rodrigues}
+%\orientadorficha{Rodrigues, Elisa Gon\c{c}alves, orient}
+%Se houver co-orientador, inclua % antes das duas linhas (antes dos comandos \orientadorcorpoficha e \orientadorficha) 
+%          e tire a % antes dos 3 comandos abaixo
+\coorientador{Prof. Dr. Jo\~ao Alves Serqueira}
+\orientadorcorpoficha{orientadora Elisa Gon\c{c}alves Rodrigues ;  co-orientador Jo\~ao Alves Serqueira}
+\orientadorficha{Rodrigues, Elisa Gon\c{c}alves, orient. II. Serqueira, Jo\~ao Alves, co-orient}
+
+\notaautorizacao{AUTORIZO A REPRODU\c{C}\~AO E DIVULGA\c{C}\~AO TOTAL OU PARCIAL DESTE TRABALHO, POR QUALQUER MEIO CONVENCIONAL OU ELETR\^ONICO PARA FINS DE ESTUDO E PESQUISA, DESDE QUE CITADA A FONTE.}
+\notabib{~  ~}
+
+\newcommand{\programa}[1]{
+
+
+% EAMB ==========================================================================
+\ifthenelse{\equal{#1}{EAMB}}{
+    \tipotrabalho{Monografia (Trabalho de Conclus\~ao de Curso)}
+    \tipotrabalhoabs{Monograph (Conclusion Course Paper)}
+    %\area{Nome da área}
+	%\opcao{Nome da Opção}
+    % O preambulo deve conter o tipo do trabalho, o objetivo, 
+	% o nome da instituição, a área de concentração e opção quando houver
+	\preambulo{Monografia apresentada ao Curso de Engenharia Ambiental, da Escola de Engenharia de S\~ao Carlos da Universidade de S\~ao Paulo, como parte dos requisitos para obten\c{c}\~ao do t\'itulo de Engenheiro Ambiental.}
+	\notaficha{Monografia (Gradua\c{c}\~ao em Engenharia Ambiental)}
+    }{
+% EAER ===========================================================================
+\ifthenelse{\equal{#1}{EAER}}{
+	\tipotrabalho{Monografia (Trabalho de Conclus\~ao de Curso)}
+	\tipotrabalhoabs{Monograph (Conclusion Course Paper)}
+	%\area{Nome da área}
+	%\opcao{Nome da Opção}
+	% O preambulo deve conter o tipo do trabalho, o objetivo, 
+	% o nome da instituição, a área de concentração e opção quando houver
+	\preambulo{Monografia apresentada ao Curso de Engenharia Aeron\'autica, da Escola de Engenharia de S\~ao Carlos da Universidade de S\~ao Paulo, como parte dos requisitos para obten\c{c}\~ao do t\'itulo de Engenheiro Aeron\'autico.}
+	\notaficha{Monografia (Gradua\c{c}\~ao em Engenharia Aeron\'autica)}
+    }{
+% ECIV =======================================================================
+\ifthenelse{\equal{#1}{ECIV}}{
+    \tipotrabalho{Monografia (Trabalho de Conclus\~ao de Curso)}
+    \tipotrabalhoabs{Monograph (Conclusion Course Paper)}
+    %\area{Nome da área}
+    %\opcao{Nome da Opção}
+    % O preambulo deve conter o tipo do trabalho, o objetivo, 
+	% o nome da instituição, a área de concentração e opção quando houver
+	\preambulo{Monografia apresentada ao Curso de Engenharia Civil, da Escola de Engenharia de S\~ao Carlos da Universidade de S\~ao Paulo, como parte dos requisitos para obten\c{c}\~ao do t\'itulo de Engenheiro Civil.}
+	\notaficha{Monografia (Gradua\c{c}\~ao em Engenharia Civil)}
+    }{
+% ECOM ===========================================================================
+\ifthenelse{\equal{#1}{ECOM}}{
+	\tipotrabalho{Monografia (Trabalho de Conclus\~ao de Curso)}
+	\tipotrabalhoabs{Monograph (Conclusion Course Paper)}
+	%\area{Nome da área}
+	%\opcao{Nome da Opção}
+	% O preambulo deve conter o tipo do trabalho, o objetivo, 
+	% o nome da instituição, a área de concentração e opção quando houver
+	\preambulo{Monografia apresentada ao Curso de Engenharia de Computa\c{c}\~ao, da Escola de Engenharia de S\~ao Carlos e Instituto de Ci\^encias Matem\'aticas e de Computa\c{c}\~ao da Universidade de S\~ao Paulo, como parte dos requisitos para obten\c{c}\~ao do t\'itulo de Engenheiro de Computa\c{c}\~ao.}
+	\notaficha{Monografia (Gradua\c{c}\~ao em Engenharia de Computa\c{c}\~ao)}
+    }{
+% EELT ==========================================================================
+\ifthenelse{\equal{#1}{EELT}}{
+    \tipotrabalho{Monografia (Trabalho de Conclus\~ao de Curso)}
+    \tipotrabalhoabs{Monograph (Conclusion Course Paper)}
+	%\area{Nome da área}
+    %\opcao{Nome da Opção}
+    % O preambulo deve conter o tipo do trabalho, o objetivo, 
+    % o nome da instituição, a área de concentração e opção quando houver
+    \preambulo{Monografia apresentada ao Curso de Engenharia El\'etrica com \^Enfase em Eletr\^onica, da Escola de Engenharia de S\~ao Carlos da Universidade de S\~ao Paulo, como parte dos requisitos para obten\c{c}\~ao do t\'itulo de Engenheiro Eletricista.}
+    \notaficha{Monografia (Gradua\c{c}\~ao em Engenharia El\'etrica com \^Enfase em Eletr\^onica)}
+    }{
+% EELS ===========================================================================
+\ifthenelse{\equal{#1}{EELS}}{
+	\tipotrabalho{Monografia (Trabalho de Conclus\~ao de Curso)}
+	\tipotrabalhoabs{Monograph (Conclusion Course Paper)}
+	%\area{Nome da área}
+	%\opcao{Nome da Opção}
+	% O preambulo deve conter o tipo do trabalho, o objetivo, 
+	% o nome da instituição, a área de concentração e opção quando houver
+	\preambulo{Monografia apresentada ao Curso de Curso de Engenharia El\'etrica com \^Enfase em Sistemas de Energia e Automa\c{c}\~ao, da Escola de Engenharia de S\~ao Carlos da Universidade de S\~ao Paulo, como parte dos requisitos para obten\c{c}\~ao do t\'itulo de Engenheiro Eletricista.}
+	\notaficha{Monografia (Gradua\c{c}\~ao em Engenharia El\'etrica com \^Enfase Sistemas de Energia e Automa\c{c}\~ao)}
+    }{			
+% EMAT ==========================================================================
+\ifthenelse{\equal{#1}{EMAT}}{
+    \tipotrabalho{Monografia (Trabalho de Conclus\~ao de Curso)}
+    \tipotrabalhoabs{Monograph (Conclusion Course Paper)}
+    %\area{Nome da área}
+    %\opcao{Nome da Opção}
+    % O preambulo deve conter o tipo do trabalho, o objetivo, 
+    % o nome da instituição, a área de concentração e opção quando houver
+    \preambulo{Monografia apresentada ao Curso de Engenharia de Materiais e Manufatura, da Escola de Engenharia de S\~ao Carlos da Universidade de S\~ao Paulo, como parte dos requisitos para obten\c{c}\~ao do t\'itulo de Engenheiro de Materiais e de Manufatura.}
+    \notaficha{Monografia (Gradua\c{c}\~ao em Engenharia de Materiais e Manufatura)}
+    }{
+% EMEC ===========================================================================
+\ifthenelse{\equal{#1}{EMEC}}{
+	\tipotrabalho{Monografia (Trabalho de Conclus\~ao de Curso)}
+	\tipotrabalhoabs{Monograph (Conclusion Course Paper)}
+	%\area{Nome da área}
+	%\opcao{Nome da Opção}
+	% O preambulo deve conter o tipo do trabalho, o objetivo, 
+	% o nome da instituição, a área de concentração e opção quando houver
+	\preambulo{Monografia apresentada ao Curso de Engenharia Mec\^anica, da Escola de Engenharia de S\~ao Carlos da Universidade de S\~ao Paulo, como parte dos requisitos para obten\c{c}\~ao do t\'itulo de Engenheiro Mec\^anico.}
+	\notaficha{Monografia (Gradua\c{c}\~ao em Engenharia Mec\^anica)}
+    }{			
+% EMET ===========================================================================
+\ifthenelse{\equal{#1}{EMET}}{
+    \tipotrabalho{Monografia (Trabalho de Conclus\~ao de Curso)}
+    \tipotrabalhoabs{Monograph (Conclusion Course Paper)}
+    %\area{Nome da área}
+    %\opcao{Nome da Opção}
+    % O preambulo deve conter o tipo do trabalho, o objetivo, 
+    % o nome da instituição, a área de concentração e opção quando houver
+    \preambulo{Monografia apresentada ao Curso de Engenharia Mecatr\^onica, da Escola de Engenharia de S\~ao Carlos da Universidade de S\~ao Paulo, como parte dos requisitos para obten\c{c}\~ao do t\'itulo de Engenheiro Mecatr\^onico.}
+    \notaficha{Monografia (Gradua\c{c}\~ao em Engenharia Mecatr\^onica)}
+    }{		
+% EPRO ===========================================================================
+\ifthenelse{\equal{#1}{EPRO}}{
+	\tipotrabalho{Monografia (Trabalho de Conclus\~ao de Curso)}
+	\tipotrabalhoabs{Monograph (Conclusion Course Paper)}
+	%\area{Nome da área}
+	%\opcao{Nome da Opção}
+	% O preambulo deve conter o tipo do trabalho, o objetivo, 
+	% o nome da instituição, a área de concentração e opção quando houver
+	\preambulo{Monografia apresentada ao Curso de Engenharia de Produ\c{c}\~ao, da Escola de Engenharia de S\~ao Carlos da Universidade de S\~ao Paulo, como parte dos requisitos para obten\c{c}\~ao do t\'itulo de Engenheiro de Produ\c{c}\~ao.}
+	\notaficha{Monografia (Gradua\c{c}\~ao em Engenharia de Produ\c{c}\~a)}
+}{		         	
+% Outros
+	\tipotrabalho{Monografia (Trabalho de Conclus\~ao de Curso)}
+	\tipotrabalhoabs{Monograph (Conclusion Course Paper)}
+	%\area{Nome da área}
+	%\opcao{Nome da Opção}
+	% O preambulo deve conter o tipo do trabalho, o objetivo, 
+	% o nome da instituição, a área de concentração e opção quando houver
+	\preambulo{Monografia apresentada ao Curso de Engenharia (?), da Escola de Engenharia de S\~ao Carlos da Universidade de S\~ao Paulo, como parte dos requisitos para obten\c{c}\~ao do t\'itulo de Engenheiro (?).}
+	\notaficha{Monografia (Gradua\c{c}\~ao em Engenharia (?))}		
+        }}}}}}}}}}}
+        				

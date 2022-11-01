@@ -1,0 +1,31 @@
+%
+%
+% Introduction Section
+%-----------------------------------
+\chapter{Introduction}
+\label{ch:introduction}
+%-----------------------------------
+
+The deep understanding of light-matter interaction brought several scientific possibilities such as improvements in the atom interferometry \cite{peters2001high}, accurate spectroscopic methods \cite{mukamel2020roadmap}, and control of ultracold atoms. 
+The Nobel Prize in Physics of 1997 was awarded jointly to Steven Chu \cite{chu1998nobel}, Claude Cohen-Tannoudji \cite{cohen1998nobel}, and William D. Phillips \cite{phillips1998nobel} for developing methods to cool and trap atoms with laser light, also known as laser cooling \cite{metcalf2007laser}. This achievement has enabled modern technologies, including accurate atomic clocks \cite{ludlow2015optical}, qubits for quantum computing \cite{schneider2012quantum}, and quantum sensors \cite{zhang2016precision}. Laser cooling also allowed the experimental confirmation of the Bose-Einstein condensation (BEC), motivating the Nobel Prize of Physics in 2001 \cite{cornell2002nobel, ketterle2002nobel}.
+
+The workhorse of laser cooling is the magneto-optical trap (MOT) \cite{krzysztof2010magneto}, a technique to trap and cool a dilute atomic gas until temperatures in a range of $\mu K$. A standard MOT consists of three pairs of counter-propagating laser beams mutually orthogonal and a magnetic quadrupole field. Briefly, the atoms scatter photons from the laser light through atomic transitions, which cause momentum exchanges. The average momentum exchange yields a trapping and drag force on the atoms (MOT force), whereas its fluctuations determine temperature. The frequency of these random scatterings increases with the atomic linewidth and defines the magnitude of both MOT force and fluctuations. Hence, MOTs operating with narrow transitions reach lower temperatures at the cost of trapping efficiency. When the linewidth is comparable to the photonic recoil, we have the narrow line magneto-optical trap (nMOT) \cite{frisch2012narrow, maier2014narrow, miyazawa2021narrow}.
+
+The current MOT theories based upon Doppler cooling are rather limited to predict quantities such as temperature \cite{lett1988observation} and atomic cloud size \cite{gattobigio2010scaling}. In many experiments, there is either the absence of theoretical predictions or the necessity of adjustable scaling factors \cite{loo2003investigations}. Furthermore, most of these theories are restricted to an unfeasible one-dimensional MOT \cite{metcalf2007laser, balykin2000electromagnetic}. The difficulty arises from the three-dimensional laser beams arrangement in the presence of a magnetic quadrupole field. There are few papers devoted to develop a 3D MOT model \cite{prudnikov2015three}, all of them with strong limitations. The case of nMOTs is even more delicate since gravity can be comparable with the optical forces and then must be included. Therefore, it is evident that a computational approach to predict MOT features is appropriate and often required \cite{chaudhuri2006realization, atutov2001sodium,hanley2018quantitative}.
+
+In this thesis, we focus perform a deep analysis of the atom dynamics in nMOTs through a stochastic simulation proposal. Our model relies on sampling ensembles of random atomic trajectories as a discrete stochastic process, more precisely as a Markov chain. To validate the model, we simulate standard six-beam nMOTs of dysprosium and strontium, obtaining results in agreement with experimental measurements. Then we analyze the nuances of the stochastic dynamics in nMOTs based upon simulated data.
+
+%-----------------------------------
+\section{The thesis}
+\label{sec:introduction-thesis}
+%-----------------------------------
+
+In the framework of this thesis, we execute a deep study of atom-light interactions and stochastic processes aiming to understand the atom dynamics from both optical forces and photon scattering (Markovian process) perspectives. The radiation pressure force is the base of the Doppler cooling theory, whereas the stochastic dynamics theory is essential to computationally approach the atoms dynamics and then infer experimental quantities.
+
+Firstly, we investigate the basic concepts of atom-light interaction through the Einstein rate equations. Although this approach is proper to attend an elementary understanding, it does not contemplate coherent effects such as Rabi oscillations and the nature of line broadening mechanisms. To take these phenomena into account, we introduce the density operator formalism, treating the atom-light interaction semiclassically. Afterwards, we introduce both radiation pressure force and gradient dipole force, also known as optical forces. Finally, we verify the conditions to occur a transition between electronic states.
+
+\textcolor{red}{Study of magneto-optical traps and the limit of narrow-line}
+
+\textcolor{red}{Study of stochastic dynamics in nMOTs}
+
+\textcolor{red}{Comments about results}
