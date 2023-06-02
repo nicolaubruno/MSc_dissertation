@@ -1,0 +1,13 @@
+%
+%-----------------------------------
+\chapter{Scattering cross section}
+\label{ap:scattering-cross-section}
+%-----------------------------------
+%
+
+In atomic spectroscopy, it is often measure the light power $ P_{sc} $ which an atom emits due to spontaneous emission, i.e. the power of the scattered light also known as \textbf{fluorescence}. Fluorescence imaging can be used to detect single trapped atoms \cite{kuhr2001deterministic} and momentum distribution \cite{fuhrmanek2010imaging, bucker2009single}. In the case of a two-level atom interacting with a monochromatic light whose frequency is $ \omega $, we can write $ P_{sc} $ as the energy $ \hbar \omega_0 $\footnote{The spontaneously emitted photon does not have a single frequency $ \omega_0 $ (section \ref{sec:spectral-broadening}). However, since $ \omega_0 $ is much greater than the FWHM of the line shape, we have $$ \omega_0 \simeq \int_{0}^{\infty} \omega g(\omega) d\omega $$.} of a single photon with frequency $ \omega_0 $ (atomic resonant frequency) times the rate $ R_{sc} = \Gamma \rho_{2,2} $\footnote{$ \Gamma $ is the rate at which atoms in the excited state emit photons spontaneously and $ \rho_{2,2} $ is the probability of finding an atom in the excited state.} at which an atom scatters photons, i.e. the rate at which an atom absorb a photon stimulately and then emit it spontaneously. Therefore, we can define a cross section given by\footnote{In a general case, $$ P_{sc} = \int \sigma_{sc}(\omega') I(\omega') d\omega', $$ where $ I(\omega') $ is the spectral intensity. However, since $ I(\omega')= I_0 \delta(\omega' - \omega) $ for a monochromatic light, we can write $  P_{sc} = \sigma_{sc}(\omega) I_0 $.}.
+\begin{equation}
+	\sigma_{sc}(\Delta) = \frac{P_{sc}}{I_0} =  \frac{\hbar \omega_0}{I_0} \Gamma \rho_{2,2} = \frac{\hbar \omega_0}{I_0} \frac{\Gamma}{2} \frac{s_0}{1 + s_0 + (2\Delta / \Gamma)^2},
+	\label{eq:scattering-cross-section}
+\end{equation}
+where $ I_0 $ is the light intensity. The quantity $ \sigma_{sc} $ is called \textbf{scattering cross section} and it is related to the probability of happening a scattering event, i.e, the probability of absorbing a photon and then emitting it spontaneously. From equation (\ref{eq:absorption-cross-section-3}), we have $ \sigma_{sc} = \sigma_{abs} $, which is expected due to conservation of energy, i.e. the energy lost from a incident light beam must be convert to scattering light via spontaneous emission. Overall, the total absorption cross section $ \sigma_{abs} $ (section \ref{sec:absorption-cross-section}) is associated with \textit{absorption imaging} and the scattering cross section $ \sigma_{sc} $ is associated with \textit{fluorescence imaging}.

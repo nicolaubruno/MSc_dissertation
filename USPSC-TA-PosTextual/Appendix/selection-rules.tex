@@ -1,0 +1,74 @@
+%
+%-----------------------------------
+\chapter{Selection Rules}
+\label{ap:selection-rules}
+%-----------------------------------
+%
+
+In section \ref{sec:interaction-Hamiltonian}, we verify that electric-dipole transitions depends on the \textit{transition dipole moment} $ \vec{\mu} $. When $ |\vec{\mu}| $ is greater than zero, the transition is allowed, otherwise the transition is \textbf{dipole forbidden}. The transition moment between two arbitrary electronic states $ \ket{i} $ and $ \ket{j} $ is given by
+\begin{equation}
+	\vec{\mu}_{i,j} = \braket{j|\mathbf{d}|i} = -e \braket{j|\mathbf{r}|i},
+	\label{eq:transition-dipole-moment}
+\end{equation}
+where $ \mathbf{r} $ is the electron position. In this section, we shall explore spherical symmetries to obtain conditions in which the transition matrix (\ref{eq:transition-dipole-moment}) vanishes. These conditions are known as \textbf{selection rules}. To effectively investigate such symmetries, let us consider the electron position in spherical coordinates so that
+\begin{equation}
+	\mathbf{r} = r\left(\sin\theta\cos\phi \mathbf{e}_x + \sin\theta\sin\phi \mathbf{e}_y + \cos\theta\mathbf{e}_z\right),
+	\label{eq:electron-position-spherical-coordinates}
+\end{equation}
+where $ \theta \in [0, \pi] $ is the \textit{polar angle}, $ \phi \in [0, 2\pi[ $ is the \textit{azimuthal angle}, $ r \in [0, \infty[ $ is the \textit{radial distance}, and $ \{\mathbf{e}_x, \mathbf{e}_y, \mathbf{e}_z \} $ is the \textit{Cartesian basis}. It is also convenient to rewrite the position (\ref{eq:electron-position-spherical-coordinates}) on the \textbf{spherical basis} given by
+\begin{gather}
+	\left\{ \mathbf{e}_{\pm1} =  \frac{\mp\mathbf{e}_x - i\mathbf{e}_y}{\sqrt{2}} = -(\mathbf{e}_{\mp 1})^*,\ \mathbf{e}_0 = \mathbf{e}_z\right\}
+	\label{eq:spherical-basis}
+\end{gather}
+so that
+\begin{gather}
+	r_{\pm} = \mp \frac{r}{\sqrt{2}}\sin\theta e^{\mp i \phi}\ \ \textrm{and}\ \ r_0 = \cos\theta,\ \ \textrm{or}\label{eq:position-vector-spherical-basis-1}
+	\\
+	r_{q} = \mathbf{r} \cdot \mathbf{e}_q^* = r \sqrt{\frac{4\pi}{3}} Y_{1, -q}(\theta, \phi)\ \ \textrm{for}\ \ q \in \{-1, 0, 1\},
+	\label{eq:position-vector-spherical-basis-2}
+\end{gather}
+where $ r_{q} $ is a component\footnote{Since the spherical basis is composed of complex elements, we must consider the component of a given $\mathbb{C}^3$-vector $ \mathbf{v} $ as $ v_\alpha = \mathbf{v} \cdot \mathbf{e}_{\alpha}^* $.} of $ \mathbf{r} $ on the spherical basis and $ Y_{l, m}(\theta, \phi) $ is a \textbf{spherical harmonic} of degree $ l $ and order $ m $.
+
+To evaluate the inner product $ \braket{i|\mathbf{r}|j} $ in (\ref{eq:transition-dipole-moment}), we must describe the spatial dependence of $ \ket{i} $ and $ \ket{j} $. Essentially, an electronic state can be represented by $ \ket{n, l, m_l, m_s} $\footnote{We are neglecting the hyperfine structure.} where $n$, $l$, $m_l$ and $ m_s $ are quantum numbers described below
+\begin{itemize}
+	\item \textit{Principal quantum number} $ n $: a positive integer related to the energy and the radial position of the electron;
+
+	\item \textit{Orbital angular momentum quantum number} $ l $: a positive number in the range $ |l| < n  $ associated with the total orbital angular momentum $ \mathbf{L}^2 $ whose eigenvalues are $ \hbar^2 l(l + 1) $;
+
+	\item \textit{Magnetic quantum number} $ m_l $: an integer number in the range $ |m_l| \leq l $ related to the z-projection of the orbital angular momentum given by the operator $ \hat{L}_z $ whose eigenvalues are $ \hbar m_l $;
+
+	\item \textit{Spin quantum number} $ m_s $: a integer number in the range $ |m_s| \leq 1/2 $ related to the z-projection of the spin given by the operator $ \hat{S}_z $ whose eigenvalues are $ \hbar m_s $.
+\end{itemize}
+
+Let us assume $ \ket{i} = \ket{n,l,m_l,m_s} $ and $ \ket{j} = \ket{n',l',m_l',m_s'} $ so that $ \braket{i|r_q|j} = \braket{n,l,m_l,m_s|r_q|n',l',m_l',m_s'} $. Since the spin does not depend on the position, we have $ \braket{i|r_q|j} = \delta_{m_s,m_s'}\braket{n,l,m_l|r_q|n',l',m_l'} $, which means the transition is dipole forbidden when the spin does not remain the same. The angular state $ \ket{l, m_l} $ is defined by the \textit{spherical harmonic} $ Y_{l,m_l}(\theta, \phi) $ so that, from equation (\ref{eq:position-vector-spherical-basis-2}),
+\begin{equation}
+	\braket{n,l,m_l|r_q|n',l',m_l'} \propto \int Y_{l,m_l}^*(\theta, \phi) Y_{1, -q}(\theta, \phi) Y_{l', m_l'}(\theta, \phi)d\Omega \propto \int_{0}^{2\pi} e^{i(m_l' - m_l - q)\phi} d\phi.
+	\label{eq:inner-product-r_q}
+\end{equation}
+From the most right term in (\ref{eq:inner-product-r_q}), we immediately see that the transition moment is zero when $ m_l' - m_l - q \neq 0 $, which means the transition is allowed when $ \Delta m_l = 0, \pm 1 $. The transitions in which $ \Delta m_l = 0 $ are known as \textbf{$\pi$-transitions}, whereas the transitions in which $ \Delta m_l = \pm 1$ are known as \textbf{$\sigma$-transitions}.
+
+To evaluate the middle term in (\ref{eq:inner-product-r_q}), we shall rewrite the product of two spherical harmonics as a sum of spherical harmonics in the following way\footnote{See section 7.3.2 Spherical Harmonics in reference \cite{steck2007quantum}.}
+\begin{equation}
+	Y_{l_1,m_1} Y_{l_2,m_2} = \sum_{j,m_j} (-1)^m \sqrt{\frac{(2l_1 + 1)(2l_2 + 1)(2j + 1)}{4\pi}} \left(\begin{matrix} l_1 & l_2 & j \\ m_1 & m_2 & m_j \end{matrix}\right) \left(\begin{matrix} l_1 & l_2 & j \\ 0 & 0 & 0 \end{matrix}\right)Y_{j,-m_j},
+	\label{eq:recoupling-relation}
+\end{equation}
+where the matrix elements are the \textbf{Wigner 3-j symbols} which are directly associated with the \textbf{Clebsch-Gordan coefficients}. Thus, plugging $ l_1 = 1 $, $ m_1 = -q $, $ l_2 = l' $, and $ m_2 = m_l' $ in equation (\ref{eq:recoupling-relation}), we obtain
+\begin{align}
+	Y_{1,-q} Y_{l',m_l'} &= \sum_{j,m_j} (-1)^m \sqrt{\frac{3(2l' + 1)(2j + 1)}{4\pi}} \left(\begin{matrix} 1 & l' & j \\ -q & m_l' & m_j \end{matrix}\right) \left(\begin{matrix} 1 & l' & j \\ 0 & 0 & 0 \end{matrix}\right)Y_{j,-m_j}.
+	\label{eq:recoupling-relation-applied}
+\end{align}
+Then, plugging (\ref{eq:recoupling-relation-applied}) in the middle term of (\ref{eq:inner-product-r_q}), we obtain
+\begin{equation}
+	\int Y_{l,m_l}^*(\theta, \phi) Y_{1, -q}(\theta, \phi) Y_{l', m_l'}(\theta, \phi)d\Omega =  \sum_{j,m_j} A_{j,m_j} \int Y^*_{l,m_l}(\theta, \phi) Y_{j,-m_j}(\theta, \phi) d\Omega,
+	\label{eq:angular-part-transition-moment}
+\end{equation}
+where $ A_{j,m_j} $ are constants. Since $ j $ satisfies the \textit{triangular condition} $ |l' - 1| \leq j \leq l' + 1 $, the right term in (\ref{eq:angular-part-transition-moment}) is only non-zero when $ l = l' \pm 1 $ due to the orthogonality property. The case $ l = l' $ also seen possible, but the left term in (\ref{eq:angular-part-transition-moment}) is zero due to the parity of the spherical harmonics given by $ Y_{l,m}(\mathbf{r}) = (-1)^l Y_{l,m}(\mathbf{r}) $, which requires that $ l + l' + 1 $ to be an even number.
+
+Overall, the selection rules for electric-dipole-transition are given by $ \Delta l = \pm 1 $, $ \Delta m_l = 0, \pm 1 $, and $ \Delta m_s = 0 $. We can see theses rules from another perspective when we consider that an atom absorbs or emits a photon. The total angular momentum of any photon is $ 2\hbar^2 $ ($ J = 1 $). Therefore, $ \Delta l = \pm 1 $ and $ \Delta m = 0, \pm 1 $ follow from the conservation of angular momentum.
+
+Besides the transition matrix, the transition also depends on the polarization vector $ \vec{\epsilon} $ of the radiation through the Rabi frequency $ \Omega \propto \vec{\mu} \cdot \vec{\epsilon} $ in equation (\ref{eq:Rabi-frequency}). Let us consider the polarization in the spherical basis such that
+\begin{equation}
+	\vec{\epsilon} = \sum_{n = -1}^{1} A_{n} \mathbf{e}_{n}\ \ \textrm{and}\ \ \sum_{n = -1}^{1} |A_{n}|^2 = 1,
+	\label{eq:polarization-spherical-basis}
+\end{equation}
+where $ A_{n} $ is a component of the polarization vector. The components $ A_{+1} $ and $ A_{-1} $ are related to the right-handed and left-handed circular polarizations respectively, whereas the component $ A_0 $ is related to the linear polarization on the z-direction. In the case of $\pi$-transitions, the only non-zero component of the electron position is $ r_0 $ due to the most right term in equation (\ref{eq:inner-product-r_q}). Therefore, these transitions are only induced by linearly polarized light on z-direction. The $\sigma$-transitions obey the same logic: right-hand circularly light induces $\sigma^+$-transitions ($ \Delta m_l = +1 $) and left-hand circularly light induces $ \sigma^- $-transitions ($ \Delta m_l = -1 $).

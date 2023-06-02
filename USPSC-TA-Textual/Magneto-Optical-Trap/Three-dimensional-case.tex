@@ -4,15 +4,16 @@
 \label{eq:three-dimensional-case}
 %-----------------------------------
 %
-\begin{wrapfigure}{l}{0.5\textwidth}
+\begin{figure}[!ht]
 	\centering
 	\caption{Standard 3D-MOT arrangement}
-	\includegraphics[width=0.45\textwidth]{USPSC-img/standard-3D-MOT-arrangement.png}
+	\includegraphics[width=0.5\textwidth]{USPSC-img/standard-3D-MOT-arrangement.png}
 	\legend{Standard arrangement of MOT composed of three orthogonal pairs of counter propagating laser beams with opposite circular polarization and coils in anti-Helmholtz configuration, which produces a magnetic quadrupole field. \\ Source: \cite[Figure~9.9]{foot2005atomic}}
 	\label{fig:standard-3D-MOT-arrangement}
 	\vspace{-20pt}
-\end{wrapfigure}
-Let us assume the standard 3D-MOT arrangement illustrated in figure \ref{fig:standard-3D-MOT-arrangement}. An atom, free to move along all Cartesian axes, interacts with \textit{three pairs} of counter-propagating laser beams with opposite circular polarization and a magnetic quadrupole field $ \mathbf{B} $. In a first attempt, we can naturally extend the 1D-MOT theory into a 3D theory considering that each laser beam yields a radiation pressure force given by equation (\ref{eq:1D-MOT-force-components}). Nevertheless, the quantization axis ($z$-axis) must match the direction of the field $ \mathbf{B} $ to proper evaluate the Zeeman shift, which implies that each laser beam polarization depends on the atomic position. This is not a concern in the 1D-MOT since the magnetic field has a fixed direction. Therefore, a theoretical description of the 3D-MOT \cite{prudnikov2015three} encounters considerable difficult due to the spatial-dependence of the quantization axis. Regardless the theoretical complications, the cooling and trapping effects of MOTs are widely confirmed for many alkali \cite{raab1987trapping, katori1999magneto, zachorowski1998magneto} and lanthanide \cite{maier2014narrow, miyazawa2021narrow, frisch2012narrow}. Also, in this thesis, we could demonstrate both effects for dysprosium and strontium atoms through a stochastic simulation. Moreover, it is possible to estimate temperature and also atomic cloud size.
+\end{figure}
+
+Let us assume the standard 3D-MOT arrangement illustrated in figure \ref{fig:standard-3D-MOT-arrangement}. An atom, free to move along all Cartesian axes, interacts with \textit{three pairs} of counter-propagating laser beams with opposite circular polarization and a magnetic quadrupole field $ \mathbf{B} $. In a first attempt, we can naturally extend the 1D-MOT theory into a 3D theory considering that each laser beam yields a radiation pressure force given by equation (\ref{eq:1D-MOT-force-components}). Nevertheless, the quantization axis ($z$-axis) must match the direction of the field $ \mathbf{B} $ to proper evaluate the Zeeman shift, which implies that each laser beam polarization depends on the atomic position. This is not a concern in the 1D-MOT since the magnetic field has a fixed direction. Therefore, a theoretical description of the 3D-MOT \cite{prudnikov2015three} encounters considerable difficult due to the spatial-dependence of the quantization axis. Regardless the theoretical complications, the cooling and trapping effects of MOTs are widely confirmed for many alkali \cite{raab1987trapping, katori1999magneto, zachorowski1998magneto} and lanthanide \cite{maier2014narrow, miyazawa2021narrow, frisch2012narrow}. Also, in this thesis, we could demonstrate both effects for dysprosium and strontium atoms through a Monte Carlo simulation.
 
 %-----------------------------------
 \subsection{Limit temperature in Doppler cooling}
@@ -27,9 +28,26 @@ where $ \{ \mathbf{e}_1, \mathbf{e}_2, \mathbf{e}_3 \}$ is the Cartesian basis. 
 \begin{equation}
 	\gamma = - \frac{8 \hbar k^2 s_0 (\delta / \Gamma)}{[1 + s_0 + 4(\delta / \Gamma)^2]^2}.
 \end{equation}
-Assuming red-detuned laser beams ($ \delta < 0 $), we have $ \gamma > 0 $ and then $ \mathbf{F}_{MOT} $ describes a friction force. Hence, the velocity vanishes after a time as long as $ 1 / \gamma $ and then the final temperature should be zero. However, the $ \mathbf{F}_{MOT} $ is an average and therefore we must take its fluctuations into account. These fluctuations are associate with the Brownian atomic motion due to spontaneous emission, which yields a \textit{heating process}. Therefore, a finite temperature is set by the balance between cooling and heating mechanisms. 
+Assuming red-detuned laser beams ($ \delta < 0 $), we have $ \gamma > 0 $ and then $ \mathbf{F}_{MOT} $ describes a friction force. Hence, the velocity vanishes after a time as long as $ 1 / \gamma $ and then the final temperature should be zero. However, the $ \mathbf{F}_{MOT} $ is an average. We also must to consider the variance effect of $ \mathbf{F}_{MOT} $ which relies on the Brownian atomic motion due to spontaneous emission. This random dynamics yields a \textit{heating process}. Therefore, the balance between cooling and heating mechanisms set finite temperature.
 
-Let us considering a cycle of $ N $ 
+From the \textit{equipartition theorem}, the average total energy of the atom is given by
+\begin{equation}
+	\frac{\Delta \mathbf{p}^2}{2m} = \frac{3}{2} k_B T,
+\end{equation}
+where $ T $ is the temperature of the atomic cloud, $m$ is the the atomic mass, and $ \mathbf{p} $ is the linear momentum of the atom. There is an association between the \textbf{diffusion coefficient}\footnote{Correlation between the $\mathbf{F}_{MOT}(t) $ and $ \mathbf{F}_{MOT}(t + \delta t) $, where $ t $ is a specific instant and $ \delta t $ is a time interval.} $ D $ and the quantity $ \Delta \mathbf{p}^2 $ given by $ \Delta \mathbf{p}^2 \approx D / \gamma $ \cite[Section~2]{perrin2014doppler}. To obtain an expression for $ D $, we need to calculate quantum fluctuations, which is out of the scope of this work. However, skipping this step \cite[Section~2.3]{perrin2014doppler}, there are two possible regimes in which we can define a temperature \cite[Section~V]{loftus2004narrow}:
+\begin{itemize}
+	\item \textbf{High saturation} ($ s_0 \gg 1 $):
+	\begin{equation}
+		T(s_0) = \sqrt{s_0} T_0
+		\label{eq:Doppler-temperature-high-saturation}
+	\end{equation}
+	\item \textbf{Low saturation} ($ s_0 \ll 1 $):
+	\begin{equation}
+		T(s_0, \delta) = \frac{1 + 4(\delta / \Gamma_E)^2}{4|\delta|/\Gamma_E} \sqrt{s_0} T_0
+		\label{eq:Doppler-temperature-low-saturation}
+	\end{equation}
+\end{itemize}
+where $ T_0 \equiv \hbar \Gamma / (2 k_B) $ is known as \textbf{Doppler cooling limit} and $ \Gamma_{E} \equiv \Gamma \sqrt{1 + s_0} $ is the \textbf{power-broadened linewidth}. Considering $ s_0 \gg 1 $ in (\ref{eq:Doppler-temperature-low-saturation}), we obtain (\ref{eq:Doppler-temperature-high-saturation}). The temperature is dependent of the lasers intensity in both regimes and is dependent of the lasers detuning only in the low saturation case. However, making $ \delta \gg 1 $, the temperature of the low saturation case becomes detuning-independent. Indeed, the temperatures in both regimes are equivalent in this limit. Therefore, for high detunings and fixed saturation parameters, we expected a constant temperature.
 
 %-----------------------------------
 \subsection{Atomic cloud size}

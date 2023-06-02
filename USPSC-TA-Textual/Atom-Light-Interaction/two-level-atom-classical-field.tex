@@ -1,12 +1,83 @@
 %
+%--- 
 %-----------------------------------
 \section{Two-level atom interacting with classical light field}
 \label{sec:two-level-atom}
 %-----------------------------------
+%--- 
 %
 
-In this section, we deeply study the interaction between a classical monochromatic radiation and a two-level atom through the semiclassical approach presented in section \ref{sec:semiclassical-approach}. We shall explore both coherent effects (\textit{Rabi oscillation}) and line-broadening mechanisms, which are not essentially contemplated by the rate equations model discussed in section \ref{sec:rate-equations-model}. We also analyze mechanical effects through average forces derived from the \textit{Ehrenfest theorem}. Theses forces, known as \textbf{optical forces}, are divided into two: \textbf{radiation pressure force} and \textbf{gradient dipole force}.
+In the previous section, we consider phenomenological rate equations to study two-level atomic transitions. This approach does not contemplate coherence effects nor a fundamental understanding of line broadening mechanisms. In a first attempt, we can take the coherence effects into account assuming the interaction between a classical light field (electromagnetic waves) and an atom whose internal states are described by a quantum state vector $ \ket{\psi} $. Indeed, this is a proper treatment as long as we are only interested in stimulated processes. However, spontaneous emission comes from the interaction between atom and the vacuum modes of the quantized electromagnetic field, an incoherent relaxation process. Therefore, a single state vector is not sufficient to analyze an atom under both stimulated and spontaneous processes since such system is under decoherence. A proper description comes through the density operator (appendix \ref{ap:density-operator}), which describes a statistical mixture of quantum states. This approach allows us to study the system time evolution taking both coherent and incoherent processes into account through a master equation.
 
+%
+%-----------------------------------
+\subsection{Two-level system and the Bloch sphere}
+\label{sec:two-level-system-Bloch-sphere}
+%-----------------------------------
+%
+
+Let us consider a system composed of only two quantum states $ \ket{1} $ and $ \ket{2} $, in which $ \ket{1} $ is the \textit{ground state} and $ \ket{2} $ is the excited state. An arbitrary two-dimensional density operator can be represent as
+\begin{equation}
+	\hat{\rho} = \left[ \begin{matrix} \rho_{1, 1} & \rho_{1, 2} \\ \rho_{2, 1} & \rho_{2, 2}\end{matrix}\right],
+	\label{eq:density-operator-two-level-system}
+\end{equation}
+where $ \rho_{i,j} = \braket{i|\hat{\rho}|j} $. The diagonal terms represent probabilities so that $ \rho_{1,1} + \rho_{2,2} = 1 $, being $\rho_{1,1} $ and $ \rho_{2,2} $ real values. Also, $ \hat{\rho} $ must be hermitian and therefore $ \rho_{1,2} = (\rho_{2,1})^* $. The density matrix (\ref{eq:density-operator-two-level-system}) is represented on the basis
+\begin{equation}
+	\left\{\left[ \begin{matrix} 1 & 0 \\ 0 & 0 \end{matrix} \right],\ \left[ \begin{matrix} 0 & 1 \\ 0 & 0 \end{matrix} \right],\ \left[ \begin{matrix} 0 & 0 \\ 1 & 0 \end{matrix} \right],\ \left[ \begin{matrix} 0 & 0 \\ 0 & 1 \end{matrix} \right] \right\}.
+\end{equation}
+Another convenient basis is the \textbf{Pauli matrices basis},
+\begin{equation}
+	\left\{\sigma_x = \left[ \begin{matrix} 0 & 1 \\ 1 & 0 \end{matrix} \right],\ \sigma_y = \left[ \begin{matrix} 0 & -i \\ i & 0 \end{matrix} \right],\ \sigma_z = \left[ \begin{matrix} 1 & 0 \\ 0 & -1 \end{matrix} \right],\ \mathbb{I}_2 = \left[ \begin{matrix} 1 & 0 \\ 0 & 1 \end{matrix} \right] \right\},
+\end{equation}
+where $ \sigma_x $, $ \sigma_y $, and $ \sigma_z $ are the \textit{Pauli matrices}. An arbitrary density matrix on this basis is written as\footnote{For an arbitrary operator, we should have four coefficients $ [\hat{A}] = a_0 \mathbb{I} + a_1 \sigma_x + a_2 \sigma_y + a_3 \sigma_z $. In the case of the density matrix, we must have $ a_0 = 1/2 $ due to the property $ \Tr[\hat{\rho}] = 1 $.}
+\begin{gather}
+	\hat{\rho} = \frac{1}{2}(\mathbb{I}_2 + \mathbf{a} \cdot \vec{\sigma}) = \frac{1}{2}\left[ \begin{matrix} 1 + a_3 & a_1 - ia_2 \\ a_1 + i a_2 & 1 - a_3 \end{matrix} \right], 
+	\label{eq:density-matrix-on-Pauli-basis}
+	\\
+	\textrm{where}\ \ \vec{\sigma} = \left[ \begin{matrix} \sigma_x \\ \sigma_y \\ \sigma_z \end{matrix} \right]\ \ \textrm{and}\ \ \mathbf{a} = \left[ \begin{matrix} a_1 \\ a_2 \\ a_3 \end{matrix} \right] \textrm{(\textbf{Bloch vector})}.
+	\label{eq:Bloch-vector}
+\end{gather}
+In this representation, its eigenvalues are $ (1 \pm |\mathbf{a}|)/2$. Since they are probabilities, we must have $ 0 \leq (1 \pm |\mathbf{a}|)/2 \leq 1 \Rightarrow |\mathbf{a}| \leq 1 $. For the same reason, the diagonal terms, and then $ a_3 $, must be positive values. Furthermore, $ \hat{\rho} = \hat{\rho}^{\dagger} $, which implies $ a_1 = a_1^* $ and $ a_2 = a_2^* $. Hence, $ \mathbf{a} $ is a real vector. Comparing with the density matrix (\ref{eq:density-operator-two-level-system}), we have $ a_3 = \rho_{1,1} - \rho_{2,2} = p $ and $ (a_1 + i a_2) / 2 = \rho_{2,1} = q $, where $ p $ is known as \textbf{population inversion} and $ q $ is the \textit{coherence}. Then, the Bloch vector and the density matrix can be written as
+\begin{equation}
+	\mathbf{a} = \left[ \begin{matrix} 2\Re[q] \\ 2\Im[q] \\ p \end{matrix} \right] = \left[ \begin{matrix} q + q^* \\ i(q^* - q) \\ p \end{matrix} \right]\ \ \textrm{and}\ \ \hat{\rho} = \left[ \begin{matrix} (1 + p)/2 & q^{*} \\ q & (1 - p)/2 \end{matrix} \right].
+	\label{eq:density-matrix-two-level-system}
+\end{equation}
+Taking the property $ |\mathbf{a}| \leq 1 $ into account, we can represent the Bloch vector in a ball of unitary radius known as \textbf{Bloch sphere} (although it is a ball, not a sphere) illustrated in figure \ref{fig:Bloch-sphere}. The axes are given by $x = 2\Re[q]$, $ y = 2\Im[q] $, and $ z = p $. When $ \hat{\rho} $ represent a pure state, we have
+\begin{equation}
+	\Tr[\hat{\rho}^2] = 1 \Rightarrow \frac{1}{2}(1 + |\mathbf{a}|^2) = 1 \Rightarrow |\mathbf{a}|^2 = 1.
+\end{equation}
+Therefore, the surface of the Bloch sphere represents all the pure states, whereas the inside corresponds to all the mixed states.
+
+\noindent
+\begin{minipage}{\textwidth}
+	\begin{wrapfigure}{l}{0.45\textwidth}
+		\centering
+		\vspace{-10pt}
+		\caption{Bloch sphere.}
+		\includegraphics[width=0.35\textwidth]{USPSC-img/Bloch_sphere.png}
+		\legend{Bloch sphere for a pure state given by \\ $ \ket{\psi} = \sin(\theta/2) \ket{1} + e^{i\phi} \cos(\theta/2) \ket{2} $. \\ Source: Author}
+		\label{fig:Bloch-sphere}
+		\vspace{-5pt}
+	\end{wrapfigure}
+	Let us consider a pure state $ \ket{\psi} = c_1\ket{1} + c_2\ket{2} $. Since a global phase is not measurable, we can assume $ \ket{\psi} = c_1 \ket{1} + c_2 e^{i\phi} \ket{2} $ where $ \phi $ is the phase difference between $ \ket{1} $ and $ \ket{2} $, and both $ c_1 $ and $ c_2 $ are real values. Moreover, $ c_1^2 + c_2^2 = 1 $, which allows us to associate $ c_1 $ and $ c_2 $ with a unique value $ \theta $ considering $ c_1 = \sin{(\theta/2)} $ and $ c_2 = \cos{(\theta/2)} $. Even though the value of $ \theta $ is not unique to represent $ c_1 $ and $ c_2 $, the point $ (\theta, \phi) $ is unique to represent $ \ket{\psi} $. Thus, a density operator $ \hat{\rho} = \ketbra{\psi}{\psi} $ of a pure state can be written as
+	\begin{align}
+		\hat{\rho} &= \sin^2(\theta/2) \ketbra{1}{1} + \cos^2(\theta/2) \ketbra{2}{2} + \nonumber 
+		\\
+		&+ \frac{1}{2}e^{-i\phi}\sin\theta \ketbra{1}{2} + \frac{1}{2}e^{i\phi}\sin\theta \ketbra{2}{1},
+	\end{align}
+\end{minipage}
+
+\begin{equation}
+	\hat{\rho} = \left[ \begin{matrix} \sin^2(\theta/2) & \frac{1}{2}e^{-i\phi}\sin\theta \\ \frac{1}{2}e^{i\phi}\sin\theta & \cos^2(\theta/2) \end{matrix} \right].
+	\label{eq:density-matrix-pure-state-spherical-coordinates}
+\end{equation}
+From equations (\ref{eq:density-matrix-on-Pauli-basis}) and (\ref{eq:density-matrix-pure-state-spherical-coordinates}), we obtain the following Bloch vector
+\begin{equation}
+	\mathbf{a} = (\cos\phi \sin\theta, \sin\phi \sin\theta, \cos\theta),
+\end{equation}
+in which $ (\phi, \theta) $ are \textit{spherical coordinates} represented in figure \ref{fig:Bloch-sphere}.
+
+%
 %-----------------------------------
 \subsection{Interaction Hamiltonian}
 \label{sec:interaction-Hamiltonian}
@@ -16,7 +87,7 @@ Let us consider a system formed by only two electronic states $ \{\ket{1}, \ket{
 \begin{equation}
 	 \hat{H}_0 = \hbar \omega_1 \ketbra{1}{1} + \hbar \omega_2 \ketbra{2}{2} = \hbar \omega_1 \hat{\sigma} \hat{\sigma}^{\dagger} + \hbar \omega_2 \hat{\sigma} \hat{\sigma}^{\dagger},
 \end{equation}
-where $ \hat{\sigma} \equiv \ketbra{1}{2} $ and $ \omega_1 < \omega_2 $. The lowest energy state $ \ket{1} $ is called \textit{ground state}, whereas the highest energy state $ \ket{2} $ is called \textit{excited state}. Since we are only concern with energy differences, we can shift the zero of energy adding $ - \hbar \omega_1 $ to each energy level so that 
+where $ \hat{\sigma} \equiv \ketbra{1}{2} $ and $ \omega_1 < \omega_2 $. The lowest energy state $ \ket{1} $ is called \textit{ground state}, whereas the highest energy state $ \ket{2} $ is called \textit{excited state}. Since we are only concern with energy differences, we can shift the zero of energy adding $ - \hbar \omega_1 $ to each energy level so that
 \begin{equation}
 	\hat{H}_0 = \hbar \omega_0 \hat{\sigma}^{\dagger} \hat{\sigma} = \left[ \begin{matrix} 0 & 0 \\ 0 & \hbar \omega_0 \end{matrix} \right],
 	\label{eq:atom-hamiltonian}
@@ -44,20 +115,9 @@ where $ \vec{\mu} \equiv \braket{2|\mathbf{d}|1} $ is the \textbf{transition dip
 	\Omega(\mathbf{r}) \equiv -\frac{E_0(\vec{\epsilon} \cdot \vec{\mu})}{\hbar}e^{i\mathbf{k}\cdot\mathbf{r}}\ \textrm{and}\ \tilde{\Omega}(\mathbf{r}) \equiv -\frac{E_0^* (\vec{\epsilon} \cdot \vec{\mu})}{\hbar}e^{-i\mathbf{k}\cdot\mathbf{r}},
 	\label{eq:Rabi-frequency}
 \end{gather}
-where $ \Omega(\mathbf{r}) $ and $ \tilde{\Omega}(\mathbf{r}) $ are known as \textbf{Rabi frequencies}\footnote{Both $ \Omega $ and $ \tilde{\Omega} $ have the same amplitude $ |\Omega| = |\tilde{\Omega}| $ but different phases.}. 
-
-
-%---
-\subsubsection{Dipole approximation}
-\label{sec:dipole-approximation}
-%---
+where $ \Omega(\mathbf{r}) $ and $ \tilde{\Omega}(\mathbf{r}) $ are known as \textbf{Rabi frequencies}\footnote{Both $ \Omega $ and $ \tilde{\Omega} $ have the same amplitude $ |\Omega| = |\tilde{\Omega}| $ but different phases.}.
 
 The minimum wavelength of non-ionizing radiation, which is the typical spectral range in laser cooling experiments, is around $100 nm = 1000 \textrm{\AA} $, whereas the atomic size is around the Bohr radius $ a_B \simeq 0.5 $\AA. Then, atoms are approximately thousand times smaller than the field spatial variation. Hence, assuming a quasi-static atom, we can neglect the spatial variation of the electromagnetic field in the dynamics of the electronic states. In this case, the Rabi frequency is approximately spatial-independent $ \Omega(\mathbf{r}) \simeq \Omega $, which is known as \textbf{dipole approximation}.
-
-%---
-\subsubsection{Rotating wave approximation}
-\label{sec:rotating-wave-approximation}
-%---
 
 The typical values of $ |\Omega| $ are around MHz, whereas the typical atomic resonant frequencies are around $100$THz. Thereby $ \hat{V} \sim \hbar |\Omega| \ll \hbar \omega_0 $, which allows us to treat the interaction as a perturbation on the system. In the \textit{Dirac picture}, also called \textit{interaction picture}, considering $ \hat{U} = e^{-i \hat{H}_0 t / \hbar} = \hat{\sigma}\hat{\sigma}^{\dagger} + e^{-i\omega_0 t} \hat{\sigma}^{\dagger}\hat{\sigma}$, we have
 \begin{align}
@@ -101,11 +161,11 @@ where $ \Gamma $ is a decay rate associated with spontaneous emission. By simpli
 \begin{align}
 	\partial_t \rho_{1,1} &= - \Omega\Im[\rho_{1,2}] + \Gamma \rho_{2,2}
 	\label{eq:optical-Bloch-equations-1}
-	\\ 
-	\partial_t \rho_{2,2} &= \Omega\Im[\rho_{1,2}] - \Gamma \rho_{2,2} 
+	\\
+	\partial_t \rho_{2,2} &= \Omega\Im[\rho_{1,2}] - \Gamma \rho_{2,2}
 	\label{eq:optical-Bloch-equations-2}
-	\\ 
-	\partial_t \rho_{1,2} &= - (\Gamma / 2 - i \Delta) \rho_{1,2} + i\Omega (\rho_{1,1} - \rho_{2,2}) / 2 
+	\\
+	\partial_t \rho_{1,2} &= - (\Gamma / 2 - i \Delta) \rho_{1,2} + i\Omega (\rho_{1,1} - \rho_{2,2}) / 2
 	\label{eq:optical-Bloch-equations-3}
 	\\
 	\partial_t \rho_{2,1} &= - (\Gamma / 2 + i \Delta) \rho_{2,1} - i\Omega (\rho_{1,1} - \rho_{2,2}) / 2,
@@ -116,17 +176,13 @@ where $ \rho_{2,1} = (\rho_{1,2})^* $ and $ \rho_{1,1} + \rho_{2,2} = 1 $. The e
 	\partial_t \mathbf{a}(t) = \mathcal{M}\mathbf{a}(t) + \mathbf{b},
 	\label{eq:optical-Bloch-equations-Bloch-vector}
 	\\
-	\mathcal{M} = \left[ \begin{matrix} 
-		-\Gamma/2 & - \Delta & 0 \\  
+	\mathcal{M} = \left[ \begin{matrix}
+		-\Gamma/2 & - \Delta & 0 \\
 		\Delta & -\Gamma/2 & -\Omega \\
 		0 & \Omega & -\Gamma
 	\end{matrix} \right],\ \mathbf{b} = \left[ \begin{matrix} 0 \\ 0 \\ \Gamma \end{matrix} \right],\ \mathbf{a}(t) = \left[ \begin{matrix} 2\Re[q(t)] \\ 2\Im[q(t)] \\ p(t) \end{matrix} \right].
 \end{gather}
 It is labour to solve the equation (\ref{eq:optical-Bloch-equations-Bloch-vector}) for a general case. \textit{H. C. Torrey} \cite{torrey1949transient} deduced a general form using the \textit{Laplace transformation} but he only obtain exact solutions for the cases of exact resonance $ \Delta = 0 $ and strong excitation so that $ \Omega \gg \Gamma $. We shall pursue the solution of the OBEs from a different approach based upon the calculation of \textit{eigenvalues} and \textit{eigenvectors}.
-
-%---
-\subsubsection{General solution}
-%---
 
 Considering the vector $ \vec{\xi}(t) = \mathbf{a}(t) + \mathcal{M}^{-1} $, where $ \mathcal{M}^{-1} $ is the inverse\footnote{We are assuming $ \det\mathcal{M} \neq 0 $, which is a requirement to exist the inverse of $ \mathcal{M} $.} of $ \mathbf{M} $, we can rewrite the equation (\ref{eq:optical-Bloch-equations-Bloch-vector}) so that
 \begin{gather}
@@ -148,18 +204,13 @@ Since $ P(m) $ is a \textit{cubic polynomial} with real coefficients, at least o
 \begin{equation}
 	m_1 = -a,\ \ m_2 = -b + ic,\ \ \textrm{and}\ \ m_3 = -b - ic,
 	\label{eq:general-form-eigenvalues}
-\end{equation} 
+\end{equation}
 where $ a $, $ b $, and $ c $ are real values, being $ a $ and $ b $ positive numbers. Thus, plugging (\ref{eq:general-form-eigenvalues}) in (\ref{eq:xi-eigenvalue-equation}), we obtain the general solution given by
 \begin{equation}
 	a_{i}(t) = A_i e^{-at} + e^{-b t}[B_i \cos(ct) + C_i \sin(ct)] + a_i(\infty),\ \ \textrm{for}\ i \in \{1,2,3\},
 	\label{eq:general-solution-OBEs}
 \end{equation}
-where $ a_1 $, $ a_2 $, and $ a_3 $ are components of the Bloch vector $ \mathbf{a} $ and $ A_i $, $ B_i $, and $ C_i $ are complex constants that depend on the initial conditions and the eigenvectors $ \vec{\chi}_i $. The first term of (\ref{eq:general-solution-OBEs}) represents exponential decays of the populations and coherences, which come from the relaxation due to the spontaneous emission. The second and third terms are associated with damped oscillations known as \textbf{Rabi oscillations} or \textbf{Rabi flopping} (sections \ref{sec:Rabi-oscillations} and \ref{sec:damped-Rabi-oscillations}). The last term is a \textbf{stationary} solution (section \ref{sec:steady-state}) in which any oscillation vanishes.
-
-%-----------------------------------
-\subsection{Steady state}
-\label{sec:steady-state}
-%-----------------------------------
+where $ a_1 $, $ a_2 $, and $ a_3 $ are components of the Bloch vector $ \mathbf{a} $ and $ A_i $, $ B_i $, and $ C_i $ are complex constants that depend on the initial conditions and the eigenvectors $ \vec{\chi}_i $. The first term of (\ref{eq:general-solution-OBEs}) represents exponential decays of the populations and coherences, which come from the relaxation due to the spontaneous emission. The second and third terms are associated with damped oscillations known as \textbf{Rabi oscillations} or \textbf{Rabi flopping}. The last term is a \textbf{stationary} solution in which any oscillation vanishes.
 
 After a while, the system will reach a \textbf{steady-state} $ \mathbf{a}(\infty) $ as shown in equation (\ref{eq:general-solution-OBEs}). This solution comes straightforwardly from equation (\ref{eq:optical-Bloch-equations-Bloch-vector}) assuming $ \partial_t \mathbf{a}(\infty) = 0 $ such that
 \begin{equation}
@@ -167,8 +218,8 @@ After a while, the system will reach a \textbf{steady-state} $ \mathbf{a}(\infty
 \end{equation}
 where $ \mathcal{M}^{-1} $ is the inverse of $ \mathcal{M} $ given by
 \begin{gather}
-	\mathcal{M}^{-1} = \frac{\textrm{adj}\mathcal{M}}{\det \mathcal{M}},\ \ \det\mathcal{M} = -\Gamma (\Gamma^2/4 + \Omega^2 /2 + \Delta^2) \\ \ \textrm{adj}\mathcal{M} = 
-	\left[ \begin{matrix} 
+	\mathcal{M}^{-1} = \frac{\textrm{adj}\mathcal{M}}{\det \mathcal{M}},\ \ \det\mathcal{M} = -\Gamma (\Gamma^2/4 + \Omega^2 /2 + \Delta^2) \\ \ \textrm{adj}\mathcal{M} =
+	\left[ \begin{matrix}
 		\Gamma^2 / 2 + \Omega^2 & -\Delta \Gamma & \Delta \Omega  \\
 		\Delta \Gamma & \Gamma^2/2 & -\Omega \Gamma/2\\
 		\Delta \Omega & \Omega \Gamma/2 & \Gamma^2 / 4 + \Delta^2
@@ -179,7 +230,7 @@ where $ \textrm{adj}\mathcal{M} $ and $ \det \mathcal{M} $ are the \textit{adjug
 	\mathbf{a}(\infty) = \frac{1}{\Gamma^2 / 4 + \Omega^2 / 2 + \Delta^2} \left[ \begin{matrix} \Delta \Omega\\ -\Omega \Gamma/2 \\ \Delta^2 + \Gamma^2/4 \end{matrix} \right] = \left[ \begin{matrix} 2 \Re[q'] \\ 2\Im[q'] \\ p \end{matrix} \right] = \left[ \begin{matrix} 2 \Re[qe^{i \omega t}] \\ 2\Im[qe^{i \omega t}] \\ p \end{matrix} \right],
 	\label{eq:stationary-solution-OBEs}
 	\\
-	p(\infty) = \frac{\Delta^2 + \Gamma^2/4}{\Delta^2 + \Omega^2 / 2 + \Gamma^2 / 4}\ \ \textrm{and} 
+	p(\infty) = \frac{\Delta^2 + \Gamma^2/4}{\Delta^2 + \Omega^2 / 2 + \Gamma^2 / 4}\ \ \textrm{and}
 	\label{eq:stationary-population-inversion}
 	\\
 	q(\infty) = \frac{\Omega}{2} \frac{\Delta - i (\Gamma / 2)}{\Delta^2 + \Omega^2 / 2 + \Gamma^2 / 4}
@@ -200,17 +251,17 @@ For strong excitation such that $ \Omega^2 \gg 2\Delta^2 + \Gamma^2 / 2 $, the p
 
 The Rabi oscillations occur during the transient to the steady-state as shown in equation (\ref{eq:general-solution-OBEs}). They are fully associated with the \textit{coherent evolution} given by the term $ [\hat{H}, \hat{\rho}] $ in the master equation (\ref{eq:master-equaton-two-level-system}). These oscillations are damped by spontaneous emission, which is an incoherent process. Then, to clearly approach this effect, let us assume a system under strong excitation $ \Omega \gg \Gamma $ so that spontaneous emission can be neglected over a considerable period $ t $. In this case, $\vec{\xi}(t) \simeq \mathbf{a}(t) $ in equation (\ref{eq:superposition-Bloch-vector-2}) since $ \mathcal{M}^{-1} \mathbf{b} \simeq 0 $. The characteristic polynomial (\ref{eq:characteristic-polynomial}) and its roots are given by
 \begin{equation}
-	P(m) = m (m^2 + |\Omega|^2 + \Delta^2)\ \ \Rightarrow\ \ 
+	P(m) = m (m^2 + |\Omega|^2 + \Delta^2)\ \ \Rightarrow\ \
 	m_1 = 0,\ \ m_2 = -iG,\ \ m_3 = iG,
 	\label{eq:eigenvalues-strong-excitation}
 \end{equation}
 where $ G \equiv \sqrt{|\Omega|^2 + \Delta^2} $ is the \textbf{generalized Rabi frequency}. Plugging the values (\ref{eq:eigenvalues-strong-excitation}) in $ \mathcal{M}\vec{\chi}_i = m_i \vec{\chi}_i $, we obtain the following eigenvectors
-\begin{equation}	
+\begin{equation}
 	\vec{\chi}_1 = \left[ \begin{matrix} 1 \\ 0 \\ \Delta / \Omega \end{matrix} \right],\ \ \vec{\chi}_2 =  \left[ \begin{matrix} \Delta / \Omega \\ i(G / \Omega) \\ -1 \end{matrix} \right],\ \ \vec{\chi}_3 =  \left[ \begin{matrix} -\Delta / \Omega \\ i(G / \Omega) \\ 1 \end{matrix} \right].
 	\label{eq:eigenvectors-strong-excitation}
 \end{equation}
 Let us assume an atom initially in the ground state so that $ p(0) = 1 $ and $ q(0) = 0 $. Then, from equations (\ref{eq:superposition-Bloch-vector-2}) and (\ref{eq:eigenvectors-strong-excitation}), we obtain
-\begin{equation}	
+\begin{equation}
 	\mathbf{a}(0) = \left[ \begin{matrix} 0 \\ 0 \\ 1 \end{matrix} \right] = c_1 \left[ \begin{matrix} 1 \\ 0 \\ \Delta / \Omega \end{matrix} \right] + c_2 \left[ \begin{matrix} \Delta / \Omega \\ i(G / \Omega) \\ -1 \end{matrix} \right] + c_3 \left[ \begin{matrix} -\Delta / \Omega \\ i(G / \Omega) \\ 1 \end{matrix} \right].
 	\label{eq:initial-condition-strong-excitation}
 \end{equation}
@@ -234,7 +285,7 @@ Finally, from equation (\ref{eq:population-inversion-Rabi-oscillations}), the po
 \end{equation}
 In the exact resonance $ \Delta = 0 $,
 \begin{align}
-	p(t) &= \cos(\Omega t) 
+	p(t) &= \cos(\Omega t)
 	\label{eq:population-inversion-exact-resonance-strong-excitation}
 	\\
 	q(t) &= i \sin(\Omega t).
@@ -259,17 +310,7 @@ which has the maximum $ 1 $ when $ \Delta = 0 $, decreasing with $ \Delta / \Ome
 
 In the exact resonance given by the equations (\ref{eq:population-inversion-exact-resonance-strong-excitation}) and (\ref{eq:coherence-exact-resonance-strong-excitation}), the period is $ T = 2\pi / \Omega $. If a field is turned on at $ t = 0 $ and then turned off after $ t = T / 2 $, an atom initially in the ground state will be certainly promoted to the excited state. Such pulse is called \textbf{$\pi$-pulse}. Furthermore, if a filed is turned on for a duration $ T / 4 $, an atom initially in the ground state ends up in a superposition between the excited and ground states, which is called \textbf{$\pi/2$-pulse}. This is widely used in atomic clocks and quantum computation, beyond the scope of this thesis.
 
-%-----------------------------------
-\subsection{Damped Rabi oscillations}
-\label{sec:damped-Rabi-oscillations}
-%-----------------------------------
-
 When spontaneous emission is consirable, the Rabi oscillations will be damped by them so that, after a while, the system will reach the steady-state given by (\ref{eq:stationary-population-inversion}) and ({\ref{eq:stationary-coherence}). To get some insight into the damping oscillations, let us analyze the case of exact resonance $ \Delta = 0 $, which has a friendly exact solution. Afterwards, we perform numerical calculations to evaluate the dependence of the damping coefficients $ a $ and $ b $, and the oscillation frequency $ c $ in (\ref{eq:general-solution-OBEs}) with the parameters $ \Omega $, $ \Delta $, and $ \Gamma $.
-
-% ---
-\subsubsection{Exact resonance}
-\label{sec:exact-resonance}
-% ---
 
 In the exact resonance case $ \Delta = 0 $, the roots of the characteristic polynomial (\ref{eq:characteristic-polynomial}) have a friendly form given by
 \begin{gather}
@@ -279,7 +320,7 @@ In the exact resonance case $ \Delta = 0 $, the roots of the characteristic poly
 where $ \Omega_{\Gamma} \equiv \sqrt{\Omega^2 - (\Gamma / 4)^2} $ is the Rabi oscillations frequency in the presence of damping. Plugging these eigenvalues in $ \mathcal{M}\vec{\chi}_i = m_i \vec{\chi} $, we obtain the following eigenvectors
 \begin{equation}
 	 \vec{\chi}_1 = \left[ \begin{matrix} 1 \\ 0 \\ 0 \end{matrix} \right],\ \
-	 \vec{\chi}_2 = \left[ \begin{matrix} 0 \\ 1 \\ e^{i\theta} \end{matrix} \right],\ \ 
+	 \vec{\chi}_2 = \left[ \begin{matrix} 0 \\ 1 \\ e^{i\theta} \end{matrix} \right],\ \
 	 \vec{\chi}_3 = \left[ \begin{matrix} 0 \\ 1 \\ e^{-i\theta} \end{matrix} \right],
 	\label{eq:eigenvectors-damped-Rabi-oscillations}
 \end{equation}
@@ -292,7 +333,7 @@ Thus, plugging the values (\ref{eq:eigenvalues-damped-Rabi-oscillations}) and (\
 \begin{equation}
 	c_1 \left[ \begin{matrix} 1 \\ 0 \\ 0 \end{matrix} \right] + c_2 \left[ \begin{matrix} 0 \\ 1 \\ e^{i\theta} \end{matrix} \right] + c_3 \left[ \begin{matrix} 0 \\ 1 \\ e^{-i\theta} \end{matrix} \right] = (1 - p(\infty)) \left[ \begin{matrix} 0 \\ \Gamma / \Omega \\ 1 \end{matrix} \right],
 	\label{eq:evaluating-initial-conditions-damped-Rabi-oscillations}
-\end{equation} 
+\end{equation}
 which is a system of linear equations. After some algebra, the solution of (\ref{eq:evaluating-initial-conditions-damped-Rabi-oscillations}) is
 \begin{equation}
 	c_1 = 0,\ \ c_2 = c_3^* = \left[ \frac{\Gamma}{2\Omega} - i \frac{\Omega^2 - \Gamma^2 / 4}{2 \Omega \Omega_{\Gamma}} \right](1 - p(\infty)).
@@ -326,11 +367,6 @@ The equation (\ref{eq:population-inversion-damped-Rabi-oscillations}) shows a \t
 	\vspace{-15pt}
 \end{figure}
 
-% ---
-\subsubsection{Numerical solution}
-\label{sec:numerical-solution}
-% ---
-
 There is not a simple analytical solution for the general case (\ref{eq:general-solution-OBEs}) since the roots of the characteristic polynomial (\ref{eq:characteristic-polynomial}) do not have a friendly form out of specific regimes such as strong excitation (section \ref{sec:Rabi-oscillations}) and exact resonance (\ref{sec:exact-resonance}). Then, to evaluate the coefficients $ a $ and $ b $, and the oscillation frequency $ c $, we numerically calculate the eigenvalues of $ \mathcal{M} $. These eigenvalues are associated with the coefficients $ a $, $ b $, and $ c $ through (\ref{eq:general-form-eigenvalues}).
 
 \begin{figure}[H]
@@ -357,7 +393,7 @@ There is not a simple analytical solution for the general case (\ref{eq:general-
 	\label{fig:damping-coefficients}
 	\vspace{-30pt}
 \end{figure}
-The damping coefficient $ a $ from equation (\ref{eq:general-solution-OBEs}) is the rate at which the populations and coherences decay. From figure \ref{fig:damping-coefficient-a}, we can see that $ a $ converges to $ \Gamma $ when $ a \rightarrow \pm \infty $. Also, the coefficient $ a $ is between $ \Gamma/2 $ and $ \Gamma $. The damping coefficient $ b $ from equation (\ref{eq:general-solution-OBEs}) is a rate at which the Rabi oscillations decay. From figure \ref{fig:damping-coefficient-b}, we can see that $ b $ converges to $ \Gamma / 2 $ when $ b \rightarrow \pm \infty $ and it is between $ \Gamma / 2 $ and $ 3\Gamma/4 $. The lower the Rabi frequency the faster $ a $ and $ b $ converge. The system practically reaches the steady-state for a time greater than $ 2 / \Gamma $, since both damping coefficients have the minimum $ \Gamma / 2 $. 
+The damping coefficient $ a $ from equation (\ref{eq:general-solution-OBEs}) is the rate at which the populations and coherences decay. From figure \ref{fig:damping-coefficient-a}, we can see that $ a $ converges to $ \Gamma $ when $ a \rightarrow \pm \infty $. Also, the coefficient $ a $ is between $ \Gamma/2 $ and $ \Gamma $. The damping coefficient $ b $ from equation (\ref{eq:general-solution-OBEs}) is a rate at which the Rabi oscillations decay. From figure \ref{fig:damping-coefficient-b}, we can see that $ b $ converges to $ \Gamma / 2 $ when $ b \rightarrow \pm \infty $ and it is between $ \Gamma / 2 $ and $ 3\Gamma/4 $. The lower the Rabi frequency the faster $ a $ and $ b $ converge. The system practically reaches the steady-state for a time greater than $ 2 / \Gamma $, since both damping coefficients have the minimum $ \Gamma / 2 $.
 
 \begin{figure}[!ht]
 	\centering
@@ -420,33 +456,16 @@ It is convenient to rewrite equations (\ref{eq:stationary-population-inversion})
 \end{gather}
 
 %-----------------------------------
-\subsection{Scattering cross section}
-\label{sec:scattering-cross-section}
-%-----------------------------------
-
-In atomic spectroscopy, it is often measure the light power $ P_{sc} $ which an atom emits due to spontaneous emission, i.e. the power of the scattered light also known as \textbf{fluorescence}. Fluorescence imaging can be used to detect single trapped atoms \cite{kuhr2001deterministic} and momentum distribution \cite{fuhrmanek2010imaging, bucker2009single}. In the case of a two-level atom interacting with a monochromatic light whose frequency is $ \omega $, we can write $ P_{sc} $ as the energy $ \hbar \omega_0 $\footnote{The spontaneously emitted photon does not have a single frequency $ \omega_0 $ (section \ref{sec:spectral-broadening}). However, since $ \omega_0 $ is much greater than the FWHM of the line shape, we have $$ \omega_0 \simeq \int_{0}^{\infty} \omega g(\omega) d\omega $$.} of a single photon with frequency $ \omega_0 $ (atomic resonant frequency) times the rate $ R_{sc} = \Gamma \rho_{2,2} $\footnote{$ \Gamma $ is the rate at which atoms in the excited state emit photons spontaneously and $ \rho_{2,2} $ is the probability of finding an atom in the excited state.} at which an atom scatters photons, i.e. the rate at which an atom absorb a photon stimulately and then emit it spontaneously. Therefore, we can define a cross section given by\footnote{In a general case, $$ P_{sc} = \int \sigma_{sc}(\omega') I(\omega') d\omega', $$ where $ I(\omega') $ is the spectral intensity. However, since $ I(\omega')= I_0 \delta(\omega' - \omega) $ for a monochromatic light, we can write $  P_{sc} = \sigma_{sc}(\omega) I_0 $.}.
-\begin{equation}
-	\sigma_{sc}(\Delta) = \frac{P_{sc}}{I_0} =  \frac{\hbar \omega_0}{I_0} \Gamma \rho_{2,2} = \frac{\hbar \omega_0}{I_0} \frac{\Gamma}{2} \frac{s_0}{1 + s_0 + (2\Delta / \Gamma)^2},
-	\label{eq:scattering-cross-section}
-\end{equation}
-where $ I_0 $ is the light intensity. The quantity $ \sigma_{sc} $ is called \textbf{scattering cross section} and it is related to the probability of happening a scattering event, i.e, the probability of absorbing a photon and then emitting it spontaneously. From equation (\ref{eq:absorption-cross-section-3}), we have $ \sigma_{sc} = \sigma_{abs} $, which is expected due to conservation of energy, i.e. the energy lost from a incident light beam must be convert to scattering light via spontaneous emission. Overall, the total absorption cross section $ \sigma_{abs} $ (section \ref{sec:absorption-cross-section}) is associated with \textit{absorption imaging} and the scattering cross section $ \sigma_{sc} $ is associated with \textit{fluorescence imaging}.
-
-%-----------------------------------
 \subsection{Line-broadening mechanisms}
 \label{sec:line-broadening-mechanisms}
 %-----------------------------------
 
-In section \ref{sec:spectral-broadening}, we introduce the \textit{line shape function} $ g(\omega) $, which gives the probability of either absorbing or emitting a photon with a frequency between $ \omega $ and $ \omega + d\omega $. This function is proportional to the \textit{absorption cross-section} $ \sigma(\omega) $ according equation (\ref{eq:absorption-cross-section-2}). Although the line shape function take spectral broadening into account, it is not directly proportional to both absorbing and fluorescence profiles, which are actually measured. Theses profiles are associated directly with the \textit{net absorption cross-section} $ \sigma_{abs} $ and the \textit{scattering cross-section} $ \sigma_{sc} $. From equations (\ref{eq:net-absorption-cross-section-3}) and (\ref{eq:scattering-cross-section}), we can see that the absorption profile is not a sharp line as discussed in section \ref{sec:spectral-broadening}. In the next sections, we shall discuss physical effects which can both broaden and shift the absorption/scattering cross-section profile. Overall, there are two types of line broadening mechanisms: 
+In section \ref{sec:spectral-broadening}, we introduce the \textit{line shape function} $ g(\omega) $, which gives the probability of either absorbing or emitting a photon with a frequency between $ \omega $ and $ \omega + d\omega $. This function is proportional to the \textit{absorption cross-section} $ \sigma(\omega) $ according equation (\ref{eq:absorption-cross-section-2}). Although the line shape function take spectral broadening into account, it is not directly proportional to both absorbing and fluorescence profiles, which are actually measured. Theses profiles are associated directly with the \textit{net absorption cross-section} $ \sigma_{abs} $ and the \textit{scattering cross-section} $ \sigma_{sc} $. From equations (\ref{eq:net-absorption-cross-section-3}) and (\ref{eq:scattering-cross-section}), we can see that the absorption profile is not a sharp line as discussed in section \ref{sec:spectral-broadening}. In the next sections, we shall discuss physical effects which can both broaden and shift the absorption/scattering cross-section profile. Overall, there are two types of line broadening mechanisms:
 \begin{itemize}
 	\item \textbf{Homogeneous broadening:} all atoms in a medium are affected in the same way. In this case, we can add these line-broadening mechanisms in the optical Bloch equations so that it is valid for all atoms in the medium;
 
 	\item \textbf{Inhomogeneous broadening:} each atom in a medium is individually affected. In this case, we can only described line-broadening mechanisms in the optical Bloch equations for individual atoms. Therefore, we can not generalize for all atoms in the medium.
 \end{itemize}
-
-%---
-\subsubsection{Natural broadening}
-\label{sec:natural-broadening}
-%---
 
 Let us assume an isolated atom initially in the excited state so that there is not an incident light beam ($ s_0 = 0 $). This atom will decay in an average time $ 1/\Gamma $ known as \textit{lifetime}. In other words, $ 1 / \Gamma $ is the average time for the system changes considerably. Therefore, due to the \textit{time-energy uncertainty principle}, there will be an energy uncertainty in the excited state given by
 \begin{equation}
@@ -468,15 +487,10 @@ Spontaneously emitted photons do not have a deterministic energy $ \hbar \omega_
 	\label{eq:line-shape-function-natural-broadening}
 \end{equation}
 The equation (\ref{eq:line-shape-function-natural-broadening}) is \textit{Lorentzian profile} whose FWHM, also known as \textit{linewidth}, is $ \Gamma $, which is in agreement to equation (\ref{eq:line-shape-simplest-case}) proposed in section \ref{sec:spectral-broadening}. Since $ \Gamma $ is associated with the natural broadening, it is also called \textbf{natural linewidth}. In the regime of weak excitation so that $ s_0 \ll 1 $, the absorption cross-section approximately equals the net absorption cross-section such that $ \sigma \simeq \sigma_{abs} $.
- 
-%---
-\subsubsection{Power broadening}
-\label{sec:power-broadening}
-%---
 
 In the presence of a light field so that $ s_0 > 0 $, the only spectral broadening is the natural broadening given by (\ref{eq:line-shape-function-natural-broadening}). However, the net absorption cross-section $ \sigma_{abs} $ does not equal the absorption cross-section $ \sigma $. According to equation (\ref{eq:net-absorption-cross-section-2}), there will be a decreasing by a factor of $ 1 + s(\omega) $, which causes a line-broadening illustrated in figure (\ref{fig:net-absorption-cross-section}). From equations (\ref{eq:net-absorption-cross-section-3}) and (\ref{eq:absorption-cross-section-3}), we have
 \begin{gather}
-	\sigma(\Delta) = \frac{\pi \Gamma \sigma_0}{2} g(\Delta)\ \ \textrm{and}\ \ \sigma_{abs}(\Delta) = \frac{\pi \Gamma \sigma_0}{2(1 + s_0)} L(\Delta), 
+	\sigma(\Delta) = \frac{\pi \Gamma \sigma_0}{2} g(\Delta)\ \ \textrm{and}\ \ \sigma_{abs}(\Delta) = \frac{\pi \Gamma \sigma_0}{2(1 + s_0)} L(\Delta),
 	\\
 	\textrm{where}\ \ L(\Delta) \equiv \frac{2}{\pi \Gamma'} \frac{1}{1 + (2\Delta / \Gamma')^2}\ \ \textrm{and}\ \ \Gamma' \equiv \Gamma \sqrt{1 + s_0}.
 	\label{eq:absorption-line-shape}
@@ -492,11 +506,6 @@ The function $ L $ is known as \textbf{absorption line-shape} and it is a \texti
 	\legend{Net absorption cross section as function of detuning for some values of resonant saturation parameter.\\ Source: Author}
 	\label{fig:net-absorption-cross-section}
 \end{figure}
-
-%---
-\subsubsection{Doppler broadening}
-\label{sec:Doppler-broadening}
-%---
 
 The angular frequency $ \omega' $ of an incident light beam depends on the frame in which it is being observed. This effect is known as \textbf{Doppler effect}. We have been studying the atom-light interaction assuming that the light frequency is the same in both laboratory and atom frames. However, the Doppler effect causes an \textit{inhomogeneous resonance shift} since each atom will perceive an angular frequency given by
 \begin{equation}
@@ -523,14 +532,14 @@ where $ T $ is the temperature of the gas, $ k_B $ is the Boltzmann constant, an
 \label{sec:optical-forces}
 %-----------------------------------
 
-We can divide the atom state into two sets. The first one is the \textit{internal states} related to the \textit{electronic states}. The second one is the \textit{external states} associated with the centre-of-mass coordinates. So far we evaluated the dynamics of the internal states, neglecting the dynamics of the atomic centre-of-mass except to explain Doppler broadening in section (\ref{sec:Doppler-broadening}). However, there is a coupling between the external and internal degrees of freedom mediated by the absorption and emission processes, which provokes mechanical effects in the atomic centre-of-mass. These effects can be quantify from the \textit{Ehrenfest theorem}, which establishes the average force given by
+We can divide the atom state into two sets. The first one is the \textit{internal states} related to the \textit{electronic states}. The second one is the \textit{external states} associated with the centre-of-mass coordinates. So far we evaluated the dynamics of the internal states, neglecting the dynamics of the atomic centre-of-mass except to explain Doppler broadening in section (\ref{sec:line-broadening-mechanisms}). However, there is a coupling between the external and internal degrees of freedom mediated by the absorption and emission processes, which provokes mechanical effects in the atomic centre-of-mass. These effects can be quantify from the \textit{Ehrenfest theorem}, which establishes the average force given by
 \begin{equation}
 	\mathbf{F} = - \braket{\nabla \hat{V}},
 	\label{eq:average-force}
 \end{equation}
-where $ \hat{V} $ is the interaction Hamiltonian. 
+where $ \hat{V} $ is the interaction Hamiltonian.
 
-In section \ref{sec:interaction-Hamiltonian}, we introduce the interaction Hamiltonian (\ref{eq:interaction-Hamiltonian-monochromatic-light}) assuming an interaction between a two-level atom and a monochromatic light beam in the \textit{rotating frame} and in the \textit{interaction picture}. In the dynamics of the internal states, we can neglect the spatial dependence of the Rabi frequency $ \Omega $ due to the rotating wave approximation. However, in the dynamics of the external states this spatial variation must be considered. It is important to notice that $ E_0 $ can have a spatial dependence by itself when the light beam is not a plane wave, which is the case of a Gaussian beam\footnote{The Gaussian beam properly described that light beam produces by a laser.}. Considering $ \Omega(\mathbf{r}) = |\Omega(\mathbf{r})| e^{i\mathbf{k}\cdot\mathbf{r}} $\footnote{Any additional phase in $ \Omega $ can be incorporated in the coherence $ q $}, we obtain
+In section \ref{sec:interaction-Hamiltonian}, we introduce the interaction Hamiltonian assuming an interaction between a two-level atom and a monochromatic light beam in the \textit{rotating frame} and in the \textit{interaction picture}. In the dynamics of the internal states, we can neglect the spatial dependence of the Rabi frequency $ \Omega $ due to the rotating wave approximation. However, in the dynamics of the external states this spatial variation must be considered. It is important to notice that $ E_0 $ can have a spatial dependence by itself when the light beam is not a plane wave, which is the case of a Gaussian beam\footnote{The Gaussian beam properly described that light beam produces by a laser.}. Considering $ \Omega(\mathbf{r}) = |\Omega(\mathbf{r})| e^{i\mathbf{k}\cdot\mathbf{r}} $\footnote{Any additional phase in $ \Omega $ can be incorporated in the coherence $ q $}, we obtain
 \begin{align}
 	\hat{V}(\mathbf{r}) &= \frac{\hbar}{2}\left[ \begin{matrix} 0 & |\Omega(\mathbf{r})| e^{-i\mathbf{k}\cdot\mathbf{r}} \\ |\Omega(\mathbf{r})| e^{i\mathbf{k}\cdot\mathbf{r}} & -2\Delta \end{matrix} \right] \Rightarrow \\
 	\nabla \hat{V} &= \frac{\hbar}{2}\left[ \begin{matrix} 0 & (\nabla|\Omega| - i\mathbf{k}|\Omega|)e^{-i\mathbf{k}\cdot\mathbf{r}} \\ (\nabla|\Omega| + i\mathbf{k}|\Omega|) e^{i\mathbf{k}\cdot\mathbf{r}} & 0 \end{matrix} \right],
@@ -539,7 +548,7 @@ We can evaluate the average force (\ref{eq:average-force}) considering the prope
 \begin{equation}
 	\mathbf{F} = -\Tr[\hat{\rho}\nabla\hat{V}],
 \end{equation}
-where $ \hat{\rho} $ is the density operator of the two-level atom. As discussed in section \ref{sec:steady-state}, the system will reach a steady-state due to spontaneous emission, a relaxation process. In section \ref{sec:numerical-solution}, we verify that the system reaches the steady-state exponentially at a minimum rate $ \Gamma / 2 $, where $ \Gamma $ is the natural linewidth. If the dynamics time scale is much greater than $ 2 / \Gamma $, we can assume the system in the steady-state. Then, the density operator $ \hat{\rho} $ are defined by equations (\ref{eq:stationary-population-inversion}) and (\ref{eq:stationary-coherence}) and the average force $ \mathbf{F} $ is given by
+where $ \hat{\rho} $ is the density operator of the two-level atom. As discussed in section \ref{sec:optical-Bloch-equations}, the system will reach a steady-state due to spontaneous emission, a relaxation process. We also verify that the system reaches the steady-state exponentially at a minimum rate $ \Gamma / 2 $, where $ \Gamma $ is the natural linewidth. If the dynamics time scale is much greater than $ 2 / \Gamma $, we can assume the system in the steady-state. Then, the density operator $ \hat{\rho} $ are defined by equations (\ref{eq:stationary-population-inversion}) and (\ref{eq:stationary-coherence}) and the average force $ \mathbf{F} $ is given by
 \begin{equation}
 	\mathbf{F} = -\hbar \Re[(\nabla|\Omega| + i\mathbf{k}|\Omega|)q^*(\infty)].
 	\label{eq:optical-forces-1}
@@ -549,7 +558,7 @@ Plugging $ q(\infty) $ of equation (\ref{eq:coherence-OBEs-2}) in (\ref{eq:optic
 	\mathbf{F} = -\frac{\hbar \Delta}{\Omega} \frac{s(\Delta)}{1 + s(\Delta)}\nabla \Omega  + \hbar\mathbf{k} \frac{\Gamma}{2} \frac{s(\Delta)}{1 + s(\Delta)}.
 	\label{eq:optical-forces-2}
 \end{equation}
-We can simply the equation (\ref{eq:optical-forces-2}) considering 
+We can simply the equation (\ref{eq:optical-forces-2}) considering
 \begin{equation}
 	\nabla \ln\left[1 + s(\Delta) \right] = \frac{2}{\Omega} \frac{s(\Delta)}{1 + s(\Delta)} \nabla \Omega.
 	\label{eq:simplification-1}
@@ -563,11 +572,6 @@ Then, plugging (\ref{eq:simplification-1}) in (\ref{eq:optical-forces-2}), we ob
 	\label{eq:gradient-dipole-force}
 \end{align}
 The dissipative force $ \mathbf{F}_{rp} $ is called \textbf{radiation pressure force} and the conservative force $ \mathbf{F}_{dp} $ is called \textbf{gradient dipole force}.
-
-%---
-\subsubsection{Radiation pressure force}
-\label{sec:radiation-pressure-force}
-%---
 
 We can rewrite $ \mathbf{F}_{rp} $ from equation (\ref{eq:radiation-pressure-force}) considering the scattering cross-section $ \sigma_{sc} $ from equation (\ref{eq:scattering-cross-section}) so that
 \begin{equation}
@@ -589,11 +593,6 @@ where $ I_0 / (\hbar \omega_0) $ is the flux of photons from the incident beam. 
 
 From equation (\ref{eq:radiation-pressure-force-2}), we can see that the radiation pressure force has the maximum at resonance, and it decreases with the detuning. Also, this force saturates when $ s_0 $ is much greater than $ 1 + (2\Delta / \Gamma)^2 $. The spontaneous emission rate determines the force intensity, which is as greater as $ \Gamma $. Since $ \mathbf{F}_{rp} $ is a dissipative force, it can be used to both cool and trap atoms, being a the key concepts to understand MOTs.
 
-%---
-\subsubsection{Gradient dipole force}
-\label{sec:gradient-dipole-force}
-%---
-
 The gradient dipole force can be derived from a potential $ U_{dp} $ illustrated in figure (\ref{fig:gradient-dipole-potential}), and therefore it is a conservative force. At resonance, $ U_{dp} $ is zero and its module increases with the detuning for a range near to resonance. Far from resonance, $ U_{dp} $ asymptotically goes into zero. Unlike the radiation pressure force, the gradient dipole force does not saturate. It can increase continuously without bound, though it only does logarithmically for large intensities (saturation parameter). This forces is usually applied to spatially confine atoms.
 
 \begin{figure}[!ht]
@@ -604,75 +603,3 @@ The gradient dipole force can be derived from a potential $ U_{dp} $ illustrated
 	\label{fig:gradient-dipole-potential}
 \end{figure}
 
-%-----------------------------------
-\subsection{Selection Rules}
-\label{sec:selection-rules}
-%-----------------------------------
-
-In section \ref{sec:interaction-Hamiltonian}, we verify that electric-dipole transitions depends on the \textit{transition dipole moment} $ \vec{\mu} $. When $ |\vec{\mu}| $ is greater than zero, the transition is allowed, otherwise the transition is \textbf{dipole forbidden}. The transition moment between two arbitrary electronic states $ \ket{i} $ and $ \ket{j} $ is given by
-\begin{equation}
-	\vec{\mu}_{i,j} = \braket{j|\mathbf{d}|i} = -e \braket{j|\mathbf{r}|i},
-	\label{eq:transition-dipole-moment}
-\end{equation}
-where $ \mathbf{r} $ is the electron position. In this section, we shall explore spherical symmetries to obtain conditions in which the transition matrix (\ref{eq:transition-dipole-moment}) vanishes. These conditions are known as \textbf{selection rules}. To effectively investigate such symmetries, let us consider the electron position in spherical coordinates so that
-\begin{equation}
-	\mathbf{r} = r\left(\sin\theta\cos\phi \mathbf{e}_x + \sin\theta\sin\phi \mathbf{e}_y + \cos\theta\mathbf{e}_z\right),
-	\label{eq:electron-position-spherical-coordinates}
-\end{equation}
-where $ \theta \in [0, \pi] $ is the \textit{polar angle}, $ \phi \in [0, 2\pi[ $ is the \textit{azimuthal angle}, $ r \in [0, \infty[ $ is the \textit{radial distance}, and $ \{\mathbf{e}_x, \mathbf{e}_y, \mathbf{e}_z \} $ is the \textit{Cartesian basis}. It is also convenient to rewrite the position (\ref{eq:electron-position-spherical-coordinates}) on the \textbf{spherical basis} given by
-\begin{gather}
-	\left\{ \mathbf{e}_{\pm1} =  \frac{\mp\mathbf{e}_x - i\mathbf{e}_y}{\sqrt{2}} = -(\mathbf{e}_{\mp 1})^*,\ \mathbf{e}_0 = \mathbf{e}_z\right\}
-	\label{eq:spherical-basis}
-\end{gather}
-so that
-\begin{gather}
-	r_{\pm} = \mp \frac{r}{\sqrt{2}}\sin\theta e^{\mp i \phi}\ \ \textrm{and}\ \ r_0 = \cos\theta,\ \ \textrm{or}\label{eq:position-vector-spherical-basis-1}
-	\\
-	r_{q} = \mathbf{r} \cdot \mathbf{e}_q^* = r \sqrt{\frac{4\pi}{3}} Y_{1, -q}(\theta, \phi)\ \ \textrm{for}\ \ q \in \{-1, 0, 1\},
-	\label{eq:position-vector-spherical-basis-2}
-\end{gather}
-where $ r_{q} $ is a component\footnote{Since the spherical basis is composed of complex elements, we must consider the component of a given $\mathbb{C}^3$-vector $ \mathbf{v} $ as $ v_\alpha = \mathbf{v} \cdot \mathbf{e}_{\alpha}^* $.} of $ \mathbf{r} $ on the spherical basis and $ Y_{l, m}(\theta, \phi) $ is a \textbf{spherical harmonic} of degree $ l $ and order $ m $.
-
-To evaluate the inner product $ \braket{i|\mathbf{r}|j} $ in (\ref{eq:transition-dipole-moment}), we must describe the spatial dependence of $ \ket{i} $ and $ \ket{j} $. Essentially, an electronic state can be represented by $ \ket{n, l, m_l, m_s} $\footnote{We are neglecting the hyperfine structure.} where $n$, $l$, $m_l$ and $ m_s $ are quantum numbers described below
-\begin{itemize}
-	\item \textit{Principal quantum number} $ n $: a positive integer related to the energy and the radial position of the electron; 
-
-	\item \textit{Orbital angular momentum quantum number} $ l $: a positive number in the range $ |l| < n  $ associated with the total orbital angular momentum $ \mathbf{L}^2 $ whose eigenvalues are $ \hbar^2 l(l + 1) $;
-
-	\item \textit{Magnetic quantum number} $ m_l $: an integer number in the range $ |m_l| \leq l $ related to the z-projection of the orbital angular momentum given by the operator $ \hat{L}_z $ whose eigenvalues are $ \hbar m_l $;
-
-	\item \textit{Spin quantum number} $ m_s $: a integer number in the range $ |m_s| \leq 1/2 $ related to the z-projection of the spin given by the operator $ \hat{S}_z $ whose eigenvalues are $ \hbar m_s $.
-\end{itemize}
-
-Let us assume $ \ket{i} = \ket{n,l,m_l,m_s} $ and $ \ket{j} = \ket{n',l',m_l',m_s'} $ so that $ \braket{i|r_q|j} = \braket{n,l,m_l,m_s|r_q|n',l',m_l',m_s'} $. Since the spin does not depend on the position, we have $ \braket{i|r_q|j} = \delta_{m_s,m_s'}\braket{n,l,m_l|r_q|n',l',m_l'} $, which means the transition is dipole forbidden when the spin does not remain the same. The angular state $ \ket{l, m_l} $ is defined by the \textit{spherical harmonic} $ Y_{l,m_l}(\theta, \phi) $ so that, from equation (\ref{eq:position-vector-spherical-basis-2}),
-\begin{equation}
-	\braket{n,l,m_l|r_q|n',l',m_l'} \propto \int Y_{l,m_l}^*(\theta, \phi) Y_{1, -q}(\theta, \phi) Y_{l', m_l'}(\theta, \phi)d\Omega \propto \int_{0}^{2\pi} e^{i(m_l' - m_l - q)\phi} d\phi.
-	\label{eq:inner-product-r_q}
-\end{equation}
-From the most right term in (\ref{eq:inner-product-r_q}), we immediately see that the transition moment is zero when $ m_l' - m_l - q \neq 0 $, which means the transition is allowed when $ \Delta m_l = 0, \pm 1 $. The transitions in which $ \Delta m_l = 0 $ are known as \textbf{$\pi$-transitions}, whereas the transitions in which $ \Delta m_l = \pm 1$ are known as \textbf{$\sigma$-transitions}.
-
-To evaluate the middle term in (\ref{eq:inner-product-r_q}), we shall rewrite the product of two spherical harmonics as a sum of spherical harmonics in the following way\footnote{See section 7.3.2 Spherical Harmonics in reference \cite{steck2007quantum}.}
-\begin{equation}
-	Y_{l_1,m_1} Y_{l_2,m_2} = \sum_{j,m_j} (-1)^m \sqrt{\frac{(2l_1 + 1)(2l_2 + 1)(2j + 1)}{4\pi}} \left(\begin{matrix} l_1 & l_2 & j \\ m_1 & m_2 & m_j \end{matrix}\right) \left(\begin{matrix} l_1 & l_2 & j \\ 0 & 0 & 0 \end{matrix}\right)Y_{j,-m_j},
-	\label{eq:recoupling-relation}
-\end{equation}
-where the matrix elements are the \textbf{Wigner 3-j symbols} which are directly associated with the \textbf{Clebsch-Gordan coefficients}. Thus, plugging $ l_1 = 1 $, $ m_1 = -q $, $ l_2 = l' $, and $ m_2 = m_l' $ in equation (\ref{eq:recoupling-relation}), we obtain
-\begin{align}
-	Y_{1,-q} Y_{l',m_l'} &= \sum_{j,m_j} (-1)^m \sqrt{\frac{3(2l' + 1)(2j + 1)}{4\pi}} \left(\begin{matrix} 1 & l' & j \\ -q & m_l' & m_j \end{matrix}\right) \left(\begin{matrix} 1 & l' & j \\ 0 & 0 & 0 \end{matrix}\right)Y_{j,-m_j}.
-	\label{eq:recoupling-relation-applied}
-\end{align}
-Then, plugging (\ref{eq:recoupling-relation-applied}) in the middle term of (\ref{eq:inner-product-r_q}), we obtain
-\begin{equation}
-	\int Y_{l,m_l}^*(\theta, \phi) Y_{1, -q}(\theta, \phi) Y_{l', m_l'}(\theta, \phi)d\Omega =  \sum_{j,m_j} A_{j,m_j} \int Y^*_{l,m_l}(\theta, \phi) Y_{j,-m_j}(\theta, \phi) d\Omega,
-	\label{eq:angular-part-transition-moment}
-\end{equation}
-where $ A_{j,m_j} $ are constants. Since $ j $ satisfies the \textit{triangular condition} $ |l' - 1| \leq j \leq l' + 1 $, the right term in (\ref{eq:angular-part-transition-moment}) is only non-zero when $ l = l' \pm 1 $ due to the orthogonality property. The case $ l = l' $ also seen possible, but the left term in (\ref{eq:angular-part-transition-moment}) is zero due to the parity of the spherical harmonics given by $ Y_{l,m}(\mathbf{r}) = (-1)^l Y_{l,m}(\mathbf{r}) $, which requires that $ l + l' + 1 $ to be an even number. 
-
-Overall, the selection rules for electric-dipole-transition are given by $ \Delta l = \pm 1 $, $ \Delta m_l = 0, \pm 1 $, and $ \Delta m_s = 0 $. We can see theses rules from another perspective when we consider that an atom absorbs or emits a photon. The total angular momentum of any photon is $ 2\hbar^2 $ ($ J = 1 $). Therefore, $ \Delta l = \pm 1 $ and $ \Delta m = 0, \pm 1 $ follow from the conservation of angular momentum.
-
-Besides the transition matrix, the transition also depends on the polarization vector $ \vec{\epsilon} $ of the radiation through the Rabi frequency $ \Omega \propto \vec{\mu} \cdot \vec{\epsilon} $ in equation (\ref{eq:Rabi-frequency}). Let us consider the polarization in the spherical basis such that
-\begin{equation}
-	\vec{\epsilon} = \sum_{n = -1}^{1} A_{n} \mathbf{e}_{n}\ \ \textrm{and}\ \ \sum_{n = -1}^{1} |A_{n}|^2 = 1,
-	\label{eq:polarization-spherical-basis}
-\end{equation}
-where $ A_{n} $ is a component of the polarization vector. The components $ A_{+1} $ and $ A_{-1} $ are related to the right-handed and left-handed circular polarizations respectively, whereas the component $ A_0 $ is related to the linear polarization on the z-direction. In the case of $\pi$-transitions, the only non-zero component of the electron position is $ r_0 $ due to the most right term in equation (\ref{eq:inner-product-r_q}). Therefore, these transitions are only induced by linearly polarized light on z-direction. The $\sigma$-transitions obey the same logic: right-hand circularly light induces $\sigma^+$-transitions ($ \Delta m_l = +1 $) and left-hand circularly light induces $ \sigma^- $-transitions ($ \Delta m_l = -1 $).
