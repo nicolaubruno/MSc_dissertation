@@ -1,7 +1,7 @@
 %
 %-----------------------------------
 \newpage
-\section{Narrow Line Magneto-Optical Trap}
+\section{Narrow-line magneto-optical trap}
 %-----------------------------------
 %
 
@@ -52,4 +52,23 @@ When $ \eta' \gg 1 $, the semiclassical approach is suitable since the photonic 
 \label{sec:nMOT-centre-of-mass}
 %-----------------------------------
 
-We can estimate the centre of mass of the atomic cloud in the power-broadened regime by assuming that all radiation pressure forces on an atom balance each other in all directions except in the gravity direction. In this case, the gravity force balances with the radiation pressure forces in the same direction. Let us consider red-detuned lasers such that $ \delta' < 0 $ and $ |\delta'| > 1 $. We expected that the centre of mass $ z_0 < 0 $, where the origin is the point at which the magnetic field is zero. Furthermore, we also expected that the the magnetic field component in the gravity direction will be much larger than the other components so that we can assume the magnetic field entirely in the gravity direction. In these conditions, the forces (\ref{eq:1D-MOT-force-components}) are valid in the gravity directions.
+We can estimate the centre of mass of the atomic cloud in the \textbf{power-broadened regime} by assuming that all radiation pressure forces on an atom balance each other in all directions except in the gravity direction $ \hat{z} $. The radiation pressure forces $ F_{\pm} $ balance with the gravity force in this direction as illustrated in figure (...). Thus, a trapped atom is restricted to be in a region where the magnetic field components perpendicular to $ z $ is zero, otherwise there will be an unbalance between forces in those direction due to the Zeeman shift (see section \ref{sec:cooling-trapping-effect}). The position of a trapped atom must be $ \vec{r} = z_0 \hat{z} $ disregarding the variance effect of the radiation pressure force (see section \ref{sec:Doppler-temperature-limit}), which is much smaller than the average pressure force in the power-broadened regime. In this condition, the one-dimensional model presented in section \ref{sec:one-dimensional-model} is suitable to analyse the atom dynamics so that, from equations (\ref{eq:1D-MOT-force-components}), we obtain the following equation of motion
+\begin{equation}
+    \hbar k \frac{\Gamma}{2} s_0 \left( \frac{1}{1 + s_0 + 4(\Delta_{+} / \Gamma)^2} - \frac{1}{1 + s_0 + 4(\Delta_{-} / \Gamma)^2}  \right) - mg = 0.
+    \label{eq:equation-motion-1D-model-under-gravity}
+\end{equation}
+We must impose $ |\Delta_{+}| < |\Delta_{-}| $ to ensure a solution to the equation (\ref{eq:equation-motion-1D-model-under-gravity}). Neglecting the Doppler shift ($ \delta_{D}^{(\pm)} = 0 $), and assuming red-detuned lasers\footnote{This assumption is necessary to create a trapping environment as discussed in \ref{sec:cooling-trapping-effect}.} ($ \delta < 0 $), we obtain $ z_0 < 0 $, which means the centre of mass will be located below the magnetic field origin. Furthermore, $ |\Delta_{+}| \gg |\Delta_{-}| $ for $ |\delta| \gg 1 $ so that $ F_{-} $ is negligible. Hence, we can approximate the equation (\ref{eq:equation-motion-1D-model-under-gravity}) to
+\begin{equation}
+    \hbar k \frac{\Gamma}{2} s_0 \left( \frac{1}{1 + s_0 + 4[(\delta + \delta_{Z}^{(+)}) / \Gamma]^2}\right) - mg = 0.
+\end{equation}
+We have been assuming the transition $ J = 0 \longrightarrow J = 1 $ such that $ \delta_Z^{(+)} = - \beta g_J m_J z $. However, the transition can happen between any transition $ J = j \longrightarrow J = j + 1$, where $ j \geq 0 $. To take it into account, we must consider
+\begin{equation}
+     \delta_Z^{(+)} = - \beta \chi z_0,\ \textrm{being}\ \chi \equiv (g_J - g_J') j > 0,
+     \label{eq:zeeman-shift-generic-transition}
+\end{equation}
+where $ g_J' $ and $ g_J $ are the \textit{Landé factors} of the excited and ground states respectively. The equation (\ref{eq:zeeman-shift-generic-transition}) is valid when the transitions only happens between the states $ m_J = -j $ and $ m_J = -j + 1 $. Isolating $ z_0 $, we obtain
+\begin{equation}
+    z_0 = - \frac{1}{\beta \chi} \left(\delta + \frac{\Gamma}{2} \sqrt{\frac{h \Gamma s_0}{2 \lambda m g} - 1 - s_0} \right)
+    \label{eq:centre-of-mass-power-broadened-regime}
+\end{equation}
+The equation (\ref{eq:centre-of-mass-power-broadened-regime}) is only valid when $ z_0 $ is
