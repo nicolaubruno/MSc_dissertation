@@ -52,7 +52,17 @@ When $ \eta' \gg 1 $, the semiclassical approach is suitable since the photonic 
 \label{sec:nMOT-centre-of-mass}
 %-----------------------------------
 
-We can estimate the centre of mass of the atomic cloud in the \textbf{power-broadened regime} by assuming that all radiation pressure forces on an atom balance each other in all directions except in the gravity direction $ \hat{z} $. The radiation pressure forces $ F_{\pm} $ balance with the gravity force in this direction as illustrated in figure (...). Thus, a trapped atom is restricted to be in a region where the magnetic field components perpendicular to $ z $ is zero, otherwise there will be an unbalance between forces in those direction due to the Zeeman shift (see section \ref{sec:cooling-trapping-effect}). The position of a trapped atom must be $ \vec{r} = z_0 \hat{z} $ disregarding the variance effect of the radiation pressure force (see section \ref{sec:Doppler-temperature-limit}), which is much smaller than the average pressure force in the power-broadened regime. In this condition, the one-dimensional model presented in section \ref{sec:one-dimensional-model} is suitable to analyse the atom dynamics so that, from equations (\ref{eq:1D-MOT-force-components}), we obtain the following equation of motion
+\begin{wrapfigure}{l}{0.35\textwidth}
+    \centering
+    \vspace{-10px}
+    \caption{Forces diagram of a trapped atom}
+    \includegraphics[width=0.25\textwidth]{USPSC-img/centre_of_mass_power_broadened_regime.png}
+    \legend{Forces diagram of a trapped atom in a nMOT in the power-broadened regime. \\ Source: author}
+    \label{fig:forces-diagram-trapped-atom-nMOT-power-broadened-regime}
+    \vspace{-20px}
+\end{wrapfigure}
+
+We can estimate the centre of mass of the atomic cloud in the power-broadened regime by assuming that all radiation pressure forces on an atom balance each other in all directions except in the gravity direction $ \hat{z} $. The radiation pressure forces $ F_{\pm} $ balance with the gravity force in this direction as illustrated in figure (...). Thus, a trapped atom is restricted to be in a region where the magnetic field components perpendicular to $ z $ is zero, otherwise there will be an unbalance between forces in those direction due to the Zeeman shift (see section \ref{sec:cooling-trapping-effect}). The position of a trapped atom must be $ \vec{r} = z_0 \hat{z} $ disregarding the variance effect of the radiation pressure force (see section \ref{sec:Doppler-temperature-limit}), which is much smaller than the average pressure force in the power-broadened regime. In this condition, the one-dimensional model presented in section \ref{sec:one-dimensional-model} is suitable to analyse the atom dynamics so that, from equations (\ref{eq:1D-MOT-force-components}), we obtain the following equation of motion
 \begin{equation}
     \hbar k \frac{\Gamma}{2} s_0 \left( \frac{1}{1 + s_0 + 4(\Delta_{+} / \Gamma)^2} - \frac{1}{1 + s_0 + 4(\Delta_{-} / \Gamma)^2}  \right) - mg = 0.
     \label{eq:equation-motion-1D-model-under-gravity}
@@ -71,4 +81,4 @@ where $ g_J' $ and $ g_J $ are the \textit{Landé factors} of the excited and gr
     z_0 = - \frac{1}{\beta \chi} \left(\delta + \frac{\Gamma}{2} \sqrt{\frac{h \Gamma s_0}{2 \lambda m g} - 1 - s_0} \right)
     \label{eq:centre-of-mass-power-broadened-regime}
 \end{equation}
-The equation (\ref{eq:centre-of-mass-power-broadened-regime}) is only valid when $ z_0 $ is
+The equation (\ref{eq:centre-of-mass-power-broadened-regime}) is only valid when the centre of mass is sufficient below the magnetic field origin to match all the assumptions described above and in section \ref{sec:MOT-force}.

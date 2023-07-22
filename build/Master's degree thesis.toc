@@ -46,7 +46,7 @@
 \contentsline {chapter}{\chapternumberline {6}\MakeTextUppercase {Conclusion}}{49}{chapter.6}%
 \vspace {\cftbeforechapterskip }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
-\contentsline {chapter}{\uppercase {References}}{51}{section*.30}%
+\contentsline {chapter}{\uppercase {References}}{51}{section*.31}%
 \renewcommand *{\cftappendixname }{APPENDIX \space }
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
