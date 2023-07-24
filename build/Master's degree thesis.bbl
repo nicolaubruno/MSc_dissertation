@@ -250,12 +250,28 @@ Available at: \url{https://link.aps.org/doi/10.1103/PhysRevA.49.4864}.}
 \textbf{Phys. Rev. A}, American Physical Society, v.~90, p. 063404, Dec 2014.
 Available at: \url{https://link.aps.org/doi/10.1103/PhysRevA.90.063404}.}
 
+\bibitem{courteille2019atom}
+\abntrefinfo{Courteille}{COURTEILLE}{2019}
+{COURTEILLE, P.~W. Atom-light interaction and basic applications.
+2019.}
+
 \bibitem{dreon2017optical}
 \abntrefinfo{Dreon \textit{et al.}}{DREON \textit{et al.}}{2017}
 {DREON, D. \textit{et al.} Optical cooling and trapping of highly magnetic
   atoms: the benefits of a spontaneous spin polarization.
 \textbf{Journal of Physics B: Atomic, Molecular and Optical Physics}, IOP
   Publishing, v.~50, n.~6, p. 065005, 2017.}
+
+\bibitem{nMOT_sim}
+\abntrefinfo{Santos}{SANTOS}{2023}
+{SANTOS, B. \textbf{Monte Carlo simulation of narrow-line Magneto-Optical
+  Traps}. [\textit{S.l.: s.n.}]: GitHub, 2023.
+  \url{https://github.com/nicolaubruno/mot_simulation}.}
+
+\bibitem{wasserman2004all}
+\abntrefinfo{Wasserman}{WASSERMAN}{2004}
+{WASSERMAN, L. \textbf{All of statistics: a concise course in statistical
+  inference}. [\textit{S.l.: s.n.}]: Springer, 2004. v.~26.}
 
 \bibitem{brasil2013simple}
 \abntrefinfo{Brasil, Fanchini and Napolitano}{BRASIL; FANCHINI;

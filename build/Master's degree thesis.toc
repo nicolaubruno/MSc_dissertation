@@ -30,37 +30,38 @@
 \contentsline {section}{\numberline {3.2}Three-dimensional case}{37}{section.3.2}%
 \contentsline {subsection}{\numberline {3.2.1}Limit temperature in Doppler cooling}{38}{subsection.3.2.1}%
 \contentsline {subsection}{\numberline {3.2.2}Atomic cloud size}{40}{subsection.3.2.2}%
-\contentsline {section}{\numberline {3.3}Narrow-line magneto-optical trap}{41}{section.3.3}%
+\contentsline {subsection}{\numberline {3.2.3}Magnetic force}{41}{subsection.3.2.3}%
+\contentsline {section}{\numberline {3.3}Narrow-line magneto-optical trap}{42}{section.3.3}%
 \contentsline {subsection}{\numberline {3.3.1}Operating regimes}{42}{subsection.3.3.1}%
 \contentsline {subsection}{\numberline {3.3.2}Centre of mass of the atomic cloud}{43}{subsection.3.3.2}%
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase {Monte Carlo simulation model}}{45}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Stochastic process}{45}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Sampling distributions}{45}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Data analysis}{45}{section.4.3}%
+\contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase {Monte Carlo simulation}}{45}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Stochastic evolution}{45}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}Equilibrium}{45}{subsection.4.1.1}%
+\contentsline {subsection}{\numberline {4.1.2}Magnetic field basis}{46}{subsection.4.1.2}%
+\contentsline {subsection}{\numberline {4.1.3}Transition probabilities}{47}{subsection.4.1.3}%
+\contentsline {section}{\numberline {4.2}Sampling distributions}{47}{section.4.2}%
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {5}\MakeTextUppercase {Results}}{47}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Dysprosium}{47}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Strontium}{47}{section.5.2}%
+\contentsline {chapter}{\chapternumberline {5}\MakeTextUppercase {Results}}{49}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Dysprosium}{49}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Strontium}{49}{section.5.2}%
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {6}\MakeTextUppercase {Conclusion}}{49}{chapter.6}%
+\contentsline {chapter}{\chapternumberline {6}\MakeTextUppercase {Conclusion}}{51}{chapter.6}%
 \vspace {\cftbeforechapterskip }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
-\contentsline {chapter}{\uppercase {References}}{51}{section*.31}%
+\contentsline {chapter}{\uppercase {References}}{53}{section*.31}%
 \renewcommand *{\cftappendixname }{APPENDIX \space }
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \cftinsert {A}
-\contentsline {appendix}{\chapternumberline {A}\MakeTextUppercase {Density operator}}{55}{appendix.A}%
-\contentsline {section}{\numberline {A.1}Introduction}{55}{section.A.1}%
-\contentsline {subsection}{\numberline {A.1.1}Master equation}{57}{subsection.A.1.1}%
-\contentsline {subsection}{\numberline {A.1.2}Liouville equation}{57}{subsection.A.1.2}%
-\contentsline {subsection}{\numberline {A.1.3}Decoherence}{58}{subsection.A.1.3}%
+\contentsline {appendix}{\chapternumberline {A}\MakeTextUppercase {Density operator}}{57}{appendix.A}%
+\contentsline {subsection}{\numberline {A.0.1}Liouville equation}{59}{subsection.A.0.1}%
+\contentsline {section}{\numberline {A.1}Decoherence}{60}{section.A.1}%
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \cftinsert {A}
-\contentsline {appendix}{\chapternumberline {B}\MakeTextUppercase {Scattering cross section}}{61}{appendix.B}%
+\contentsline {appendix}{\chapternumberline {B}\MakeTextUppercase {Scattering cross section}}{63}{appendix.B}%
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \cftinsert {A}
-\contentsline {appendix}{\chapternumberline {C}\MakeTextUppercase {Selection Rules}}{63}{appendix.C}%
+\contentsline {appendix}{\chapternumberline {C}\MakeTextUppercase {Selection Rules}}{65}{appendix.C}%

@@ -1,0 +1,67 @@
+\changetocdepth {4}
+\babel@toc {brazil}{}\relax 
+\babel@toc {english}{}\relax 
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {1}\MakeTextUppercase {Introduction}}{5}{chapter.1}%
+\contentsline {section}{\numberline {1.1}The thesis}{6}{section.1.1}%
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {2}\MakeTextUppercase {Atom-light interaction}}{7}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Rate equations model}{7}{section.2.1}%
+\contentsline {subsection}{\numberline {2.1.1}Relation between the Einstein coefficients}{8}{subsection.2.1.1}%
+\contentsline {subsection}{\numberline {2.1.2}Probabilistic analysis for single atoms}{9}{subsection.2.1.2}%
+\contentsline {subsection}{\numberline {2.1.3}Spectral broadening}{10}{subsection.2.1.3}%
+\contentsline {subsection}{\numberline {2.1.4}Monochromatic light field}{11}{subsection.2.1.4}%
+\contentsline {subsection}{\numberline {2.1.5}Absorption cross section}{12}{subsection.2.1.5}%
+\contentsline {section}{\numberline {2.2}Semiclassical approach}{14}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}The density operator}{14}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.2}Two-level system and the Bloch sphere}{17}{subsection.2.2.2}%
+\contentsline {subsection}{\numberline {2.2.3}Liouville equation}{18}{subsection.2.2.3}%
+\contentsline {subsection}{\numberline {2.2.4}Master equation}{19}{subsection.2.2.4}%
+\contentsline {section}{\numberline {2.3}Two-level atom interacting with classical light field}{20}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}Interaction Hamiltonian}{21}{subsection.2.3.1}%
+\contentsline {subsubsection}{\numberline {2.3.1.1}Dipole approximation}{22}{subsubsection.2.3.1.1}%
+\contentsline {subsubsection}{\numberline {2.3.1.2}Rotating wave approximation}{22}{subsubsection.2.3.1.2}%
+\contentsline {subsection}{\numberline {2.3.2}Optical Bloch equations}{23}{subsection.2.3.2}%
+\contentsline {subsubsection}{\numberline {2.3.2.1}General solution}{24}{subsubsection.2.3.2.1}%
+\contentsline {subsection}{\numberline {2.3.3}Steady state}{25}{subsection.2.3.3}%
+\contentsline {subsection}{\numberline {2.3.4}Rabi oscillations}{26}{subsection.2.3.4}%
+\contentsline {subsection}{\numberline {2.3.5}Damped Rabi oscillations}{27}{subsection.2.3.5}%
+\contentsline {subsubsection}{\numberline {2.3.5.1}Exact resonance}{28}{subsubsection.2.3.5.1}%
+\contentsline {subsubsection}{\numberline {2.3.5.2}Numerical solution}{29}{subsubsection.2.3.5.2}%
+\contentsline {subsection}{\numberline {2.3.6}Rate-equation limit}{30}{subsection.2.3.6}%
+\contentsline {subsection}{\numberline {2.3.7}Scattering cross section}{31}{subsection.2.3.7}%
+\contentsline {subsection}{\numberline {2.3.8}Line-broadening mechanisms}{32}{subsection.2.3.8}%
+\contentsline {subsubsection}{\numberline {2.3.8.1}Natural broadening}{33}{subsubsection.2.3.8.1}%
+\contentsline {subsubsection}{\numberline {2.3.8.2}Power broadening}{33}{subsubsection.2.3.8.2}%
+\contentsline {subsubsection}{\numberline {2.3.8.3}Doppler broadening}{34}{subsubsection.2.3.8.3}%
+\contentsline {subsection}{\numberline {2.3.9}Optical forces}{35}{subsection.2.3.9}%
+\contentsline {subsubsection}{\numberline {2.3.9.1}Radiation pressure force}{36}{subsubsection.2.3.9.1}%
+\contentsline {subsubsection}{\numberline {2.3.9.2}Gradient dipole force}{37}{subsubsection.2.3.9.2}%
+\contentsline {subsection}{\numberline {2.3.10}Selection Rules}{37}{subsection.2.3.10}%
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {3}\MakeTextUppercase {Magneto-Optical Trap}}{41}{chapter.3}%
+\contentsline {section}{\numberline {3.1}One-dimensional model}{41}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}Cooling and trapping effect}{42}{subsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.1.2}MOT Force}{44}{subsection.3.1.2}%
+\contentsline {section}{\numberline {3.2}Three-dimensional case}{45}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Limit temperature in Doppler cooling}{46}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}Atomic cloud size}{47}{subsection.3.2.2}%
+\contentsline {section}{\numberline {3.3}Narrow Line Magneto-Optical Trap}{47}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}Doppler, power-broadening, and quantum regimes}{47}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.3.2}Gravity-assisted nMOT}{47}{subsection.3.3.2}%
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase {nMOT stochastic dynamics}}{49}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Markovian Evolution}{49}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Monte Carlo simulation}{49}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Data processing}{49}{section.4.3}%
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {5}\MakeTextUppercase {Results}}{51}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Dysprosium}{51}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Dysprosium}{51}{section.5.2}%
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {6}\MakeTextUppercase {Conclusion}}{53}{chapter.6}%
+\vspace {\cftbeforechapterskip }
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\contentsline {chapter}{\uppercase {References}}{55}{section*.24}%

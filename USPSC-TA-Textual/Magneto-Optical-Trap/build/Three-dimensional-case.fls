@@ -1,0 +1,14 @@
+PWD /media/nicolau/Data/USP/Postgraduate/MSc/Dissertation/USPSC-TA-Textual/Magneto-Optical-Trap
+INPUT /etc/texmf/web2c/texmf.cnf
+INPUT /usr/share/texmf/web2c/texmf.cnf
+INPUT /usr/share/texlive/texmf-dist/web2c/texmf.cnf
+INPUT /var/lib/texmf/web2c/pdftex/pdflatex.fmt
+INPUT Three-dimensional-case.tex
+OUTPUT build/Three-dimensional-case.log
+INPUT /usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmti10.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx7.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx5.tfm
+OUTPUT build/Three-dimensional-case.pdf
+INPUT /var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map

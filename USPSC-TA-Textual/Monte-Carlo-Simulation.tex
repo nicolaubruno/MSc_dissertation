@@ -1,0 +1,22 @@
+%
+%--- 
+%-----------------------------------
+\chapter{Monte Carlo simulation}
+\label{ch:Monte-Carlo-simulation}
+%-----------------------------------
+%--- 
+%
+
+In order to predict experimental quantities in nMOTs, we propose a Monte Carlo simulation to estimate the probability distributions of both the atoms' position and velocity. The goal is to acquire simulated quantities in agreement with experimental measures for different nMOTs by considering as many parameters as possible. Our simulation can be used to optimize the parameters of nMOTs without the necessity of experimental data. It is also a tool to analyse the feasibility of unusual nMOT arrangements such as nMOTs with fewer laser beams. To ensure optimization, we developed a module for Python using the C programming language\footnote{We choose the C language since it is one of the fastest languages available.}, which deploys our model. We also developed a Python program that applies the model-view-controller pattern and parallelism. Our code is available in \cite{nMOT_sim}. In this section, we shall introduce our model as well as its deployment.
+
+% Stochastic evolution
+%-----------------------------------
+\input{USPSC-TA-Textual/Monte-Carlo-Simulation/Stochastic-evolution.tex}
+%-----------------------------------
+%
+
+% Monte Carlo Simulation
+%-----------------------------------
+\input{USPSC-TA-Textual/Monte-Carlo-Simulation/sampling-distributions.tex}
+%-----------------------------------
+%

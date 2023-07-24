@@ -105,9 +105,9 @@ where $ \vec{\epsilon} = (\vec{\epsilon})^* $ is the \textit{polarization vector
 where $ \mathbf{d} = - e \mathbf{r}_e  $ is the \textbf{dipole operator}, $ e \simeq 1.6 \times 10^{-19}C $ is the elementary charge, and $ \mathbf{r}_e $ is the valence electron position in the nucleus frame. The typical values of $ |\vec{\mu}| $ are around $ ea_B $\footnote{The \textit{debye} (symbol $ D $) is a standard unit measure for electric dipole moment in the atomic and molecular scale, $ 1 D \equiv 10^{-18} statC \cdot cm $. Historically, the debye was defined as the dipole moment of a system composed of two electric charges of opposite sign and equal magnitude $ 10^{-10} statC \simeq 0.2083 e $ separated by $ 1 \textrm{\AA} $.}, where $ a_B = 0.529 \textrm{\AA} = 0.529 \cdot 10^{-10}m $ is the \textit{Bohr radius}. Atoms do not have permanent dipole moment due to the parity of the electrons position. Hence, the dipole operator can be written as\footnote{We are assuming $ \braket{1|\mathbf{d}|1} = \braket{2|\mathbf{d}|2} = 0 $.}
 \begin{gather}
 	\mathbf{d} = (\vec{\mu})^* \hat{\sigma} + \vec{\mu} \hat{\sigma}^{\dagger},
-	\label{eq:transition-dipole-moment}
+	\label{eq:transition-dipole-operator}
 \end{gather}
-where $ \vec{\mu} \equiv \braket{2|\mathbf{d}|1} $ is the \textbf{transition dipole moment}. When $ |\vec{\mu}| = 0 $, the transition is said to be \textbf{dipole forbidden}. Then, from equations (\ref{eq:monochromatic-radiation}), (\ref{eq:transition-dipole-moment}), and (\ref{eq:dipole-interaction}), we obtain the following interaction Hamiltonian
+where $ \vec{\mu} \equiv \braket{2|\mathbf{d}|1} $ is the \textbf{transition dipole moment}. When $ |\vec{\mu}| = 0 $, the transition is said to be \textbf{dipole forbidden}. Then, from equations (\ref{eq:monochromatic-radiation}), (\ref{eq:transition-dipole-operator}), and (\ref{eq:dipole-interaction}), we obtain the following interaction Hamiltonian
 \begin{gather}
 	\hat{V}(t) = \frac{\hbar}{2} [(\tilde{\Omega}^*(\mathbf{r}) e^{- i \omega t} + \Omega^{*}(\mathbf{r})e^{i \omega t})\hat{\sigma} + (\Omega(\mathbf{r}) e^{- i \omega t} + \tilde{\Omega}(\mathbf{r})e^{i \omega t})\hat{\sigma}^{\dagger}],
 	\label{eq:full-interaction-Hamiltonian}
@@ -367,7 +367,7 @@ The equation (\ref{eq:population-inversion-damped-Rabi-oscillations}) shows a \t
 	\vspace{-15pt}
 \end{figure}
 
-There is not a simple analytical solution for the general case (\ref{eq:general-solution-OBEs}) since the roots of the characteristic polynomial (\ref{eq:characteristic-polynomial}) do not have a friendly form out of specific regimes such as strong excitation (section \ref{sec:Rabi-oscillations}) and exact resonance (\ref{sec:exact-resonance}). Then, to evaluate the coefficients $ a $ and $ b $, and the oscillation frequency $ c $, we numerically calculate the eigenvalues of $ \mathcal{M} $. These eigenvalues are associated with the coefficients $ a $, $ b $, and $ c $ through (\ref{eq:general-form-eigenvalues}).
+There is not a simple analytical solution for the general case (\ref{eq:general-solution-OBEs}) since the roots of the characteristic polynomial (\ref{eq:characteristic-polynomial}) do not have a friendly form out of specific regimes such as strong excitation and exact resonance. Then, to evaluate the coefficients $ a $ and $ b $, and the oscillation frequency $ c $, we numerically calculate the eigenvalues of $ \mathcal{M} $. These eigenvalues are associated with the coefficients $ a $, $ b $, and $ c $ through (\ref{eq:general-form-eigenvalues}).
 
 \begin{figure}[H]
 	\caption{Damping coefficients $ a $ and $ b $}
