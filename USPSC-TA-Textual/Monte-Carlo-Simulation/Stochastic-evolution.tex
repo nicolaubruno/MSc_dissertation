@@ -7,10 +7,10 @@
 
 Let us consider an atom at $ \mathbf{r_0} $ and with the velocity $ \mathbf{v_0} $ in the presence of laser beams and a quadrupole magnetic field. After a period $ \delta t $, this atom can absorb a photon with momentum $ \hbar \mathbf{k_j} $ and then emit a photon with momentum $ \hbar |\mathbf{k}_j| \mathbf{\hat{u}} $, where $ \mathbf{\hat{u}} $ is an uniform unit random vector and $ \mathbf{k}_j $ is the wave vector of the $j$-th laser beam. Also, since there is a magnetic field gradient, a magnetic force acts on the atom as discussed in section \ref{sec:magnetic-force} that yields a position-dependent acceleration $ \mathbf{a}_{B}(\mathbf{r_0}) $. Therefore, the atom's velocity $ \mathbf{v}_i $ and position $ \mathbf{r}_i $ at instant $ i \delta t $, where $ i = 0, 1, \cdots $, are
 \begin{equation}
-    \mathbf{v}_i = \left\{ \begin{array}{lr}
-        \mathbf{v}_{i - 1} + \hbar \frac{|\mathbf{k}_j|}{m}(\mathbf{\hat{k}}_j + \mathbf{\hat{u}}) + (\mathbf{a}_B(\mathbf{r}_{i - 1})- g \mathbf{\hat{z}}) \delta t, & \textrm{with probability}\ P_{i}
+    \mathbf{v}_{i} = \left\{ \begin{array}{lr}
+        \mathbf{v}_{i - 1} + \hbar \frac{|\mathbf{k}_j|}{m}(\mathbf{\hat{k}}_j + \mathbf{\hat{u}}) + (\mathbf{a}_B(\mathbf{r}_{i - 1})- g \mathbf{\hat{z}}) \delta t, & \textrm{with probability}\ P_{i,j}
         \\
-        \mathbf{v}_{i - 1} + (\mathbf{a}_B(\mathbf{r}_{i - 1})- g \mathbf{\hat{z}}) \delta t, & \textrm{with probability}\ 1 - P_{i}
+        \mathbf{v}_{i - 1} + (\mathbf{a}_B(\mathbf{r}_{i - 1})- g \mathbf{\hat{z}}) \delta t, & \textrm{with probability}\ 1 - \sum_{j} P_{i,j}
         \end{array} \right.
         \label{eq:atom-velocity-iteration}
 \end{equation}
@@ -19,7 +19,7 @@ and
     \mathbf{r}_i = \mathbf{r}_{i - 1} + \mathbf{v}_{i}\delta t + (\mathbf{a}_B(\mathbf{r}_{i - 1}) - g \mathbf{\hat{z}}) \delta t^2 / 2,
     \label{eq:atom-position-iteration}
 \end{equation}
-where $ P_{i} \equiv P(\mathbf{r} = \mathbf{r}_i, \mathbf{v} = \mathbf{v}_i | \mathbf{r}_{i - 1}, \mathbf{v}_{i - 1}) $ is the probability of happing a scattering event also known as \textbf{transition probability}. Since $ P_i $ is a conditional probability that depends only on the previous atom state, the dynamics is then a \textbf{memoryless stochastic process}, also known as \textbf{Markov chain}. The goal is to sample trajectories $ \mathbf{r}(t) $ and velocities $ \mathbf{v}(t) $ in order to estimate the probability distributions of the atom's position and velocity. To perform this, we iterate the equations (\ref{eq:atom-velocity-iteration}) and (\ref{eq:atom-position-iteration}) and then fill up histograms.
+where $ P_{i,j} $ is the probability of happing a scattering event due to the $ j $-th laser beam also known as \textbf{transition probability}. Since $ P_{i,j} $ is a conditional probability that depends only on the previous atom state, the dynamics is then a \textbf{memoryless stochastic process}, also known as \textbf{Markov chain}. The goal is to sample trajectories $ \mathbf{r}(t) $ and velocities $ \mathbf{v}(t) $ in order to estimate the probability distributions of the atom's position and velocity. To perform this, we iterate the equations (\ref{eq:atom-velocity-iteration}) and (\ref{eq:atom-position-iteration}) and then fill up histograms.
 
 
 %-----------------------------------
@@ -28,7 +28,7 @@ where $ P_{i} \equiv P(\mathbf{r} = \mathbf{r}_i, \mathbf{v} = \mathbf{v}_i | \m
 %-----------------------------------
 
 Let us consider the vector $ \rho(t) = \rho(i\delta) = \rho_i $ in which each component is the probability of an atom being at specific position $ \mathbf{r} = (x, y, z) $ with a specific velocity $ \mathbf{v} = (v_x, v_y, v_z) $ at a instant $ t $.
-We shall call this vector as \textbf{atom state}. Although position and velocity are continuous variables, we must discrete both to perform a feasible computation. If we consider $ N $ possible values for $ x $, $ y $, $ z $, $ v_x $, $ v_y $, and $ v_z $, the dimension of the vector $ \rho_i $ is $ N^6 $, which means that the dimension of the problem escalates very quickly. Since the probabilities related to each component of position ($ x $, $ y $, and $ z $) and velocity ($ v_x $, $ v_y $, and $ v_z $) are independent, we only need the marginal distributions so that the total dimension will be reduced to $ 6N $. It is also possible to represent the transition probabilities $ P_i $ in the same vector space as a matrix $ \mathbf{P} $ of which each element is $ P(\mathbf{r} = \mathbf{r}_i, \mathbf{v} = \mathbf{v}_i | \mathbf{r}_{i - 1}, \mathbf{v}_{i - 1}) $\footnote{We are assuming that $ \mathbf{r} $ and $ \mathbf{v} $ are discrete variables}. Therefore, after $ n $ iterations, the atom state will be \cite[Section~23.2]{wasserman2004all}
+We shall call this vector as \textbf{atom state}. Although position and velocity are continuous variables, we must discrete both to perform a feasible computation. If we consider $ N $ possible values for $ x $, $ y $, $ z $, $ v_x $, $ v_y $, and $ v_z $, the dimension of the vector $ \rho_i $ is $ N^6 $, which means that the dimension of the problem escalates very quickly. Since the probabilities related to each component of position ($ x $, $ y $, and $ z $) and velocity ($ v_x $, $ v_y $, and $ v_z $) are independent, we only need the marginal distributions so that the total dimension will be reduced to $ 6N $. It is also possible to represent the transition probabilities $ P_i $ in the same vector space as a matrix $ \mathbf{P} $ of which each element is $ P_{i,j} $\footnote{We are assuming that $ \mathbf{r} $ and $ \mathbf{v} $ are discrete variables}. Therefore, after $ n $ iterations, the atom state will be \cite[Section~23.2]{wasserman2004all}
 \begin{equation}
     \rho_n =  \rho_0 \underbrace{(\mathbf{P} \times \mathbf{P} \times \cdots \times \mathbf{P})}_{\textrm{mutiply the matrix $n$ times}} = \rho_0 \mathbf{P}^n,
 \end{equation}
