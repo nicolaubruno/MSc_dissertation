@@ -1,0 +1,77 @@
+%
+%-----------------------------------
+\section{Input and outputs}
+\label{sec:input-outputs}
+%-----------------------------------
+%
+
+In this section, we define the parameters (inputs) to execute the simulation as well as the experimental quantities (outputs) obtained from the estimated distributions of the atom's position and velocity.
+
+%-----------------------------------
+\subsection{Input}
+\label{sec:input}
+%-----------------------------------
+
+Since we seek to obtain accurate quantities from the simulation, we must take into account detailed information about the nMOT. There are two groups of parameters, the experiment parameters and the performance parameters. The \textbf{experiment parameters}, related to the nMOT, define the laser beam arrangement, the magnetic field profile, the involved electronic transitions, and the atom. Whilst the \textbf{performance parameters} define the computational resolution as well as precision parameters.
+
+The experiment parameters are presented in the tables \ref{tab:transition-parameters}, \ref{tab:magnetic-field-profile-parameters}, and \ref{tab:laser-beams-arrangement-parameters}.
+\begin{table}[ht!]
+    \centering
+    \begin{tabular}{|c|c|c|}
+        \hline
+        \textbf{Symbol} & \textbf{Description} & \textbf{Unit} \\ \hline
+        $ \Gamma $ & Natural linewidth & $ 2\pi \times kHz $ \\
+        $ \lambda $ & Resonance wavelength & $ nm $ \\
+        $ J_{\textrm{gnd}} $ & Total angular momentum of the ground state & dimensionless \\
+        $ J_{\textrm{exc}} $ & Total angular momentum of the excited state & dimensionless \\
+        $ g_{\textrm{gnd}} $ & \textit{Landé} factor of the ground state & dimensionless \\
+        $ g_{\textrm{exc}} $ & \textit{Landé} factor of the excited state & dimensionless \\
+        $ m $ & Atomic mass & $ Da $ (Dalton unit) \\
+        \hline
+    \end{tabular}
+    \caption{Parameters that defines the electronic transition.}
+    \label{tab:transition-parameters}
+\end{table}
+
+The next set of parameters presented in table \ref{tab:magnetic-field-profile-parameters} defines the magnetic field profile. Besides the quadrupole magnetic field, some experiments have a residual linear gradient and a constant magnetic field to control the magnetic field origin.
+\begin{table}[ht!]
+    \centering
+    \begin{tabular}{|c|c|c|}
+        \hline
+        \textbf{Symbol} & \textbf{Description} & \textbf{Unit} \\ \hline
+        $ B_0 $ & Magnetic field gradient in equation (\ref{eq:magnetic-field-profile}) & $ G/cm $ \\
+        $ B_{\textrm{axial}} $ & Axial direction of the magnetic field & 3D vector \\
+        $ B_{\textrm{lingrad}} $ & Residual magnetic field gradient & 3D vector \\
+        $ B_{\textrm{bias}} $ & Constant magnetic field & 3D vector \\
+        \hline
+    \end{tabular}
+    \caption{Parameters that defines the magnetic field profile.}
+    \label{tab:magnetic-field-profile-parameters}
+\end{table}
+
+The final set of experimental quantities defines the laser beam arrangement. The parameters shown in table \ref{tab:laser-beams-arrangement-parameters} must be defined for each laser beam.
+\begin{table}[ht!]
+    \centering
+    \begin{tabular}{|c|c|c|}
+        \hline
+        \textbf{Symbol} & \textbf{Description} & \textbf{Unit} \\ \hline
+        $ \delta $ & Laser detuning & $ 2\pi \times kHz $ \\
+        $ s_0 $ & Saturation parameter & dimensionless \\
+        $ w $ & Waist & $ cm $ \\
+        $ \hat{\mathbf{k}} $ & Wavevector direction & 3D vector \\
+        $ \hat{\epsilon} $ & Polarization vector in the laboratory frame & 3D vector \\
+        \hline
+    \end{tabular}
+    \caption{Parameters that defines the laser beams arrangement.}
+    \label{tab:laser-beams-arrangement-parameters}
+\end{table}
+
+%-----------------------------------
+\subsection{Output}
+\label{sec:output}
+%-----------------------------------
+
+As discussed in section \ref{sec:stochastic-evolution}, the simulation estimates distributions for the atoms' position and velocity. In total, we have 6 set distributions $ d_x $, $ d_y $, $ d_z $, $ d_{v_x} $, $ d_{v_y} $, and $ d_{v_z} $. With this distributions, we can estimate the atomic cloud profile and temperature. We are interested in two atomic cloud variables: the centre of mass and the cloud size. The centre of mass is the easiest one to obtain from the distributions,
+\begin{equation}
+    x_c = \braket{d_x} =
+\end{equation}
