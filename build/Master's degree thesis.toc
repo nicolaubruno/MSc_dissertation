@@ -47,24 +47,28 @@
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \contentsline {chapter}{\chapternumberline {5}\MakeTextUppercase {Results}}{55}{chapter.5}%
 \contentsline {section}{\numberline {5.1}Dysprosium}{55}{section.5.1}%
+\contentsline {subsection}{\numberline {5.1.1}Atomic cloud profile}{55}{subsection.5.1.1}%
+\contentsline {subsection}{\numberline {5.1.2}Temperature}{55}{subsection.5.1.2}%
 \contentsline {section}{\numberline {5.2}Strontium}{55}{section.5.2}%
+\contentsline {subsection}{\numberline {5.2.1}Atomic cloud profile}{57}{subsection.5.2.1}%
+\contentsline {subsection}{\numberline {5.2.2}Temperature}{57}{subsection.5.2.2}%
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {6}\MakeTextUppercase {Conclusion}}{57}{chapter.6}%
+\contentsline {chapter}{\chapternumberline {6}\MakeTextUppercase {Conclusion}}{63}{chapter.6}%
 \vspace {\cftbeforechapterskip }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
-\contentsline {chapter}{\uppercase {References}}{59}{section*.36}%
+\contentsline {chapter}{\uppercase {References}}{65}{section*.45}%
 \renewcommand *{\cftappendixname }{APPENDIX \space }
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \cftinsert {A}
-\contentsline {appendix}{\chapternumberline {A}\MakeTextUppercase {Density operator}}{63}{appendix.A}%
-\contentsline {subsection}{\numberline {A.0.1}Liouville equation}{65}{subsection.A.0.1}%
-\contentsline {section}{\numberline {A.1}Decoherence}{66}{section.A.1}%
+\contentsline {appendix}{\chapternumberline {A}\MakeTextUppercase {Density operator}}{69}{appendix.A}%
+\contentsline {subsection}{\numberline {A.0.1}Liouville equation}{71}{subsection.A.0.1}%
+\contentsline {section}{\numberline {A.1}Decoherence}{72}{section.A.1}%
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \cftinsert {A}
-\contentsline {appendix}{\chapternumberline {B}\MakeTextUppercase {Scattering cross section}}{69}{appendix.B}%
+\contentsline {appendix}{\chapternumberline {B}\MakeTextUppercase {Scattering cross section}}{75}{appendix.B}%
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \cftinsert {A}
-\contentsline {appendix}{\chapternumberline {C}\MakeTextUppercase {Selection Rules}}{71}{appendix.C}%
+\contentsline {appendix}{\chapternumberline {C}\MakeTextUppercase {Selection Rules}}{77}{appendix.C}%
