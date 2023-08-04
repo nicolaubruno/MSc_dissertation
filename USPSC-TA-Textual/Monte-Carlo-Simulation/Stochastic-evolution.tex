@@ -21,6 +21,8 @@ and
 \end{equation}
 where $ P_{i,j} $ is the probability of happing a scattering event due to the $ j $-th laser beam also known as \textbf{transition probability}. Since $ P_{i,j} $ is a conditional probability that depends on the previous atom state, the dynamics is then a \textbf{memoryless stochastic process}, also known as \textbf{Markov chain}. The goal is to sample trajectories $ \mathbf{r}(t) $ and velocities $ \mathbf{v}(t) $ in order to estimate the probability distributions of the atom's position and velocity. To perform this, we iterate the equations (\ref{eq:atom-velocity-iteration}) and (\ref{eq:atom-position-iteration}) and then fill up histograms.
 
+We shall assume that simulating a single atom's motion for a long period of time is equivalent to simulating the motion of many atoms over smaller periods of time, which is known as \textbf{the ergodic hypothesis}. Thus, we shall work with ensembles of atoms' motions. We also shall neglect the interaction between atoms so that the atoms' motions will be independent of each other. These assumptions allow us to efficiently apply parallelism and then decrease the computational time.
+
 
 %-----------------------------------
 \subsection{Equilibrium}
@@ -41,21 +43,21 @@ where $ \rho_0 $ is the initial atom state given by a deterministic vector since
 \label{sec:magnetic-field-frame}
 %-----------------------------------
 
-\begin{wrapfigure}{l}{0.4\textwidth}
-    \centering
-    \vspace{-10px}
-    \caption{Magnetic field frame}
-    \includegraphics[width=0.3\textwidth]{USPSC-img/polarization_basis.png}
-    \legend{basis $ A' = \{\mathbf{\hat{x}}', \mathbf{\hat{y}}', \mathbf{\hat{z}}'\} $ of the magnetic field frame in relation to the basis $ A = \{\mathbf{\hat{x}}, \mathbf{\hat{y}}, \mathbf{\hat{z}}\} $ of the laboratory frame. \\ Source: author}
-    \label{fig:magnetic-field-frame}
-    \vspace{-10px}
-\end{wrapfigure}
-
 We shall consider the assumptions introduced in section \ref{sec:MOT-force}, which simplifies a four-level system in three independent two-level systems associated with the polarizations $ \sigma_{\pm} $ and $ \pi $. In this condition, for each laser beam, there are three possible transitions, each one with its scattering rate $ R_{i,j,l} $, where $ l \in \{\sigma_{+}, \sigma_{-}, \pi \} $. Initially, we define the laser polarizations on the basis $ \mathbf{B} = \{\hat{\sigma}_{+}, \hat{\sigma}_{-}, \hat{\pi} \} $ so that
 \begin{equation}
     \hat{\sigma}_+ = \frac{\mathbf{\hat{x}} + i\mathbf{\hat{y}}}{\sqrt{2}},\ \ \hat{\sigma}_- = \frac{\mathbf{\hat{x}} - i\mathbf{\hat{y}}}{\sqrt{2}},\ \ \hat{\pi} = \mathbf{\hat{z}},
 \end{equation}
-where $ A = \{\mathbf{\hat{x}}, \mathbf{\hat{y}}, \mathbf{\hat{z}}\} $ is the basis of the \textbf{laboratory frame}. To account the magnetic field $ \mathbf{B} $ effect in $ R_{i,j,l} $, we must analyse the magnetic field in a frame that defines the quantization axis parallel to $ \mathbf{B} $. Let us consider the basis $ A' = \{\mathbf{\hat{x}}', \mathbf{\hat{y}}', \mathbf{\hat{z}}'\} $ in the \textbf{magnetic field frame} as illustrated in figure \ref{fig:magnetic-field-frame}. The polarization basis $ \mathbf{B}' = \{\hat{\sigma}_{+}', \hat{\sigma}_{-}', \hat{\pi}' \} $ in the magnetic field frame is given by
+where $ A = \{\mathbf{\hat{x}}, \mathbf{\hat{y}}, \mathbf{\hat{z}}\} $ is the basis of the \textbf{laboratory frame}.
+\begin{figure}[!ht]
+    \centering
+    \caption{Magnetic field frame}
+    \includegraphics[width=0.4\textwidth]{USPSC-img/polarization_basis.png}
+    \vspace{5px}
+    \legend{basis $ A' = \{\mathbf{\hat{x}}', \mathbf{\hat{y}}', \mathbf{\hat{z}}'\} $ of the magnetic field frame in relation to the basis $ A = \{\mathbf{\hat{x}}, \mathbf{\hat{y}}, \mathbf{\hat{z}}\} $ of the laboratory frame. \\ Source: author}
+    \label{fig:magnetic-field-frame}
+\end{figure}
+
+To account the magnetic field $ \mathbf{B} $ effect in $ R_{i,j,l} $, we must analyse the magnetic field in a frame that defines the quantization axis parallel to $ \mathbf{B} $. Let us consider the basis $ A' = \{\mathbf{\hat{x}}', \mathbf{\hat{y}}', \mathbf{\hat{z}}'\} $ in the \textbf{magnetic field frame} as illustrated in figure \ref{fig:magnetic-field-frame}. The polarization basis $ \mathbf{B}' = \{\hat{\sigma}_{+}', \hat{\sigma}_{-}', \hat{\pi}' \} $ in the magnetic field frame is given by
 \begin{equation}
     \hat{\sigma}_+' = \frac{\mathbf{\hat{x}'} + i\mathbf{\hat{y}}'}{\sqrt{2}},\ \ \hat{\sigma}_-' = \frac{\mathbf{\hat{x}'} - i\mathbf{\hat{y}}'}{\sqrt{2}},\ \ \hat{\pi}' = \mathbf{\hat{z}}' \| \mathbf{B}.
 \end{equation}
@@ -97,6 +99,7 @@ The scattering rate $ R_{i,j,l} $ is the time derivative of the probability of s
 The probability of a photon from the $j$-th laser beam having the polarization $ l $ is $ \left| \braket{\hat{\epsilon}_j|\mathbf{\hat{e}}_l} \right|^2 $, where $ \mathbf{\hat{e}}_l \in B' $. Thus, the transition probability $ P_{i,j} $ is given by
 \begin{equation}
     P_{i,j} = \sum_{l} \left| \braket{\hat{\epsilon}_j|\mathbf{\hat{e}}_l} \right|^2 P_{i,j,k} =  \sum_{l} \left| \braket{\hat{\epsilon}_j|\mathbf{\hat{e}}_l} \right|^2 R_{i,j,l} \delta t.
+    \label{eq:transition-probabilities}
 \end{equation}
 From equation (\ref{eq:radiation-pressure-force-2}), we have
 \begin{equation}

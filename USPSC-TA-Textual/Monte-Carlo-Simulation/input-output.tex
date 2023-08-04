@@ -5,16 +5,18 @@
 %-----------------------------------
 %
 
-In this section, we define the parameters (inputs) to execute the simulation as well as the experimental quantities (outputs) obtained from the estimated distributions of the atom's position and velocity.
+Overall, the input of the simulation is divided into two categories: the \textbf{experiment} and the \textbf{performance parameters}. The experiment parameters include information about the controllable quantities of a nMOT, such as the laser arrangement, the magnetic field profile, and the involved electronic transitions. It is essential to have detailed information about the nMOT in order to accurately obtain experimental quantities. The performance parameters define precision, execution time, and memory usage. We seek the optimisation of both time and spatial computational complexities. Hence, it is important to properly set up the performance parameters in order to execute a simulation in an acceptable period of time using the available memory.
+
+The raw output of the simulation is six probability distributions of the atoms' position and velocity, as explained in Section \ref{sec:equilibrium}. The position distributions are essential to obtaining experimental quantities related to the atomic cloud profile, such as the centre of mass and the cloud size. While the velocity distributions are relevant to obtaining the temperature.
 
 %-----------------------------------
 \subsection{Input}
 \label{sec:input}
 %-----------------------------------
 
-Since we seek to obtain accurate quantities from the simulation, we must take into account detailed information about the nMOT. There are two groups of parameters, the experiment parameters and the performance parameters. The \textbf{experiment parameters}, related to the nMOT, define the laser beam arrangement, the magnetic field profile, the involved electronic transitions, and the atom. Whilst the \textbf{performance parameters} define the computational resolution as well as precision parameters.
+The \textbf{experiment parameters} are presented in three groups: the laser arrangement, the magnetic field profile, and the involved electronic transition. All groups are shown in tables \ref{tab:transition-parameters}, \ref{tab:magnetic-field-profile-parameters}, and \ref{tab:laser-beams-arrangement-parameters}. Table \ref{tab:transition-parameters} contains essential information to define the involved electronic transition as well as the atoms' mass, which is crucial for evaluating the scattering rates (\ref{eq:scattering-rate-each-transition}) and therefore the transition probabilities (\ref{eq:transition-probabilities}).
+Table \ref{tab:magnetic-field-profile-parameters} contains the magnetic field profile. Besides the quadrupole magnetic field already mentioned in previous sections, some experiments also have a residual linear gradient and a constant magnetic field to control the magnetic field origin. Lastly, table \ref{tab:laser-beams-arrangement-parameters} defines the laser beam arrangement.
 
-The experiment parameters are presented in the tables \ref{tab:transition-parameters}, \ref{tab:magnetic-field-profile-parameters}, and \ref{tab:laser-beams-arrangement-parameters}.
 \begin{table}[ht!]
     \centering
     \begin{tabular}{|c|c|c|}
@@ -29,11 +31,10 @@ The experiment parameters are presented in the tables \ref{tab:transition-parame
         $ m $ & Atomic mass & $ Da $ (Dalton unit) \\
         \hline
     \end{tabular}
-    \caption{Parameters that defines the electronic transition.}
+    \caption{Parameters that defines the involved electronic transition and the mass of the atoms.}
     \label{tab:transition-parameters}
 \end{table}
 
-The next set of parameters presented in table \ref{tab:magnetic-field-profile-parameters} defines the magnetic field profile. Besides the quadrupole magnetic field, some experiments have a residual linear gradient and a constant magnetic field to control the magnetic field origin.
 \begin{table}[ht!]
     \centering
     \begin{tabular}{|c|c|c|}
@@ -49,7 +50,6 @@ The next set of parameters presented in table \ref{tab:magnetic-field-profile-pa
     \label{tab:magnetic-field-profile-parameters}
 \end{table}
 
-The final set of experimental quantities defines the laser beam arrangement. The parameters shown in table \ref{tab:laser-beams-arrangement-parameters} must be defined for each laser beam.
 \begin{table}[ht!]
     \centering
     \begin{tabular}{|c|c|c|}
@@ -66,12 +66,70 @@ The final set of experimental quantities defines the laser beam arrangement. The
     \label{tab:laser-beams-arrangement-parameters}
 \end{table}
 
+The \textbf{performance parameters} are shown in table \ref{tab:performance-parameters}. Let us discussed each of them. The parameter $ t_{w} $ is the period of time in which we do not get samples. This parameter defines a moment at which equilibrium has already been reached. We set its value by analysing the variation of the atom's position. Thus, we only get samples during the interval $ t - t_{w} $. The last time parameter is the time resolution from equations (\ref{eq:atom-velocity-iteration}) and (\ref{eq:atom-position-iteration}). The parameters $ t $, $ r_{m} $, and $ v_{m} $ define the conditions to stop the simulation, which are
+\begin{itemize}
+    \item If the simulation time is greater than $ t $;
+    \item If the atom trespasses the sphere of radius $ r_{m} $;
+    \item If the atom's velocity is greater than $ v_{m} $.
+\end{itemize}
+The position and velocity resolution are defined by the parameters $ N_{r} $, $ r_{m} $, $ v_{m} $. The spatial resolution is $ \delta r = r_{m} / N_{r} $, whilst the speed resolution is $ \delta v = v_{m} / N_r $. Hence, the atoms' positions $ x $, $ y $, and $ z $ are multiples of $ \delta_r $, whereas the atoms' velocities $ v_x $, $ v_y $, and $ v_z $ are multiples of $ \delta_v $. The number of samples $ N_{s} $ is basically the number of ensembles (atoms' motions), which defines the precision of the output. Lastly, the initial temperature $ T_0 $ defines the initial atoms' velocities by sampling the \textbf{Maxwell-Boltzmann distribution}.
+
+\begin{table}[ht!]
+    \centering
+    \begin{tabular}{|c|c|c|}
+        \hline
+        \textbf{Symbol} & \textbf{Description} & \textbf{Unit} \\ \hline
+        $ t $ & Maximum time of simulation & $ ms $ \\
+        $ t_{w} $ & Waiting time & $ ms $ \\
+        $ \delta t $ & Time resolution & $ ms $ \\
+        $ r_{m} $ & Maximum distance of the origin & $ cm $ \\
+        $ v_{m} $ & Maximum speed & $ cm / s $ \\
+        $ N_{s} $ & Number of samples & dimensionless \\
+        $ N_{r} $ & Resolution number & dimensionless \\
+        $ N_{p} $ & Number of parallel tasks & dimensionless \\
+        $ T_0 $ & Initial temperature & $ \mu K $ \\
+        \hline
+    \end{tabular}
+    \caption{Performance parameters.}
+    \label{tab:performance-parameters}
+\end{table}
+
 %-----------------------------------
 \subsection{Output}
 \label{sec:output}
 %-----------------------------------
 
-As discussed in section \ref{sec:stochastic-evolution}, the simulation estimates distributions for the atoms' position and velocity. In total, we have 6 set distributions $ d_x $, $ d_y $, $ d_z $, $ d_{v_x} $, $ d_{v_y} $, and $ d_{v_z} $. With this distributions, we can estimate the atomic cloud profile and temperature. We are interested in two atomic cloud variables: the centre of mass and the cloud size. The centre of mass is the easiest one to obtain from the distributions,
+The raw output of the simulation consists of six probability distributions that describe the atoms' motion. These distributions can be divided into two groups: \textbf{position} and \textbf{velocity distributions}. Although these are continuous quantities, our model reproduces discrete values. Hence, the atoms' position and velocities are then restricted to the following space
+\begin{gather}
+    \mathbf{r} = (i_x \hat{\mathbf{x}} + i_y \hat{\mathbf{y}} + i_z \hat{\mathbf{z}}) \delta r, \\
+    \mathbf{v} = (j_x \hat{\mathbf{x}} + j_y \hat{\mathbf{y}} + j_x \hat{\mathbf{z}}) \delta v,
+\end{gather}
+where $ i_x $, $ i_y $, $ i_z $, $ j_x $, $ j_y $, and $ j_z $ are positive integers, and $ \delta r $ and $ \delta v $ are the spatial and speed resolution respectively. The joint probability distribution $d_r$ of the atoms' position is given by
+\begin{gather}
+    d_{r}(i_x, i_y, i_z) = d_x(i_x) d_y(i_y) d_z(i_z),
+    \label{eq:joint-position-distribution}
+    \\
+    \sum_{V} d_r(i_x,i_y,i_z) \ \rightarrow\ \textrm{Probability of finding an atom in the volume $ V $},
+\end{gather}
+where $ d_{x} $, $ d_y $, and $ d_z $ are marginal probability distributions. The equation (\ref{eq:joint-position-distribution}) assumes independence between each direction. Similarly, the joint probability distribution $d_v$ of the atoms' velocity is given by
+\begin{gather}
+    d_{v}(i_{v_x}, i_{v_y}, i_{v_z}) = d_{v_x}(i_{v_x}) d_{v_y}(i_{v_y}) d_{v_z}(i_{v_z}),
+    \label{eq:joint-position-distribution}
+    \\
+    \sum_{\Delta v} d_{v}(i_{v_x}, i_{v_y}, i_{v_z}) \ \rightarrow\ \textrm{Probability of finding an atom with velocities $ \Delta v $},
+\end{gather}
+
+We are interested in two atomic cloud quantities: the centre of mass and the cloud size. The centre of mass is given by,
 \begin{equation}
-    x_c = \braket{d_x} =
+    \mathbf{r}_c = \braket{d_x} \hat{\mathbf{x}} + \braket{d_y} \hat{\mathbf{y}} + \braket{d_z} \hat{\mathbf{z}},
+\end{equation}
+where $ \braket{d_x} $, $ \braket{d_y} $, and $ \braket{d_z} $ are averages. The cloud sizes are
+\begin{equation}
+    \sigma_x = \sqrt{\braket{(d_x - \braket{d_x})^2}},\ \sigma_y = \sqrt{\braket{(d_y - \braket{d_y})^2}},\ \sigma_z = \sqrt{\braket{(d_z - \braket{d_z})^2}},
+\end{equation}
+where $ \sigma_x $, $ \sigma_y $, $ \sigma_z $ are standard deviations.
+
+We are also interested in temperature, which is evaluated by the equipartition theorem given by
+\begin{equation}
+    \frac{3}{2}k_B T = \frac{m}{2} (\braket{d_{v_x}^2} + \braket{d_{v_y}^2} + \braket{d_{v_z}^2})\ \Rightarrow\ T = \frac{m}{3k_B} (\braket{d_{v_x}^2} + \braket{d_{v_y}^2} + \braket{d_{v_z}^2}).
 \end{equation}
