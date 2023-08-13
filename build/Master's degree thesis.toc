@@ -33,7 +33,7 @@
 \contentsline {subsection}{\numberline {3.2.2}Atomic cloud size}{42}{subsection.3.2.2}%
 \contentsline {subsection}{\numberline {3.2.3}Magnetic force}{43}{subsection.3.2.3}%
 \contentsline {section}{\numberline {3.3}Narrow-line magneto-optical trap}{44}{section.3.3}%
-\contentsline {subsection}{\numberline {3.3.1}Operating regimes}{44}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.3.1}Operating regimes}{45}{subsection.3.3.1}%
 \contentsline {subsection}{\numberline {3.3.2}Centre of mass of the atomic cloud}{45}{subsection.3.3.2}%
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase {Monte Carlo simulation}}{47}{chapter.4}%
@@ -42,21 +42,21 @@
 \contentsline {subsection}{\numberline {4.1.2}Magnetic field frame}{48}{subsection.4.1.2}%
 \contentsline {subsection}{\numberline {4.1.3}Transition probabilities}{50}{subsection.4.1.3}%
 \contentsline {section}{\numberline {4.2}Input and outputs}{50}{section.4.2}%
-\contentsline {subsection}{\numberline {4.2.1}Input}{50}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.1}Input}{51}{subsection.4.2.1}%
 \contentsline {subsection}{\numberline {4.2.2}Output}{52}{subsection.4.2.2}%
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \contentsline {chapter}{\chapternumberline {5}\MakeTextUppercase {Results}}{55}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Dysprosium}{55}{section.5.1}%
-\contentsline {subsection}{\numberline {5.1.1}Atomic cloud profile}{55}{subsection.5.1.1}%
-\contentsline {subsection}{\numberline {5.1.2}Temperature}{55}{subsection.5.1.2}%
-\contentsline {section}{\numberline {5.2}Strontium}{55}{section.5.2}%
-\contentsline {subsection}{\numberline {5.2.1}Atomic cloud profile}{57}{subsection.5.2.1}%
-\contentsline {subsection}{\numberline {5.2.2}Temperature}{57}{subsection.5.2.2}%
+\contentsline {section}{\numberline {5.1}Dysprosium nMOT}{55}{section.5.1}%
+\contentsline {subsection}{\numberline {5.1.1}Atomic cloud profile}{56}{subsection.5.1.1}%
+\contentsline {subsection}{\numberline {5.1.2}Temperature}{56}{subsection.5.1.2}%
+\contentsline {section}{\numberline {5.2}Strontium}{56}{section.5.2}%
+\contentsline {subsection}{\numberline {5.2.1}Atomic cloud profile}{58}{subsection.5.2.1}%
+\contentsline {subsection}{\numberline {5.2.2}Temperature}{58}{subsection.5.2.2}%
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \contentsline {chapter}{\chapternumberline {6}\MakeTextUppercase {Conclusion}}{63}{chapter.6}%
 \vspace {\cftbeforechapterskip }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
-\contentsline {chapter}{\uppercase {References}}{65}{section*.45}%
+\contentsline {chapter}{\uppercase {References}}{65}{section*.46}%
 \renewcommand *{\cftappendixname }{APPENDIX \space }
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}

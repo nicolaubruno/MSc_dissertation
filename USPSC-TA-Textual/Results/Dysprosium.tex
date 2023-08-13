@@ -1,28 +1,40 @@
 %
 %-----------------------------------
-\section{Dysprosium}
-\label{sec:dysprosium}
+\section{Dysprosium nMOT}
+\label{sec:dysprosium-nMOT}
 %-----------------------------------
 %
+
+We choose to simulate the dysprosium nMOT \cite{dreon2017optical} reproduced by Davide Dreon and his research group since it matches the conditions of our model and is thorough detailed in the Dreon PhD thesis \cite{dreon2017designing}, which is necessary to improve accuracy as discussed in section \ref{sec:input-outputs}.
+
+\begin{wrapfigure}{l}{0.5\linewidth}
+    \centering
+    \caption{Electronic transitions of the dysprosium nMOT}
+    \includegraphics[width=0.45\textwidth]{USPSC-img/Dy-Dreon-transitions.png}
+    \vspace{5px}
+    \legend{. \\ Source: \cite{dreon2017optical}}
+    \label{fig:Dy-Dreon-electronic-transitions}
+\end{wrapfigure}
+The involved electronic transition presented in table \ref{tab:electronic-transition-Dy-Dreon} yields a narrowness of $ \eta =  43.8 $ that is not small enough to reach the quantum regime, but it is enough to reach the power-broadened regime. Furthermore, in the presence of a magnetic field, the involved electronic transition $ J = 8 \longrightarrow J' = 9 $ has 36 possible states, which is much more complicated than the transition $ J = 0 \longrightarrow J = 1 $ presented in chapter \ref{ch:Monte-Carlo-simulation}. However, previous works \cite{lu2011strongly,aikawa2012bose} on nMOTs with Lanthanide atoms experimentally confirmed a spontaneous spin polarization that allows to simplify the transitions to $ \ket{J = 8, m_J = 8} \longrightarrow \ket{J' = 9, m_J' = -7, -8, -9} $ as  illustrated in figure \ref{fig:Dy-Dreon-electronic-transitions}.
 
 \begin{table}[ht!]
     \centering
     \begin{tabular}{|c|c|c|}
         \hline
         \textbf{Symbol} & \textbf{Quantity} & \textbf{Value} \\ \hline
-        $ T_D $ & Doppler temperature & $ 3.26\ \mu K $ \\
         $ \Gamma $ & Natural Linewidth & $ 2\pi \times 136\ kHz $ \\
         $ \lambda $ & Resonant wavelength & $ 626\ nm $ \\
         $ J_{gnd} $ & Ground state angular momentum & $ 8 $ \\
         $ g_{gnd} $ & Ground state Landè factor & $ 1.24 $ \\
         $ g_{exc} $ & Excited state Landè factor & $ 1.29 $ \\
         $ m $ & Mass & $ 164\ u $ \\
-        $ Z $ & Atomic number & $ 66 $ \\
         \hline
     \end{tabular}
-    \caption{$ {}^{164}Dy $ features and transition information.}
-    \label{tab:164Dy}
+    \caption{Eletronic transition parameters of the dysprosium nMOT reproduced by \cite{dreon2017designing}.}
+    \label{tab:electronic-transition-Dy-Dreon}
 \end{table}
+
+$ T_D = 3.26\ \mu K $
 
 \begin{table}[ht!]
     \centering

@@ -92,18 +92,23 @@ where
 \label{sec:transition-probabilities}
 %-----------------------------------
 
-The scattering rate $ R_{i,j,l} $ is the time derivative of the probability of scattering a photon of the $j$-th laser beam due to transition $ l $. Hence, the probability $ P_{i,j,l} $ of happing a scattering event during a time interval $ \delta t $ is given by
+The transition probability $ P_{i,j} $ is the probability of an atom at state $ i $ transiting to the state $ j $ by scattering a photon of the $j$-th laser in a nMOT arrangement. Let us impose the independent two-level systems assumption discussed in section \ref{sec:MOT-force} such that there will be three independent transitions for each laser beam. Thus,
 \begin{equation}
-    R_{i,j,l} = \frac{\partial P_{i,j,l}}{\partial t} \Rightarrow P_{i,j,l} \simeq R_{i,j,l} \delta t.
+    P_{i,j} = \sum_{l = 0}^{2} P_{i,j,l},
 \end{equation}
-The probability of a photon from the $j$-th laser beam having the polarization $ l $ is $ \left| \braket{\hat{\epsilon}_j|\mathbf{\hat{e}}_l} \right|^2 $, where $ \mathbf{\hat{e}}_l \in B' $. Thus, the transition probability $ P_{i,j} $ is given by
-\begin{equation}
-    P_{i,j} = \sum_{l} \left| \braket{\hat{\epsilon}_j|\mathbf{\hat{e}}_l} \right|^2 P_{i,j,k} =  \sum_{l} \left| \braket{\hat{\epsilon}_j|\mathbf{\hat{e}}_l} \right|^2 R_{i,j,l} \delta t.
-    \label{eq:transition-probabilities}
-\end{equation}
-From equation (\ref{eq:radiation-pressure-force-2}), we have
+where $ P_{i,j,l} $ is the probability of an atom at state $ i $ scattering a photon of the $j$-th laser due to the $l$-th electronic transition. This assumption is only valid when the Zeeman shift is strong enough to decouple the excited states so that we can neglect coherent transitions between them. Therefore, our model is reliable when the trapped atoms are far away from the magnetic field origin, which happens in the power-broadened and quantum regimes (see section \ref{sec:nMOT-operating-regimes}). Although the quantum regime matches this condition, we are not analysing the atom dynamics in quantum mechanics since we are treating the atoms' position and velocity classically. Therefore, we expect that our model will fail in the Doppler and quantum regime.
+
+The time derivative of $ P_{i,j,l} $ is the scattering rate $ R_{i,j,l} $ given by
 \begin{equation}
     R_{i,j,l} = \frac{\Gamma}{2}\frac{s(\mathbf{r})}{1 + s(\mathbf{r}) + (2\Delta_l / \Gamma)^2},\ \ s(\mathbf{r}) = \exp\left[\ -\frac{2(x^2 + y^2)}{w^2} \right],\ \ \Delta_l = \delta + \delta_Z^{(l)} + \delta_D,
     \label{eq:scattering-rate-each-transition}
 \end{equation}
-where $ w $ is the waist of the $ j $-th laser beam, $ \delta $ is the laser detuning, $ \delta_Z^{(l)} $ is the Zeeman shift due to the $ l $ transition given by equation (\ref{eq:Zeeman-shift}), and $ \delta_D = - \mathbf{k} \cdot \mathbf{v}_{i - 1} $ is the Doppler shift. To increase accuracy, we are taking into account the Gaussian profile of the laser beams in $ s(\mathbf{r}) $.
+where $ w $ and $ \delta $ is, respectively, the waist and the laser detuning of the $ j $-th laser beam, $ \delta_Z^{(l)} $ is the Zeeman shift due to the $ l $ transition given by equation (\ref{eq:Zeeman-shift}), and $ \delta_D = - \mathbf{k} \cdot \mathbf{v}_{i - 1} $ is the Doppler shift. To increase accuracy, we are taking into account the Gaussian profile of the laser beams in $ s(\mathbf{r}) $. Hence, the probability $ P_{i,j,l} $ of happening a scattering event during a small time interval $ \delta t $ can be approximate by
+\begin{equation}
+    R_{i,j,l} = \frac{\partial P_{i,j,l}}{\partial t} \Rightarrow P_{i,j,l} \simeq R_{i,j,l} \delta t.
+\end{equation}
+Each transition is associated with one laser polarization. The probability of a photon from the $j$-th laser beam having the polarization associated with the $ l $-transition is $ \left| \braket{\hat{\epsilon}_j|\mathbf{\hat{e}}_l} \right|^2 $, where $ \mathbf{\hat{e}}_l \in B' $. Thus, the transition probability $ P_{i,j} $ is given by
+\begin{equation}
+    P_{i,j} = \sum_{l} \left| \braket{\hat{\epsilon}_j|\mathbf{\hat{e}}_l} \right|^2 P_{i,j,k} =  \sum_{l} \left| \braket{\hat{\epsilon}_j|\mathbf{\hat{e}}_l} \right|^2 R_{i,j,l} \delta t.
+    \label{eq:transition-probabilities}
+\end{equation}

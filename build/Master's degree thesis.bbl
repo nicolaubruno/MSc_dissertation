@@ -5,6 +5,13 @@
 \providecommand{\abntbstabout}[1]{}
 \abntbstabout{v-1.9.7 }
 
+\bibitem{dreon2017designing}
+\abntrefinfo{Dreon}{DREON}{2017}
+{DREON, D.
+\textbf{Designing and building an ultracold Dysprosium experiment: a new
+  framework for light-spin interaction}.
+2017. Tese (Doutorado) --- Paris Sciences et Lettres (ComUE), 2017.}
+
 \bibitem{peters2001high}
 \abntrefinfo{Peters, Chung and Chu}{PETERS; CHUNG; CHU}{2001}
 {PETERS, A.; CHUNG, K.~Y.; CHU, S. High-precision gravity measurements using
@@ -272,6 +279,17 @@ Available at: \url{https://link.aps.org/doi/10.1103/PhysRevA.90.063404}.}
 \abntrefinfo{Wasserman}{WASSERMAN}{2004}
 {WASSERMAN, L. \textbf{All of statistics: a concise course in statistical
   inference}. [\textit{S.l.: s.n.}]: Springer, 2004. v.~26.}
+
+\bibitem{lu2011strongly}
+\abntrefinfo{Lu \textit{et al.}}{LU \textit{et al.}}{2011}
+{LU, M. \textit{et al.} Strongly dipolar bose-einstein condensate of
+  dysprosium.
+\textbf{Physical review letters}, APS, v.~107, n.~19, p. 190401, 2011.}
+
+\bibitem{aikawa2012bose}
+\abntrefinfo{Aikawa \textit{et al.}}{AIKAWA \textit{et al.}}{2012}
+{AIKAWA, K. \textit{et al.} Bose-einstein condensation of erbium.
+\textbf{Physical review letters}, APS, v.~108, n.~21, p. 210401, 2012.}
 
 \bibitem{brasil2013simple}
 \abntrefinfo{Brasil, Fanchini and Napolitano}{BRASIL; FANCHINI;
