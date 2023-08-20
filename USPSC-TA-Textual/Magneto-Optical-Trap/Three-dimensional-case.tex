@@ -47,7 +47,7 @@ where $ T $ is the temperature of the atomic cloud, $m$ is the the atomic mass, 
 		\label{eq:Doppler-temperature-low-saturation}
 	\end{equation}
 \end{itemize}
-where $ T_0 \equiv \hbar \Gamma / (2 k_B) $ is known as \textbf{Doppler cooling limit} and $ \Gamma_{E} \equiv \Gamma \sqrt{1 + s_0} $ is the \textbf{power-broadened linewidth}. Considering $ s_0 \gg 1 $ in (\ref{eq:Doppler-temperature-low-saturation}), we obtain (\ref{eq:Doppler-temperature-high-saturation}). The temperature is dependent of the lasers intensity in both regimes and is dependent of the lasers detuning only in the low saturation case. However, making $ \delta \gg 1 $, the temperature of the low saturation case becomes detuning-independent. Indeed, the temperatures in both regimes are equivalent in this limit. Therefore, for high detunings and fixed saturation parameters, we expected a constant temperature.
+where $ T_0 \equiv \hbar \Gamma / (2 k_B) $ is known as \textbf{Doppler cooling limit} and $ \Gamma_{E} \equiv \Gamma \sqrt{1 + s_0} $ is the \textbf{power-broadened linewidth}. The temperature is dependent of the lasers intensity in both regimes and is dependent of the lasers detuning only in the low saturation case.
 
 %-----------------------------------
 \subsection{Atomic cloud size}
@@ -58,8 +58,9 @@ The atomic cloud size is typically characterized by its root-mean-square width a
 \begin{equation}
 	\frac{1}{2} \kappa_{i} \braket{x_i^2} = \frac{1}{2}k_B T
 	\Rightarrow \sigma_{i} \equiv \sqrt{\braket{x_i^2}} = \frac{k_B T}{\kappa_{i}} ,
+	\label{eq:theoretical-cloud-size}
 \end{equation}
-where $ \sigma_{i} $ is the cloud size on the $ x_i $ direction, $ \kappa_{i} $ is the \textit{spring constant} on the same direction, and $ T $ is the temperature of the cloud. In the unidimensional MOT, from equation (\ref{eq:damped-harmonic-oscillation-1D-MOT}), $ \kappa_{i} = m\omega_{MOT}^2 \propto B_0 / (s_0 \delta)$. Therefore, the more intense the magnetic field gradient, the smaller the cloud size. The saturation parameter and the detuning cause an inverse effect. Assuming a symmetric laser arrangement and the centre of mass at the magnetic field origin, the cloud will have a Gaussian shape with the $ \sigma_z $ smaller by a factor of $ \sqrt{2} $ due to the large magnetic field gradient as shown in figure . In the regime of low density, this is a proper estimation. However, interatomic interactions play a role when the density increases. These interactions expand the cloud by a factor of $ N^{1/3} $ as shown in figure \ref{fig:cloud-size-scaling}, where $ N $ is the number of atoms, due to the reabsorption of scattered photons (light-induced interactions) \cite{PhysRevA.90.063404}. This effect tends to expand the cloud by a factor of $ N^{1/3} $ as shown in figure \ref{fig:cloud-size-scaling}, where $ N $ is the number of atoms.
+where $ \sigma_{i} $ is the cloud size on the $ x_i $ direction, $ \kappa_{i} $ is the \textit{spring constant} on the same direction, and $ T $ is the temperature of the cloud. In the unidimensional MOT, from equation (\ref{eq:damped-harmonic-oscillation-1D-MOT}), $ \kappa_{i} = m\omega_{MOT}^2 \propto B_0 / (s_0 \delta)$. Therefore, the more intense the magnetic field gradient, the smaller the cloud size. The saturation parameter and the detuning cause an inverse effect. The atomic cloud will have a Gaussian shape when the laser arrangement is symmetric and the centre of mass is at the magnetic field origin. In the regime of low density, the cloud size given by equation (\ref{eq:theoretical-cloud-size}) is a proper estimation. However, interatomic interactions play a role when the density increases. These interactions expand the cloud by a factor of $ N^{1/3} $ as shown in figure \ref{fig:cloud-size-scaling}, where $ N $ is the number of atoms, due to the reabsorption of scattered photons (light-induced interactions) \cite{PhysRevA.90.063404}.
 
 \begin{figure}[!ht]
     \centering

@@ -114,7 +114,7 @@ where $ i_x $, $ i_y $, $ i_z $, $ j_x $, $ j_y $, and $ j_z $ are positive inte
 where $ d_{x} $, $ d_y $, and $ d_z $ are marginal probability distributions. The equation (\ref{eq:joint-position-distribution}) assumes independence between each direction. Similarly, the joint probability distribution $d_v$ of the atoms' velocity is given by
 \begin{gather}
     d_{v}(i_{v_x}, i_{v_y}, i_{v_z}) = d_{v_x}(i_{v_x}) d_{v_y}(i_{v_y}) d_{v_z}(i_{v_z}),
-    \label{eq:joint-position-distribution}
+    \label{eq:joint-velocity-distribution}
     \\
     \sum_{\Delta v} d_{v}(i_{v_x}, i_{v_y}, i_{v_z}) \ \rightarrow\ \textrm{Probability of finding an atom with velocities $ \Delta v $},
 \end{gather}
@@ -122,10 +122,12 @@ where $ d_{x} $, $ d_y $, and $ d_z $ are marginal probability distributions. Th
 We are interested in two atomic cloud quantities: the centre of mass and the cloud size. The centre of mass is given by,
 \begin{equation}
     \mathbf{r}_c = \braket{d_x} \hat{\mathbf{x}} + \braket{d_y} \hat{\mathbf{y}} + \braket{d_z} \hat{\mathbf{z}},
+    \label{eq:simulated-centre-of-mass}
 \end{equation}
 where $ \braket{d_x} $, $ \braket{d_y} $, and $ \braket{d_z} $ are averages. The cloud sizes are
 \begin{equation}
     \sigma_x = \sqrt{\braket{(d_x - \braket{d_x})^2}},\ \sigma_y = \sqrt{\braket{(d_y - \braket{d_y})^2}},\ \sigma_z = \sqrt{\braket{(d_z - \braket{d_z})^2}},
+    \label{eq:simulated-cloud-sizes}
 \end{equation}
 where $ \sigma_x $, $ \sigma_y $, $ \sigma_z $ are standard deviations.
 
