@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.6.16)  21 AUG 2023 03:51
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.6.16)  21 AUG 2023 04:44
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1478,8 +1478,9 @@ ion with the same identifier (name{page.2}) has been already used, duplicate ig
 nored
 <to be read again> 
                    \relax 
-l.3 	P
-      rimeira frase do agradecimento .... [2
+l.3 	I
+       would like to acknowledge the support and patience of my advisor, Pro...
+[2
 
 
 ] [3] [4
@@ -1487,8 +1488,7 @@ l.3 	P
 ])
 \openout2 = `USPSC-TA-PreTextual/USPSC-Abstract.aux'.
 
-
-(./USPSC-TA-PreTextual/USPSC-Abstract.tex [5
+ (./USPSC-TA-PreTextual/USPSC-Abstract.tex [5
 
 
 
@@ -1978,7 +1978,7 @@ xmf/fonts/type1/public/lm/lmsy6.pfb></usr/share/texmf/fonts/type1/public/lm/lms
 y8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam1
 0.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10
 .pfb>
-Output written on "build/Master's degree thesis.pdf" (89 pages, 1984450 bytes).
+Output written on "build/Master's degree thesis.pdf" (89 pages, 1985965 bytes).
 
 PDF statistics:
  1894 PDF objects out of 2073 (max. 8388607)
