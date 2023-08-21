@@ -2,6 +2,8 @@ This is BibTeX, Version 0.99d (TeX Live 2022/dev/Debian)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: Master's degree thesis.aux
 The style file: USPSC-classe/abntex2-numeng-USPSC.bst
+A level-1 auxiliary file: USPSC-TA-PreTextual/USPSC-Agradecimentos.aux
+A level-1 auxiliary file: USPSC-TA-PreTextual/USPSC-Abstract.aux
 A level-1 auxiliary file: USPSC-TA-Textual/introduction.aux
 A level-1 auxiliary file: USPSC-TA-Textual/Atom-Light-Interaction.aux
 A level-1 auxiliary file: USPSC-TA-Textual/Magneto-Optical-Trap.aux
@@ -40,7 +42,7 @@ Reallocated glb_str_end (elt_size=4) to 20 items from 10.
 +---------------------------------------------------------+
 You've used 62 entries,
             6714 wiz_defined-function locations,
-            1522 strings with 19195 characters,
+            1524 strings with 19277 characters,
 and the built_in function-call counts, 46849 in all, are:
 = -- 3586
 > -- 1543

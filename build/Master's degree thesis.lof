@@ -1,35 +1,34 @@
 \babel@toc {brazil}{}\relax 
 \babel@toc {english}{}\relax 
-\contentsline {figure}{\numberline {1}{\ignorespaces Optical two-level transitions\relax }}{10}{figure.caption.5}%
-\contentsline {figure}{\numberline {2}{\ignorespaces Spectral broadening\relax }}{12}{figure.caption.6}%
-\contentsline {figure}{\numberline {3}{\ignorespaces Absorption Cross Section\relax }}{14}{figure.caption.7}%
-\contentsline {figure}{\numberline {4}{\ignorespaces Bloch sphere.\relax }}{18}{figure.caption.8}%
-\contentsline {figure}{\numberline {5}{\ignorespaces Rabi oscillations\relax }}{24}{figure.caption.9}%
-\contentsline {figure}{\numberline {6}{\ignorespaces Damped Rabi oscillations\relax }}{26}{figure.caption.10}%
-\contentsline {figure}{\numberline {7}{\ignorespaces Damping coefficients $ a $ and $ b $\relax }}{27}{figure.caption.11}%
-\contentsline {figure}{\numberline {8}{\ignorespaces Oscillation frequency $ c $\relax }}{27}{figure.caption.12}%
-\contentsline {figure}{\numberline {9}{\ignorespaces Natural broadening\relax }}{30}{figure.caption.13}%
-\contentsline {figure}{\numberline {10}{\ignorespaces Net absorption cross-section\relax }}{31}{figure.caption.14}%
-\contentsline {figure}{\numberline {11}{\ignorespaces Radiation pressure force\relax }}{33}{figure.caption.15}%
-\contentsline {figure}{\numberline {12}{\ignorespaces Potential from gradient dipole force\relax }}{34}{figure.caption.16}%
-\contentsline {figure}{\numberline {13}{\ignorespaces 1D-MOT\relax }}{35}{figure.caption.17}%
-\contentsline {figure}{\numberline {14}{\ignorespaces Zeeman splitting in 1D-MOTs\relax }}{36}{figure.caption.18}%
-\contentsline {figure}{\numberline {15}{\ignorespaces Detuning in 1D-MOT\relax }}{37}{figure.caption.19}%
-\contentsline {figure}{\numberline {16}{\ignorespaces Assumption of independent two-level systems\relax }}{38}{figure.caption.20}%
-\contentsline {figure}{\numberline {17}{\ignorespaces MOT force\relax }}{39}{figure.caption.21}%
-\contentsline {figure}{\numberline {18}{\ignorespaces Standard 3D-MOT arrangement\relax }}{40}{figure.caption.22}%
-\contentsline {figure}{\numberline {19}{\ignorespaces Atomic cloud size scaling in a very large MOT\relax }}{42}{figure.caption.23}%
-\contentsline {figure}{\numberline {20}{\ignorespaces Atomic cloud shape in nMOTs for small laser intensities.\relax }}{44}{figure.caption.24}%
-\contentsline {figure}{\numberline {21}{\ignorespaces Forces diagram of a trapped atom\relax }}{46}{figure.caption.25}%
-\contentsline {figure}{\numberline {22}{\ignorespaces Magnetic field frame\relax }}{49}{figure.caption.26}%
-\contentsline {figure}{\numberline {23}{\ignorespaces Electronic transitions of the dysprosium nMOT\relax }}{56}{figure.caption.32}%
-\contentsline {figure}{\numberline {24}{\ignorespaces nMOT setup of the Dreon experiment\relax }}{56}{figure.caption.33}%
-\contentsline {figure}{\numberline {25}{\ignorespaces In-situ and simulated atomic cloud profile of Dreon nMOTs\relax }}{57}{figure.caption.36}%
-\contentsline {figure}{\numberline {26}{\ignorespaces Centre of mass of the Dreon nMOT in function of the laser detunings\relax }}{58}{figure.caption.37}%
-\contentsline {figure}{\numberline {27}{\ignorespaces Cloud sizes $ \sigma _y $ and $ \sigma _x $ of the Dreon nMOT\relax }}{59}{figure.caption.38}%
-\contentsline {figure}{\numberline {28}{\ignorespaces Cloud size ratio $ \sigma _y / \sigma _z $ and $ \sigma _x $ of the Dreon nMOT\relax }}{59}{figure.caption.39}%
-\contentsline {figure}{\numberline {29}{\ignorespaces Temperature of the Dreon nMOT as a function of the laser detuning\relax }}{60}{figure.caption.40}%
-\contentsline {figure}{\numberline {30}{\ignorespaces Simulated ${}^{88}Sr$ cloud profile\relax }}{61}{figure.caption.41}%
-\contentsline {figure}{\numberline {31}{\ignorespaces Centre of mass of the ${}^{88}Sr$ nMOT as a function of the lasers detuning\relax }}{62}{figure.caption.42}%
-\contentsline {figure}{\numberline {32}{\ignorespaces Cloud size of the ${}^{88}Sr$ nMOT\relax }}{62}{figure.caption.43}%
-\contentsline {figure}{\numberline {33}{\ignorespaces Temperature of the ${}^{88}Sr$ nMOT as a function of the lasers detuning\relax }}{63}{figure.caption.44}%
+\contentsline {figure}{\numberline {1}{\ignorespaces Optical two-level transitions\relax }}{16}{figure.caption.8}%
+\contentsline {figure}{\numberline {2}{\ignorespaces Spectral broadening\relax }}{18}{figure.caption.9}%
+\contentsline {figure}{\numberline {3}{\ignorespaces Absorption Cross Section\relax }}{20}{figure.caption.10}%
+\contentsline {figure}{\numberline {4}{\ignorespaces Bloch sphere.\relax }}{24}{figure.caption.11}%
+\contentsline {figure}{\numberline {5}{\ignorespaces Rabi oscillations\relax }}{30}{figure.caption.12}%
+\contentsline {figure}{\numberline {6}{\ignorespaces Damped Rabi oscillations\relax }}{32}{figure.caption.13}%
+\contentsline {figure}{\numberline {7}{\ignorespaces Damping coefficients $ a $ and $ b $\relax }}{33}{figure.caption.14}%
+\contentsline {figure}{\numberline {8}{\ignorespaces Oscillation frequency $ c $\relax }}{33}{figure.caption.15}%
+\contentsline {figure}{\numberline {9}{\ignorespaces Natural broadening\relax }}{36}{figure.caption.16}%
+\contentsline {figure}{\numberline {10}{\ignorespaces Net absorption cross-section\relax }}{37}{figure.caption.17}%
+\contentsline {figure}{\numberline {11}{\ignorespaces Radiation pressure force\relax }}{39}{figure.caption.18}%
+\contentsline {figure}{\numberline {12}{\ignorespaces Potential from gradient dipole force\relax }}{40}{figure.caption.19}%
+\contentsline {figure}{\numberline {13}{\ignorespaces 1D-MOT\relax }}{41}{figure.caption.20}%
+\contentsline {figure}{\numberline {14}{\ignorespaces Zeeman splitting in 1D-MOTs\relax }}{42}{figure.caption.21}%
+\contentsline {figure}{\numberline {15}{\ignorespaces Detuning in 1D-MOT\relax }}{43}{figure.caption.22}%
+\contentsline {figure}{\numberline {16}{\ignorespaces Assumption of independent two-level systems\relax }}{44}{figure.caption.23}%
+\contentsline {figure}{\numberline {17}{\ignorespaces MOT force\relax }}{45}{figure.caption.24}%
+\contentsline {figure}{\numberline {18}{\ignorespaces Standard 3D-MOT arrangement\relax }}{46}{figure.caption.25}%
+\contentsline {figure}{\numberline {19}{\ignorespaces Atomic cloud size scaling in a very large MOT\relax }}{48}{figure.caption.26}%
+\contentsline {figure}{\numberline {20}{\ignorespaces Atomic cloud shape in nMOTs for small laser intensities.\relax }}{50}{figure.caption.27}%
+\contentsline {figure}{\numberline {21}{\ignorespaces Forces diagram of a trapped atom\relax }}{52}{figure.caption.28}%
+\contentsline {figure}{\numberline {22}{\ignorespaces Magnetic field frame\relax }}{55}{figure.caption.29}%
+\contentsline {figure}{\numberline {23}{\ignorespaces Electronic transitions of dysprosium atoms under spin-polarization phenomenon\relax }}{62}{figure.caption.35}%
+\contentsline {figure}{\numberline {24}{\ignorespaces Dreon nMOT setup\relax }}{62}{figure.caption.36}%
+\contentsline {figure}{\numberline {25}{\ignorespaces In-situ and estimated atomic cloud profiles from Dreon nMOT\relax }}{63}{figure.caption.39}%
+\contentsline {figure}{\numberline {26}{\ignorespaces Centre of mass in function of the laser detunings for the Dreon nMOT\relax }}{64}{figure.caption.40}%
+\contentsline {figure}{\numberline {27}{\ignorespaces Cloud sizes $ \sigma _y $ and $ \sigma _z $ of the Dreon nMOT as a function of the laser detuning\relax }}{65}{figure.caption.41}%
+\contentsline {figure}{\numberline {28}{\ignorespaces Temperature of the Dreon nMOT as a function of the laser detuning\relax }}{66}{figure.caption.42}%
+\contentsline {figure}{\numberline {29}{\ignorespaces In-situ and estimated atomic cloud profiles from Loftus nMOT\relax }}{67}{figure.caption.47}%
+\contentsline {figure}{\numberline {30}{\ignorespaces Centre of mass in function of the laser detunings for the Loftus nMOT\relax }}{68}{figure.caption.48}%
+\contentsline {figure}{\numberline {31}{\ignorespaces Cloud sizes components of the Loftus nMOT as a function of the laser detuning\relax }}{69}{figure.caption.49}%
+\contentsline {figure}{\numberline {32}{\ignorespaces Temperature of the IFSC nMOT\relax }}{69}{figure.caption.50}%

@@ -12,6 +12,18 @@
   framework for light-spin interaction}.
 2017. Tese (Doutorado) --- Paris Sciences et Lettres (ComUE), 2017.}
 
+\bibitem{dreon2017optical}
+\abntrefinfo{Dreon \textit{et al.}}{DREON \textit{et al.}}{2017}
+{DREON, D. \textit{et al.} Optical cooling and trapping of highly magnetic
+  atoms: the benefits of a spontaneous spin polarization.
+\textbf{Journal of Physics B: Atomic, Molecular and Optical Physics}, IOP
+  Publishing, v.~50, n.~6, p. 065005, 2017.}
+
+\bibitem{loftus2004narrow}
+\abntrefinfo{Loftus \textit{et al.}}{LOFTUS \textit{et al.}}{2004}
+{LOFTUS, T.~H. \textit{et al.} Narrow line cooling and momentum-space crystals.
+\textbf{Physical Review A}, APS, v.~70, n.~6, p. 063413, 2004.}
+
 \bibitem{peters2001high}
 \abntrefinfo{Peters, Chung and Chu}{PETERS; CHUNG; CHU}{2001}
 {PETERS, A.; CHUNG, K.~Y.; CHU, S. High-precision gravity measurements using
@@ -207,11 +219,6 @@
 \textbf{Journal of Experimental and Theoretical Physics}, Springer, v.~120,
   n.~4, p. 587--594, 2015.}
 
-\bibitem{loftus2004narrow}
-\abntrefinfo{Loftus \textit{et al.}}{LOFTUS \textit{et al.}}{2004}
-{LOFTUS, T.~H. \textit{et al.} Narrow line cooling and momentum-space crystals.
-\textbf{Physical Review A}, APS, v.~70, n.~6, p. 063413, 2004.}
-
 \bibitem{choi2008three}
 \abntrefinfo{Choi \textit{et al.}}{CHOI \textit{et al.}}{2008}
 {CHOI, S.-K. \textit{et al.} Three-dimensional analysis of the magneto-optical
@@ -261,13 +268,6 @@ Available at: \url{https://link.aps.org/doi/10.1103/PhysRevA.90.063404}.}
 \abntrefinfo{Courteille}{COURTEILLE}{2019}
 {COURTEILLE, P.~W. Atom-light interaction and basic applications.
 2019.}
-
-\bibitem{dreon2017optical}
-\abntrefinfo{Dreon \textit{et al.}}{DREON \textit{et al.}}{2017}
-{DREON, D. \textit{et al.} Optical cooling and trapping of highly magnetic
-  atoms: the benefits of a spontaneous spin polarization.
-\textbf{Journal of Physics B: Atomic, Molecular and Optical Physics}, IOP
-  Publishing, v.~50, n.~6, p. 065005, 2017.}
 
 \bibitem{nMOT_sim}
 \abntrefinfo{Santos}{SANTOS}{2023}

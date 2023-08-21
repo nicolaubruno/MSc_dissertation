@@ -1,7 +1,7 @@
 %
 %-----------------------------------
 \section{Three-dimensional case}
-\label{eq:three-dimensional-case}
+\label{sec:three-dimensional-MOT}
 %-----------------------------------
 %
 \begin{figure}[!ht]
@@ -36,14 +36,14 @@ From the \textit{equipartition theorem}, the average total energy of the atom is
 \end{equation}
 where $ T $ is the temperature of the atomic cloud, $m$ is the the atomic mass, and $ \mathbf{p} $ is the linear momentum of the atom. There is an association between the \textbf{diffusion coefficient}\footnote{Correlation between the $\mathbf{F}_{MOT}(t) $ and $ \mathbf{F}_{MOT}(t + \delta t) $, where $ t $ is a specific instant and $ \delta t $ is a time interval.} $ D $ and the quantity $ \Delta \mathbf{p}^2 $ given by $ \Delta \mathbf{p}^2 \approx D / \gamma $ \cite[Section~2]{perrin2014doppler}. To obtain an expression for $ D $, we need to calculate quantum fluctuations, which is out of the scope of this work. However, skipping this step \cite[Section~2.3]{perrin2014doppler}, there are two possible regimes in which we can define a temperature \cite[Section~V]{loftus2004narrow}:
 \begin{itemize}
-	\item \textbf{High saturation} ($ s_0 \gg 1 $):
+	\item $ \delta/\Gamma \gg 1 $:
 	\begin{equation}
-		T(s_0) = \sqrt{s_0} T_0
+		T(s_0) = \sqrt{1 + s_0} T_0
 		\label{eq:Doppler-temperature-high-saturation}
 	\end{equation}
-	\item \textbf{Low saturation} ($ s_0 \ll 1 $):
+	\item $ \delta/\Gamma \sim 1 $
 	\begin{equation}
-		T(s_0, \delta) = \frac{1 + 4(\delta / \Gamma_E)^2}{4|\delta|/\Gamma_E} \sqrt{s_0 + 1} T_0
+		T(s_0, \delta) = \frac{1 + 4(\delta / \Gamma_E)^2}{4|\delta|/\Gamma_E} \sqrt{1 + s_0} T_0
 		\label{eq:Doppler-temperature-low-saturation}
 	\end{equation}
 \end{itemize}

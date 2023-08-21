@@ -1276,6 +1276,12 @@ INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmr12.tfm
 INPUT build/Master's degree thesis.aux
 INPUT build/Master's degree thesis.aux
 INPUT build/Master's degree thesis.aux
+INPUT build/USPSC-TA-PreTextual/USPSC-Agradecimentos.aux
+INPUT build/USPSC-TA-PreTextual/USPSC-Agradecimentos.aux
+INPUT build/USPSC-TA-PreTextual/USPSC-Agradecimentos.aux
+INPUT build/USPSC-TA-PreTextual/USPSC-Abstract.aux
+INPUT build/USPSC-TA-PreTextual/USPSC-Abstract.aux
+INPUT build/USPSC-TA-PreTextual/USPSC-Abstract.aux
 INPUT build/USPSC-TA-Textual/introduction.aux
 INPUT build/USPSC-TA-Textual/introduction.aux
 INPUT build/USPSC-TA-Textual/introduction.aux
@@ -1441,6 +1447,27 @@ INPUT /usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
+INPUT ./USPSC-TA-PreTextual/USPSC-Agradecimentos.tex
+INPUT ./USPSC-TA-PreTextual/USPSC-Agradecimentos.tex
+INPUT ./USPSC-TA-PreTextual/USPSC-Agradecimentos.tex
+OUTPUT build/USPSC-TA-PreTextual/USPSC-Agradecimentos.aux
+INPUT ./USPSC-TA-PreTextual/USPSC-Agradecimentos.tex
+INPUT ./USPSC-TA-PreTextual/USPSC-Agradecimentos.tex
+INPUT ./USPSC-TA-PreTextual/USPSC-Agradecimentos.tex
+INPUT USPSC-TA-PreTextual/USPSC-Agradecimentos.tex
+INPUT ./USPSC-TA-PreTextual/USPSC-Agradecimentos.tex
+INPUT USPSC-TA-PreTextual/USPSC-Agradecimentos.tex
+INPUT ./USPSC-TA-PreTextual/USPSC-Abstract.tex
+INPUT ./USPSC-TA-PreTextual/USPSC-Abstract.tex
+INPUT ./USPSC-TA-PreTextual/USPSC-Abstract.tex
+OUTPUT build/USPSC-TA-PreTextual/USPSC-Abstract.aux
+INPUT ./USPSC-TA-PreTextual/USPSC-Abstract.tex
+INPUT ./USPSC-TA-PreTextual/USPSC-Abstract.tex
+INPUT ./USPSC-TA-PreTextual/USPSC-Abstract.tex
+INPUT USPSC-TA-PreTextual/USPSC-Abstract.tex
+INPUT ./USPSC-TA-PreTextual/USPSC-Abstract.tex
+INPUT USPSC-TA-PreTextual/USPSC-Abstract.tex
+INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmbx12.tfm
 INPUT build/Master's degree thesis.lof
 INPUT build/Master's degree thesis.lof
 INPUT build/Master's degree thesis.lof
@@ -1460,7 +1487,6 @@ INPUT ./USPSC-TA-Textual/introduction.tex
 INPUT USPSC-TA-Textual/introduction.tex
 INPUT ./USPSC-TA-Textual/introduction.tex
 INPUT USPSC-TA-Textual/introduction.tex
-INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmbx12.tfm
 INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmr10.tfm
 INPUT ./USPSC-TA-Textual/Atom-Light-Interaction.tex
 INPUT ./USPSC-TA-Textual/Atom-Light-Interaction.tex
@@ -1746,6 +1772,11 @@ INPUT ./USPSC-img/sr_loftus_cloud_profile.png
 INPUT USPSC-img/sr_loftus_cloud_profile.png
 INPUT ./USPSC-img/sr_loftus_cloud_profile.png
 INPUT ./USPSC-img/sr_loftus_cloud_profile.png
+INPUT ./USPSC-img/loftus-atomic-cloud-profile.png
+INPUT ./USPSC-img/loftus-atomic-cloud-profile.png
+INPUT USPSC-img/loftus-atomic-cloud-profile.png
+INPUT ./USPSC-img/loftus-atomic-cloud-profile.png
+INPUT ./USPSC-img/loftus-atomic-cloud-profile.png
 INPUT ./USPSC-img/sr_centre_of_mass.png
 INPUT ./USPSC-img/sr_centre_of_mass.png
 INPUT USPSC-img/sr_centre_of_mass.png
@@ -1756,11 +1787,16 @@ INPUT ./USPSC-img/sr_loftus_cloud_size.png
 INPUT USPSC-img/sr_loftus_cloud_size.png
 INPUT ./USPSC-img/sr_loftus_cloud_size.png
 INPUT ./USPSC-img/sr_loftus_cloud_size.png
-INPUT ./USPSC-img/sr_temperature.png
-INPUT ./USPSC-img/sr_temperature.png
-INPUT USPSC-img/sr_temperature.png
-INPUT ./USPSC-img/sr_temperature.png
-INPUT ./USPSC-img/sr_temperature.png
+INPUT ./USPSC-img/sr-ifsc-temperature_vs_detuning.png
+INPUT ./USPSC-img/sr-ifsc-temperature_vs_detuning.png
+INPUT USPSC-img/sr-ifsc-temperature_vs_detuning.png
+INPUT ./USPSC-img/sr-ifsc-temperature_vs_detuning.png
+INPUT ./USPSC-img/sr-ifsc-temperature_vs_detuning.png
+INPUT ./USPSC-img/sr_ifsc_temperature_vs_saturation.png
+INPUT ./USPSC-img/sr_ifsc_temperature_vs_saturation.png
+INPUT USPSC-img/sr_ifsc_temperature_vs_saturation.png
+INPUT ./USPSC-img/sr_ifsc_temperature_vs_saturation.png
+INPUT ./USPSC-img/sr_ifsc_temperature_vs_saturation.png
 INPUT ./USPSC-TA-Textual/Conclusion.tex
 INPUT ./USPSC-TA-Textual/Conclusion.tex
 INPUT ./USPSC-TA-Textual/Conclusion.tex
@@ -1801,6 +1837,12 @@ OUTPUT build/Master's degree thesis.lof
 OUTPUT build/Master's degree thesis.lot
 OUTPUT build/Master's degree thesis.toc
 INPUT build/Master's degree thesis.aux
+INPUT build/USPSC-TA-PreTextual/USPSC-Agradecimentos.aux
+INPUT build/USPSC-TA-PreTextual/USPSC-Agradecimentos.aux
+INPUT build/USPSC-TA-PreTextual/USPSC-Agradecimentos.aux
+INPUT build/USPSC-TA-PreTextual/USPSC-Abstract.aux
+INPUT build/USPSC-TA-PreTextual/USPSC-Abstract.aux
+INPUT build/USPSC-TA-PreTextual/USPSC-Abstract.aux
 INPUT build/USPSC-TA-Textual/introduction.aux
 INPUT build/USPSC-TA-Textual/introduction.aux
 INPUT build/USPSC-TA-Textual/introduction.aux

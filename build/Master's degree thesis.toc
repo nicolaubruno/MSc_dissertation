@@ -4,71 +4,72 @@
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {1}\MakeTextUppercase {Introduction}}{7}{chapter.1}%
-\contentsline {section}{\numberline {1.1}The thesis}{8}{section.1.1}%
+\contentsline {chapter}{\chapternumberline {1}\MakeTextUppercase {Introduction}}{13}{chapter.1}%
+\contentsline {section}{\numberline {1.1}The thesis}{14}{section.1.1}%
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {2}\MakeTextUppercase {Atom-light interaction}}{9}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Rate equations model}{9}{section.2.1}%
-\contentsline {subsection}{\numberline {2.1.1}Relation between the Einstein coefficients}{10}{subsection.2.1.1}%
-\contentsline {subsection}{\numberline {2.1.2}Probabilistic analysis for single atoms}{11}{subsection.2.1.2}%
-\contentsline {subsection}{\numberline {2.1.3}Spectral broadening}{12}{subsection.2.1.3}%
-\contentsline {subsection}{\numberline {2.1.4}Monochromatic light field}{13}{subsection.2.1.4}%
-\contentsline {subsection}{\numberline {2.1.5}Absorption cross section}{14}{subsection.2.1.5}%
-\contentsline {section}{\numberline {2.2}Two-level atom interacting with classical light field}{16}{section.2.2}%
-\contentsline {subsection}{\numberline {2.2.1}Two-level system and the Bloch sphere}{16}{subsection.2.2.1}%
-\contentsline {subsection}{\numberline {2.2.2}Interaction Hamiltonian}{18}{subsection.2.2.2}%
-\contentsline {subsection}{\numberline {2.2.3}Optical Bloch equations}{20}{subsection.2.2.3}%
-\contentsline {subsection}{\numberline {2.2.4}Rabi oscillations}{23}{subsection.2.2.4}%
-\contentsline {subsection}{\numberline {2.2.5}Rate-equation limit}{28}{subsection.2.2.5}%
-\contentsline {subsection}{\numberline {2.2.6}Line-broadening mechanisms}{29}{subsection.2.2.6}%
-\contentsline {subsection}{\numberline {2.2.7}Optical forces}{31}{subsection.2.2.7}%
+\contentsline {chapter}{\chapternumberline {2}\MakeTextUppercase {Atom-light interaction}}{15}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Rate equations model}{15}{section.2.1}%
+\contentsline {subsection}{\numberline {2.1.1}Relation between the Einstein coefficients}{16}{subsection.2.1.1}%
+\contentsline {subsection}{\numberline {2.1.2}Probabilistic analysis for single atoms}{17}{subsection.2.1.2}%
+\contentsline {subsection}{\numberline {2.1.3}Spectral broadening}{18}{subsection.2.1.3}%
+\contentsline {subsection}{\numberline {2.1.4}Monochromatic light field}{19}{subsection.2.1.4}%
+\contentsline {subsection}{\numberline {2.1.5}Absorption cross section}{20}{subsection.2.1.5}%
+\contentsline {section}{\numberline {2.2}Two-level atom interacting with classical light field}{22}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}Two-level system and the Bloch sphere}{22}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.2}Interaction Hamiltonian}{24}{subsection.2.2.2}%
+\contentsline {subsection}{\numberline {2.2.3}Optical Bloch equations}{26}{subsection.2.2.3}%
+\contentsline {subsection}{\numberline {2.2.4}Rabi oscillations}{29}{subsection.2.2.4}%
+\contentsline {subsection}{\numberline {2.2.5}Rate-equation limit}{34}{subsection.2.2.5}%
+\contentsline {subsection}{\numberline {2.2.6}Line-broadening mechanisms}{35}{subsection.2.2.6}%
+\contentsline {subsection}{\numberline {2.2.7}Optical forces}{37}{subsection.2.2.7}%
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {3}\MakeTextUppercase {Magneto-Optical Trap}}{35}{chapter.3}%
-\contentsline {section}{\numberline {3.1}One-dimensional model}{35}{section.3.1}%
-\contentsline {subsection}{\numberline {3.1.1}Cooling and trapping effect}{36}{subsection.3.1.1}%
-\contentsline {subsection}{\numberline {3.1.2}MOT Force}{37}{subsection.3.1.2}%
-\contentsline {section}{\numberline {3.2}Three-dimensional case}{39}{section.3.2}%
-\contentsline {subsection}{\numberline {3.2.1}Limit temperature in Doppler cooling}{40}{subsection.3.2.1}%
-\contentsline {subsection}{\numberline {3.2.2}Atomic cloud size}{42}{subsection.3.2.2}%
-\contentsline {subsection}{\numberline {3.2.3}Magnetic force}{43}{subsection.3.2.3}%
-\contentsline {section}{\numberline {3.3}Narrow-line magneto-optical trap}{44}{section.3.3}%
-\contentsline {subsection}{\numberline {3.3.1}Operating regimes}{45}{subsection.3.3.1}%
-\contentsline {subsection}{\numberline {3.3.2}Centre of mass of the atomic cloud}{45}{subsection.3.3.2}%
+\contentsline {chapter}{\chapternumberline {3}\MakeTextUppercase {Magneto-Optical Trap}}{41}{chapter.3}%
+\contentsline {section}{\numberline {3.1}One-dimensional model}{41}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}Cooling and trapping effect}{42}{subsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.1.2}MOT Force}{43}{subsection.3.1.2}%
+\contentsline {section}{\numberline {3.2}Three-dimensional case}{45}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Limit temperature in Doppler cooling}{46}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}Atomic cloud size}{48}{subsection.3.2.2}%
+\contentsline {subsection}{\numberline {3.2.3}Magnetic force}{49}{subsection.3.2.3}%
+\contentsline {section}{\numberline {3.3}Narrow-line magneto-optical trap}{50}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}Operating regimes}{51}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.3.2}Centre of mass of the atomic cloud}{51}{subsection.3.3.2}%
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase {Monte Carlo simulation}}{47}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Stochastic evolution}{47}{section.4.1}%
-\contentsline {subsection}{\numberline {4.1.1}Equilibrium}{48}{subsection.4.1.1}%
-\contentsline {subsection}{\numberline {4.1.2}Magnetic field frame}{48}{subsection.4.1.2}%
-\contentsline {subsection}{\numberline {4.1.3}Transition probabilities}{50}{subsection.4.1.3}%
-\contentsline {section}{\numberline {4.2}Input and outputs}{50}{section.4.2}%
-\contentsline {subsection}{\numberline {4.2.1}Input}{51}{subsection.4.2.1}%
-\contentsline {subsection}{\numberline {4.2.2}Output}{52}{subsection.4.2.2}%
+\contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase {Monte Carlo simulation}}{53}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Stochastic evolution}{53}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}Equilibrium}{54}{subsection.4.1.1}%
+\contentsline {subsection}{\numberline {4.1.2}Magnetic field frame}{54}{subsection.4.1.2}%
+\contentsline {subsection}{\numberline {4.1.3}Transition probabilities}{56}{subsection.4.1.3}%
+\contentsline {section}{\numberline {4.2}Input and outputs}{56}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Input}{57}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}Output}{58}{subsection.4.2.2}%
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {5}\MakeTextUppercase {Results}}{55}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Dysprosium}{55}{section.5.1}%
-\contentsline {subsection}{\numberline {5.1.1}Atomic cloud profile}{56}{subsection.5.1.1}%
-\contentsline {subsection}{\numberline {5.1.2}Temperature}{59}{subsection.5.1.2}%
-\contentsline {section}{\numberline {5.2}Strontium}{60}{section.5.2}%
-\contentsline {subsection}{\numberline {5.2.1}Atomic cloud profile}{60}{subsection.5.2.1}%
-\contentsline {subsection}{\numberline {5.2.2}Temperature}{60}{subsection.5.2.2}%
+\contentsline {chapter}{\chapternumberline {5}\MakeTextUppercase {Results}}{61}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Dysprosium}{61}{section.5.1}%
+\contentsline {subsection}{\numberline {5.1.1}Atomic cloud profile}{62}{subsection.5.1.1}%
+\contentsline {subsection}{\numberline {5.1.2}Temperature}{65}{subsection.5.1.2}%
+\contentsline {section}{\numberline {5.2}Strontium}{65}{section.5.2}%
+\contentsline {subsection}{\numberline {5.2.1}Atomic cloud profile}{66}{subsection.5.2.1}%
+\contentsline {subsection}{\numberline {5.2.2}Temperature}{68}{subsection.5.2.2}%
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {6}\MakeTextUppercase {Conclusion}}{65}{chapter.6}%
+\contentsline {chapter}{\chapternumberline {6}\MakeTextUppercase {Conclusion}}{71}{chapter.6}%
 \vspace {\cftbeforechapterskip }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
-\contentsline {chapter}{\uppercase {References}}{67}{section*.47}%
+\contentsline {chapter}{\uppercase {References}}{73}{section*.53}%
 \renewcommand *{\cftappendixname }{APPENDIX \space }
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \cftinsert {A}
-\contentsline {appendix}{\chapternumberline {A}\MakeTextUppercase {Density operator}}{71}{appendix.A}%
-\contentsline {subsection}{\numberline {A.0.1}Liouville equation}{73}{subsection.A.0.1}%
-\contentsline {section}{\numberline {A.1}Decoherence}{74}{section.A.1}%
+\contentsline {appendix}{\chapternumberline {A}\MakeTextUppercase {Density operator}}{77}{appendix.A}%
+\contentsline {subsection}{\numberline {A.0.1}Liouville equation}{79}{subsection.A.0.1}%
+\contentsline {section}{\numberline {A.1}Decoherence}{80}{section.A.1}%
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \cftinsert {A}
-\contentsline {appendix}{\chapternumberline {B}\MakeTextUppercase {Scattering cross section}}{77}{appendix.B}%
+\contentsline {appendix}{\chapternumberline {B}\MakeTextUppercase {Scattering cross section}}{83}{appendix.B}%
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \cftinsert {A}
-\contentsline {appendix}{\chapternumberline {C}\MakeTextUppercase {Selection Rules}}{79}{appendix.C}%
+\contentsline {appendix}{\chapternumberline {C}\MakeTextUppercase {Selection Rules}}{85}{appendix.C}%
