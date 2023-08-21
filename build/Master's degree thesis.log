@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.6.16)  21 AUG 2023 02:22
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.6.16)  21 AUG 2023 03:51
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1518,12 +1518,17 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 ])
+Overfull \hbox (4.74683pt too wide) in paragraph at lines 25--125
+[]\T1/lmr/m/n/12 In Chap-ter [][]3[][], we in-tro-duce the the-ory of MOTs for 
+elec-tronic tran-si-tions $[] [][]\OMS/lmsy/m/n/12 !
+ []
+
 [14]
 \openout2 = `USPSC-TA-Textual/Atom-Light-Interaction.aux'.
 
  (./USPSC-TA-Textual/Atom-Light-Interaction.tex
 (./USPSC-TA-Textual/Atom-Light-Interaction/Rate-Equations-Model.tex
-<USPSC-img/stimulated_absorption.png, id=347, 241.90375pt x 174.6525pt>
+<USPSC-img/stimulated_absorption.png, id=360, 241.90375pt x 174.6525pt>
 File: USPSC-img/stimulated_absorption.png Graphic file (type png)
 <use USPSC-img/stimulated_absorption.png>
 Package pdftex.def Info: USPSC-img/stimulated_absorption.png  used on input lin
@@ -1531,13 +1536,13 @@ e 22.
 (pdftex.def)             Requested size: 116.48311pt x 84.1014pt.
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <10.95> on input line 24.
-<USPSC-img/stimulated_emission.png, id=348, 244.915pt x 173.64874pt>
+<USPSC-img/stimulated_emission.png, id=361, 244.915pt x 173.64874pt>
 File: USPSC-img/stimulated_emission.png Graphic file (type png)
 <use USPSC-img/stimulated_emission.png>
 Package pdftex.def Info: USPSC-img/stimulated_emission.png  used on input line 
 31.
 (pdftex.def)             Requested size: 116.48311pt x 82.58734pt.
-<USPSC-img/spontaneous_emission.png, id=349, 240.9pt x 176.66pt>
+<USPSC-img/spontaneous_emission.png, id=362, 240.9pt x 176.66pt>
 File: USPSC-img/spontaneous_emission.png Graphic file (type png)
 <use USPSC-img/spontaneous_emission.png>
 Package pdftex.def Info: USPSC-img/spontaneous_emission.png  used on input line
@@ -1554,18 +1559,18 @@ Underfull \vbox (badness 7796) has occurred while \output is active []
 ]
 [16 <./USPSC-img/stimulated_absorption.png> <./USPSC-img/stimulated_emission.pn
 g> <./USPSC-img/spontaneous_emission.png>] [17]
-<USPSC-img/sharp_line.png, id=413, 219.4599pt x 121.8954pt>
+<USPSC-img/sharp_line.png, id=424, 219.4599pt x 121.8954pt>
 File: USPSC-img/sharp_line.png Graphic file (type png)
 <use USPSC-img/sharp_line.png>
 Package pdftex.def Info: USPSC-img/sharp_line.png  used on input line 154.
 (pdftex.def)             Requested size: 163.7995pt x 90.9805pt.
-<USPSC-img/broadened_line.png, id=415, 229.8186pt x 118.2819pt>
+<USPSC-img/broadened_line.png, id=426, 229.8186pt x 118.2819pt>
 File: USPSC-img/broadened_line.png Graphic file (type png)
 <use USPSC-img/broadened_line.png>
 Package pdftex.def Info: USPSC-img/broadened_line.png  used on input line 164.
 (pdftex.def)             Requested size: 163.7995pt x 84.30379pt.
  [18 <./USPSC-img/sharp_line.png> <./USPSC-img/broadened_line.png>]
-<USPSC-img/cross_section_scheme.png, id=434, 438.63875pt x 336.25626pt>
+<USPSC-img/cross_section_scheme.png, id=445, 438.63875pt x 336.25626pt>
 File: USPSC-img/cross_section_scheme.png Graphic file (type png)
 <use USPSC-img/cross_section_scheme.png>
 Package pdftex.def Info: USPSC-img/cross_section_scheme.png  used on input line
@@ -1577,7 +1582,7 @@ Package pdftex.def Info: USPSC-img/cross_section_scheme.png  used on input line
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [22]
-<USPSC-img/Bloch_sphere.png, id=501, 1027.84pt x 1093.08376pt>
+<USPSC-img/Bloch_sphere.png, id=512, 1027.84pt x 1093.08376pt>
 File: USPSC-img/Bloch_sphere.png Graphic file (type png)
 <use USPSC-img/Bloch_sphere.png>
 Package pdftex.def Info: USPSC-img/Bloch_sphere.png  used on input line 57.
@@ -1587,26 +1592,26 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [23]
 [24 <./USPSC-img/Bloch_sphere.png>] [25] [26] [27] [28] [29]
-<USPSC-img/Rabi_oscillations.png, id=645, 462.528pt x 346.896pt>
+<USPSC-img/Rabi_oscillations.png, id=656, 462.528pt x 346.896pt>
 File: USPSC-img/Rabi_oscillations.png Graphic file (type png)
 <use USPSC-img/Rabi_oscillations.png>
 Package pdftex.def Info: USPSC-img/Rabi_oscillations.png  used on input line 30
 5.
 (pdftex.def)             Requested size: 227.5pt x 170.62628pt.
  [30 <./USPSC-img/Rabi_oscillations.png>] [31]
-<USPSC-img/Damped_Rabi_oscillations.png, id=686, 462.528pt x 346.896pt>
+<USPSC-img/Damped_Rabi_oscillations.png, id=697, 462.528pt x 346.896pt>
 File: USPSC-img/Damped_Rabi_oscillations.png Graphic file (type png)
 <use USPSC-img/Damped_Rabi_oscillations.png>
 Package pdftex.def Info: USPSC-img/Damped_Rabi_oscillations.png  used on input 
 line 364.
 (pdftex.def)             Requested size: 227.5pt x 170.62628pt.
-<USPSC-img/damping_coefficient_a.png, id=690, 462.528pt x 346.896pt>
+<USPSC-img/damping_coefficient_a.png, id=701, 462.528pt x 346.896pt>
 File: USPSC-img/damping_coefficient_a.png Graphic file (type png)
 <use USPSC-img/damping_coefficient_a.png>
 Package pdftex.def Info: USPSC-img/damping_coefficient_a.png  used on input lin
 e 377.
 (pdftex.def)             Requested size: 218.39806pt x 163.79807pt.
-<USPSC-img/damping_coefficient_b.png, id=693, 462.528pt x 346.896pt>
+<USPSC-img/damping_coefficient_b.png, id=704, 462.528pt x 346.896pt>
 File: USPSC-img/damping_coefficient_b.png Graphic file (type png)
 <use USPSC-img/damping_coefficient_b.png>
 Package pdftex.def Info: USPSC-img/damping_coefficient_b.png  used on input lin
@@ -1616,7 +1621,7 @@ e 386.
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [32 <./USPSC-img/Damped_Rabi_oscillations.png>]
-<USPSC-img/oscillation_frequency_c.png, id=710, 462.528pt x 346.896pt>
+<USPSC-img/oscillation_frequency_c.png, id=721, 462.528pt x 346.896pt>
 File: USPSC-img/oscillation_frequency_c.png Graphic file (type png)
 <use USPSC-img/oscillation_frequency_c.png>
 Package pdftex.def Info: USPSC-img/oscillation_frequency_c.png  used on input l
@@ -1629,14 +1634,14 @@ LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 4
  (/usr/share/texmf/tex/latex/lm/ts1lmr.fd
 File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-<USPSC-img/natural_broadening.png, id=757, 314.17375pt x 212.795pt>
+<USPSC-img/natural_broadening.png, id=768, 314.17375pt x 212.795pt>
 File: USPSC-img/natural_broadening.png Graphic file (type png)
 <use USPSC-img/natural_broadening.png>
 Package pdftex.def Info: USPSC-img/natural_broadening.png  used on input line 4
 78.
 (pdftex.def)             Requested size: 181.99722pt x 123.26857pt.
  [35]
-<USPSC-img/net_absorption_cross_section.png, id=780, 462.528pt x 346.896pt>
+<USPSC-img/net_absorption_cross_section.png, id=791, 462.528pt x 346.896pt>
 File: USPSC-img/net_absorption_cross_section.png Graphic file (type png)
 <use USPSC-img/net_absorption_cross_section.png>
 Package pdftex.def Info: USPSC-img/net_absorption_cross_section.png  used on in
@@ -1645,14 +1650,14 @@ put line 504.
  [36 <./USPSC-img/natural_broadening.png>] [37 <./USPSC-img/net_absorption_cros
 s_section.png>]
 [38]
-<USPSC-img/radiation_pressure_force.png, id=832, 781.92125pt x 206.7725pt>
+<USPSC-img/radiation_pressure_force.png, id=843, 781.92125pt x 206.7725pt>
 File: USPSC-img/radiation_pressure_force.png Graphic file (type png)
 <use USPSC-img/radiation_pressure_force.png>
 Package pdftex.def Info: USPSC-img/radiation_pressure_force.png  used on input 
 line 587.
 (pdftex.def)             Requested size: 364.00139pt x 96.25864pt.
  [39 <./USPSC-img/radiation_pressure_force.png>]
-<USPSC-img/gradient_dipole_potential.png, id=844, 462.528pt x 346.896pt>
+<USPSC-img/gradient_dipole_potential.png, id=855, 462.528pt x 346.896pt>
 File: USPSC-img/gradient_dipole_potential.png Graphic file (type png)
 <use USPSC-img/gradient_dipole_potential.png>
 Package pdftex.def Info: USPSC-img/gradient_dipole_potential.png  used on input
@@ -1663,7 +1668,7 @@ Package pdftex.def Info: USPSC-img/gradient_dipole_potential.png  used on input
 
  (./USPSC-TA-Textual/Magneto-Optical-Trap.tex
 (./USPSC-TA-Textual/Magneto-Optical-Trap/One-dimensional-model.tex
-<USPSC-img/1D-MOT.png, id=857, 828.09375pt x 192.72pt>
+<USPSC-img/1D-MOT.png, id=868, 828.09375pt x 192.72pt>
 File: USPSC-img/1D-MOT.png Graphic file (type png)
 <use USPSC-img/1D-MOT.png>
 Package pdftex.def Info: USPSC-img/1D-MOT.png  used on input line 13.
@@ -1674,35 +1679,35 @@ Package pdftex.def Info: USPSC-img/1D-MOT.png  used on input line 13.
 
 
  <./USPSC-img/1D-MOT.png>]
-<USPSC-img/1D-MOT-Zeeman-splitting.png, id=871, 938.50626pt x 391.4625pt>
+<USPSC-img/1D-MOT-Zeeman-splitting.png, id=882, 938.50626pt x 391.4625pt>
 File: USPSC-img/1D-MOT-Zeeman-splitting.png Graphic file (type png)
 <use USPSC-img/1D-MOT-Zeeman-splitting.png>
 Package pdftex.def Info: USPSC-img/1D-MOT-Zeeman-splitting.png  used on input l
 ine 30.
 (pdftex.def)             Requested size: 318.49861pt x 132.8446pt.
  [42 <./USPSC-img/1D-MOT-Zeeman-splitting.png>]
-<USPSC-img/1D-MOT-detunings.png, id=889, 842.14626pt x 528.97626pt>
+<USPSC-img/1D-MOT-detunings.png, id=900, 842.14626pt x 528.97626pt>
 File: USPSC-img/1D-MOT-detunings.png Graphic file (type png)
 <use USPSC-img/1D-MOT-detunings.png>
 Package pdftex.def Info: USPSC-img/1D-MOT-detunings.png  used on input line 55.
 
 (pdftex.def)             Requested size: 250.25139pt x 157.18472pt.
  [43 <./USPSC-img/1D-MOT-detunings.png>]
-<USPSC-img/Independent-two-level-system.png, id=900, 927.465pt x 469.755pt>
+<USPSC-img/Independent-two-level-system.png, id=911, 927.465pt x 469.755pt>
 File: USPSC-img/Independent-two-level-system.png Graphic file (type png)
 <use USPSC-img/Independent-two-level-system.png>
 Package pdftex.def Info: USPSC-img/Independent-two-level-system.png  used on in
 put line 81.
 (pdftex.def)             Requested size: 273.00278pt x 138.27547pt.
  [44 <./USPSC-img/Independent-two-level-system.png>]
-<USPSC-img/MOT_force.png, id=912, 461.8053pt x 346.1733pt>
+<USPSC-img/MOT_force.png, id=923, 461.8053pt x 346.1733pt>
 File: USPSC-img/MOT_force.png Graphic file (type png)
 <use USPSC-img/MOT_force.png>
 Package pdftex.def Info: USPSC-img/MOT_force.png  used on input line 100.
 (pdftex.def)             Requested size: 227.5pt x 170.53493pt.
 )
 (./USPSC-TA-Textual/Magneto-Optical-Trap/Three-dimensional-case.tex
-<USPSC-img/standard-3D-MOT-arrangement.png, id=916, 170.7981pt x 205.4877pt>
+<USPSC-img/standard-3D-MOT-arrangement.png, id=927, 170.7981pt x 205.4877pt>
 File: USPSC-img/standard-3D-MOT-arrangement.png Graphic file (type png)
 <use USPSC-img/standard-3D-MOT-arrangement.png>
 Package pdftex.def Info: USPSC-img/standard-3D-MOT-arrangement.png  used on inp
@@ -1721,7 +1726,7 @@ Overfull \hbox (0.97354pt too wide) detected at line 26
  []
 
 [46 <./USPSC-img/standard-3D-MOT-arrangement.png>] [47]
-<USPSC-img/atomic-cloud-size-scaling.png, id=963, 770.88pt x 580.1675pt>
+<USPSC-img/atomic-cloud-size-scaling.png, id=974, 770.88pt x 580.1675pt>
 File: USPSC-img/atomic-cloud-size-scaling.png Graphic file (type png)
 <use USPSC-img/atomic-cloud-size-scaling.png>
 Package pdftex.def Info: USPSC-img/atomic-cloud-size-scaling.png  used on input
@@ -1732,23 +1737,23 @@ Underfull \vbox (badness 6332) has occurred while \output is active []
 
  [48 <./USPSC-img/atomic-cloud-size-scaling.png>])
 (./USPSC-TA-Textual/Magneto-Optical-Trap/Narrow-Line-MOT.tex [49]
-<USPSC-img/atomic_cloud_shape_in_nMOTs.png, id=984, 384.43625pt x 473.77pt>
+<USPSC-img/atomic_cloud_shape_in_nMOTs.png, id=995, 384.43625pt x 473.77pt>
 File: USPSC-img/atomic_cloud_shape_in_nMOTs.png Graphic file (type png)
 <use USPSC-img/atomic_cloud_shape_in_nMOTs.png>
 Package pdftex.def Info: USPSC-img/atomic_cloud_shape_in_nMOTs.png  used on inp
-ut line 12.
+ut line 13.
 (pdftex.def)             Requested size: 136.50139pt x 168.22206pt.
 
 Underfull \vbox (badness 4217) has occurred while \output is active []
 
  [50 <./USPSC-img/atomic_cloud_shape_in_nMOTs.png>]
-<USPSC-img/centre_of_mass_power_broadened_regime.png, id=999, 181.67876pt x 313
-.17pt>
+<USPSC-img/centre_of_mass_power_broadened_regime.png, id=1010, 181.67876pt x 31
+3.17pt>
 File: USPSC-img/centre_of_mass_power_broadened_regime.png Graphic file (type pn
 g)
 <use USPSC-img/centre_of_mass_power_broadened_regime.png>
 Package pdftex.def Info: USPSC-img/centre_of_mass_power_broadened_regime.png  u
-sed on input line 59.
+sed on input line 60.
 (pdftex.def)             Requested size: 77.34917pt x 133.33202pt.
  [51])) [52 <./USPSC-img/centre_of_mass_power_broadened_regime.png>]
 \openout2 = `USPSC-TA-Textual/Monte-Carlo-Simulation.aux'.
@@ -1760,7 +1765,7 @@ sed on input line 59.
 
 
 ]
-<USPSC-img/polarization_basis.png, id=1041, 298.11375pt x 238.8925pt>
+<USPSC-img/polarization_basis.png, id=1053, 298.11375pt x 238.8925pt>
 File: USPSC-img/polarization_basis.png Graphic file (type png)
 <use USPSC-img/polarization_basis.png>
 Package pdftex.def Info: USPSC-img/polarization_basis.png  used on input line 5
@@ -1779,13 +1784,13 @@ Package pdftex.def Info: USPSC-img/polarization_basis.png  used on input line 5
 
 ]
 (./USPSC-TA-Textual/Results/Dysprosium.tex [61]
-<USPSC-img/Dy-Dreon-transitions.png, id=1133, 661.47125pt x 406.51875pt>
+<USPSC-img/Dy-Dreon-transitions.png, id=1144, 661.47125pt x 406.51875pt>
 File: USPSC-img/Dy-Dreon-transitions.png Graphic file (type png)
 <use USPSC-img/Dy-Dreon-transitions.png>
 Package pdftex.def Info: USPSC-img/Dy-Dreon-transitions.png  used on input line
  33.
 (pdftex.def)             Requested size: 181.99722pt x 111.84572pt.
-<USPSC-img/Dreon-setup.png, id=1138, 174.8934pt x 177.0615pt>
+<USPSC-img/Dreon-setup.png, id=1149, 174.8934pt x 177.0615pt>
 File: USPSC-img/Dreon-setup.png Graphic file (type png)
 <use USPSC-img/Dreon-setup.png>
 Package pdftex.def Info: USPSC-img/Dreon-setup.png  used on input line 43.
@@ -1795,20 +1800,20 @@ Underfull \hbox (badness 10000) in paragraph at lines 44--44
 [][]|\T1/lmr/m/n/12 Laser beam ar-range-ment and
  []
 
-<USPSC-img/dy_dreon_cloud_profile.png, id=1153, 433.62pt x 361.35pt>
+<USPSC-img/dy_dreon_cloud_profile.png, id=1164, 433.62pt x 361.35pt>
 File: USPSC-img/dy_dreon_cloud_profile.png Graphic file (type png)
 <use USPSC-img/dy_dreon_cloud_profile.png>
 Package pdftex.def Info: USPSC-img/dy_dreon_cloud_profile.png  used on input li
 ne 93.
 (pdftex.def)             Requested size: 227.5pt x 189.58478pt.
-<USPSC-img/in-situ-atomic-cloud-Dreon.png, id=1156, 133.6995pt x 152.2488pt>
+<USPSC-img/in-situ-atomic-cloud-Dreon.png, id=1167, 133.6995pt x 152.2488pt>
 File: USPSC-img/in-situ-atomic-cloud-Dreon.png Graphic file (type png)
 <use USPSC-img/in-situ-atomic-cloud-Dreon.png>
 Package pdftex.def Info: USPSC-img/in-situ-atomic-cloud-Dreon.png  used on inpu
 t line 100.
 (pdftex.def)             Requested size: 127.39749pt x 145.07458pt.
 [62 <./USPSC-img/Dy-Dreon-transitions.png> <./USPSC-img/Dreon-setup.png>]
-<USPSC-img/dy_centre_of_mass.png, id=1170, 606.265pt x 425.59pt>
+<USPSC-img/dy_centre_of_mass.png, id=1181, 606.265pt x 425.59pt>
 File: USPSC-img/dy_centre_of_mass.png Graphic file (type png)
 <use USPSC-img/dy_centre_of_mass.png>
 Package pdftex.def Info: USPSC-img/dy_centre_of_mass.png  used on input line 11
@@ -1817,19 +1822,19 @@ Package pdftex.def Info: USPSC-img/dy_centre_of_mass.png  used on input line 11
 
 [63 <./USPSC-img/dy_dreon_cloud_profile.png> <./USPSC-img/in-situ-atomic-cloud-
 Dreon.png>]
-<USPSC-img/dy_cloud_size.png, id=1187, 602.25pt x 420.57124pt>
+<USPSC-img/dy_cloud_size.png, id=1198, 602.25pt x 420.57124pt>
 File: USPSC-img/dy_cloud_size.png Graphic file (type png)
 <use USPSC-img/dy_cloud_size.png>
 Package pdftex.def Info: USPSC-img/dy_cloud_size.png  used on input line 125.
 (pdftex.def)             Requested size: 227.5pt x 158.86896pt.
-<USPSC-img/dy_cloud_size_ratio.png, id=1188, 475.7775pt x 332.24126pt>
+<USPSC-img/dy_cloud_size_ratio.png, id=1199, 475.7775pt x 332.24126pt>
 File: USPSC-img/dy_cloud_size_ratio.png Graphic file (type png)
 <use USPSC-img/dy_cloud_size_ratio.png>
 Package pdftex.def Info: USPSC-img/dy_cloud_size_ratio.png  used on input line 
 132.
 (pdftex.def)             Requested size: 204.74861pt x 142.97754pt.
  [64 <./USPSC-img/dy_centre_of_mass.png>]
-<USPSC-img/dy_temperature.png, id=1197, 471.7625pt x 378.41376pt>
+<USPSC-img/dy_temperature.png, id=1208, 471.7625pt x 378.41376pt>
 File: USPSC-img/dy_temperature.png Graphic file (type png)
 <use USPSC-img/dy_temperature.png>
 Package pdftex.def Info: USPSC-img/dy_temperature.png  used on input line 148.
@@ -1837,13 +1842,13 @@ Package pdftex.def Info: USPSC-img/dy_temperature.png  used on input line 148.
 )
 (./USPSC-TA-Textual/Results/Strontium.tex [65 <./USPSC-img/dy_cloud_size.png> <
 ./USPSC-img/dy_cloud_size_ratio.png>]
-<USPSC-img/sr_loftus_cloud_profile.png, id=1221, 500.8311pt x 185.0112pt>
+<USPSC-img/sr_loftus_cloud_profile.png, id=1232, 500.8311pt x 185.0112pt>
 File: USPSC-img/sr_loftus_cloud_profile.png Graphic file (type png)
 <use USPSC-img/sr_loftus_cloud_profile.png>
 Package pdftex.def Info: USPSC-img/sr_loftus_cloud_profile.png  used on input l
 ine 86.
 (pdftex.def)             Requested size: 263.90083pt x 97.48802pt.
-<USPSC-img/loftus-atomic-cloud-profile.png, id=1224, 217.2918pt x 72.7518pt>
+<USPSC-img/loftus-atomic-cloud-profile.png, id=1235, 217.2918pt x 72.7518pt>
 File: USPSC-img/loftus-atomic-cloud-profile.png Graphic file (type png)
 <use USPSC-img/loftus-atomic-cloud-profile.png>
 Package pdftex.def Info: USPSC-img/loftus-atomic-cloud-profile.png  used on inp
@@ -1852,25 +1857,25 @@ ut line 93.
  [66 <./USPSC-img/dy_temperature.png>]
 [67 <./USPSC-img/sr_loftus_cloud_profile.png> <./USPSC-img/loftus-atomic-cloud-
 profile.png>]
-<USPSC-img/sr_centre_of_mass.png, id=1240, 433.62pt x 325.215pt>
+<USPSC-img/sr_centre_of_mass.png, id=1251, 433.62pt x 325.215pt>
 File: USPSC-img/sr_centre_of_mass.png Graphic file (type png)
 <use USPSC-img/sr_centre_of_mass.png>
 Package pdftex.def Info: USPSC-img/sr_centre_of_mass.png  used on input line 10
 6.
 (pdftex.def)             Requested size: 227.5pt x 170.6263pt.
-<USPSC-img/sr_loftus_cloud_size.png, id=1243, 361.35pt x 289.08pt>
+<USPSC-img/sr_loftus_cloud_size.png, id=1254, 361.35pt x 289.08pt>
 File: USPSC-img/sr_loftus_cloud_size.png Graphic file (type png)
 <use USPSC-img/sr_loftus_cloud_size.png>
 Package pdftex.def Info: USPSC-img/sr_loftus_cloud_size.png  used on input line
  117.
 (pdftex.def)             Requested size: 218.39806pt x 174.7197pt.
-<USPSC-img/sr-ifsc-temperature_vs_detuning.png, id=1247, 433.62pt x 325.215pt>
+<USPSC-img/sr-ifsc-temperature_vs_detuning.png, id=1258, 433.62pt x 325.215pt>
 File: USPSC-img/sr-ifsc-temperature_vs_detuning.png Graphic file (type png)
 <use USPSC-img/sr-ifsc-temperature_vs_detuning.png>
 Package pdftex.def Info: USPSC-img/sr-ifsc-temperature_vs_detuning.png  used on
  input line 136.
 (pdftex.def)             Requested size: 218.39806pt x 163.79807pt.
-<USPSC-img/sr_ifsc_temperature_vs_saturation.png, id=1248, 433.62pt x 325.215pt
+<USPSC-img/sr_ifsc_temperature_vs_saturation.png, id=1259, 433.62pt x 325.215pt
 >
 File: USPSC-img/sr_ifsc_temperature_vs_saturation.png Graphic file (type png)
 <use USPSC-img/sr_ifsc_temperature_vs_saturation.png>
@@ -1947,10 +1952,10 @@ LaTeX Warning: There were multiply-defined labels.
 ### simple group (level 1) entered at line 313 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 31755 strings out of 480113
- 587405 string characters out of 5892773
- 911842 words of memory out of 5000000
- 48447 multiletter control sequences out of 15000+600000
+ 31756 strings out of 480113
+ 587426 string characters out of 5892773
+ 911939 words of memory out of 5000000
+ 48448 multiletter control sequences out of 15000+600000
  552535 words of font info for 78 fonts, out of 8000000 for 9000
  83 hyphenation exceptions out of 8191
  89i,17n,93p,1964b,908s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1973,11 +1978,11 @@ xmf/fonts/type1/public/lm/lmsy6.pfb></usr/share/texmf/fonts/type1/public/lm/lms
 y8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam1
 0.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10
 .pfb>
-Output written on "build/Master's degree thesis.pdf" (89 pages, 1984327 bytes).
+Output written on "build/Master's degree thesis.pdf" (89 pages, 1984450 bytes).
 
 PDF statistics:
- 1882 PDF objects out of 2073 (max. 8388607)
- 1626 compressed objects within 17 object streams
+ 1894 PDF objects out of 2073 (max. 8388607)
+ 1638 compressed objects within 17 object streams
  541 named destinations out of 1000 (max. 500000)
  661 words of extra memory for PDF output out of 10000 (max. 10000000)
 
