@@ -4,6 +4,7 @@ The top-level auxiliary file: Master's degree thesis.aux
 The style file: USPSC-classe/abntex2-numeng-USPSC.bst
 A level-1 auxiliary file: USPSC-TA-PreTextual/USPSC-Agradecimentos.aux
 A level-1 auxiliary file: USPSC-TA-PreTextual/USPSC-Abstract.aux
+A level-1 auxiliary file: USPSC-TA-PreTextual/USPSC-Resumo.aux
 A level-1 auxiliary file: USPSC-TA-Textual/introduction.aux
 A level-1 auxiliary file: USPSC-TA-Textual/Atom-Light-Interaction.aux
 A level-1 auxiliary file: USPSC-TA-Textual/Magneto-Optical-Trap.aux
@@ -22,11 +23,11 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
 Database file #1: abntex2-options.bib
 Database file #2: references.bib
-Repeated entry---line 376 of file references.bib
+Repeated entry---line 354 of file references.bib
  : @article{krzysztof2010magneto
  :                              ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 469 of file references.bib
+Repeated entry---line 440 of file references.bib
  : @article{metcalf2007laser
  :                          ,
 I'm skipping whatever remains of this entry
@@ -40,45 +41,45 @@ Reallocated glb_str_end (elt_size=4) to 20 items from 10.
 | Em caso de dúvidas ou problemas com este estilo procure |
 | http://www.abntex.net.br/                               |
 +---------------------------------------------------------+
-You've used 62 entries,
+You've used 61 entries,
             6714 wiz_defined-function locations,
-            1524 strings with 19277 characters,
-and the built_in function-call counts, 46849 in all, are:
-= -- 3586
-> -- 1543
-< -- 266
-+ -- 753
-- -- 449
-* -- 3379
-:= -- 5819
-add.period$ -- 160
-call.type$ -- 64
-change.case$ -- 653
-chr.to.int$ -- 185
-cite$ -- 51
-duplicate$ -- 2677
-empty$ -- 3254
-format.name$ -- 2376
-if$ -- 11130
+            1516 strings with 19118 characters,
+and the built_in function-call counts, 44088 in all, are:
+= -- 3200
+> -- 1531
+< -- 164
++ -- 647
+- -- 445
+* -- 3205
+:= -- 5494
+add.period$ -- 157
+call.type$ -- 63
+change.case$ -- 649
+chr.to.int$ -- 184
+cite$ -- 50
+duplicate$ -- 2316
+empty$ -- 3151
+format.name$ -- 2356
+if$ -- 10602
 int.to.chr$ -- 10
 int.to.str$ -- 1
-missing$ -- 1031
-newline$ -- 261
-num.names$ -- 204
-pop$ -- 1242
+missing$ -- 1016
+newline$ -- 258
+num.names$ -- 200
+pop$ -- 1292
 preamble$ -- 1
-purify$ -- 259
+purify$ -- 256
 quote$ -- 0
-skip$ -- 3097
+skip$ -- 2761
 stack$ -- 1
-substring$ -- 1764
-swap$ -- 1403
-text.length$ -- 122
+substring$ -- 1647
+swap$ -- 1258
+text.length$ -- 120
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 2
 warning$ -- 0
-while$ -- 322
+while$ -- 315
 width$ -- 0
-write$ -- 784
+write$ -- 736
 (There were 2 error messages)

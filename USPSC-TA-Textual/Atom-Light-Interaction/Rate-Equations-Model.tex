@@ -15,36 +15,31 @@ Let us consider a dilute atomic gas with number density $ n_1(t) $ of atoms in t
 where $ B_{12} u(\omega_0) $, $ B_{21} u(\omega_0) $, and $ A $ are phenomenological rates associated with the stimulated absorption, stimulated emission and spontaneous emission respectively. The rates associated with stimulated processes are proportional to the spectral density energy and therefore theses processes only happen in the presence of a light field. 
 
 \begin{figure}[H]
-	\caption{Optical two-level transitions}
 	\begin{subfigure}[t]{0.32\textwidth}
 		\centering
 		\subcaption{\textbf{Stimulated absorption}}
-		\includegraphics[width=0.8\textwidth]{USPSC-img/stimulated_absorption.png}
+		\includegraphics[width=0.7\textwidth]{USPSC-img/stimulated_absorption.png}
 		\vspace{5pt}
-		\legend{An atom in the lower level goes into the upper level absorbing a photon with energy $ \hbar \omega_0 $ from a light field with $ u(\omega_0) > 0 $.}
 		\label{img:stimulated-absorption}
 	\end{subfigure}
 	\hfill
 	\begin{subfigure}[t]{0.32\textwidth}
 		\centering
 		\subcaption{\textbf{Stimulated emission}}
-		\includegraphics[width=0.8\textwidth]{USPSC-img/stimulated_emission.png}
+		\includegraphics[width=0.7\textwidth]{USPSC-img/stimulated_emission.png}
 		\vspace{5pt}
-		\legend{An atom in the upper level decays into the lower level in the presence of a light field with $ u(\omega_0) > 0 $, emitting a photon with energy $\hbar \omega_0 $ similar to the photons in the light field.}
 		\label{img:stimulated-emission}
 	\end{subfigure}
 	\hfill
 	\begin{subfigure}[t]{0.32\textwidth}
 		\centering
 		\subcaption{\textbf{Spontaneous emission}}
-		\includegraphics[width=0.8\textwidth]{USPSC-img/spontaneous_emission.png}
+		\includegraphics[width=0.7\textwidth]{USPSC-img/spontaneous_emission.png}
 		\vspace{5pt}
-		\legend{An atom in the upper level emits an isotropic photon with energy $ \hbar \omega_0 $ spontaneously, decaying into the lower level.}
 		\label{img:spontaneous-emission}
 	\end{subfigure}
-
-	\legend{Source: Author}
-	\vspace{-20pt}
+	\caption{Representative illustration of stimulated absorption and emission, and spontaneous emission. In figure (a), an atom in the lower level goes into the upper level absorbing a photon with energy $ \hbar \omega_0 $ from a light field with $ u(\omega_0) > 0 $. In figure (b), an atom in the upper level decays into the lower level in the presence of a light field with $ u(\omega_0) > 0 $, emitting a photon with energy $\hbar \omega_0 $ similar to the photons in the light field. In figure (c), an atom in the upper level emits an isotropic photon with energy $ \hbar \omega_0 $ spontaneously, decaying into the lower level.}
+	\legend{Source: By the author.}
 	\label{fig:optical-transitions}
 \end{figure}
 
@@ -147,13 +142,11 @@ In the limits $ A \gg \alpha $ and $ A \ll \alpha $, we obtain $ P(t) \longright
 In the previous section, we assume that the emitted and absorbed photons have a single frequency $ \omega_0 $. In this case, the probability to absorb or emit a photon is a sharp line centered at $ \omega = \omega_0 $ as illustrated in figure \ref{fig:shap-spectral-line}. However, in real situations, atoms can absorb and emit photons in a range of frequencies due to \textbf{line-broadening mechanisms} (section \ref{sec:line-broadening-mechanisms}), which is illustrated in figure \ref{fig:broadened-spectral-line}. 
 
 \begin{figure}[H]
-	\caption{Spectral broadening}
 	\begin{subfigure}[t]{0.45\textwidth}
 		\centering
 		\subcaption{Sharp spectral line}
-		\includegraphics[width=0.8\textwidth]{USPSC-img/sharp_line.png}
+		\includegraphics[width=0.7\textwidth]{USPSC-img/sharp_line.png}
 		\vspace{5pt}
-		\legend{Absorption or emission spectrum without line-broadening mechanisms so that we can assume the line shape $ g(\omega) = \delta(\omega - \omega_0) $.}
 		\label{fig:shap-spectral-line}
 	\end{subfigure}
 	\hfill
@@ -161,14 +154,13 @@ In the previous section, we assume that the emitted and absorbed photons have a 
 		\centering
 		\subcaption{Broadened spectral line}
 		\vspace{8pt}
-		\includegraphics[width=0.8\textwidth]{USPSC-img/broadened_line.png}
+		\includegraphics[width=0.7\textwidth]{USPSC-img/broadened_line.png}
 		\vspace{5pt}
-		\legend{Absorption or emission spectrum taking line-broadening mechanisms into account.}
 		\label{fig:broadened-spectral-line}
 	\end{subfigure}
 
-	\legend{Source: \cite{valverde2016mecanismos}}
-	\vspace{-20pt}
+	\caption{Representative illustration of optical two-level transitions. In figure (a), it is represented the absorption or emission spectrum without line-broadening mechanisms so that we can assume the line shape $ g(\omega) = \delta(\omega - \omega_0) $. In figure (b), it is represented the absorption or emission spectrum taking line-broadening mechanisms into account.}
+	\legend{Source: VALVERDE, C.; BASEIA, B.; BAGNATO. \cite{valverde2016mecanismos}}
 	\label{fig:spectral-broadening}
 \end{figure}
 
@@ -228,16 +220,17 @@ The intensity $ I_s $ is called \textbf{saturation intensity}. When $ s(\omega) 
 %-----------------------------------
 %
 
-\begin{wrapfigure}{l}{0.45\textwidth}
-	\centering
-	\caption{Absorption Cross Section}
-	\includegraphics[width=0.43\textwidth]{USPSC-img/cross_section_scheme.png}
-	\legend{Dilute atomic gas interacting with a electromagnetic radiation in a slab of thickness $ \Delta z $ and volume $ \Delta S \Delta z $. \\ Source: Author}
-	\vspace{-15pt}
-	\label{fig:absorption-cross-section}
-\end{wrapfigure}
+In atomic spectroscopic, it is common to analyse the attenuated or amplified light beam which passes through an atomic medium \cite{reinaudi2007strong, smith2011absorption, shu2004absorption}. Let us consider an electromagnetic beam with total spectral intensity $ I(\omega, z) $ propagating in the z-direction. This radiation passes through an atomic ensemble with $ n_1 $ atoms per volume in the ground state and $ n_2 $ atoms per volume in the excited state, being attenuated or amplified in each slab of thickness $ \Delta z $ due to stimulated absorption, as illustrated in Figure \ref{fig:absorption-cross-section}.
 
-In atomic spectroscopic, it is common to analyse the attenuated or amplified light beam which passes through an atomic medium \cite{reinaudi2007strong, smith2011absorption, shu2004absorption}. Let us consider an electromagnetic beam with total spectral intensity $ I(\omega, z) $ propagating in the z-direction. This radiation passes through an atomic ensemble with $ n_1 $ atoms per volume in the ground state and $ n_2 $ atoms per volume in the excited state (figure \ref{fig:absorption-cross-section}), being attenuated or amplified in each slab of thickness $ \Delta z $ due to stimulated absorption. Its spectral intensity will be reduced by a fraction of $ n_1 \sigma(\omega) \Delta z $, where $ \sigma(\omega) $, known as \textbf{absorption cross-section}\footnote{The absorption cross-section is expressed in units of area}, is related to the probability that an atom will absorb an photon with angular frequency between $ \omega $ and $ \omega + d\omega $ from the light field on the section where this light passes on. Therefore, the lost spectral intensity is given $ \Delta I / I = - N \sigma \Delta z $ and then
+\begin{figure}[!ht]
+	\centering
+	\includegraphics[width=0.40\textwidth]{USPSC-img/cross_section_scheme.png}
+	\caption{Dilute atomic gas interacting with a electromagnetic radiation in a slab of thickness $ \Delta z $ and volume $ \Delta S \Delta z $.}
+	\legend{Source: By the author.}
+	\label{fig:absorption-cross-section}
+\end{figure}
+
+The spectral intensity will be reduced by a fraction of $ n_1 \sigma(\omega) \Delta z $, where $ \sigma(\omega) $, known as \textbf{absorption cross-section}\footnote{The absorption cross-section is expressed in units of area}, is related to the probability that an atom will absorb an photon with angular frequency between $ \omega $ and $ \omega + d\omega $ from the light field on the section where this light passes on. Therefore, the lost spectral intensity is given $ \Delta I / I = - N \sigma \Delta z $ and then
 \begin{equation}
 	\frac{dI}{dz}(\omega, z) = - n_1 \sigma(\omega) I(\omega, z).
 	\label{eq:lost-spectral-intensity}

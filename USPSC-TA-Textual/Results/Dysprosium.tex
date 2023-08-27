@@ -9,6 +9,7 @@ The dysprosium nMOT \cite{dreon2017optical} reproduced by Davide Dreon and his r
 
 \begin{table}[ht!]
     \centering
+    \caption{Parameters of the involved electronic transition from the Dreon nMOT.}
     \begin{tabular}{|c|c|c|}
         \hline
         \textbf{Symbol} & \textbf{Quantity} & \textbf{Value} \\ \hline
@@ -21,34 +22,38 @@ The dysprosium nMOT \cite{dreon2017optical} reproduced by Davide Dreon and his r
         $ m $ & Mass & $ 164\ u $ \\
         \hline
     \end{tabular}
-    \caption{Electronic transition parameters from \cite{dreon2017designing}.}
+    \vspace{10px}
+    \legend{Source: DREON, D. \cite{dreon2017designing}.}
     \label{tab:electronic-transition-Dy-Dreon}
 \end{table}
 
-The involved transition is more complicated than the one present in Chapter \ref{ch:Monte-Carlo-simulation} since it has 36 possible states in the presence of a magnetic field due to the large angular momenta $ \ket{J = 8} \longrightarrow \ket{J = 9} $. However, in the power-broadened regime, the dysprosium atoms gather in a region with a large and negative magnetic field, which leads to a large and positive Zeeman shift so that an efficient optical pumping populates the absolute ground state $ \ket{J = 8, m_J = -8} $. This spin-polarization phenomenon was observed experimentally for nMOTs with lanthanide atoms \cite{lu2011strongly,aikawa2012bose} and also in the Dreon experiment. Therefore, due to selection rules (see Appendix \ref{ap:selection-rules}), we can simplify the transitions to a four-level system as illustrated in Figure \ref{fig:Dy-Dreon-electronic-transitions} and then apply our model under the three independent two-level systems assumption.
+The involved transition is more complicated than the one present in Chapter \ref{ch:Monte-Carlo-simulation} since it has 36 possible states in the presence of a magnetic field due to the large angular momenta $ \ket{J = 8} \longrightarrow \ket{J = 9} $. However, in the power-broadened regime, the dysprosium atoms gather in a region with a large and negative magnetic field, which leads to a large and positive Zeeman shift so that an efficient optical pumping populates the absolute ground state $ \ket{J = 8, m_J = -8} $. This spin-polarization was observed experimentally for nMOTs with lanthanide atoms \cite{lu2011strongly,aikawa2012bose} and also in the Dreon experiment. Therefore, due to selection rules (see Appendix \ref{ap:selection-rules}), we can simplify the transitions to a four-level system as illustrated in Figure \ref{fig:Dy-Dreon-electronic-transitions} and then apply our model under the three independent two-level systems assumption.
 
 \begin{figure}[!ht]
     \centering
-    \caption{Electronic transitions of dysprosium atoms under spin-polarization phenomenon}
-    \includegraphics[width=0.4\textwidth]{USPSC-img/Dy-Dreon-transitions.png}
-    \vspace{5px}
-    \legend{The spin-polarization phenomenon populates the absolute ground state $ \ket{J = 8, m_J = -8} $. Hence, due to selection rules (see appendix \ref{ap:selection-rules}), we can simplify the transitions to a four-level system $ \ket{J = 8, m_J = 8} \longrightarrow \ket{J' = 9, m_J' = -7, -8, -9} $. \\ Source: \cite{dreon2017optical}}
-    \label{fig:Dy-Dreon-electronic-transitions}
+    \begin{subfigure}[b]{0.48\linewidth}
+        \centering
+        \subcaption{Electronic transitions}
+        \includegraphics[width=0.8\textwidth]{USPSC-img/Dy-Dreon-transitions.png}
+        \label{fig:Dy-Dreon-electronic-transitions}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.48\linewidth}
+        \centering
+        \subcaption{Laser beam arrangement}
+        \includegraphics[width=0.6\textwidth]{USPSC-img/Dreon-setup.png}
+        \label{fig:Dreon-setup}
+    \end{subfigure}
+    \vspace{10px}
+    \caption{(a) Electronic transitions of spin-polarized dysprosium atoms and (b) laser beam arrangement and Helmholtz coils setup from the Dreon nMOT.}
+    \legend{Source: DREON, D. \textit{et al}. \cite{dreon2017optical}.}
 \end{figure}
 
-\begin{wrapfigure}{l}{0.4\textwidth}
-    \centering
-    \vspace{-15px}
-    \caption{Dreon nMOT setup}
-    \includegraphics[width=0.3\textwidth]{USPSC-img/Dreon-setup.png}
-    \legend{Laser beam arrangement and Helmholtz coils setup. \\ Source: \cite{dreon2017optical}}
-    \label{fig:Dreon-setup}
-    \vspace{-10px}
-\end{wrapfigure}
 The arrangement of the lasers is not the usual one introduced in Section \ref{sec:three-dimensional-MOT}, where we have a pair of counter-propagating laser beams in the gravity direction. In the Dreon setup, there are two pairs of counter-propagating laser beams forming an angle of 45 degrees with the gravity direction, as illustrated in Figure \ref{fig:Dreon-setup}. Moreover, the strong and negative magnetic field component is perpendicular to the gravity direction so that the laser beams in this direction have different polarization than the other ones. This setup was designed to decrease the MOT force in the gravity direction and then guarantee that the atoms fall below the magnetic field origin. The parameters of the laser arrangement and the magnetic field profile are presented in Tables \ref{tab:Dreon-laser-beams} and \ref{tab:Dreon-magnetic-field}.
 
 \begin{table}[ht!]
     \centering
+    \caption{Wave vector direction $ (x, y, z) $ and polarization $ (\sigma_+, \sigma_-, \pi) $ in the laboratory frame (see Section \ref{sec:magnetic-field-frame}) from Dreon nMOT. All laser beams are set up with the saturation parameter $ s_0 = 0.65 $ and waist $ 2.0\ cm $.}
     \begin{tabular}{|c|c|}
         \hline
         \textbf{Wave vector (arb. unit.)} & \textbf{Polarization} \\ \hline
@@ -60,12 +65,14 @@ The arrangement of the lasers is not the usual one introduced in Section \ref{se
         $ (0, -1, -1) $ & $ (1, 0, 0) $ \\
         \hline
     \end{tabular}
-    \caption{Wave vector direction $ (x, y, z) $ and polarization $ (\sigma_+, \sigma_-, \pi) $ in the laboratory frame (see Section \ref{sec:magnetic-field-frame}) from \cite{dreon2017optical}. All laser beams are set up with the saturation parameter $ s_0 = 0.65 $ and waist $ 2.0\ cm $.}
+    \vspace{10px}
+    \legend{Source: DREON, D. \textit{et al}. \cite{dreon2017optical}.}
     \label{tab:Dreon-laser-beams}
 \end{table}
 
 \begin{table}[ht!]
     \centering
+    \caption{Parameters that defined the magnetic field profile from Dreon nMOT.}
     \begin{tabular}{|c|c|c|}
         \hline
         \textbf{Symbol} & \textbf{Quantity} & \textbf{Value} \\ \hline
@@ -74,7 +81,8 @@ The arrangement of the lasers is not the usual one introduced in Section \ref{se
         $ B_{bias} $ & Bias & $ (-0.094 \hat{z})\ G / cm $ \\
         \hline
     \end{tabular}
-    \caption{Magnetic field parameters from \cite{dreon2017optical}}
+    \vspace{10px}
+    \legend{Source: DREON, D. \textit{et al}. \cite{dreon2017optical}.}
     \label{tab:Dreon-magnetic-field}
 \end{table}
 
@@ -87,31 +95,32 @@ The in-situ and estimated atomic cloud profiles are shown in Figures \ref{fig:Dr
 
 \begin{figure}[!ht]
     \centering
-    \caption{In-situ and estimated atomic cloud profiles from Dreon nMOT}
     \begin{subfigure}[b]{0.5\linewidth}
         \centering
+        \subcaption{Simulated atomic cloud}
         \includegraphics[width=\textwidth]{USPSC-img/dy_dreon_cloud_profile.png}
-        \caption{Estimated atomic cloud profile for different laser detunings based on equation (\ref{eq:joint-position-distribution}). \\ Source: author}
         \label{fig:Dreon-simulated-atomic-cloud-profile}
     \end{subfigure}
     \hspace{20px}
     \begin{subfigure}[b]{0.4\linewidth}
         \centering
+        \subcaption{In-situ atomic cloud}
         \includegraphics[width=0.7\textwidth]{USPSC-img/in-situ-atomic-cloud-Dreon.png}
-        \caption{In situ atomic cloud profile. \\ Source: \cite{dreon2017designing}}
-        \vspace{35px}
+        \vspace{30px}
         \label{fig:Dreon-in-situ-atomic-cloud-profile}
     \end{subfigure}
+    \caption{(a) Estimated atomic cloud profile for different laser detunings based on equation (\ref{eq:joint-position-distribution}). (b) In-situ atomic cloud profiles from the Dreon nMOT.}
+    \legend{Source (a): By the author. Source (b): DREON, D. \textit{et al}. \cite{dreon2017optical}.}
 \end{figure}
 
 From equation (\ref{eq:centre-of-mass-power-broadened-regime}), we expect that the centre of mass\footnote{We are considering only the z component as the centre of mass since all other components is about zero in all cases.} of the atomic cloud is proportional to the laser detuning for large detunings. In fact, the estimated centre of mass given by equation (\ref{eq:simulated-centre-of-mass}) and the experimental measures confirm this linear relation for laser detunings roughly larger than $ 2\pi \times 700\ kHz \simeq 4\Gamma' $, as illustrated in Figure \ref{fig:Dreon-centre-of-mass}. However, the theoretical centre of mass is not as accurate as the estimated one since there is a difference of about $1mm$ between the experimental and theoretical centre of mass, whereas the estimated values match almost perfectly the experimental measures.
 
 \begin{figure}[!ht]
     \centering
-    \caption{Centre of mass in function of the laser detunings for the Dreon nMOT}
     \includegraphics[width=0.6\textwidth]{USPSC-img/dy_centre_of_mass.png}
     \vspace{5px}
-    \legend{The gravity direction component of the centre of mass as a function of the laser detuning. The blue spheres, orange triangles, and green squares are, respectively, the theoretical centres of mass from equation (\ref{eq:centre-of-mass-power-broadened-regime}), estimated points, and experimental measures from \cite{dreon2017designing}. \\ Source: author}
+    \caption{The gravity direction component of the centre of mass as a function of the laser detuning. The blue spheres, orange triangles, and green squares are, respectively, the theoretical centres of mass from equation (\ref{eq:centre-of-mass-power-broadened-regime}), estimated points, and experimental measures from \cite{dreon2017designing}.}
+    \legend{Source: By the author.}
     \label{fig:Dreon-centre-of-mass}
 \end{figure}
 
@@ -119,20 +128,21 @@ We do not expect an accurate estimative of the cloud size since this quantity is
 
 \begin{figure}[!ht]
     \centering
-    \caption{Cloud sizes $ \sigma_y $ and $ \sigma_z $ of the Dreon nMOT as a function of the laser detuning}
     \begin{subfigure}[b]{0.5\linewidth}
         \centering
+        \subcaption{Cloud sizes $ \sigma_y $ and $ \sigma_z $}
         \includegraphics[width=\textwidth]{USPSC-img/dy_cloud_size.png}
-        \caption{The blue spheres and orange triangles are the estimated and experimental cloud sizes respectively.\\ Source: author}
         \label{fig:Dreon-cloud-size}
     \end{subfigure}
     \hfill
     \begin{subfigure}[b]{0.45\linewidth}
         \centering
+        \subcaption{Cloud size ratio $ \sigma_y / \sigma_z $}
         \includegraphics[width=\textwidth]{USPSC-img/dy_cloud_size_ratio.png}
-        \caption{Cloud size ratio $ \sigma_y / \sigma_z $ as a function of the laser detuning. The blue spheres and orange triangles are the estimated and experimental cloud sizes respectively.\\ Source: author}
         \label{fig:Dreon-cloud-size-ratio}
     \end{subfigure}
+    \caption{(a) Cloud sizes $ \sigma_y $ and $ \sigma_z $ and (b) cloud ratio $ \sigma_y / \sigma_z $ as a function of the laser detuning. The blue spheres and orange triangles are the estimated and experimental cloud sizes respectively.}
+    \legend{Source: By the author.}
 \end{figure}
 
 %-----------------------------------
@@ -144,9 +154,9 @@ The experimental and estimated temperatures are shown in Figure \ref{fig:Dreon-t
 
 \begin{figure}[!ht]
     \centering
-    \caption{Temperature of the Dreon nMOT as a function of the laser detuning}
     \includegraphics[width=0.45\textwidth]{USPSC-img/dy_temperature.png}
     \vspace{5px}
-    \legend{The blue spheres and the orange triangles are the estimated and experimental temperatures respectively. We can roughly split the temperatures into two regions at the laser detuning $ -6 \Gamma' \simeq 7.5 \Gamma $. For detunings lower than $ 6 \Gamma'  $ in module, the nMOT is not in the power-broadened regime and then present a divergence between experimental and estimated values. \\ Source: author}
+    \caption{Temperature of the Dreon nMOT as a function of the laser detuning. The blue spheres and the orange triangles are the estimated and experimental temperatures respectively. We can roughly split the temperatures into two regions at the laser detuning $ -6 \Gamma' \simeq 7.5 \Gamma $. For detunings lower than $ 6 \Gamma'  $ in module, the nMOT is not in the power-broadened regime and then present a divergence between experimental and estimated values.}
+    \legend{Source: By the author.}
     \label{fig:Dreon-temperature}
 \end{figure}

@@ -48,24 +48,20 @@ Taking the property $ |\mathbf{a}| \leq 1 $ into account, we can represent the B
 \end{equation}
 Therefore, the surface of the Bloch sphere represents all the pure states, whereas the inside corresponds to all the mixed states.
 
-\noindent
-\begin{minipage}{\textwidth}
-	\begin{wrapfigure}{l}{0.45\textwidth}
-		\centering
-		\vspace{-10pt}
-		\caption{Bloch sphere.}
-		\includegraphics[width=0.35\textwidth]{USPSC-img/Bloch_sphere.png}
-		\legend{Bloch sphere for a pure state given by \\ $ \ket{\psi} = \sin(\theta/2) \ket{1} + e^{i\phi} \cos(\theta/2) \ket{2} $. \\ Source: Author}
-		\label{fig:Bloch-sphere}
-		\vspace{-5pt}
-	\end{wrapfigure}
-	Let us consider a pure state $ \ket{\psi} = c_1\ket{1} + c_2\ket{2} $. Since a global phase is not measurable, we can assume $ \ket{\psi} = c_1 \ket{1} + c_2 e^{i\phi} \ket{2} $ where $ \phi $ is the phase difference between $ \ket{1} $ and $ \ket{2} $, and both $ c_1 $ and $ c_2 $ are real values. Moreover, $ c_1^2 + c_2^2 = 1 $, which allows us to associate $ c_1 $ and $ c_2 $ with a unique value $ \theta $ considering $ c_1 = \sin{(\theta/2)} $ and $ c_2 = \cos{(\theta/2)} $. Even though the value of $ \theta $ is not unique to represent $ c_1 $ and $ c_2 $, the point $ (\theta, \phi) $ is unique to represent $ \ket{\psi} $. Thus, a density operator $ \hat{\rho} = \ketbra{\psi}{\psi} $ of a pure state can be written as
-	\begin{align}
-		\hat{\rho} &= \sin^2(\theta/2) \ketbra{1}{1} + \cos^2(\theta/2) \ketbra{2}{2} + \nonumber 
-		\\
-		&+ \frac{1}{2}e^{-i\phi}\sin\theta \ketbra{1}{2} + \frac{1}{2}e^{i\phi}\sin\theta \ketbra{2}{1},
-	\end{align}
-\end{minipage}
+\begin{figure}[!ht]
+	\centering
+	\includegraphics[width=0.35\textwidth]{USPSC-img/Bloch_sphere.png}
+	\caption{Bloch sphere for a pure state given by $ \ket{\psi} = \sin(\theta/2) \ket{1} + e^{i\phi} \cos(\theta/2) \ket{2} $.}
+	\legend{Source: By the author.}
+	\label{fig:Bloch-sphere}
+\end{figure}
+
+Let us consider a pure state $ \ket{\psi} = c_1\ket{1} + c_2\ket{2} $. Since a global phase is not measurable, we can assume $ \ket{\psi} = c_1 \ket{1} + c_2 e^{i\phi} \ket{2} $ where $ \phi $ is the phase difference between $ \ket{1} $ and $ \ket{2} $, and both $ c_1 $ and $ c_2 $ are real values. Moreover, $ c_1^2 + c_2^2 = 1 $, which allows us to associate $ c_1 $ and $ c_2 $ with a unique value $ \theta $ considering $ c_1 = \sin{(\theta/2)} $ and $ c_2 = \cos{(\theta/2)} $. Even though the value of $ \theta $ is not unique to represent $ c_1 $ and $ c_2 $, the point $ (\theta, \phi) $ is unique to represent $ \ket{\psi} $. Thus, a density operator $ \hat{\rho} = \ketbra{\psi}{\psi} $ of a pure state can be written as
+\begin{align}
+	\hat{\rho} &= \sin^2(\theta/2) \ketbra{1}{1} + \cos^2(\theta/2) \ketbra{2}{2} + \nonumber
+	\\
+	&+ \frac{1}{2}e^{-i\phi}\sin\theta \ketbra{1}{2} + \frac{1}{2}e^{i\phi}\sin\theta \ketbra{2}{1},
+\end{align}
 
 \begin{equation}
 	\hat{\rho} = \left[ \begin{matrix} \sin^2(\theta/2) & \frac{1}{2}e^{-i\phi}\sin\theta \\ \frac{1}{2}e^{i\phi}\sin\theta & \cos^2(\theta/2) \end{matrix} \right].
@@ -300,12 +296,10 @@ which has the maximum $ 1 $ when $ \Delta = 0 $, decreasing with $ \Delta / \Ome
 
 \begin{figure}[!ht]
 	\centering
-	\caption{Rabi oscillations}
-	\vspace{-10pt}
 	\includegraphics[width=0.5\textwidth]{USPSC-img/Rabi_oscillations.png}
-	\legend{Population of the excited state for Rabi oscillations with detunings equal to $ 0 $ (exact resonance), $ \Omega $, and $ 2\Omega $. \\ Source: Author}
+	\caption{Population of the excited state for Rabi oscillations with detunings equal to $ 0 $ (exact resonance), $ \Omega $, and $ 2\Omega $.}
+	\legend{Source: By the author.}
 	\label{fig:Rabi-oscillations}
-	\vspace{-15pt}
 \end{figure}
 
 In the exact resonance given by the equations (\ref{eq:population-inversion-exact-resonance-strong-excitation}) and (\ref{eq:coherence-exact-resonance-strong-excitation}), the period is $ T = 2\pi / \Omega $. If a field is turned on at $ t = 0 $ and then turned off after $ t = T / 2 $, an atom initially in the ground state will be certainly promoted to the excited state. Such pulse is called \textbf{$\pi$-pulse}. Furthermore, if a filed is turned on for a duration $ T / 4 $, an atom initially in the ground state ends up in a superposition between the excited and ground states, which is called \textbf{$\pi/2$-pulse}. This is widely used in atomic clocks and quantum computation, beyond the scope of this thesis.
@@ -359,24 +353,20 @@ The equation (\ref{eq:population-inversion-damped-Rabi-oscillations}) shows a \t
 
 \begin{figure}[!ht]
 	\centering
-	\caption{Damped Rabi oscillations}
 	\vspace{-10pt}
 	\includegraphics[width=0.5\textwidth]{USPSC-img/Damped_Rabi_oscillations.png}
-	\legend{Source: Author \\ Population of the excited state for damped Rabi oscillations with relaxation rates equal to $ 0 $ (exact resonance), $ \Omega/2 $, $ \Omega $, and $ 2\Omega $.}
+	\caption{Population of the excited state for damped Rabi oscillations with relaxation rates equal to $ 0 $ (exact resonance), $ \Omega/2 $, $ \Omega $, and $ 2\Omega $.}
+	\legend{Source: By the author.}
 	\label{fig:damped-Rabi-oscillations}
-	\vspace{-15pt}
 \end{figure}
 
 There is not a simple analytical solution for the general case (\ref{eq:general-solution-OBEs}) since the roots of the characteristic polynomial (\ref{eq:characteristic-polynomial}) do not have a friendly form out of specific regimes such as strong excitation and exact resonance. Then, to evaluate the coefficients $ a $ and $ b $, and the oscillation frequency $ c $, we numerically calculate the eigenvalues of $ \mathcal{M} $. These eigenvalues are associated with the coefficients $ a $, $ b $, and $ c $ through (\ref{eq:general-form-eigenvalues}).
 
 \begin{figure}[H]
-	\caption{Damping coefficients $ a $ and $ b $}
 	\begin{subfigure}[t]{0.48\textwidth}
 		\centering
 		\subcaption{Damping coefficient $ a $}
 		\includegraphics[width=1.0\textwidth]{USPSC-img/damping_coefficient_a.png}
-		\vspace{-5pt}
-		\legend{Damping coefficient $ a $ from equation (\ref{eq:general-solution-OBEs}) in function of the detuning $ \Delta $ for different Rabi frequencies $ \Omega $.}
 	\label{fig:damping-coefficient-a}
 	\end{subfigure}
 	\hfill
@@ -384,23 +374,21 @@ There is not a simple analytical solution for the general case (\ref{eq:general-
 		\centering
 		\subcaption{Damping coefficient $ b $}
 		\includegraphics[width=1.0\textwidth]{USPSC-img/damping_coefficient_b.png}
-		\vspace{-5pt}
-		\legend{Damping coefficient $ b $ from equation (\ref{eq:general-solution-OBEs}) in function of the detuning $ \Delta $ for different Rabi frequencies $ \Omega $.}
 		\label{fig:damping-coefficient-b}
 	\end{subfigure}
 
-	\legend{Source: Author}
+	\caption{Damping coefficients $ a $ and $ b $ from equation (\ref{eq:general-solution-OBEs}) as a function of the detuning $ \Delta $ for different Rabi frequencies $ \Omega $.}
+	\legend{Source: By the author.}
 	\label{fig:damping-coefficients}
-	\vspace{-30pt}
 \end{figure}
 The damping coefficient $ a $ from equation (\ref{eq:general-solution-OBEs}) is the rate at which the populations and coherences decay. From figure \ref{fig:damping-coefficient-a}, we can see that $ a $ converges to $ \Gamma $ when $ a \rightarrow \pm \infty $. Also, the coefficient $ a $ is between $ \Gamma/2 $ and $ \Gamma $. The damping coefficient $ b $ from equation (\ref{eq:general-solution-OBEs}) is a rate at which the Rabi oscillations decay. From figure \ref{fig:damping-coefficient-b}, we can see that $ b $ converges to $ \Gamma / 2 $ when $ b \rightarrow \pm \infty $ and it is between $ \Gamma / 2 $ and $ 3\Gamma/4 $. The lower the Rabi frequency the faster $ a $ and $ b $ converge. The system practically reaches the steady-state for a time greater than $ 2 / \Gamma $, since both damping coefficients have the minimum $ \Gamma / 2 $.
 
 \begin{figure}[!ht]
 	\centering
-	\caption{Oscillation frequency $ c $}
 	\vspace{-10pt}
 	\includegraphics[width=0.5\textwidth]{USPSC-img/oscillation_frequency_c.png}
-	\legend{Source: Author \\ Oscillation frequency $ c $ from equation (\ref{eq:general-solution-OBEs}) in function of the detuning $ \Delta $ for different Rabi frequencies $ \Omega $.}
+	\caption{Oscillation frequency $ c $ from equation (\ref{eq:general-solution-OBEs}) in function of the detuning $ \Delta $ for different Rabi frequencies $ \Omega $.}
+	\legend{Source: By the author.}
 	\label{fig:oscillation-frequency-c}
 	\vspace{-15pt}
 \end{figure}
@@ -473,12 +461,9 @@ Let us assume an isolated atom initially in the excited state so that there is n
 \end{equation}
 \begin{figure}[!ht]
 	\centering
-	\vspace{0pt}
-	\caption{Natural broadening}
-	\includegraphics[width=0.4\textwidth]{USPSC-img/natural_broadening.png}
-	\vspace{5pt}
-	\legend{Energy uncertainty of a excited state whose lifetime is $ 1/\Gamma $. Due to the time-energy uncertainty principle, $ \Delta E \geq \hbar \Gamma / 2 $ and then a spontaneously emitted photon have a random energy $ \hbar \omega $ whose the average is $ \hbar \omega_0 $ and the uncertainty is greater than $ \hbar \Gamma / 2 $.\\ Source: Author}
-	\vspace{-10pt}
+	\includegraphics[width=0.35\textwidth]{USPSC-img/natural_broadening.png}
+	\caption{Energy uncertainty of a excited state whose lifetime is $ 1/\Gamma $. Due to the time-energy uncertainty principle, $ \Delta E \geq \hbar \Gamma / 2 $ and then a spontaneously emitted photon have a random energy $ \hbar \omega $ whose the average is $ \hbar \omega_0 $ and the uncertainty is greater than $ \hbar \Gamma / 2 $.}
+	\legend{Source: By the author.}
 	\label{fig:natural-broadening}
 \end{figure}
 Spontaneously emitted photons do not have a deterministic energy $ \hbar \omega_0 $ since the system does not have either, as illustrated in figure \ref{fig:natural-broadening}. This phenomena provokes a \textit{homogeneous} line-broadening known as \textbf{natural broadening} or \textbf{lifetime broadening}. The probability of spontaneously emitting a photon with frequency between $ \omega $ and $ \omega + d\omega $ is given by the line shape function $ g(\omega) $ and it is proportional to the absorption cross-section $ \sigma(\omega) $ according equations (\ref{eq:line-shape-function-2}) and (\ref{eq:absorption-cross-section-3}). From equation (\ref{eq:line-shape-function-2}), we have
@@ -499,11 +484,9 @@ The function $ L $ is known as \textbf{absorption line-shape} and it is a \texti
 
 \begin{figure}[!ht]
 	\centering
-	\caption{Net absorption cross-section}
-	\vspace{-5pt}
 	\includegraphics[width=0.5\textwidth]{USPSC-img/net_absorption_cross_section.png}
-	\vspace{-5pt}
-	\legend{Net absorption cross section as function of detuning for some values of resonant saturation parameter.\\ Source: Author}
+	\caption{Net absorption cross section as function of the detuning for some values of resonant saturation parameter.}
+	\legend{Source: By the author.}
 	\label{fig:net-absorption-cross-section}
 \end{figure}
 
@@ -582,11 +565,10 @@ where $ I_0 / (\hbar \omega_0) $ is the flux of photons from the incident beam. 
 
 \begin{figure}[!ht]
 	\centering
-	\caption{Radiation pressure force}
-	\vspace{-10pt}
 	\includegraphics[width=0.8\textwidth]{USPSC-img/radiation_pressure_force.png}
 	\vspace{5pt}
-	\legend{An atom initially with momentum $ \mathbf{p}_0 $ absorbs a photon with momentum $ \hbar \mathbf{k} $ after a period $ t_1 - t_0 $. Then, at instant $ t_2 $, this atom spontaneously emits a photon with momentum $ \hbar \mathbf{k}' $ so that $ |\mathbf{k}| = |\mathbf{k}'| $. Finally, after successive absorption and emissions, the final momentum will be $ \mathbf{p} \simeq \mathbf{p}_0 + N\hbar\mathbf{k} $ since the spontaneous emission is isotropic. The quantity $ N $ is the number of absorbed photons after a period $ t_3 - t_0 $. Therefore, the impulse after a period $ \Delta t $ will be $ \Delta \mathbf{p} = \hbar \mathbf{k} R_{sc} \Delta t $, where $ R_{sc} $ is the rate at which the atom scatters photons. \\ Source: Author}
+	\caption{Representative illustration of the radiation pressure force as an average of scattering events. An atom initially with momentum $ \mathbf{p}_0 $ absorbs a photon with momentum $ \hbar \mathbf{k} $ after a period $ t_1 - t_0 $. Then, at instant $ t_2 $, this atom spontaneously emits a photon with momentum $ \hbar \mathbf{k}' $ so that $ |\mathbf{k}| = |\mathbf{k}'| $. Finally, after successive absorption and emissions, the final momentum will be $ \mathbf{p} \simeq \mathbf{p}_0 + N\hbar\mathbf{k} $ since the spontaneous emission is isotropic. The quantity $ N $ is the number of absorbed photons after a period $ t_3 - t_0 $. Therefore, the impulse after a period $ \Delta t $ will be $ \Delta \mathbf{p} = \hbar \mathbf{k} R_{sc} \Delta t $, where $ R_{sc} $ is the rate at which the atom scatters photons.}
+	\legend{Source: By the author.}
 	\label{fig:radiation-pressure-force}
 	\vspace{-15pt}
 \end{figure}
@@ -597,9 +579,9 @@ The gradient dipole force can be derived from a potential $ U_{dp} $ illustrated
 
 \begin{figure}[!ht]
 	\centering
-	\caption{Potential from gradient dipole force}
 	\includegraphics[width=0.5\textwidth]{USPSC-img/gradient_dipole_potential.png}
-	\legend{Potential from gradient dipole force for few saturation parameters as a funtion of detuning. \\ Source: Author}
+	\caption{Potential from gradient dipole force for few saturation parameters as a function of the laser detuning.}
+	\legend{Source: By the author.}
 	\label{fig:gradient-dipole-potential}
 \end{figure}
 

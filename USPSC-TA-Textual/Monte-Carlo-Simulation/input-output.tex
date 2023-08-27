@@ -17,8 +17,8 @@ The raw output of the simulation is six probability distributions of the atoms' 
 The \textbf{experiment parameters} are presented in three groups: the laser arrangement, the magnetic field profile, and the involved electronic transition. All groups are shown in tables \ref{tab:transition-parameters}, \ref{tab:magnetic-field-profile-parameters}, and \ref{tab:laser-beams-arrangement-parameters}. Table \ref{tab:transition-parameters} contains essential information to define the involved electronic transition as well as the atoms' mass, which is crucial for evaluating the scattering rates (\ref{eq:scattering-rate-each-transition}) and therefore the transition probabilities (\ref{eq:transition-probabilities}).
 Table \ref{tab:magnetic-field-profile-parameters} contains the magnetic field profile. Besides the quadrupole magnetic field already mentioned in previous sections, some experiments also have a residual linear gradient and a constant magnetic field to control the magnetic field origin. Lastly, table \ref{tab:laser-beams-arrangement-parameters} defines the laser beam arrangement.
 
-\begin{table}[ht!]
-    \centering
+\begin{table}[!ht]
+    \caption{Simulation parameters that defines the involved electronic transition and the mass of the atoms.}
     \begin{tabular}{|c|c|c|}
         \hline
         \textbf{Symbol} & \textbf{Description} & \textbf{Unit} \\ \hline
@@ -31,12 +31,14 @@ Table \ref{tab:magnetic-field-profile-parameters} contains the magnetic field pr
         $ m $ & Atomic mass & $ Da $ (Dalton unit) \\
         \hline
     \end{tabular}
-    \caption{Parameters that defines the involved electronic transition and the mass of the atoms.}
+    \vspace{10px}
+    \legend{Source: By the author.}
     \label{tab:transition-parameters}
 \end{table}
 
-\begin{table}[ht!]
+\begin{table}[!ht]
     \centering
+    \caption{Simulation parameters that defines the magnetic field profile.}
     \begin{tabular}{|c|c|c|}
         \hline
         \textbf{Symbol} & \textbf{Description} & \textbf{Unit} \\ \hline
@@ -46,12 +48,14 @@ Table \ref{tab:magnetic-field-profile-parameters} contains the magnetic field pr
         $ B_{\textrm{bias}} $ & Constant magnetic field & 3D vector \\
         \hline
     \end{tabular}
-    \caption{Parameters that defines the magnetic field profile.}
+    \vspace{10px}
+    \legend{Source: By the author.}
     \label{tab:magnetic-field-profile-parameters}
 \end{table}
 
-\begin{table}[ht!]
+\begin{table}[!ht]
     \centering
+    \caption{Simulation parameters that defines the laser beams arrangement.}
     \begin{tabular}{|c|c|c|}
         \hline
         \textbf{Symbol} & \textbf{Description} & \textbf{Unit} \\ \hline
@@ -62,7 +66,8 @@ Table \ref{tab:magnetic-field-profile-parameters} contains the magnetic field pr
         $ \hat{\epsilon} $ & Polarization vector in the laboratory frame & 3D vector \\
         \hline
     \end{tabular}
-    \caption{Parameters that defines the laser beams arrangement.}
+    \vspace{10px}
+    \legend{Source: By the author.}
     \label{tab:laser-beams-arrangement-parameters}
 \end{table}
 
@@ -74,8 +79,9 @@ The \textbf{performance parameters} are shown in table \ref{tab:performance-para
 \end{itemize}
 The position and velocity resolution are defined by the parameters $ N_{r} $, $ r_{m} $, $ v_{m} $. The spatial resolution is $ \delta r = r_{m} / N_{r} $, whilst the speed resolution is $ \delta v = v_{m} / N_r $. Hence, the atoms' positions $ x $, $ y $, and $ z $ are multiples of $ \delta_r $, whereas the atoms' velocities $ v_x $, $ v_y $, and $ v_z $ are multiples of $ \delta_v $. The number of samples $ N_{s} $ is basically the number of ensembles (atoms' motions), which defines the precision of the output. Lastly, the initial temperature $ T_0 $ defines the initial atoms' velocities by sampling the \textbf{Maxwell-Boltzmann distribution}.
 
-\begin{table}[ht!]
+\begin{table}[!ht]
     \centering
+    \caption{Simulation performance parameters.}
     \begin{tabular}{|c|c|c|}
         \hline
         \textbf{Symbol} & \textbf{Description} & \textbf{Unit} \\ \hline
@@ -90,7 +96,8 @@ The position and velocity resolution are defined by the parameters $ N_{r} $, $ 
         $ T_0 $ & Initial temperature & $ \mu K $ \\
         \hline
     \end{tabular}
-    \caption{Performance parameters.}
+    \vspace{10px}
+    \legend{Source: By the author.}
     \label{tab:performance-parameters}
 \end{table}
 
