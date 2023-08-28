@@ -10,7 +10,8 @@
 {DREON, D.
 \textbf{Designing and building an ultracold Dysprosium experiment:
   \textnormal{a new framework for light-spin interaction}}.
-2017. Tese (Doutorado) --- Paris Sciences Lettres Research University, 2017.}
+2017. PhD Thesis (Doctor) --- Paris Sciences Lettres Research University,
+  2017.}
 
 \bibitem{peters2001high}
 \abntrefinfo{Peters, Chung and Chu}{PETERS; CHUNG; CHU}{2001}
@@ -36,15 +37,16 @@
 
 \bibitem{phillips1998nobel}
 \abntrefinfo{Phillips}{PHILLIPS}{1998}
-{PHILLIPS, W.~D. Nobel lecture: Laser cooling and trapping of neutral atoms.
+{PHILLIPS, W.~D. Nobel lecture: laser cooling and trapping of neutral atoms.
 \textbf{Reviews of Modern Physics}, v.~70, n.~3, p.~721, 1998.}
 
 \bibitem{metcalf2007laser}
-\abntrefinfo{Metcalf and Straten}{METCALF; STRATEN}{2007}
+\abntrefinfo{Metcalf and Straten}{METCALF; STRATEN}{}
 {METCALF, H.~J.; STRATEN, P. Van~der. Laser cooling and trapping of neutral
   atoms.
-\textbf{Optics Encyclopedia: \textnormal{basic foundations and practical
-  applications}}, Wiley Online Library, 2007.}
+Available at:
+  \url{https://onlinelibrary.wiley.com/doi/epdf/10.1002/9783527600441.oe005.}
+  Access at: 23 Jan. 2023.}
 
 \bibitem{ludlow2015optical}
 \abntrefinfo{Ludlow \textit{et al.}}{LUDLOW \textit{et al.}}{2015}
@@ -65,13 +67,13 @@
 
 \bibitem{cornell2002nobel}
 \abntrefinfo{Cornell and Wieman}{CORNELL; WIEMAN}{2002}
-{CORNELL, E.~A.; WIEMAN, C.~E. Nobel lecture: Bose-einstein condensation in a
+{CORNELL, E.~A.; WIEMAN, C.~E. Nobel lecture: Bose-{E}instein condensation in a
   dilute gas, the first 70 years and some recent experiments.
 \textbf{Reviews of Modern Physics}, v.~74, n.~3, p.~875, 2002.}
 
 \bibitem{ketterle2002nobel}
 \abntrefinfo{Ketterle}{KETTERLE}{2002}
-{KETTERLE, W. Nobel lecture: When atoms behave as waves: Bose-einstein
+{KETTERLE, W. Nobel lecture: When atoms behave as waves: Bose-{E}instein
   condensation and the atom laser.
 \textbf{Reviews of Modern Physics}, v.~74, n.~4, p.~1131, 2002.}
 
@@ -92,7 +94,7 @@ DOI: 10.12921/cmst.2010.SI.02.115-129.}
 \abntrefinfo{Maier \textit{et al.}}{MAIER \textit{et al.}}{2014}
 {MAIER, T. \textit{et al.} Narrow-line magneto-optical trap for dysprosium
   atoms.
-\textbf{Optics letters}, v.~39, n.~11, p. 3138--3141, 2014.}
+\textbf{Optics Letters}, v.~39, n.~11, p. 3138--3141, 2014.}
 
 \bibitem{miyazawa2021narrow}
 \abntrefinfo{Miyazawa \textit{et al.}}{MIYAZAWA \textit{et al.}}{2021}
@@ -103,7 +105,7 @@ DOI: 10.12921/cmst.2010.SI.02.115-129.}
 \abntrefinfo{Lett \textit{et al.}}{LETT \textit{et al.}}{1988}
 {LETT, P.~D. \textit{et al.} Observation of atoms laser cooled below the
   doppler limit.
-\textbf{Physical review letters}, v.~61, n.~2, p.~169, 1988.}
+\textbf{Physical Review Letters}, v.~61, n.~2, p.~169, 1988.}
 
 \bibitem{gattobigio2010scaling}
 \abntrefinfo{Gattobigio \textit{et al.}}{GATTOBIGIO \textit{et al.}}{2010}
@@ -114,7 +116,7 @@ DOI: 10.12921/cmst.2010.SI.02.115-129.}
 \abntrefinfo{Loo \textit{et al.}}{LOO \textit{et al.}}{2003}
 {LOO, F. \textit{et al.} Investigations of a two-level atom in a
   magneto-optical trap using magnesium.
-\textbf{Journal of Optics B: Quantum and Semiclassical Optics}, v.~6, n.~1,
+\textbf{Journal of Optics B: quantum and semiclassical optics}, v.~6, n.~1,
   p.~81, 2003.}
 
 \bibitem{balykin2000electromagnetic}
@@ -157,27 +159,30 @@ DOI: 10.12921/cmst.2010.SI.02.115-129.}
 \bibitem{steck2007quantum}
 \abntrefinfo{Steck}{STECK}{2007}
 {STECK, D.~A. Quantum and atom optics.
-2007.}
+2007.
+Available at:
+  \url{http://info.phys.unm.edu/~ideutsch/Classes/Phys581S23/Reference\%20Material\%EF\%80\%A8/Steck\%20quantum\%20optics.pdf.
+  Accessible at: 23 Jan. 2023.} Access at: 23 Jan. 2023.}
 
 \bibitem{valverde2016mecanismos}
 \abntrefinfo{Valverde, Baseia and Bagnato}{VALVERDE; BASEIA; BAGNATO}{2016}
 {VALVERDE, C.; BASEIA, B.; BAGNATO, V. Mecanismos de alargamento de linhas
   espectrais at{\^o}micas.
-\textbf{Revista Brasileira de Ensino de F{\'\i}sica}, SciELO Brasil, v.~38,
+\textbf{Revista Brasileira de Ensino de F{\'\i}sica}, v.~38, n.~4, p. e4302,
   2016.}
 
 \bibitem{reinaudi2007strong}
 \abntrefinfo{Reinaudi \textit{et al.}}{REINAUDI \textit{et al.}}{2007}
 {REINAUDI, G. \textit{et al.} Strong saturation absorption imaging of dense
   clouds of ultracold atoms.
-\textbf{Optics letters}, Optical Society of America, v.~32, n.~21, p.
+\textbf{Optics Letters}, Optical Society of America, v.~32, n.~21, p.
   3143--3145, 2007.}
 
 \bibitem{smith2011absorption}
 \abntrefinfo{Smith \textit{et al.}}{SMITH \textit{et al.}}{2011}
 {SMITH, D.~A. \textit{et al.} Absorption imaging of ultracold atoms on atom
   chips.
-\textbf{Optics express}, Optical Society of America, v.~19, n.~9, p.
+\textbf{Optics Express}, Optical Society of America, v.~19, n.~9, p.
   8471--8485, 2011.}
 
 \bibitem{shu2004absorption}
@@ -194,7 +199,10 @@ DOI: 10.12921/cmst.2010.SI.02.115-129.}
 \bibitem{perrin2014doppler}
 \abntrefinfo{Perrin}{PERRIN}{2014}
 {PERRIN, H. Doppler cooling and magneto-optical trapping.
-\textbf{Part of the Les Houches lectures on laser cooling and trapping}, 2014.}
+\textbf{Part of the Les Houches lectures on laser cooling and trapping}, 2014.
+Available at:
+  \url{http://www-lpl.univ-paris13.fr/bec/BEC/Teaching/lecture2\_2012.pdf.}
+  Access at: 30 Apr. 2022.}
 
 \bibitem{prudnikov2015three}
 \abntrefinfo{Prudnikov, Taichenachev and Yudin}{PRUDNIKOV; TAICHENACHEV;
@@ -219,8 +227,8 @@ DOI: 10.12921/cmst.2010.SI.02.115-129.}
 \abntrefinfo{Gajda and Mostowski}{GAJDA; MOSTOWSKI}{1994}
 {GAJDA, M.; MOSTOWSKI, J. Three-dimensional theory of the magneto-optical trap:
   Doppler cooling in the low-intensity limit.
-\textbf{Phys. Rev. A}, American Physical Society, v.~49, p. 4864--4875, Jun
-  1994.
+\textbf{Physical Review A}, American Physical Society, v.~49, p. 4864--4875,
+  Jun 1994.
 DOI: 10.1103/PhysRevA.49.4864.}
 
 \bibitem{berman2011principles}
@@ -232,7 +240,7 @@ DOI: 10.1103/PhysRevA.49.4864.}
 \abntrefinfo{Raab \textit{et al.}}{RAAB \textit{et al.}}{1987}
 {RAAB, E.~L. \textit{et al.} Trapping of neutral sodium atoms with radiation
   pressure.
-\textbf{Physical review letters}, v.~59, n.~23, p.~2631, 1987.}
+\textbf{Physical Review Letters}, v.~59, n.~23, p.~2631, 1987.}
 
 \bibitem{katori1999magneto}
 \abntrefinfo{Katori \textit{et al.}}{KATORI \textit{et al.}}{1999}
@@ -250,13 +258,16 @@ DOI: 10.1103/PhysRevA.49.4864.}
 \abntrefinfo{Camara, Kaiser and Labeyrie}{CAMARA; KAISER; LABEYRIE}{2014}
 {CAMARA, A.; KAISER, R.; LABEYRIE, G. Scaling behavior of a very large
   magneto-optical trap.
-\textbf{Phys. Rev. A}, v.~90, p. 063404, Dec 2014.
+\textbf{Physical Review A}, v.~90, p. 063404, Dec 2014.
 DOI: 10.1103/PhysRevA.90.063404.}
 
 \bibitem{courteille2019atom}
 \abntrefinfo{Courteille}{COURTEILLE}{2019}
 {COURTEILLE, P.~W. Atom-light interaction and basic applications.
-2019.}
+2019.
+Available at:
+  \url{https://www.ifsc.usp.br/~strontium/Publication/Scripts/LightAtomsLecture.pdf.}
+  Access at: 23 Jan. 2023.}
 
 \bibitem{dreon2017optical}
 \abntrefinfo{Dreon \textit{et al.}}{DREON \textit{et al.}}{2017}
@@ -267,19 +278,20 @@ DOI: 10.1103/PhysRevA.90.063404.}
 
 \bibitem{wasserman2004all}
 \abntrefinfo{Wasserman}{WASSERMAN}{2004}
-{WASSERMAN, L. \textbf{All of statistics: a concise course in statistical
-  inference}. New York: Springer, 2004. v.~26.}
+{WASSERMAN, L. \textbf{All of statistics: \textnormal{a concise course in
+  statistical inference}}. New York: Springer, 2004. v.~26. (Springer texts in
+  statistics, v. 26).}
 
 \bibitem{lu2011strongly}
 \abntrefinfo{Lu \textit{et al.}}{LU \textit{et al.}}{2011}
-{LU, M. \textit{et al.} Strongly dipolar bose-einstein condensate of
+{LU, M. \textit{et al.} Strongly dipolar bose-{E}instein condensate of
   dysprosium.
-\textbf{Physical review letters}, v.~107, n.~19, p. 190401, 2011.}
+\textbf{Physical Review Letters}, v.~107, n.~19, p. 190401, 2011.}
 
 \bibitem{aikawa2012bose}
 \abntrefinfo{Aikawa \textit{et al.}}{AIKAWA \textit{et al.}}{2012}
-{AIKAWA, K. \textit{et al.} Bose-einstein condensation of erbium.
-\textbf{Physical review letters}, v.~108, n.~21, p. 210401, 2012.}
+{AIKAWA, K. \textit{et al.} Bose-{E}instein condensation of erbium.
+\textbf{Physical Review Letters}, v.~108, n.~21, p. 210401, 2012.}
 
 \bibitem{brasil2013simple}
 \abntrefinfo{Brasil, Fanchini and Napolitano}{BRASIL; FANCHINI;

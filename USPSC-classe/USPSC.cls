@@ -192,14 +192,14 @@
 % ---
 \addto\captionsenglish{% ingles
 	%% adjusts names from abnTeX2 
-	\renewcommand{\bibname}{References}
+	\renewcommand{\bibname}{REFERENCES}
 	\renewcommand{\folhaderostoname}{Title page}
 	\renewcommand{\folhaderostonamem}{Title page}
 	\renewcommand{\folhaderostoadicname}{Title page additional}
 	\renewcommand{\epigraphname}{Epigraph}
 	\renewcommand{\dedicatorianame}{Dedication}
 	\renewcommand{\errataname}{Errata}
-	\renewcommand{\agradecimentosname}{Acknowledgements}
+	\renewcommand{\agradecimentosname}{ACKNOWLEDGEMENTS}
 	\renewcommand{\indexname}{INDEX}
 	\renewcommand{\anexoname}{ANNEX}
 	\renewcommand{\anexosname}{ANNEX}
@@ -209,7 +209,7 @@
 	\renewcommand{\coorientadorname}{Coadvisor:}
 	\renewcommand{\folhadeaprovacaoname}{Approval}
 	%\renewcommand{\resumoname}{Abstract} 
-	\renewcommand{\resumoname}{Resumo} 
+	\renewcommand{\resumoname}{RESUMO}
 	\renewcommand{\listadesiglasname}{List of abbreviations and acronyms}
 	\renewcommand{\listadesimbolosname}{List of symbols}
 	\renewcommand{\quadroname}{Frame}
@@ -431,7 +431,7 @@
 \newcommand{\pretextualchapter}[1]{%
   \addtocounter{abntex@bookmarkcounter}{1}%
   \PRIVATEbookmarkthis{#1}%
-  \chapter*[#1]{#1}%
+  \chapter*[#1]{\centering #1}%
   }
 \provideboolean{abntex@apendiceousecao}
 \setboolean{abntex@apendiceousecao}{false}
@@ -1073,7 +1073,7 @@
 \newenvironment{resumo}[1][\resumoname]{%
    \PRIVATEbookmarkthis{#1}
    \renewcommand{\abstractnamefont}{\chaptitlefont}
-   \renewcommand{\abstractname}{\ABNTEXchapterupperifneeded{#1}}
+   \renewcommand{\abstractname}{\ABNTEXchapterupperifneeded{\MakeUppercase #1}}
    \begin{abstract}
   }{\end{abstract}\PRIVATEclearpageifneeded}
   

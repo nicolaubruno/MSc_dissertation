@@ -23,13 +23,9 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
 Database file #1: abntex2-options.bib
 Database file #2: references.bib
-Repeated entry---line 354 of file references.bib
+Repeated entry---line 349 of file references.bib
  : @article{krzysztof2010magneto
  :                              ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 440 of file references.bib
- : @article{metcalf2007laser
- :                          ,
 I'm skipping whatever remains of this entry
 Warning--I didn't find a database entry for "abnt-etal-cite"
 Reallocated singl_function (elt_size=4) to 100 items from 50.
@@ -43,43 +39,43 @@ Reallocated glb_str_end (elt_size=4) to 20 items from 10.
 +---------------------------------------------------------+
 You've used 61 entries,
             6714 wiz_defined-function locations,
-            1516 strings with 19118 characters,
-and the built_in function-call counts, 44088 in all, are:
-= -- 3200
+            1520 strings with 19438 characters,
+and the built_in function-call counts, 51152 in all, are:
+= -- 4325
 > -- 1531
-< -- 164
-+ -- 647
+< -- 524
++ -- 1005
 - -- 445
-* -- 3205
-:= -- 5494
-add.period$ -- 157
+* -- 3576
+:= -- 6247
+add.period$ -- 165
 call.type$ -- 63
-change.case$ -- 649
+change.case$ -- 650
 chr.to.int$ -- 184
 cite$ -- 50
-duplicate$ -- 2316
-empty$ -- 3151
+duplicate$ -- 3402
+empty$ -- 3161
 format.name$ -- 2356
-if$ -- 10602
+if$ -- 11764
 int.to.chr$ -- 10
 int.to.str$ -- 1
-missing$ -- 1016
-newline$ -- 258
+missing$ -- 1018
+newline$ -- 261
 num.names$ -- 200
-pop$ -- 1292
+pop$ -- 1299
 preamble$ -- 1
 purify$ -- 256
 quote$ -- 0
-skip$ -- 2761
+skip$ -- 3825
 stack$ -- 1
-substring$ -- 1647
-swap$ -- 1258
-text.length$ -- 120
+substring$ -- 2007
+swap$ -- 1635
+text.length$ -- 126
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 2
 warning$ -- 0
-while$ -- 315
+while$ -- 319
 width$ -- 0
-write$ -- 736
-(There were 2 error messages)
+write$ -- 743
+(There was 1 error message)
