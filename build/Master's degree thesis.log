@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.6.16)  28 AUG 2023 13:21
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.6.16)  30 AUG 2023 06:53
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -535,7 +535,7 @@ File: bkm-pdftex.def 2020-11-06 v1.29 bookmark driver for pdfTeX (HO)
 Package: babel 2022/01/26 3.70 The Babel package
 \babel@savecnt=\count322
 \U@D=\dimen187
-\l@unhyphenated=\language10
+\l@unhyphenated=\language8
 
 (/usr/share/texlive/texmf-dist/tex/generic/babel/txtbabel.def)
 \bbl@readstream=\read3
@@ -543,17 +543,21 @@ Package: babel 2022/01/26 3.70 The Babel package
 
 (/usr/share/texlive/texmf-dist/tex/generic/babel-english/english.ldf
 Language: english 2017/06/06 v3.3r English support from the babel system
+Package babel Info: Hyphen rules for 'british' set to \l@english
+(babel)             (\language0). Reported on input line 82.
+Package babel Info: Hyphen rules for 'UKenglish' set to \l@english
+(babel)             (\language0). Reported on input line 83.
 Package babel Info: Hyphen rules for 'canadian' set to \l@english
 (babel)             (\language0). Reported on input line 102.
-Package babel Info: Hyphen rules for 'australian' set to \l@ukenglish
-(babel)             (\language3). Reported on input line 105.
-Package babel Info: Hyphen rules for 'newzealand' set to \l@ukenglish
-(babel)             (\language3). Reported on input line 108.
+Package babel Info: Hyphen rules for 'australian' set to \l@english
+(babel)             (\language0). Reported on input line 105.
+Package babel Info: Hyphen rules for 'newzealand' set to \l@english
+(babel)             (\language0). Reported on input line 108.
 )
 (/usr/share/texlive/texmf-dist/tex/generic/babel-portuges/brazil.ldf
 Language: portuges 2021/07/09 v1.2t Portuguese support from the babel system
 Package babel Info: Hyphen rules for 'brazil' set to \l@portuguese
-(babel)             (\language7). Reported on input line 111.
+(babel)             (\language4). Reported on input line 111.
 Package babel Info: Making " an active character on input line 143.
 ))
 (/usr/share/texlive/texmf-dist/tex/latex/enumitem/enumitem.sty
@@ -998,7 +1002,7 @@ File: pppdftex.def 2022/01/29 v0.5u Pdfpages driver for pdfTeX (AM)
 )
 (/usr/share/texlive/texmf-dist/tex/latex/hyphenat/hyphenat.sty
 Package: hyphenat 2009/09/02 v2.3c hyphenation utilities
-\langwohyphens=\language11
+\langwohyphens=\language9
 LaTeX Info: Redefining \_ on input line 43.
 )
 (/usr/share/texlive/texmf-dist/tex/latex/textpos/textpos.sty
@@ -1781,7 +1785,7 @@ File: USPSC-img/1D-MOT-Zeeman-splitting.png Graphic file (type png)
 Package pdftex.def Info: USPSC-img/1D-MOT-Zeeman-splitting.png  used on input l
 ine 29.
 (pdftex.def)             Requested size: 318.49861pt x 132.8446pt.
- [48 <./USPSC-img/1D-MOT-Zeeman-splitting.png>]
+ [48 <./USPSC-img/1D-MOT-Zeeman-Splitting.png>]
 <USPSC-img/1D-MOT-detunings.png, id=1018, 842.14626pt x 528.97626pt>
 File: USPSC-img/1D-MOT-detunings.png Graphic file (type png)
 <use USPSC-img/1D-MOT-detunings.png>
@@ -1930,46 +1934,46 @@ File: USPSC-img/dy_temperature.png Graphic file (type png)
 Package pdftex.def Info: USPSC-img/dy_temperature.png  used on input line 157.
 (pdftex.def)             Requested size: 204.74861pt x 164.23334pt.
 ) (./USPSC-TA-Textual/Results/Strontium.tex [71 <./USPSC-img/dy_cloud_size.png>
- <./USPSC-img/dy_cloud_size_ratio.png>]
-<USPSC-img/sr_loftus_cloud_profile.png, id=1348, 500.8311pt x 185.0112pt>
+ <./USPSC-img/dy_cloud_size_ratio.png>] [72 <./USPSC-img/dy_temperature.png>]
+<USPSC-img/sr_loftus_cloud_profile.png, id=1356, 500.8311pt x 185.0112pt>
 File: USPSC-img/sr_loftus_cloud_profile.png Graphic file (type png)
 <use USPSC-img/sr_loftus_cloud_profile.png>
 Package pdftex.def Info: USPSC-img/sr_loftus_cloud_profile.png  used on input l
-ine 94.
+ine 96.
 (pdftex.def)             Requested size: 263.90083pt x 97.48802pt.
-<USPSC-img/loftus-atomic-cloud-profile.png, id=1349, 217.2918pt x 72.7518pt>
+<USPSC-img/loftus-atomic-cloud-profile.png, id=1357, 217.2918pt x 72.7518pt>
 File: USPSC-img/loftus-atomic-cloud-profile.png Graphic file (type png)
 <use USPSC-img/loftus-atomic-cloud-profile.png>
 Package pdftex.def Info: USPSC-img/loftus-atomic-cloud-profile.png  used on inp
-ut line 101.
+ut line 103.
 (pdftex.def)             Requested size: 172.90222pt x 57.89178pt.
- [72 <./USPSC-img/dy_temperature.png>] [73]
-<USPSC-img/sr_centre_of_mass.png, id=1365, 433.62pt x 325.215pt>
+ [73]
+<USPSC-img/sr_centre_of_mass.png, id=1368, 433.62pt x 325.215pt>
 File: USPSC-img/sr_centre_of_mass.png Graphic file (type png)
 <use USPSC-img/sr_centre_of_mass.png>
 Package pdftex.def Info: USPSC-img/sr_centre_of_mass.png  used on input line 11
-3.
+5.
 (pdftex.def)             Requested size: 227.5pt x 170.6263pt.
-<USPSC-img/sr_loftus_cloud_size.png, id=1368, 361.35pt x 289.08pt>
+ [74 <./USPSC-img/sr_loftus_cloud_profile.png> <./USPSC-img/loftus-atomic-cloud
+-profile.png> <./USPSC-img/sr_centre_of_mass.png>]
+<USPSC-img/sr_loftus_cloud_size.png, id=1378, 361.35pt x 289.08pt>
 File: USPSC-img/sr_loftus_cloud_size.png Graphic file (type png)
 <use USPSC-img/sr_loftus_cloud_size.png>
 Package pdftex.def Info: USPSC-img/sr_loftus_cloud_size.png  used on input line
- 124.
+ 126.
 (pdftex.def)             Requested size: 218.39806pt x 174.7197pt.
- [74 <./USPSC-img/sr_loftus_cloud_profile.png> <./USPSC-img/loftus-atomic-cloud
--profile.png> <./USPSC-img/sr_centre_of_mass.png>]
-<USPSC-img/sr-ifsc-temperature_vs_detuning.png, id=1379, 433.62pt x 325.215pt>
+<USPSC-img/sr-ifsc-temperature_vs_detuning.png, id=1382, 433.62pt x 325.215pt>
 File: USPSC-img/sr-ifsc-temperature_vs_detuning.png Graphic file (type png)
 <use USPSC-img/sr-ifsc-temperature_vs_detuning.png>
 Package pdftex.def Info: USPSC-img/sr-ifsc-temperature_vs_detuning.png  used on
- input line 144.
+ input line 146.
 (pdftex.def)             Requested size: 218.39806pt x 163.79807pt.
-<USPSC-img/sr_ifsc_temperature_vs_saturation.png, id=1380, 433.62pt x 325.215pt
+<USPSC-img/sr_ifsc_temperature_vs_saturation.png, id=1383, 433.62pt x 325.215pt
 >
 File: USPSC-img/sr_ifsc_temperature_vs_saturation.png Graphic file (type png)
 <use USPSC-img/sr_ifsc_temperature_vs_saturation.png>
 Package pdftex.def Info: USPSC-img/sr_ifsc_temperature_vs_saturation.png  used 
-on input line 151.
+on input line 153.
 (pdftex.def)             Requested size: 218.39806pt x 163.79807pt.
 ))
 [75 <./USPSC-img/sr_loftus_cloud_size.png>] [76 <./USPSC-img/sr-ifsc-temperatur
@@ -2044,12 +2048,12 @@ LaTeX Warning: There were multiply-defined labels.
 ### simple group (level 1) entered at line 307 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 32102 strings out of 480113
- 594184 string characters out of 5892773
- 929133 words of memory out of 5000000
- 48774 multiletter control sequences out of 15000+600000
+ 32105 strings out of 480154
+ 594216 string characters out of 5893788
+ 928983 words of memory out of 5000000
+ 48769 multiletter control sequences out of 15000+600000
  552535 words of font info for 78 fonts, out of 8000000 for 9000
- 83 hyphenation exceptions out of 8191
+ 61 hyphenation exceptions out of 8191
  89i,17n,93p,1964b,1000s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/
 texmf/fonts/enc/dvips/lm/lm-ts1.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.
@@ -2070,11 +2074,11 @@ xmf/fonts/type1/public/lm/lmsy6.pfb></usr/share/texmf/fonts/type1/public/lm/lms
 y8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam1
 0.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10
 .pfb>
-Output written on "build/Master's degree thesis.pdf" (95 pages, 2078967 bytes).
+Output written on "build/Master's degree thesis.pdf" (95 pages, 2079917 bytes).
 
 PDF statistics:
- 2013 PDF objects out of 2073 (max. 8388607)
- 1741 compressed objects within 18 object streams
- 546 named destinations out of 1000 (max. 500000)
+ 2017 PDF objects out of 2073 (max. 8388607)
+ 1744 compressed objects within 18 object streams
+ 547 named destinations out of 1000 (max. 500000)
  709 words of extra memory for PDF output out of 10000 (max. 10000000)
 
