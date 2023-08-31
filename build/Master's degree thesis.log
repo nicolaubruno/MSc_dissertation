@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.6.16)  30 AUG 2023 06:53
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.6.16)  31 AUG 2023 02:41
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1149,6 +1149,25 @@ LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 ))
+(/usr/share/texlive/texmf-dist/tex/latex/tools/longtable.sty
+Package: longtable 2021-09-01 v4.17 Multi-page Table package (DPC)
+\LTleft=\skip264
+\LTright=\skip265
+\LTpre=\skip266
+\LTpost=\skip267
+\LTchunksize=\count382
+\LTcapwidth=\dimen331
+\LT@head=\box77
+\LT@firsthead=\box78
+\LT@foot=\box79
+\LT@lastfoot=\box80
+\LT@gbox=\box81
+\LT@cols=\count383
+\LT@rows=\count384
+\c@LT@tables=\count385
+\c@LT@chunks=\count386
+\LT@p@ftn=\toks51
+)
 (/usr/share/texlive/texmf-dist/tex/latex/cite/cite.sty
 LaTeX Info: Redefining \cite on input line 302.
 LaTeX Info: Redefining \nocite on input line 332.
@@ -1158,10 +1177,10 @@ Package: cite 2015/02/27  v 5.5
 Package: abntex2cite 2018/11/24 v-1.9.7 abnTeX2
 
 (/usr/share/texlive/texmf-dist/tex/latex/abntex2/abntex2abrev.sty)
-\minimumbiblabelwidth=\skip264
-\ABCIauxlen=\skip265
-\c@ABCIaux=\count382
-\c@ABCImax=\count383
+\minimumbiblabelwidth=\skip268
+\ABCIauxlen=\skip269
+\c@ABCIaux=\count387
+\c@ABCImax=\count388
 
 (/usr/share/texlive/texmf-dist/tex/generic/iftex/ifpdf.sty
 Package: ifpdf 2019/10/25 v3.4 ifpdf legacy package. Use iftex instead.
@@ -1172,40 +1191,35 @@ Package: ifxetex 2019/10/25 v0.7 ifxetex legacy package. Use iftex instead.
 (/usr/share/texlive/texmf-dist/tex/latex/relsize/relsize.sty
 Package: relsize 2013/03/29 ver 4.1
 )
-\biblabelsep=\skip266
+\biblabelsep=\skip270
 LaTeX Info: Redefining \newblock on input line 591.
 LaTeX Info: Redefining \cite on input line 862.
 LaTeX Info: Redefining \citeonline on input line 866.
-\ABCItoken=\toks51
+\ABCItoken=\toks52
 )
 (/usr/share/texlive/texmf-dist/tex/latex/tools/multicol.sty
 Package: multicol 2021/10/28 v1.9b multicolumn formatting (FMi)
-\c@tracingmulticols=\count384
-\mult@box=\box77
-\multicol@leftmargin=\dimen331
-\c@unbalance=\count385
-\c@collectmore=\count386
-\doublecol@number=\count387
-\multicoltolerance=\count388
-\multicolpretolerance=\count389
-\full@width=\dimen332
-\page@free=\dimen333
-\premulticols=\dimen334
-\postmulticols=\dimen335
-\multicolsep=\skip267
-\multicolbaselineskip=\skip268
-\partial@page=\box78
-\last@line=\box79
-\maxbalancingoverflow=\dimen336
-\mult@rightbox=\box80
-\mult@grightbox=\box81
-\mult@firstbox=\box82
-\mult@gfirstbox=\box83
-\@tempa=\box84
-\@tempa=\box85
-\@tempa=\box86
-\@tempa=\box87
-\@tempa=\box88
+\c@tracingmulticols=\count389
+\mult@box=\box82
+\multicol@leftmargin=\dimen332
+\c@unbalance=\count390
+\c@collectmore=\count391
+\doublecol@number=\count392
+\multicoltolerance=\count393
+\multicolpretolerance=\count394
+\full@width=\dimen333
+\page@free=\dimen334
+\premulticols=\dimen335
+\postmulticols=\dimen336
+\multicolsep=\skip271
+\multicolbaselineskip=\skip272
+\partial@page=\box83
+\last@line=\box84
+\maxbalancingoverflow=\dimen337
+\mult@rightbox=\box85
+\mult@grightbox=\box86
+\mult@firstbox=\box87
+\mult@gfirstbox=\box88
 \@tempa=\box89
 \@tempa=\box90
 \@tempa=\box91
@@ -1237,41 +1251,27 @@ Package: multicol 2021/10/28 v1.9b multicolumn formatting (FMi)
 \@tempa=\box117
 \@tempa=\box118
 \@tempa=\box119
-\c@minrows=\count390
-\c@columnbadness=\count391
-\c@finalcolumnbadness=\count392
-\last@try=\dimen337
-\multicolovershoot=\dimen338
-\multicolundershoot=\dimen339
-\mult@nat@firstbox=\box120
-\colbreak@box=\box121
-\mc@col@check@num=\count393
+\@tempa=\box120
+\@tempa=\box121
+\@tempa=\box122
+\@tempa=\box123
+\@tempa=\box124
+\c@minrows=\count395
+\c@columnbadness=\count396
+\c@finalcolumnbadness=\count397
+\last@try=\dimen338
+\multicolovershoot=\dimen339
+\multicolundershoot=\dimen340
+\mult@nat@firstbox=\box125
+\colbreak@box=\box126
+\mc@col@check@num=\count398
 )
 (/usr/share/texlive/texmf-dist/tex/latex/multirow/multirow.sty
 Package: multirow 2021/03/15 v2.8 Span multiple rows of a table
-\multirow@colwidth=\skip269
-\multirow@cntb=\count394
-\multirow@dima=\skip270
-\bigstrutjot=\dimen340
-)
-(/usr/share/texlive/texmf-dist/tex/latex/tools/longtable.sty
-Package: longtable 2021-09-01 v4.17 Multi-page Table package (DPC)
-\LTleft=\skip271
-\LTright=\skip272
-\LTpre=\skip273
-\LTpost=\skip274
-\LTchunksize=\count395
-\LTcapwidth=\dimen341
-\LT@head=\box122
-\LT@firsthead=\box123
-\LT@foot=\box124
-\LT@lastfoot=\box125
-\LT@gbox=\box126
-\LT@cols=\count396
-\LT@rows=\count397
-\c@LT@tables=\count398
-\c@LT@chunks=\count399
-\LT@p@ftn=\toks52
+\multirow@colwidth=\skip273
+\multirow@cntb=\count399
+\multirow@dima=\skip274
+\bigstrutjot=\dimen341
 )
 (/usr/share/texlive/texmf-dist/tex/latex/threeparttablex/threeparttablex.sty
 Package: threeparttablex 2013/07/23 v0.3 by daleif
@@ -1293,10 +1293,10 @@ Package: USPSC-classe/ABNT6023-2018
 )
 
 LaTeX Warning: \include should only be used after \begin{document} on input lin
-e 61.
+e 63.
 
 (./USPSC-pre-textual-IFSC.tex)
-Package hyperref Info: Option `colorlinks' set `true' on input line 88.
+Package hyperref Info: Option `colorlinks' set `true' on input line 90.
 \"Master's degree thesis"@idxfile=\write5
 \openout5 = `"Master's degree thesis.idx"'.
 
@@ -1935,45 +1935,45 @@ Package pdftex.def Info: USPSC-img/dy_temperature.png  used on input line 157.
 (pdftex.def)             Requested size: 204.74861pt x 164.23334pt.
 ) (./USPSC-TA-Textual/Results/Strontium.tex [71 <./USPSC-img/dy_cloud_size.png>
  <./USPSC-img/dy_cloud_size_ratio.png>] [72 <./USPSC-img/dy_temperature.png>]
-<USPSC-img/sr_loftus_cloud_profile.png, id=1356, 500.8311pt x 185.0112pt>
+<USPSC-img/sr_loftus_cloud_profile.png, id=1353, 500.8311pt x 185.0112pt>
 File: USPSC-img/sr_loftus_cloud_profile.png Graphic file (type png)
 <use USPSC-img/sr_loftus_cloud_profile.png>
 Package pdftex.def Info: USPSC-img/sr_loftus_cloud_profile.png  used on input l
-ine 96.
+ine 98.
 (pdftex.def)             Requested size: 263.90083pt x 97.48802pt.
-<USPSC-img/loftus-atomic-cloud-profile.png, id=1357, 217.2918pt x 72.7518pt>
+<USPSC-img/loftus-atomic-cloud-profile.png, id=1354, 217.2918pt x 72.7518pt>
 File: USPSC-img/loftus-atomic-cloud-profile.png Graphic file (type png)
 <use USPSC-img/loftus-atomic-cloud-profile.png>
 Package pdftex.def Info: USPSC-img/loftus-atomic-cloud-profile.png  used on inp
-ut line 103.
+ut line 105.
 (pdftex.def)             Requested size: 172.90222pt x 57.89178pt.
  [73]
-<USPSC-img/sr_centre_of_mass.png, id=1368, 433.62pt x 325.215pt>
+<USPSC-img/sr_centre_of_mass.png, id=1365, 433.62pt x 325.215pt>
 File: USPSC-img/sr_centre_of_mass.png Graphic file (type png)
 <use USPSC-img/sr_centre_of_mass.png>
 Package pdftex.def Info: USPSC-img/sr_centre_of_mass.png  used on input line 11
-5.
+7.
 (pdftex.def)             Requested size: 227.5pt x 170.6263pt.
  [74 <./USPSC-img/sr_loftus_cloud_profile.png> <./USPSC-img/loftus-atomic-cloud
 -profile.png> <./USPSC-img/sr_centre_of_mass.png>]
-<USPSC-img/sr_loftus_cloud_size.png, id=1378, 361.35pt x 289.08pt>
+<USPSC-img/sr_loftus_cloud_size.png, id=1375, 361.35pt x 289.08pt>
 File: USPSC-img/sr_loftus_cloud_size.png Graphic file (type png)
 <use USPSC-img/sr_loftus_cloud_size.png>
 Package pdftex.def Info: USPSC-img/sr_loftus_cloud_size.png  used on input line
- 126.
+ 128.
 (pdftex.def)             Requested size: 218.39806pt x 174.7197pt.
-<USPSC-img/sr-ifsc-temperature_vs_detuning.png, id=1382, 433.62pt x 325.215pt>
+<USPSC-img/sr-ifsc-temperature_vs_detuning.png, id=1379, 433.62pt x 325.215pt>
 File: USPSC-img/sr-ifsc-temperature_vs_detuning.png Graphic file (type png)
 <use USPSC-img/sr-ifsc-temperature_vs_detuning.png>
 Package pdftex.def Info: USPSC-img/sr-ifsc-temperature_vs_detuning.png  used on
- input line 146.
+ input line 148.
 (pdftex.def)             Requested size: 218.39806pt x 163.79807pt.
-<USPSC-img/sr_ifsc_temperature_vs_saturation.png, id=1383, 433.62pt x 325.215pt
+<USPSC-img/sr_ifsc_temperature_vs_saturation.png, id=1380, 433.62pt x 325.215pt
 >
 File: USPSC-img/sr_ifsc_temperature_vs_saturation.png Graphic file (type png)
 <use USPSC-img/sr_ifsc_temperature_vs_saturation.png>
 Package pdftex.def Info: USPSC-img/sr_ifsc_temperature_vs_saturation.png  used 
-on input line 153.
+on input line 155.
 (pdftex.def)             Requested size: 218.39806pt x 163.79807pt.
 ))
 [75 <./USPSC-img/sr_loftus_cloud_size.png>] [76 <./USPSC-img/sr-ifsc-temperatur
@@ -2048,9 +2048,9 @@ LaTeX Warning: There were multiply-defined labels.
 ### simple group (level 1) entered at line 307 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 32105 strings out of 480154
- 594216 string characters out of 5893788
- 928983 words of memory out of 5000000
+ 32104 strings out of 480154
+ 594204 string characters out of 5893788
+ 928997 words of memory out of 5000000
  48769 multiletter control sequences out of 15000+600000
  552535 words of font info for 78 fonts, out of 8000000 for 9000
  61 hyphenation exceptions out of 8191
@@ -2074,11 +2074,11 @@ xmf/fonts/type1/public/lm/lmsy6.pfb></usr/share/texmf/fonts/type1/public/lm/lms
 y8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam1
 0.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10
 .pfb>
-Output written on "build/Master's degree thesis.pdf" (95 pages, 2079917 bytes).
+Output written on "build/Master's degree thesis.pdf" (95 pages, 2080046 bytes).
 
 PDF statistics:
- 2017 PDF objects out of 2073 (max. 8388607)
- 1744 compressed objects within 18 object streams
- 547 named destinations out of 1000 (max. 500000)
+ 2015 PDF objects out of 2073 (max. 8388607)
+ 1743 compressed objects within 18 object streams
+ 546 named destinations out of 1000 (max. 500000)
  709 words of extra memory for PDF output out of 10000 (max. 10000000)
 

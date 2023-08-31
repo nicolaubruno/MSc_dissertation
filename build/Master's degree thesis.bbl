@@ -5,14 +5,6 @@
 \providecommand{\abntbstabout}[1]{}
 \abntbstabout{v-1.9.7 }
 
-\bibitem{dreon2017designing}
-\abntrefinfo{Dreon}{DREON}{2017}
-{DREON, D.
-\textbf{Designing and building an ultracold Dysprosium experiment:
-  \textnormal{a new framework for light-spin interaction}}.
-2017. PhD Thesis (Doctor) --- Paris Sciences Lettres Research University,
-  2017.}
-
 \bibitem{peters2001high}
 \abntrefinfo{Peters, Chung and Chu}{PETERS; CHUNG; CHU}{2001}
 {PETERS, A.; CHUNG, K.~Y.; CHU, S. High-precision gravity measurements using
@@ -27,12 +19,12 @@
 
 \bibitem{chu1998nobel}
 \abntrefinfo{Chu}{CHU}{1998}
-{CHU, S. Nobel lecture: The manipulation of neutral particles.
+{CHU, S. Nobel lecture: the manipulation of neutral particles.
 \textbf{Reviews of Modern Physics}, v.~70, n.~3, p.~685, 1998.}
 
 \bibitem{cohen1998nobel}
 \abntrefinfo{Cohen-Tannoudji}{COHEN-TANNOUDJI}{1998}
-{COHEN-TANNOUDJI, C.~N. Nobel lecture: Manipulating atoms with photons.
+{COHEN-TANNOUDJI, C.~N. Nobel lecture: manipulating atoms with photons.
 \textbf{Reviews of Modern Physics}, v.~70, n.~3, p.~707, 1998.}
 
 \bibitem{phillips1998nobel}
@@ -42,11 +34,11 @@
 
 \bibitem{metcalf2007laser}
 \abntrefinfo{Metcalf and Straten}{METCALF; STRATEN}{}
-{METCALF, H.~J.; STRATEN, P. Van~der. Laser cooling and trapping of neutral
-  atoms.
+{METCALF, H.~J.; STRATEN, P. Van~der. \textbf{Laser cooling and trapping of
+  neutral atoms}.
 Available at:
   \url{https://onlinelibrary.wiley.com/doi/epdf/10.1002/9783527600441.oe005.}
-  Access at: 23 Jan. 2023.}
+  Accessible at: 23 Jan. 2023.}
 
 \bibitem{ludlow2015optical}
 \abntrefinfo{Ludlow \textit{et al.}}{LUDLOW \textit{et al.}}{2015}
@@ -116,8 +108,8 @@ DOI: 10.12921/cmst.2010.SI.02.115-129.}
 \abntrefinfo{Loo \textit{et al.}}{LOO \textit{et al.}}{2003}
 {LOO, F. \textit{et al.} Investigations of a two-level atom in a
   magneto-optical trap using magnesium.
-\textbf{Journal of Optics B: quantum and semiclassical optics}, v.~6, n.~1,
-  p.~81, 2003.}
+\textbf{Journal of Optics B: \textnormal{quantum and semiclassical optics}},
+  v.~6, n.~1, p.~81, 2003.}
 
 \bibitem{balykin2000electromagnetic}
 \abntrefinfo{Balykin, Minogin and Letokhov}{BALYKIN; MINOGIN; LETOKHOV}{2000}
@@ -158,11 +150,11 @@ DOI: 10.12921/cmst.2010.SI.02.115-129.}
 
 \bibitem{steck2007quantum}
 \abntrefinfo{Steck}{STECK}{2007}
-{STECK, D.~A. Quantum and atom optics.
+{STECK, D.~A. \textbf{Quantum and atom optics}.
 2007.
 Available at:
   \url{http://info.phys.unm.edu/~ideutsch/Classes/Phys581S23/Reference\%20Material\%EF\%80\%A8/Steck\%20quantum\%20optics.pdf.
-  Accessible at: 23 Jan. 2023.} Access at: 23 Jan. 2023.}
+  Accessible at: 23 Jan. 2023.} Accessible at: 23 Jan. 2023.}
 
 \bibitem{valverde2016mecanismos}
 \abntrefinfo{Valverde, Baseia and Bagnato}{VALVERDE; BASEIA; BAGNATO}{2016}
@@ -182,8 +174,7 @@ Available at:
 \abntrefinfo{Smith \textit{et al.}}{SMITH \textit{et al.}}{2011}
 {SMITH, D.~A. \textit{et al.} Absorption imaging of ultracold atoms on atom
   chips.
-\textbf{Optics Express}, Optical Society of America, v.~19, n.~9, p.
-  8471--8485, 2011.}
+\textbf{Optics Express}, v.~19, n.~9, p. 8471--8485, 2011.}
 
 \bibitem{shu2004absorption}
 \abntrefinfo{Shu-Bin \textit{et al.}}{SHU-BIN \textit{et al.}}{2004}
@@ -198,11 +189,11 @@ Available at:
 
 \bibitem{perrin2014doppler}
 \abntrefinfo{Perrin}{PERRIN}{2014}
-{PERRIN, H. Doppler cooling and magneto-optical trapping.
-\textbf{Part of the Les Houches lectures on laser cooling and trapping}, 2014.
+{PERRIN, H. \textbf{Doppler cooling and magneto-optical trapping}.
+2014.
 Available at:
   \url{http://www-lpl.univ-paris13.fr/bec/BEC/Teaching/lecture2\_2012.pdf.}
-  Access at: 30 Apr. 2022.}
+  Accessible at: 30 Apr. 2022.}
 
 \bibitem{prudnikov2015three}
 \abntrefinfo{Prudnikov, Taichenachev and Yudin}{PRUDNIKOV; TAICHENACHEV;
@@ -227,8 +218,7 @@ Available at:
 \abntrefinfo{Gajda and Mostowski}{GAJDA; MOSTOWSKI}{1994}
 {GAJDA, M.; MOSTOWSKI, J. Three-dimensional theory of the magneto-optical trap:
   Doppler cooling in the low-intensity limit.
-\textbf{Physical Review A}, American Physical Society, v.~49, p. 4864--4875,
-  Jun 1994.
+\textbf{Physical Review A}, v.~49, p. 4864--4875, 1994.
 DOI: 10.1103/PhysRevA.49.4864.}
 
 \bibitem{berman2011principles}
@@ -258,29 +248,37 @@ DOI: 10.1103/PhysRevA.49.4864.}
 \abntrefinfo{Camara, Kaiser and Labeyrie}{CAMARA; KAISER; LABEYRIE}{2014}
 {CAMARA, A.; KAISER, R.; LABEYRIE, G. Scaling behavior of a very large
   magneto-optical trap.
-\textbf{Physical Review A}, v.~90, p. 063404, Dec 2014.
+\textbf{Physical Review A}, v.~90, p. 063404, 2014.
 DOI: 10.1103/PhysRevA.90.063404.}
 
 \bibitem{courteille2019atom}
 \abntrefinfo{Courteille}{COURTEILLE}{2019}
-{COURTEILLE, P.~W. Atom-light interaction and basic applications.
+{COURTEILLE, P.~W. \textbf{Atom-light interaction and basic applications}.
 2019.
 Available at:
   \url{https://www.ifsc.usp.br/~strontium/Publication/Scripts/LightAtomsLecture.pdf.}
-  Access at: 23 Jan. 2023.}
+  Accessible at: 23 Jan. 2023.}
 
 \bibitem{dreon2017optical}
 \abntrefinfo{Dreon \textit{et al.}}{DREON \textit{et al.}}{2017}
 {DREON, D. \textit{et al.} Optical cooling and trapping of highly magnetic
   atoms: the benefits of a spontaneous spin polarization.
 \textbf{Journal of Physics B: \textnormal{atomic, molecular and optical
-  physics}}, IOP Publishing, v.~50, n.~6, p. 065005, 2017.}
+  physics}}, v.~50, n.~6, p. 065005, 2017.}
 
 \bibitem{wasserman2004all}
 \abntrefinfo{Wasserman}{WASSERMAN}{2004}
 {WASSERMAN, L. \textbf{All of statistics: \textnormal{a concise course in
   statistical inference}}. New York: Springer, 2004. v.~26. (Springer texts in
   statistics, v. 26).}
+
+\bibitem{dreon2017designing}
+\abntrefinfo{Dreon}{DREON}{2017}
+{DREON, D.
+\textbf{Designing and building an ultracold Dysprosium experiment:
+  \textnormal{a new framework for light-spin interaction}}.
+2017. PhD Thesis (Doctor) --- Paris Sciences Lettres Research University,
+  2017.}
 
 \bibitem{lu2011strongly}
 \abntrefinfo{Lu \textit{et al.}}{LU \textit{et al.}}{2011}

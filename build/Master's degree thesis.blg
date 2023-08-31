@@ -23,7 +23,7 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
 Database file #1: abntex2-options.bib
 Database file #2: references.bib
-Repeated entry---line 349 of file references.bib
+Repeated entry---line 347 of file references.bib
  : @article{krzysztof2010magneto
  :                              ,
 I'm skipping whatever remains of this entry
@@ -39,43 +39,43 @@ Reallocated glb_str_end (elt_size=4) to 20 items from 10.
 +---------------------------------------------------------+
 You've used 61 entries,
             6714 wiz_defined-function locations,
-            1520 strings with 19438 characters,
-and the built_in function-call counts, 51152 in all, are:
-= -- 4325
+            1515 strings with 19384 characters,
+and the built_in function-call counts, 51200 in all, are:
+= -- 4329
 > -- 1531
 < -- 524
 + -- 1005
 - -- 445
-* -- 3576
-:= -- 6247
+* -- 3573
+:= -- 6253
 add.period$ -- 165
 call.type$ -- 63
 change.case$ -- 650
 chr.to.int$ -- 184
 cite$ -- 50
-duplicate$ -- 3402
-empty$ -- 3161
+duplicate$ -- 3399
+empty$ -- 3168
 format.name$ -- 2356
-if$ -- 11764
+if$ -- 11775
 int.to.chr$ -- 10
 int.to.str$ -- 1
 missing$ -- 1018
 newline$ -- 261
 num.names$ -- 200
-pop$ -- 1299
+pop$ -- 1307
 preamble$ -- 1
 purify$ -- 256
 quote$ -- 0
 skip$ -- 3825
 stack$ -- 1
-substring$ -- 2007
-swap$ -- 1635
+substring$ -- 2031
+swap$ -- 1631
 text.length$ -- 126
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 2
 warning$ -- 0
-while$ -- 319
+while$ -- 321
 width$ -- 0
-write$ -- 743
+write$ -- 739
 (There was 1 error message)

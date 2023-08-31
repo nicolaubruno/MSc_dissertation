@@ -289,7 +289,7 @@ FUNCTION {bbl.semicolon} { "; "}
 FUNCTION {bbl.same.field} {"\underline{\ \ \ \ \ \ \ \ }"}
 FUNCTION {bbl.techrep} { "Rel. Tec." }
 FUNCTION {bbl.url.accessdate}
-  {iso.abbreviation { "Cited "} {"Access at: "} if$}
+  {iso.abbreviation { "Cited "} {"Accessible at: "} if$}
 FUNCTION {bbl.url.available}
 { iso.abbreviation {"Available from Internet: "} {"Available at: "} if$}
 FUNCTION {bbl.void} {""}
